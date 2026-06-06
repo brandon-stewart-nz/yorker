@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-06-06T02:15:40.838013+00:00",
+  "generated_at_utc": "2026-06-06T02:30:35.830491+00:00",
   "games": {
     "2026-04-25": {
       "partnerships": [
@@ -232,7 +232,8 @@
       "stand_ins": [
         "Conor Mudge"
       ],
-      "captain": "Jacob"
+      "captain": "Jacob",
+      "potd": "Jack"
     },
     "2026-06-13": {
       "unavailable": [
