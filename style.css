@@ -1073,11 +1073,19 @@ button.record__cell[data-active="true"] .record__label {
    links to the game it happened in. Value bold, unit/descriptor lighter. */
 .hl-row {
   display: flex;
+  flex-direction: column;
   gap: 10px;
-  flex-wrap: wrap;
 }
+/* Desktop: player details on the left, the stacked highlight chips on the right. */
+.detail-header--player {
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 18px;
+}
+.detail-header--player .detail-header__main { flex: 1 1 auto; min-width: 0; }
+.detail-header--player .hl-row { flex: 0 0 250px; }
 .hl {
-  flex: 1 1 180px;
+  flex: 0 0 auto;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -1379,7 +1387,9 @@ button.record__cell[data-active="true"] .record__label {
   .detail-header__avatar { width: 52px; height: 52px; font-size: 20px; }
   .detail-header__name { font-size: 22px; }
   /* Player hero: avatar beside name on desktop (via __main), stacked on mobile. */
+  .detail-header--player { flex-direction: column; }
   .detail-header--player .detail-header__main { flex-direction: column; align-items: flex-start; gap: 12px; }
+  .detail-header--player .hl-row { flex: 0 0 auto; }
   .detail-header__name .badge {
     position: absolute;
     top: 14px;
