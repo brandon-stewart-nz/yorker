@@ -1455,12 +1455,15 @@ button.record__cell[data-active="true"] .record__label {
 /* auto layout (not the base fixed) so hidden columns + the colspan partnership
    banners collapse cleanly on mobile instead of reserving empty width. */
 .table.table--scorecard { table-layout: auto; }
+/* Match the player page's match-by-match spacing: let the stat columns
+   distribute (width:auto) instead of pinning them narrow, so they breathe
+   evenly across the width rather than bunching on the right. */
 .table.table--scorecard .num,
-.table.table--scorecard .num-h { width: 44px; padding-left: 6px; padding-right: 6px; }
-.table.table--scorecard .num:last-child,
-.table.table--scorecard .num-h:last-child { width: 52px; padding-right: 10px; }
+.table.table--scorecard .num-h { width: auto; padding-left: 8px; padding-right: 8px; }
 @media (max-width: 480px) {
   .table--scorecard .dk-only { display: none; }
+  .table.table--scorecard .num,
+  .table.table--scorecard .num-h { padding-left: 5px; padding-right: 5px; }
 }
 
 /* --- Tooltips ------------------------------------------------------- */
