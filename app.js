@@ -1421,12 +1421,11 @@ function bowlingTableHtml(bowlers, opts = {}) {
       <table class="table table--scorecard">
         <thead><tr>
           <th>Bowlers (in order)</th>
-          <th class="num-h">O</th>
-          <th class="num-h">R</th>
           <th class="num-h">W</th>
-          <th class="num-h">ER</th>
+          <th class="num-h">R</th>
           <th class="num-h dk-only">NB</th>
           <th class="num-h dk-only">WD</th>
+          <th class="num-h">ER</th>
         </tr></thead>
         <tbody>
           ${bowlers.map(b => {
@@ -1434,12 +1433,11 @@ function bowlingTableHtml(bowlers, opts = {}) {
             return `
             <tr ${rowLinkAttrs(b.name, linkPlayers, matchId)}>
               <td>${escapeHtml(displayName(b.name, { opponent }) + (isCap ? " (c)" : ""))}</td>
-              <td class="num">${b.overs}</td>
-              <td class="num">${b.runs_conceded}</td>
               <td class="num">${b.wickets}</td>
-              <td class="num">${economyRate(b.runs_conceded, b.overs)}</td>
+              <td class="num">${b.runs_conceded}</td>
               <td class="num dk-only">${b.no_balls ?? 0}</td>
               <td class="num dk-only">${b.wides ?? 0}</td>
+              <td class="num">${economyRate(b.runs_conceded, b.overs)}</td>
             </tr>`;
           }).join("")}
         </tbody>
