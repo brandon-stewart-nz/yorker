@@ -1359,13 +1359,16 @@ button.record__cell[data-active="true"] .record__label {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.table--player-matches td.opp {
-  white-space: normal;
-  line-height: 1.2;
-  overflow: hidden;
+/* Keep the cell a real table-cell (so it fills the row height); clamp the
+   name on an inner span instead — -webkit-box on the <td> itself breaks
+   table-cell layout. */
+.table--player-matches td.opp { white-space: normal; }
+.table--player-matches .opp-text {
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
+  overflow: hidden;
+  line-height: 1.2;
 }
 .table--player-matches .mb-col { display: none; }   /* desktop: hide R / B */
 

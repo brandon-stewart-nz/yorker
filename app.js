@@ -1091,7 +1091,7 @@ function renderPlayer(app, key, from) {
               <tr class="player-row" data-fixture-id="${m.fixture_id}">
                 <td class="date-col">${dateCell}</td>
                 <td class="potd-cell">${isPotdForMatch(key, m) ? trophyIconHtml() : ""}</td>
-                <td class="opp">${escapeHtml(m.vs ?? "")}</td>
+                <td class="opp"><span class="opp-text">${escapeHtml(m.vs ?? "")}</span></td>
                 <td class="num mb-col col-r">${runs}</td>
                 <td class="num mb-col col-b">${bowl}</td>
                 <td class="num dk-col">${runs}</td>
