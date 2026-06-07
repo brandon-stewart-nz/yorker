@@ -897,11 +897,11 @@ function plannedBattingTableHtml(partnerships, captain = "", fixtureId = null) {
       <table class="table table--partnerships table--scorecard">
         <thead><tr>
           <th>Batters (in order)</th>
-          <th class="num-h">R</th>
-          <th class="num-h">B</th>
+          <th class="num-h" data-tip="Runs scored" aria-label="Runs scored">R</th>
+          <th class="num-h" data-tip="Balls faced" aria-label="Balls faced">B</th>
           <th class="num-h dk-only" data-tip="balls scoring 4 or 5" aria-label="Balls scoring 4 or 5">4+</th>
           <th class="num-h dk-only" data-tip="balls scoring 6 or more" aria-label="Balls scoring 6 or more">6+</th>
-          <th class="num-h">SR</th>
+          <th class="num-h" data-tip="Strike rate — runs ÷ balls × 100" aria-label="Strike rate, runs divided by balls times 100">SR</th>
         </tr></thead>
         <tbody>${body}</tbody>
       </table>
@@ -933,11 +933,11 @@ function plannedBowlingTableHtml(bowlingOrder, captain = "", fixtureId = null) {
       <table class="table table--scorecard">
         <thead><tr>
           <th>Bowlers (in order)</th>
-          <th class="num-h">W</th>
-          <th class="num-h">R</th>
-          <th class="num-h dk-only">NB</th>
-          <th class="num-h dk-only">WD</th>
-          <th class="num-h">ER</th>
+          <th class="num-h" data-tip="Wickets taken" aria-label="Wickets taken">W</th>
+          <th class="num-h" data-tip="Runs conceded" aria-label="Runs conceded">R</th>
+          <th class="num-h dk-only" data-tip="No-balls" aria-label="No-balls">NB</th>
+          <th class="num-h dk-only" data-tip="Wides" aria-label="Wides">WD</th>
+          <th class="num-h" data-tip="Economy rate — runs ÷ overs" aria-label="Economy rate, runs divided by overs">ER</th>
         </tr></thead>
         <tbody>${rows}</tbody>
       </table>
@@ -1445,11 +1445,11 @@ function battingTableHtml(batters, opts = {}) {
       <table class="table table--partnerships table--scorecard">
         <thead><tr>
           <th>Batters (in order)</th>
-          <th class="num-h">R</th>
-          <th class="num-h">B</th>
+          <th class="num-h" data-tip="Runs scored" aria-label="Runs scored">R</th>
+          <th class="num-h" data-tip="Balls faced" aria-label="Balls faced">B</th>
           <th class="num-h dk-only" data-tip="balls scoring 4 or 5" aria-label="Balls scoring 4 or 5">4+</th>
           <th class="num-h dk-only" data-tip="balls scoring 6 or more" aria-label="Balls scoring 6 or more">6+</th>
-          <th class="num-h">SR</th>
+          <th class="num-h" data-tip="Strike rate — runs ÷ balls × 100" aria-label="Strike rate, runs divided by balls times 100">SR</th>
         </tr></thead>
         <tbody>${body}</tbody>
       </table>
@@ -1468,11 +1468,11 @@ function bowlingTableHtml(bowlers, opts = {}) {
       <table class="table table--scorecard">
         <thead><tr>
           <th>Bowlers (in order)</th>
-          <th class="num-h">W</th>
-          <th class="num-h">R</th>
-          <th class="num-h dk-only">NB</th>
-          <th class="num-h dk-only">WD</th>
-          <th class="num-h">ER</th>
+          <th class="num-h" data-tip="Wickets taken" aria-label="Wickets taken">W</th>
+          <th class="num-h" data-tip="Runs conceded" aria-label="Runs conceded">R</th>
+          <th class="num-h dk-only" data-tip="No-balls" aria-label="No-balls">NB</th>
+          <th class="num-h dk-only" data-tip="Wides" aria-label="Wides">WD</th>
+          <th class="num-h" data-tip="Economy rate — runs ÷ overs" aria-label="Economy rate, runs divided by overs">ER</th>
         </tr></thead>
         <tbody>
           ${bowlers.map(b => {
