@@ -1452,18 +1452,25 @@ button.record__cell[data-active="true"] .record__label {
    (batting R/B/4+/6+/SR, bowling W/R/WD/NB/ER) fits on desktop; on
    mobile the .dk-only columns are hidden for a curated view (batting R/B/SR,
    bowling W/R/ER). */
-/* auto layout (not the base fixed) so hidden columns + the colspan partnership
-   banners collapse cleanly on mobile instead of reserving empty width. */
+/* Mobile/base: auto layout so hidden (dk-only) columns + the colspan
+   partnership banners collapse cleanly instead of reserving empty width. */
 .table.table--scorecard { table-layout: auto; }
-/* Match the player page's match-by-match spacing: let the stat columns
-   distribute (width:auto) instead of pinning them narrow, so they breathe
-   evenly across the width rather than bunching on the right. */
 .table.table--scorecard .num,
 .table.table--scorecard .num-h { width: auto; padding-left: 8px; padding-right: 8px; }
 @media (max-width: 480px) {
   .table--scorecard .dk-only { display: none; }
   .table.table--scorecard .num,
   .table.table--scorecard .num-h { padding-left: 5px; padding-right: 5px; }
+}
+/* Desktop: a fixed geometry so every scorecard table (Firebirds + opposition,
+   batting + bowling) shares identical column widths and lines up perfectly —
+   no more one table coming out skinnier than another. Name column 42%, the
+   five stat columns 11.6% each, tightened a little from the auto spread. */
+@media (min-width: 481px) {
+  .table.table--scorecard { table-layout: fixed; }
+  .table.table--scorecard th:first-child { width: 42%; }
+  .table.table--scorecard .num,
+  .table.table--scorecard .num-h { width: 11.6%; }
 }
 
 /* --- Tooltips ------------------------------------------------------- */
