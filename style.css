@@ -1384,7 +1384,7 @@ button.record__cell[data-active="true"] .record__label {
 }
 
 /* Match scorecard — dense stat tables. Narrow numeric columns so the full set
-   (batting R/B/4+/6+/SR, bowling W/R/NB/WD/ER) fits on desktop; on
+   (batting R/B/4+/6+/SR, bowling W/R/WD/NB/ER) fits on desktop; on
    mobile the .dk-only columns are hidden for a curated view (batting R/B/SR,
    bowling W/R/ER). */
 /* auto layout (not the base fixed) so hidden columns + the colspan partnership

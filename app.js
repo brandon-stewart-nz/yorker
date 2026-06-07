@@ -935,8 +935,8 @@ function plannedBowlingTableHtml(bowlingOrder, captain = "", fixtureId = null) {
           <th>Bowlers (in order)</th>
           <th class="num-h" data-tip="Wickets taken" aria-label="Wickets taken">W</th>
           <th class="num-h" data-tip="Runs conceded" aria-label="Runs conceded">R</th>
-          <th class="num-h dk-only" data-tip="No-balls" aria-label="No-balls">NB</th>
           <th class="num-h dk-only" data-tip="Wides" aria-label="Wides">WD</th>
+          <th class="num-h dk-only" data-tip="No-balls" aria-label="No-balls">NB</th>
           <th class="num-h" data-tip="Economy rate — runs ÷ overs" aria-label="Economy rate, runs divided by overs">ER</th>
         </tr></thead>
         <tbody>${rows}</tbody>
@@ -1470,8 +1470,8 @@ function bowlingTableHtml(bowlers, opts = {}) {
           <th>Bowlers (in order)</th>
           <th class="num-h" data-tip="Wickets taken" aria-label="Wickets taken">W</th>
           <th class="num-h" data-tip="Runs conceded" aria-label="Runs conceded">R</th>
-          <th class="num-h dk-only" data-tip="No-balls" aria-label="No-balls">NB</th>
           <th class="num-h dk-only" data-tip="Wides" aria-label="Wides">WD</th>
+          <th class="num-h dk-only" data-tip="No-balls" aria-label="No-balls">NB</th>
           <th class="num-h" data-tip="Economy rate — runs ÷ overs" aria-label="Economy rate, runs divided by overs">ER</th>
         </tr></thead>
         <tbody>
@@ -1482,8 +1482,8 @@ function bowlingTableHtml(bowlers, opts = {}) {
               <td>${escapeHtml(displayName(b.name, { opponent }) + (isCap ? " (c)" : ""))}</td>
               <td class="num">${b.wickets}</td>
               <td class="num">${b.runs_conceded}</td>
-              <td class="num dk-only">${b.no_balls ?? 0}</td>
               <td class="num dk-only">${b.wides ?? 0}</td>
+              <td class="num dk-only">${b.no_balls ?? 0}</td>
               <td class="num">${economyRate(b.runs_conceded, b.overs)}</td>
             </tr>`;
           }).join("")}
