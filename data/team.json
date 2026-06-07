@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-06-07T22:00:26.417898+00:00",
-  "generated_at_nz": "2026-06-08T10:00:20.890325+12:00",
+  "generated_at_utc": "2026-06-07T22:07:16.947359+00:00",
+  "generated_at_nz": "2026-06-08T10:07:11.749900+12:00",
   "team": {
     "id": 11361,
     "name": "Blazing Firebirds",
@@ -26,8 +26,8 @@
     "won": 3,
     "lost": 4,
     "drawn": 0,
-    "skins_for": 421,
-    "skins_against": 547
+    "skins_for": 441,
+    "skins_against": 564
   },
   "next_game": null
 }
