@@ -1398,6 +1398,44 @@ button.record__cell[data-active="true"] .record__label {
   .table--scorecard .dk-only { display: none; }
 }
 
+/* --- Tooltips ------------------------------------------------------- */
+/* Custom tooltip for [data-tip] headers — replaces the slow, unstyled native
+   title. The JS appends one .fb-tip to <body> (fixed position) so it never
+   clips against the table-card's overflow:hidden. */
+[data-tip] { cursor: pointer; }
+.fb-tip {
+  position: fixed;
+  z-index: 1000;
+  max-width: 220px;
+  padding: 7px 11px;
+  border-radius: 8px;
+  background: var(--teal-deep);
+  color: var(--cream);
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.35;
+  letter-spacing: 0.005em;
+  text-align: left;
+  text-transform: none;
+  box-shadow: 0 8px 22px rgba(14, 53, 61, 0.30), 0 1px 3px rgba(14, 53, 61, 0.22);
+  pointer-events: none;
+  opacity: 0;
+  transform: translateY(-4px);
+  transition: opacity 130ms ease, transform 130ms ease;
+}
+.fb-tip.is-visible { opacity: 1; transform: translateY(0); }
+/* upward arrow, centred on the target via the --tip-arrow offset */
+.fb-tip::before {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: var(--tip-arrow, 50%);
+  transform: translateX(-50%);
+  border: 5px solid transparent;
+  border-bottom-color: var(--teal-deep);
+}
+
 /* --- Footer --------------------------------------------------------- */
 
 .footer {

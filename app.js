@@ -203,6 +203,43 @@ function writeCachedJson(key, value) {
 document.addEventListener("DOMContentLoaded", init);
 window.addEventListener("hashchange", render);
 
+// --- Tooltips --------------------------------------------------------
+// On-brand tooltip for any [data-tip] element. One reused fixed-position node,
+// so it escapes the table-card's overflow:hidden and never clips; positioned
+// just below the target, clamped to the viewport, arrow tracking the target's
+// centre. Triggered by hover and keyboard focus.
+(() => {
+  let tip = null;
+  function show(el) {
+    const text = el.getAttribute("data-tip");
+    if (!text) return;
+    if (!tip) {
+      tip = document.createElement("div");
+      tip.className = "fb-tip";
+      tip.setAttribute("role", "tooltip");
+      document.body.appendChild(tip);
+    }
+    tip.textContent = text;
+    tip.classList.add("is-visible");
+    const r = el.getBoundingClientRect();
+    const pad = 8;
+    const left = Math.max(pad, Math.min(
+      r.left + r.width / 2 - tip.offsetWidth / 2,
+      window.innerWidth - tip.offsetWidth - pad
+    ));
+    tip.style.left = `${Math.round(left)}px`;
+    tip.style.top = `${Math.round(r.bottom + 9)}px`;
+    tip.style.setProperty("--tip-arrow", `${Math.round(r.left + r.width / 2 - left)}px`);
+  }
+  function hide() { if (tip) tip.classList.remove("is-visible"); }
+  const closestTip = (e) => e.target && e.target.closest && e.target.closest("[data-tip]");
+  document.addEventListener("pointerover", (e) => { const el = closestTip(e); if (el) show(el); });
+  document.addEventListener("pointerout", (e) => { const el = closestTip(e); if (el && !el.contains(e.relatedTarget)) hide(); });
+  document.addEventListener("focusin", (e) => { const el = closestTip(e); if (el) show(el); });
+  document.addEventListener("focusout", hide);
+  window.addEventListener("scroll", hide, true);
+})();
+
 // --- PWA install ----------------------------------------------------
 //
 // Two paths, picked by platform:
@@ -862,8 +899,8 @@ function plannedBattingTableHtml(partnerships, captain = "", fixtureId = null) {
           <th>Batters (in order)</th>
           <th class="num-h">R</th>
           <th class="num-h">B</th>
-          <th class="num-h dk-only" title="balls scoring 4 or 5">4+</th>
-          <th class="num-h dk-only" title="balls scoring 6 or more">6+</th>
+          <th class="num-h dk-only" data-tip="balls scoring 4 or 5" aria-label="Balls scoring 4 or 5">4+</th>
+          <th class="num-h dk-only" data-tip="balls scoring 6 or more" aria-label="Balls scoring 6 or more">6+</th>
           <th class="num-h">SR</th>
         </tr></thead>
         <tbody>${body}</tbody>
@@ -1079,8 +1116,8 @@ function renderPlayer(app, key, from) {
             <th class="date-col">Date</th>
             <th class="potd-h" aria-label="Player of the Day"></th>
             <th>Opponent</th>
-            <th class="num-h mb-col col-r" title="Runs">R</th>
-            <th class="num-h mb-col col-b" title="Bowling — wickets / runs conceded">B</th>
+            <th class="num-h mb-col col-r" data-tip="Runs scored" aria-label="Runs scored">R</th>
+            <th class="num-h mb-col col-b" data-tip="Bowling — wickets / runs conceded" aria-label="Bowling — wickets per runs conceded">B</th>
             <th class="num-h dk-col">Runs</th>
             <th class="num-h dk-col">Wickets</th>
             <th class="num-h dk-col">Given</th>
@@ -1410,8 +1447,8 @@ function battingTableHtml(batters, opts = {}) {
           <th>Batters (in order)</th>
           <th class="num-h">R</th>
           <th class="num-h">B</th>
-          <th class="num-h dk-only" title="balls scoring 4 or 5">4+</th>
-          <th class="num-h dk-only" title="balls scoring 6 or more">6+</th>
+          <th class="num-h dk-only" data-tip="balls scoring 4 or 5" aria-label="Balls scoring 4 or 5">4+</th>
+          <th class="num-h dk-only" data-tip="balls scoring 6 or more" aria-label="Balls scoring 6 or more">6+</th>
           <th class="num-h">SR</th>
         </tr></thead>
         <tbody>${body}</tbody>
