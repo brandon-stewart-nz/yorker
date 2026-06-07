@@ -1464,13 +1464,15 @@ button.record__cell[data-active="true"] .record__label {
 }
 /* Desktop: a fixed geometry so every scorecard table (Firebirds + opposition,
    batting + bowling) shares identical column widths and lines up perfectly —
-   no more one table coming out skinnier than another. Name column 42%, the
-   five stat columns 11.6% each, tightened a little from the auto spread. */
+   no more one table coming out skinnier than another. The five stat columns
+   are a narrow, uniform 68px (matching the player page's match-by-match
+   columns); the name column takes the remaining width, like the Opponent
+   column there. */
 @media (min-width: 481px) {
   .table.table--scorecard { table-layout: fixed; }
-  .table.table--scorecard th:first-child { width: 42%; }
+  .table.table--scorecard th:first-child { width: auto; }
   .table.table--scorecard .num,
-  .table.table--scorecard .num-h { width: 11.6%; }
+  .table.table--scorecard .num-h { width: 68px; }
 }
 
 /* --- Tooltips ------------------------------------------------------- */
