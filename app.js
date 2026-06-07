@@ -1100,7 +1100,7 @@ function renderPlayer(app, key, from) {
       </div>
       <div class="stat-grid__cell">
         <div class="stat-grid__num">${t.runs_conceded}</div>
-        <div class="stat-grid__label">Runs given</div>
+        <div class="stat-grid__label">Runs conceded</div>
       </div>
     </div>
 
@@ -1120,7 +1120,7 @@ function renderPlayer(app, key, from) {
             <th class="num-h mb-col col-b" data-tip="Bowling — wickets / runs conceded" aria-label="Bowling — wickets per runs conceded">B</th>
             <th class="num-h dk-col">Runs</th>
             <th class="num-h dk-col">Wickets</th>
-            <th class="num-h dk-col">Given</th>
+            <th class="num-h dk-col">Conceded</th>
           </tr>
         </thead>
         <tbody>
@@ -1133,7 +1133,7 @@ function renderPlayer(app, key, from) {
               const dateCell = yy
                 ? `${dd}/${mm}<span class="yr">/${yy}</span>`
                 : escapeHtml(dmy);
-              // Desktop shows Runs / Wickets / Given; mobile collapses bowling
+              // Desktop shows Runs / Wickets / Conceded; mobile collapses bowling
               // into one cricket-style figure (wickets / runs conceded).
               const w = m.bowling?.wickets, rc = m.bowling?.runs_conceded;
               const runs = m.batting?.runs ?? "—";
@@ -1391,7 +1391,7 @@ function potdCardHtml(iso, fbInnings, oppInnings, matchId) {
             <div class="potd-card__stats">
               ${stat(bowler?.overs, "Overs")}
               ${stat(bowler?.wickets, "Wkts")}
-              ${stat(bowler?.runs_conceded, "Given")}
+              ${stat(bowler?.runs_conceded, "Conceded")}
             </div>
           </div>
         </div>
