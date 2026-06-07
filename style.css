@@ -1083,11 +1083,7 @@ button.record__cell[data-active="true"] .record__label {
   gap: 20px;
 }
 .detail-header--player .detail-header__main { flex: 1 1 auto; min-width: 0; }
-.detail-header--player .hl-row {
-  flex: 0 0 45%;
-  border-left: 1px solid rgba(245, 239, 224, 0.18);
-  padding-left: 20px;
-}
+.detail-header--player .hl-row { flex: 0 0 45%; }
 .hl {
   flex: 0 0 auto;
   position: relative;
@@ -1391,9 +1387,9 @@ button.record__cell[data-active="true"] .record__label {
   .detail-header__avatar { width: 52px; height: 52px; font-size: 20px; }
   .detail-header__name { font-size: 22px; }
   /* Player hero: avatar beside name on desktop (via __main), stacked on mobile. */
-  .detail-header--player { flex-direction: column; align-items: stretch; }
+  .detail-header--player { flex-direction: column; align-items: stretch; gap: 18px; }
   .detail-header--player .detail-header__main { flex-direction: column; align-items: flex-start; gap: 12px; }
-  .detail-header--player .hl-row { flex: 0 0 auto; border-left: none; padding-left: 0; }
+  .detail-header--player .hl-row { flex: 0 0 auto; }
   .detail-header__name .badge {
     position: absolute;
     top: 14px;
