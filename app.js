@@ -209,7 +209,10 @@ function writeCachedJson(key, value) {
 }
 
 document.addEventListener("DOMContentLoaded", init);
-window.addEventListener("hashchange", render);
+// Wrap render so the HashChangeEvent isn't passed as `skipScroll` — every hash
+// navigation must scroll to the top of the new page (e.g. a player's name/header
+// sits above the fold when tapped from a scrolled-down squad on mobile).
+window.addEventListener("hashchange", () => render());
 
 // --- Tooltips --------------------------------------------------------
 // On-brand tooltip for any [data-tip] element. One reused fixed-position node,
