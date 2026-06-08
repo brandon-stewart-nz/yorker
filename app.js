@@ -648,7 +648,7 @@ function renderStandings(app, from) {
       <div class="detail-header__main">
         <div>
           <div class="detail-header__name">Leaderboard</div>
-          <div class="detail-header__sub">${escapeHtml(divName)} · ${teams.length} teams</div>
+          <div class="detail-header__sub">${escapeHtml(divName)}</div>
         </div>
       </div>
     </div>
@@ -935,7 +935,6 @@ function paintTeam(app, data, teamId, from) {
   const next = data.next_game;
   scheduleHeroFlip(next ? parseSpawtzDate(next.date_str, next.time) : null);
   const filtered = teamFilteredResults(data.fixtures, teamId, state.teamFilter);
-  const pos = data.standings_row?.position;
   const backHash = from || "standings";
   const backLabel = from ? "Back" : "Back to Leaderboard";
   app.innerHTML = `
@@ -945,7 +944,7 @@ function paintTeam(app, data, teamId, from) {
         <div class="detail-header__avatar">${escapeHtml(teamInitials(data.team.name))}</div>
         <div>
           <div class="detail-header__name">${escapeHtml(data.team.name)}</div>
-          <div class="detail-header__sub">${escapeHtml(data.division_name || "Division")} · ${ordinal(pos)} on the ladder</div>
+          <div class="detail-header__sub">${escapeHtml(data.division_name || "Division")}</div>
         </div>
       </div>
     </div>
