@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-06-08T06:00:39.105444+00:00",
-  "generated_at_nz": "2026-06-08T18:00:34.707791+12:00",
+  "generated_at_utc": "2026-06-08T06:10:48.378225+00:00",
+  "generated_at_nz": "2026-06-08T18:10:43.768342+12:00",
   "division_name": "Division 8",
   "team": {
     "id": 11294,
@@ -505,6 +505,95 @@
             "runs_conceded": 30,
             "no_balls": 0,
             "wides": 5
+          }
+        }
+      ]
+    },
+    {
+      "name": "Mali",
+      "totals": {
+        "innings_batted": 3,
+        "runs": 26,
+        "balls_faced": 37,
+        "dismissals": 4,
+        "overs_bowled": 6,
+        "wickets": 2,
+        "runs_conceded": 26
+      },
+      "matches": [
+        {
+          "fixture_id": 263264,
+          "date_str": "Saturday 02 May 2026",
+          "vs": "Anaya Azhar",
+          "batting": {
+            "name": "Mali Unknown",
+            "name_raw": "Mali Unknown",
+            "runs": 9,
+            "balls_faced": 10,
+            "dismissals": 1,
+            "threes": 0,
+            "fours": 1,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Mali Unknown",
+            "name_raw": "Mali Unknown",
+            "overs": 2,
+            "wickets": 1,
+            "runs_conceded": 1,
+            "no_balls": 0,
+            "wides": 2
+          }
+        },
+        {
+          "fixture_id": 263465,
+          "date_str": "Saturday 09 May 2026",
+          "vs": "Blazing Firebirds",
+          "batting": {
+            "name": "Mali Unknown",
+            "name_raw": "Mali Unknown",
+            "runs": 5,
+            "balls_faced": 13,
+            "dismissals": 2,
+            "threes": 1,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Mali Unknown",
+            "name_raw": "Mali Unknown",
+            "overs": 2,
+            "wickets": 1,
+            "runs_conceded": 10,
+            "no_balls": 0,
+            "wides": 5
+          }
+        },
+        {
+          "fixture_id": 263878,
+          "date_str": "Saturday 23 May 2026",
+          "vs": "Team Thunderboltz",
+          "batting": {
+            "name": "Mali Unknown",
+            "name_raw": "Mali Unknown",
+            "runs": 12,
+            "balls_faced": 14,
+            "dismissals": 1,
+            "threes": 0,
+            "fours": 1,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Mali Unknown",
+            "name_raw": "Mali Unknown",
+            "overs": 2,
+            "wickets": 0,
+            "runs_conceded": 15,
+            "no_balls": 0,
+            "wides": 1
           }
         }
       ]
