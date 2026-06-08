@@ -1,0 +1,1436 @@
+{
+  "generated_at_utc": "2026-06-08T05:01:35.672833+00:00",
+  "generated_at_nz": "2026-06-08T17:01:31.807615+12:00",
+  "division_name": "Division 8",
+  "team": {
+    "id": 11292,
+    "name": "Oompa Loompas",
+    "raw_name": "Oompa Loompas - Keanu"
+  },
+  "standings_row": {
+    "position": 6,
+    "team_name_raw": "Oompa Loompas - Keanu",
+    "played": 4,
+    "won": 0,
+    "lost": 4,
+    "drawn": 0,
+    "forfeits_for": 0,
+    "forfeits_against": 0,
+    "skins_for": 128,
+    "skins_against": 363,
+    "difference": -235,
+    "bonus": 0,
+    "points": 4
+  },
+  "record": {
+    "played": 7,
+    "won": 1,
+    "lost": 6,
+    "drawn": 0,
+    "skins_for": 266,
+    "skins_against": 539
+  },
+  "next_game": null,
+  "fixtures": [
+    {
+      "date_str": "Saturday 25 Apr 2026",
+      "time": "12:05",
+      "court": "Court 2",
+      "home": {
+        "id": 11292,
+        "name": "Oompa Loompas - Keanu",
+        "display": "Oompa Loompas"
+      },
+      "away": {
+        "id": 11293,
+        "name": "Team Thunderboltz - Liam",
+        "display": "Team Thunderboltz"
+      },
+      "home_skins": 58,
+      "away_skins": -14,
+      "played": true,
+      "fixture_id": 263103,
+      "scoresheet_complete": true,
+      "is_grading": false
+    },
+    {
+      "date_str": "Saturday 02 May 2026",
+      "time": "13:00",
+      "court": "Court 3",
+      "home": {
+        "id": 11292,
+        "name": "Oompa Loompas - Keanu",
+        "display": "Oompa Loompas"
+      },
+      "away": {
+        "id": 11303,
+        "name": "The Net Ninjas - Hugo",
+        "display": "The Net Ninjas"
+      },
+      "home_skins": 22,
+      "away_skins": 109,
+      "played": true,
+      "fixture_id": 263266,
+      "scoresheet_complete": false,
+      "is_grading": false
+    },
+    {
+      "date_str": "Saturday 09 May 2026",
+      "time": "12:00",
+      "court": "Court 4",
+      "home": {
+        "id": 11292,
+        "name": "Oompa Loompas - Keanu",
+        "display": "Oompa Loompas"
+      },
+      "away": {
+        "id": 11353,
+        "name": "Thunder Strikers - Aditya",
+        "display": "Thunder Strikers"
+      },
+      "home_skins": 58,
+      "away_skins": 81,
+      "played": true,
+      "fixture_id": 263463,
+      "scoresheet_complete": true,
+      "is_grading": false
+    },
+    {
+      "date_str": "Saturday 16 May 2026",
+      "time": "13:55",
+      "court": "Court 3",
+      "home": {
+        "id": 11296,
+        "name": "Cats - Bobby",
+        "display": "Cats"
+      },
+      "away": {
+        "id": 11292,
+        "name": "Oompa Loompas - Keanu",
+        "display": "Oompa Loompas"
+      },
+      "home_skins": 87,
+      "away_skins": -9,
+      "played": true,
+      "fixture_id": 263836,
+      "scoresheet_complete": true,
+      "is_grading": false
+    },
+    {
+      "date_str": "Saturday 23 May 2026",
+      "time": "13:00",
+      "court": "Court 1",
+      "home": {
+        "id": 11357,
+        "name": "Renegades - Toby",
+        "display": "Renegades"
+      },
+      "away": {
+        "id": 11292,
+        "name": "Oompa Loompas - Keanu",
+        "display": "Oompa Loompas"
+      },
+      "home_skins": 96,
+      "away_skins": 35,
+      "played": true,
+      "fixture_id": 263877,
+      "scoresheet_complete": true,
+      "is_grading": false
+    },
+    {
+      "date_str": "Saturday 30 May 2026",
+      "time": "12:00",
+      "court": "Court 2",
+      "home": {
+        "id": 11361,
+        "name": "Blazing Firebirds - Jacob",
+        "display": "Blazing Firebirds"
+      },
+      "away": {
+        "id": 11292,
+        "name": "Oompa Loompas - Keanu",
+        "display": "Oompa Loompas"
+      },
+      "home_skins": 110,
+      "away_skins": 46,
+      "played": true,
+      "fixture_id": 263950,
+      "scoresheet_complete": true,
+      "is_grading": false
+    },
+    {
+      "date_str": "Saturday 06 Jun 2026",
+      "time": "13:00",
+      "court": "Court 4",
+      "home": {
+        "id": 11292,
+        "name": "Oompa Loompas - Keanu",
+        "display": "Oompa Loompas"
+      },
+      "away": {
+        "id": 11294,
+        "name": "Brooklyn Allrounders - Ifan",
+        "display": "Brooklyn Allrounders"
+      },
+      "home_skins": 56,
+      "away_skins": 70,
+      "played": true,
+      "fixture_id": 264007,
+      "scoresheet_complete": true,
+      "is_grading": false
+    }
+  ],
+  "players": [
+    {
+      "name": "Olly Hampshire",
+      "totals": {
+        "innings_batted": 6,
+        "runs": 70,
+        "balls_faced": 71,
+        "dismissals": 3,
+        "overs_bowled": 11,
+        "wickets": 8,
+        "runs_conceded": 50
+      },
+      "matches": [
+        {
+          "fixture_id": 263103,
+          "date_str": "Saturday 25 Apr 2026",
+          "vs": "Team Thunderboltz",
+          "batting": {
+            "name": "Olly Hampshire",
+            "name_raw": "Olly Hampshire",
+            "runs": 11,
+            "balls_faced": 13,
+            "dismissals": 1,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Olly Hampshire",
+            "name_raw": "Olly Hampshire",
+            "overs": 2,
+            "wickets": 1,
+            "runs_conceded": 4,
+            "no_balls": 0,
+            "wides": 2
+          }
+        },
+        {
+          "fixture_id": 263836,
+          "date_str": "Saturday 16 May 2026",
+          "vs": "Cats",
+          "batting": {
+            "name": "Olly Hampshire",
+            "name_raw": "Olly Hampshire",
+            "runs": 2,
+            "balls_faced": 9,
+            "dismissals": 1,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Olly Hampshire",
+            "name_raw": "Olly Hampshire",
+            "overs": 2,
+            "wickets": 0,
+            "runs_conceded": 22,
+            "no_balls": 0,
+            "wides": 4
+          }
+        },
+        {
+          "fixture_id": 263877,
+          "date_str": "Saturday 23 May 2026",
+          "vs": "Renegades",
+          "batting": {
+            "name": "Olly Hampshire",
+            "name_raw": "Olly Hampshire",
+            "runs": 13,
+            "balls_faced": 11,
+            "dismissals": 0,
+            "threes": 0,
+            "fours": 0,
+            "fives": 1,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Olly Hampshire",
+            "name_raw": "Olly Hampshire",
+            "overs": 2,
+            "wickets": 2,
+            "runs_conceded": 8,
+            "no_balls": 0,
+            "wides": 0
+          }
+        },
+        {
+          "fixture_id": 264007,
+          "date_str": "Saturday 06 Jun 2026",
+          "vs": "Brooklyn Allrounders",
+          "batting": {
+            "name": "Olly Hampshire",
+            "name_raw": "Olly Hampshire",
+            "runs": 25,
+            "balls_faced": 14,
+            "dismissals": 0,
+            "threes": 1,
+            "fours": 1,
+            "fives": 1,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Olly Hampshire",
+            "name_raw": "Olly Hampshire",
+            "overs": 2,
+            "wickets": 3,
+            "runs_conceded": -4,
+            "no_balls": 0,
+            "wides": 1
+          }
+        },
+        {
+          "fixture_id": 263266,
+          "date_str": "Saturday 02 May 2026",
+          "vs": "The Net Ninjas",
+          "batting": {
+            "name": "Ollie Unknown",
+            "name_raw": "ollie Unknown",
+            "runs": 9,
+            "balls_faced": 12,
+            "dismissals": 1,
+            "threes": 1,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Ollie Unknown",
+            "name_raw": "ollie Unknown",
+            "overs": 1,
+            "wickets": 0,
+            "runs_conceded": 10,
+            "no_balls": 0,
+            "wides": 1
+          }
+        },
+        {
+          "fixture_id": 263950,
+          "date_str": "Saturday 30 May 2026",
+          "vs": "Blazing Firebirds",
+          "batting": {
+            "name": "Ollie Unknown",
+            "name_raw": "ollie Unknown",
+            "runs": 10,
+            "balls_faced": 12,
+            "dismissals": 0,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Ollie Unknown",
+            "name_raw": "ollie Unknown",
+            "overs": 2,
+            "wickets": 2,
+            "runs_conceded": 10,
+            "no_balls": 0,
+            "wides": 1
+          }
+        }
+      ]
+    },
+    {
+      "name": "Karan Bhaski",
+      "totals": {
+        "innings_batted": 2,
+        "runs": 38,
+        "balls_faced": 27,
+        "dismissals": 0,
+        "overs_bowled": 6,
+        "wickets": 4,
+        "runs_conceded": 26
+      },
+      "matches": [
+        {
+          "fixture_id": 263103,
+          "date_str": "Saturday 25 Apr 2026",
+          "vs": "Team Thunderboltz",
+          "batting": {
+            "name": "Karan Bhaski",
+            "name_raw": "Karan bhaski",
+            "runs": 23,
+            "balls_faced": 14,
+            "dismissals": 0,
+            "threes": 0,
+            "fours": 1,
+            "fives": 1,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Karan Bhaski",
+            "name_raw": "Karan bhaski",
+            "overs": 2,
+            "wickets": 3,
+            "runs_conceded": -8,
+            "no_balls": 0,
+            "wides": 1
+          }
+        },
+        {
+          "fixture_id": 263266,
+          "date_str": "Saturday 02 May 2026",
+          "vs": "The Net Ninjas",
+          "batting": null,
+          "bowling": {
+            "name": "Karan Bhaski",
+            "name_raw": "Karan bhaski",
+            "overs": 2,
+            "wickets": 1,
+            "runs_conceded": 13,
+            "no_balls": 0,
+            "wides": 2
+          }
+        },
+        {
+          "fixture_id": 263463,
+          "date_str": "Saturday 09 May 2026",
+          "vs": "Thunder Strikers",
+          "batting": {
+            "name": "Karan Bhaski",
+            "name_raw": "Karan bhaski",
+            "runs": 15,
+            "balls_faced": 13,
+            "dismissals": 0,
+            "threes": 1,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Karan Bhaski",
+            "name_raw": "Karan bhaski",
+            "overs": 2,
+            "wickets": 0,
+            "runs_conceded": 21,
+            "no_balls": 0,
+            "wides": 1
+          }
+        }
+      ]
+    },
+    {
+      "name": "Kianansh Dubariya",
+      "totals": {
+        "innings_batted": 6,
+        "runs": 34,
+        "balls_faced": 72,
+        "dismissals": 7,
+        "overs_bowled": 12,
+        "wickets": 4,
+        "runs_conceded": 135
+      },
+      "matches": [
+        {
+          "fixture_id": 263950,
+          "date_str": "Saturday 30 May 2026",
+          "vs": "Blazing Firebirds",
+          "batting": null,
+          "bowling": {
+            "name": "Kianansh Dubariya",
+            "name_raw": "Kianansh dubariya",
+            "overs": 1,
+            "wickets": 1,
+            "runs_conceded": 1,
+            "no_balls": 0,
+            "wides": 2
+          }
+        },
+        {
+          "fixture_id": 263103,
+          "date_str": "Saturday 25 Apr 2026",
+          "vs": "Team Thunderboltz",
+          "batting": {
+            "name": "Kiaansh Dubariya",
+            "name_raw": "Kiaansh dubariya",
+            "runs": 10,
+            "balls_faced": 10,
+            "dismissals": 0,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Kiaansh Dubariya",
+            "name_raw": "Kiaansh dubariya",
+            "overs": 2,
+            "wickets": 2,
+            "runs_conceded": 3,
+            "no_balls": 0,
+            "wides": 5
+          }
+        },
+        {
+          "fixture_id": 263266,
+          "date_str": "Saturday 02 May 2026",
+          "vs": "The Net Ninjas",
+          "batting": {
+            "name": "Kiaansh Dubariya",
+            "name_raw": "Kiaansh dubariya",
+            "runs": 7,
+            "balls_faced": 8,
+            "dismissals": 0,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Kiaansh Dubariya",
+            "name_raw": "Kiaansh dubariya",
+            "overs": 2,
+            "wickets": 0,
+            "runs_conceded": 33,
+            "no_balls": 0,
+            "wides": 4
+          }
+        },
+        {
+          "fixture_id": 263836,
+          "date_str": "Saturday 16 May 2026",
+          "vs": "Cats",
+          "batting": {
+            "name": "Kiaansh Dubariya",
+            "name_raw": "Kiaansh dubariya",
+            "runs": -26,
+            "balls_faced": 15,
+            "dismissals": 7,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Kiaansh Dubariya",
+            "name_raw": "Kiaansh dubariya",
+            "overs": 2,
+            "wickets": 0,
+            "runs_conceded": 29,
+            "no_balls": 0,
+            "wides": 7
+          }
+        },
+        {
+          "fixture_id": 263877,
+          "date_str": "Saturday 23 May 2026",
+          "vs": "Renegades",
+          "batting": {
+            "name": "Kiaansh Dubariya",
+            "name_raw": "Kiaansh dubariya",
+            "runs": 7,
+            "balls_faced": 8,
+            "dismissals": 0,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Kiaansh Dubariya",
+            "name_raw": "Kiaansh dubariya",
+            "overs": 2,
+            "wickets": 1,
+            "runs_conceded": 20,
+            "no_balls": 0,
+            "wides": 2
+          }
+        },
+        {
+          "fixture_id": 264007,
+          "date_str": "Saturday 06 Jun 2026",
+          "vs": "Brooklyn Allrounders",
+          "batting": {
+            "name": "Kiaansh Dubariya",
+            "name_raw": "Kiaansh dubariya",
+            "runs": 24,
+            "balls_faced": 19,
+            "dismissals": 0,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Kiaansh Dubariya",
+            "name_raw": "Kiaansh dubariya",
+            "overs": 2,
+            "wickets": 0,
+            "runs_conceded": 29,
+            "no_balls": 0,
+            "wides": 5
+          }
+        }
+      ]
+    },
+    {
+      "name": "Zayden Vosges",
+      "totals": {
+        "innings_batted": 2,
+        "runs": 33,
+        "balls_faced": 18,
+        "dismissals": 1,
+        "overs_bowled": 4,
+        "wickets": 0,
+        "runs_conceded": 42
+      },
+      "matches": [
+        {
+          "fixture_id": 263836,
+          "date_str": "Saturday 16 May 2026",
+          "vs": "Cats",
+          "batting": {
+            "name": "Zayden Vosges",
+            "name_raw": "Zayden Vosges",
+            "runs": 13,
+            "balls_faced": 8,
+            "dismissals": 1,
+            "threes": 1,
+            "fours": 0,
+            "fives": 2,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Zayden Vosges",
+            "name_raw": "Zayden Vosges",
+            "overs": 2,
+            "wickets": 0,
+            "runs_conceded": 21,
+            "no_balls": 0,
+            "wides": 4
+          }
+        },
+        {
+          "fixture_id": 263877,
+          "date_str": "Saturday 23 May 2026",
+          "vs": "Renegades",
+          "batting": {
+            "name": "Zayden Vosges",
+            "name_raw": "Zayden Vosges",
+            "runs": 20,
+            "balls_faced": 10,
+            "dismissals": 0,
+            "threes": 1,
+            "fours": 2,
+            "fives": 1,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Zayden Vosges",
+            "name_raw": "Zayden Vosges",
+            "overs": 2,
+            "wickets": 0,
+            "runs_conceded": 21,
+            "no_balls": 1,
+            "wides": 3
+          }
+        }
+      ]
+    },
+    {
+      "name": "Karan Bakshi",
+      "totals": {
+        "innings_batted": 3,
+        "runs": 27,
+        "balls_faced": 31,
+        "dismissals": 2,
+        "overs_bowled": 6,
+        "wickets": 5,
+        "runs_conceded": 29
+      },
+      "matches": [
+        {
+          "fixture_id": 263836,
+          "date_str": "Saturday 16 May 2026",
+          "vs": "Cats",
+          "batting": {
+            "name": "Karan Bakshi",
+            "name_raw": "Karan Bakshi",
+            "runs": 7,
+            "balls_faced": 12,
+            "dismissals": 1,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Karan Bakshi",
+            "name_raw": "Karan Bakshi",
+            "overs": 2,
+            "wickets": 1,
+            "runs_conceded": 12,
+            "no_balls": 0,
+            "wides": 5
+          }
+        },
+        {
+          "fixture_id": 263950,
+          "date_str": "Saturday 30 May 2026",
+          "vs": "Blazing Firebirds",
+          "batting": {
+            "name": "Karan Bakshi",
+            "name_raw": "Karan Bakshi",
+            "runs": 10,
+            "balls_faced": 6,
+            "dismissals": 0,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Karan Bakshi",
+            "name_raw": "Karan Bakshi",
+            "overs": 2,
+            "wickets": 2,
+            "runs_conceded": 10,
+            "no_balls": 0,
+            "wides": 3
+          }
+        },
+        {
+          "fixture_id": 264007,
+          "date_str": "Saturday 06 Jun 2026",
+          "vs": "Brooklyn Allrounders",
+          "batting": {
+            "name": "Karan Bakshi",
+            "name_raw": "Karan Bakshi",
+            "runs": 10,
+            "balls_faced": 13,
+            "dismissals": 1,
+            "threes": 1,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Karan Bakshi",
+            "name_raw": "Karan Bakshi",
+            "overs": 2,
+            "wickets": 2,
+            "runs_conceded": 7,
+            "no_balls": 0,
+            "wides": 5
+          }
+        }
+      ]
+    },
+    {
+      "name": "Keanu Vosges",
+      "totals": {
+        "innings_batted": 6,
+        "runs": 22,
+        "balls_faced": 73,
+        "dismissals": 12,
+        "overs_bowled": 12,
+        "wickets": 9,
+        "runs_conceded": 50
+      },
+      "matches": [
+        {
+          "fixture_id": 263103,
+          "date_str": "Saturday 25 Apr 2026",
+          "vs": "Team Thunderboltz",
+          "batting": {
+            "name": "Keanu Vosges",
+            "name_raw": "Keanu Vosges",
+            "runs": 13,
+            "balls_faced": 9,
+            "dismissals": 1,
+            "threes": 0,
+            "fours": 0,
+            "fives": 1,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Keanu Vosges",
+            "name_raw": "Keanu Vosges",
+            "overs": 2,
+            "wickets": 3,
+            "runs_conceded": -13,
+            "no_balls": 0,
+            "wides": 0
+          }
+        },
+        {
+          "fixture_id": 263266,
+          "date_str": "Saturday 02 May 2026",
+          "vs": "The Net Ninjas",
+          "batting": {
+            "name": "Keanu Vosges",
+            "name_raw": "Keanu Vosges",
+            "runs": 10,
+            "balls_faced": 9,
+            "dismissals": 1,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Keanu Vosges",
+            "name_raw": "Keanu Vosges",
+            "overs": 2,
+            "wickets": 1,
+            "runs_conceded": 21,
+            "no_balls": 0,
+            "wides": 0
+          }
+        },
+        {
+          "fixture_id": 263463,
+          "date_str": "Saturday 09 May 2026",
+          "vs": "Thunder Strikers",
+          "batting": {
+            "name": "Keanu Vosges",
+            "name_raw": "Keanu Vosges",
+            "runs": 0,
+            "balls_faced": 15,
+            "dismissals": 3,
+            "threes": 1,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Keanu Vosges",
+            "name_raw": "Keanu Vosges",
+            "overs": 2,
+            "wickets": 1,
+            "runs_conceded": 19,
+            "no_balls": 0,
+            "wides": 2
+          }
+        },
+        {
+          "fixture_id": 263836,
+          "date_str": "Saturday 16 May 2026",
+          "vs": "Cats",
+          "batting": {
+            "name": "Keanu Vosges",
+            "name_raw": "Keanu Vosges",
+            "runs": 3,
+            "balls_faced": 16,
+            "dismissals": 2,
+            "threes": 1,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Keanu Vosges",
+            "name_raw": "Keanu Vosges",
+            "overs": 2,
+            "wickets": 2,
+            "runs_conceded": 6,
+            "no_balls": 0,
+            "wides": 2
+          }
+        },
+        {
+          "fixture_id": 263877,
+          "date_str": "Saturday 23 May 2026",
+          "vs": "Renegades",
+          "batting": {
+            "name": "Keanu Vosges",
+            "name_raw": "Keanu Vosges",
+            "runs": -4,
+            "balls_faced": 14,
+            "dismissals": 3,
+            "threes": 1,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Keanu Vosges",
+            "name_raw": "Keanu Vosges",
+            "overs": 2,
+            "wickets": 0,
+            "runs_conceded": 14,
+            "no_balls": 1,
+            "wides": 2
+          }
+        },
+        {
+          "fixture_id": 264007,
+          "date_str": "Saturday 06 Jun 2026",
+          "vs": "Brooklyn Allrounders",
+          "batting": {
+            "name": "Keanu Vosges",
+            "name_raw": "Keanu Vosges",
+            "runs": 0,
+            "balls_faced": 10,
+            "dismissals": 2,
+            "threes": 1,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Keanu Vosges",
+            "name_raw": "Keanu Vosges",
+            "overs": 2,
+            "wickets": 2,
+            "runs_conceded": 3,
+            "no_balls": 0,
+            "wides": 5
+          }
+        }
+      ]
+    },
+    {
+      "name": "Koen Kleyngeld",
+      "totals": {
+        "innings_batted": 6,
+        "runs": 12,
+        "balls_faced": 68,
+        "dismissals": 10,
+        "overs_bowled": 12,
+        "wickets": 7,
+        "runs_conceded": 71
+      },
+      "matches": [
+        {
+          "fixture_id": 263103,
+          "date_str": "Saturday 25 Apr 2026",
+          "vs": "Team Thunderboltz",
+          "batting": {
+            "name": "Koen Kleyngeld",
+            "name_raw": "Koen Kleyngeld",
+            "runs": 2,
+            "balls_faced": 15,
+            "dismissals": 2,
+            "threes": 1,
+            "fours": 1,
+            "fives": 1,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Koen Kleyngeld",
+            "name_raw": "Koen Kleyngeld",
+            "overs": 2,
+            "wickets": 2,
+            "runs_conceded": 0,
+            "no_balls": 0,
+            "wides": 3
+          }
+        },
+        {
+          "fixture_id": 263877,
+          "date_str": "Saturday 23 May 2026",
+          "vs": "Renegades",
+          "batting": {
+            "name": "Koen Kleyngeld",
+            "name_raw": "Koen Kleyngeld",
+            "runs": -5,
+            "balls_faced": 13,
+            "dismissals": 3,
+            "threes": 0,
+            "fours": 1,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Koen Kleyngeld",
+            "name_raw": "Koen Kleyngeld",
+            "overs": 2,
+            "wickets": 1,
+            "runs_conceded": 15,
+            "no_balls": 0,
+            "wides": 4
+          }
+        },
+        {
+          "fixture_id": 264007,
+          "date_str": "Saturday 06 Jun 2026",
+          "vs": "Brooklyn Allrounders",
+          "batting": {
+            "name": "Koen Kleyngeld",
+            "name_raw": "Koen Kleyngeld",
+            "runs": -2,
+            "balls_faced": 11,
+            "dismissals": 2,
+            "threes": 0,
+            "fours": 0,
+            "fives": 1,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Koen Kleyngeld",
+            "name_raw": "Koen Kleyngeld",
+            "overs": 2,
+            "wickets": 1,
+            "runs_conceded": 18,
+            "no_balls": 0,
+            "wides": 6
+          }
+        },
+        {
+          "fixture_id": 263463,
+          "date_str": "Saturday 09 May 2026",
+          "vs": "Thunder Strikers",
+          "batting": {
+            "name": "Cohen Unknown",
+            "name_raw": "cohen Unknown",
+            "runs": 13,
+            "balls_faced": 9,
+            "dismissals": 0,
+            "threes": 1,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Cohen Unknown",
+            "name_raw": "cohen Unknown",
+            "overs": 2,
+            "wickets": 0,
+            "runs_conceded": 18,
+            "no_balls": 0,
+            "wides": 4
+          }
+        },
+        {
+          "fixture_id": 263266,
+          "date_str": "Saturday 02 May 2026",
+          "vs": "The Net Ninjas",
+          "batting": {
+            "name": "Coen Unknown",
+            "name_raw": "coen Unknown",
+            "runs": 9,
+            "balls_faced": 8,
+            "dismissals": 0,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Coen Unknown",
+            "name_raw": "coen Unknown",
+            "overs": 2,
+            "wickets": 2,
+            "runs_conceded": 3,
+            "no_balls": 1,
+            "wides": 3
+          }
+        },
+        {
+          "fixture_id": 263950,
+          "date_str": "Saturday 30 May 2026",
+          "vs": "Blazing Firebirds",
+          "batting": {
+            "name": "Coen Unknown",
+            "name_raw": "coen Unknown",
+            "runs": -5,
+            "balls_faced": 12,
+            "dismissals": 3,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Coen Unknown",
+            "name_raw": "coen Unknown",
+            "overs": 2,
+            "wickets": 1,
+            "runs_conceded": 17,
+            "no_balls": 0,
+            "wides": 8
+          }
+        }
+      ]
+    },
+    {
+      "name": "James",
+      "totals": {
+        "innings_batted": 1,
+        "runs": 9,
+        "balls_faced": 9,
+        "dismissals": 1,
+        "overs_bowled": 2,
+        "wickets": 2,
+        "runs_conceded": 8
+      },
+      "matches": [
+        {
+          "fixture_id": 263463,
+          "date_str": "Saturday 09 May 2026",
+          "vs": "Thunder Strikers",
+          "batting": {
+            "name": "James Unknown",
+            "name_raw": "James Unknown",
+            "runs": 9,
+            "balls_faced": 9,
+            "dismissals": 1,
+            "threes": 1,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "James Unknown",
+            "name_raw": "James Unknown",
+            "overs": 2,
+            "wickets": 2,
+            "runs_conceded": 8,
+            "no_balls": 0,
+            "wides": 1
+          }
+        }
+      ]
+    },
+    {
+      "name": "Sid Kumar",
+      "totals": {
+        "innings_batted": 4,
+        "runs": 9,
+        "balls_faced": 50,
+        "dismissals": 6,
+        "overs_bowled": 9,
+        "wickets": 8,
+        "runs_conceded": 29
+      },
+      "matches": [
+        {
+          "fixture_id": 263103,
+          "date_str": "Saturday 25 Apr 2026",
+          "vs": "Team Thunderboltz",
+          "batting": {
+            "name": "Sid Kumar",
+            "name_raw": "Sid Kumar",
+            "runs": -1,
+            "balls_faced": 11,
+            "dismissals": 2,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Sid Kumar",
+            "name_raw": "Sid Kumar",
+            "overs": 2,
+            "wickets": 2,
+            "runs_conceded": 0,
+            "no_balls": 0,
+            "wides": 1
+          }
+        },
+        {
+          "fixture_id": 263266,
+          "date_str": "Saturday 02 May 2026",
+          "vs": "The Net Ninjas",
+          "batting": null,
+          "bowling": {
+            "name": "Sid Kumar",
+            "name_raw": "Sid Kumar",
+            "overs": 1,
+            "wickets": 1,
+            "runs_conceded": 4,
+            "no_balls": 0,
+            "wides": 0
+          }
+        },
+        {
+          "fixture_id": 263463,
+          "date_str": "Saturday 09 May 2026",
+          "vs": "Thunder Strikers",
+          "batting": {
+            "name": "Sid Kumar",
+            "name_raw": "Sid Kumar",
+            "runs": 14,
+            "balls_faced": 11,
+            "dismissals": 0,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Sid Kumar",
+            "name_raw": "Sid Kumar",
+            "overs": 2,
+            "wickets": 1,
+            "runs_conceded": 10,
+            "no_balls": 0,
+            "wides": 2
+          }
+        },
+        {
+          "fixture_id": 263836,
+          "date_str": "Saturday 16 May 2026",
+          "vs": "Cats",
+          "batting": {
+            "name": "Sid Kumar",
+            "name_raw": "Sid Kumar",
+            "runs": -8,
+            "balls_faced": 12,
+            "dismissals": 3,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Sid Kumar",
+            "name_raw": "Sid Kumar",
+            "overs": 2,
+            "wickets": 4,
+            "runs_conceded": -3,
+            "no_balls": 0,
+            "wides": 2
+          }
+        },
+        {
+          "fixture_id": 263877,
+          "date_str": "Saturday 23 May 2026",
+          "vs": "Renegades",
+          "batting": {
+            "name": "Sid Kumar",
+            "name_raw": "Sid Kumar",
+            "runs": 4,
+            "balls_faced": 16,
+            "dismissals": 1,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Sid Kumar",
+            "name_raw": "Sid Kumar",
+            "overs": 2,
+            "wickets": 0,
+            "runs_conceded": 18,
+            "no_balls": 0,
+            "wides": 2
+          }
+        }
+      ]
+    },
+    {
+      "name": "Zoya Quazi",
+      "totals": {
+        "innings_batted": 2,
+        "runs": 9,
+        "balls_faced": 33,
+        "dismissals": 3,
+        "overs_bowled": 4,
+        "wickets": 2,
+        "runs_conceded": 28
+      },
+      "matches": [
+        {
+          "fixture_id": 263950,
+          "date_str": "Saturday 30 May 2026",
+          "vs": "Blazing Firebirds",
+          "batting": {
+            "name": "Zoya Quazi",
+            "name_raw": "Zoya quazi",
+            "runs": 2,
+            "balls_faced": 18,
+            "dismissals": 2,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Zoya Quazi",
+            "name_raw": "Zoya quazi",
+            "overs": 2,
+            "wickets": 0,
+            "runs_conceded": 23,
+            "no_balls": 0,
+            "wides": 1
+          }
+        },
+        {
+          "fixture_id": 263463,
+          "date_str": "Saturday 09 May 2026",
+          "vs": "Thunder Strikers",
+          "batting": {
+            "name": "Zoya Unknown",
+            "name_raw": "Zoya Unknown",
+            "runs": 7,
+            "balls_faced": 15,
+            "dismissals": 1,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Zoya Unknown",
+            "name_raw": "Zoya Unknown",
+            "overs": 2,
+            "wickets": 2,
+            "runs_conceded": 5,
+            "no_balls": 0,
+            "wides": 1
+          }
+        }
+      ]
+    },
+    {
+      "name": "Sidanth",
+      "totals": {
+        "innings_batted": 3,
+        "runs": 6,
+        "balls_faced": 29,
+        "dismissals": 5,
+        "overs_bowled": 4,
+        "wickets": 1,
+        "runs_conceded": 46
+      },
+      "matches": [
+        {
+          "fixture_id": 263266,
+          "date_str": "Saturday 02 May 2026",
+          "vs": "The Net Ninjas",
+          "batting": {
+            "name": "Sidanth Unknown",
+            "name_raw": "Sidanth Unknown",
+            "runs": -10,
+            "balls_faced": 12,
+            "dismissals": 4,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": null
+        },
+        {
+          "fixture_id": 263950,
+          "date_str": "Saturday 30 May 2026",
+          "vs": "Blazing Firebirds",
+          "batting": {
+            "name": "Sidanth Unknown",
+            "name_raw": "Sidanth Unknown",
+            "runs": 17,
+            "balls_faced": 12,
+            "dismissals": 0,
+            "threes": 1,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Sidanth Unknown",
+            "name_raw": "Sidanth Unknown",
+            "overs": 2,
+            "wickets": 0,
+            "runs_conceded": 29,
+            "no_balls": 0,
+            "wides": 6
+          }
+        },
+        {
+          "fixture_id": 264007,
+          "date_str": "Saturday 06 Jun 2026",
+          "vs": "Brooklyn Allrounders",
+          "batting": {
+            "name": "Sidanth Unknown",
+            "name_raw": "Sidanth Unknown",
+            "runs": -1,
+            "balls_faced": 5,
+            "dismissals": 1,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Sidanth Unknown",
+            "name_raw": "Sidanth Unknown",
+            "overs": 2,
+            "wickets": 1,
+            "runs_conceded": 17,
+            "no_balls": 0,
+            "wides": 1
+          }
+        }
+      ]
+    },
+    {
+      "name": "Liam",
+      "totals": {
+        "innings_batted": 0,
+        "runs": 0,
+        "balls_faced": 0,
+        "dismissals": 0,
+        "overs_bowled": 2,
+        "wickets": 0,
+        "runs_conceded": 25
+      },
+      "matches": [
+        {
+          "fixture_id": 263266,
+          "date_str": "Saturday 02 May 2026",
+          "vs": "The Net Ninjas",
+          "batting": null,
+          "bowling": {
+            "name": "Liam Unknown",
+            "name_raw": "liam Unknown",
+            "overs": 2,
+            "wickets": 0,
+            "runs_conceded": 25,
+            "no_balls": 0,
+            "wides": 1
+          }
+        }
+      ]
+    },
+    {
+      "name": "Ari",
+      "totals": {
+        "innings_batted": 1,
+        "runs": -3,
+        "balls_faced": 11,
+        "dismissals": 1,
+        "overs_bowled": 0,
+        "wickets": 0,
+        "runs_conceded": 0
+      },
+      "matches": [
+        {
+          "fixture_id": 263266,
+          "date_str": "Saturday 02 May 2026",
+          "vs": "The Net Ninjas",
+          "batting": {
+            "name": "Ari Unknown",
+            "name_raw": "ari Unknown",
+            "runs": -3,
+            "balls_faced": 11,
+            "dismissals": 1,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": null
+        }
+      ]
+    }
+  ]
+}

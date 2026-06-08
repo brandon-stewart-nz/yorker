@@ -1,0 +1,288 @@
+{
+  "fixture_id": 263463,
+  "title": "Hutt Park - Oompa Loompas - Keanu vs Thunder Strikers - Aditya (09/05/2026 12:00)",
+  "team_summaries": [
+    {
+      "name": "Thunder Strikers - Aditya",
+      "display": "Thunder Strikers",
+      "skin_scores": [
+        40,
+        26,
+        15
+      ],
+      "total": 81,
+      "skins_won": 2,
+      "points": 5
+    },
+    {
+      "name": "Oompa Loompas - Keanu",
+      "display": "Oompa Loompas",
+      "skin_scores": [
+        29,
+        13,
+        16
+      ],
+      "total": 58,
+      "skins_won": 1,
+      "points": 2
+    }
+  ],
+  "innings": [
+    {
+      "batting_team_raw": "Thunder Strikers - Aditya",
+      "batting_team_display": "Thunder Strikers",
+      "batters": [
+        {
+          "name": "Shakti Natraj",
+          "name_raw": "Shakti Natraj",
+          "runs": 21,
+          "balls_faced": 13,
+          "dismissals": 1,
+          "threes": 1,
+          "fours": 2,
+          "fives": 0,
+          "sixes": 0
+        },
+        {
+          "name": "Dishank Unknown",
+          "name_raw": "Dishank Unknown",
+          "runs": 19,
+          "balls_faced": 11,
+          "dismissals": 1,
+          "threes": 2,
+          "fours": 0,
+          "fives": 1,
+          "sixes": 0
+        },
+        {
+          "name": "Ehesanbu Unknown",
+          "name_raw": "ehesanbu Unknown",
+          "runs": 18,
+          "balls_faced": 13,
+          "dismissals": 0,
+          "threes": 0,
+          "fours": 0,
+          "fives": 1,
+          "sixes": 0
+        },
+        {
+          "name": "Aditya Unknown",
+          "name_raw": "Aditya Unknown",
+          "runs": 8,
+          "balls_faced": 11,
+          "dismissals": 1,
+          "threes": 0,
+          "fours": 0,
+          "fives": 0,
+          "sixes": 0
+        },
+        {
+          "name": "Arjun Unknown",
+          "name_raw": "Arjun Unknown",
+          "runs": 15,
+          "balls_faced": 15,
+          "dismissals": 1,
+          "threes": 2,
+          "fours": 1,
+          "fives": 0,
+          "sixes": 0
+        },
+        {
+          "name": "Hrisahn Unknown",
+          "name_raw": "hrisahn Unknown",
+          "runs": 0,
+          "balls_faced": 9,
+          "dismissals": 2,
+          "threes": 0,
+          "fours": 0,
+          "fives": 0,
+          "sixes": 0
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Keanu Vosges",
+          "name_raw": "Keanu Vosges",
+          "overs": 2,
+          "wickets": 1,
+          "runs_conceded": 19,
+          "no_balls": 0,
+          "wides": 2
+        },
+        {
+          "name": "Zoya Unknown",
+          "name_raw": "Zoya Unknown",
+          "overs": 2,
+          "wickets": 2,
+          "runs_conceded": 5,
+          "no_balls": 0,
+          "wides": 1
+        },
+        {
+          "name": "Karan Bhaski",
+          "name_raw": "Karan bhaski",
+          "overs": 2,
+          "wickets": 0,
+          "runs_conceded": 21,
+          "no_balls": 0,
+          "wides": 1
+        },
+        {
+          "name": "James Unknown",
+          "name_raw": "James Unknown",
+          "overs": 2,
+          "wickets": 2,
+          "runs_conceded": 8,
+          "no_balls": 0,
+          "wides": 1
+        },
+        {
+          "name": "Cohen Unknown",
+          "name_raw": "cohen Unknown",
+          "overs": 2,
+          "wickets": 0,
+          "runs_conceded": 18,
+          "no_balls": 0,
+          "wides": 4
+        },
+        {
+          "name": "Sid Kumar",
+          "name_raw": "Sid Kumar",
+          "overs": 2,
+          "wickets": 1,
+          "runs_conceded": 10,
+          "no_balls": 0,
+          "wides": 2
+        }
+      ]
+    },
+    {
+      "batting_team_raw": "Oompa Loompas - Keanu",
+      "batting_team_display": "Oompa Loompas",
+      "batters": [
+        {
+          "name": "Sid Kumar",
+          "name_raw": "Sid Kumar",
+          "runs": 14,
+          "balls_faced": 11,
+          "dismissals": 0,
+          "threes": 0,
+          "fours": 0,
+          "fives": 0,
+          "sixes": 0
+        },
+        {
+          "name": "Karan Bhaski",
+          "name_raw": "Karan bhaski",
+          "runs": 15,
+          "balls_faced": 13,
+          "dismissals": 0,
+          "threes": 1,
+          "fours": 0,
+          "fives": 0,
+          "sixes": 0
+        },
+        {
+          "name": "Keanu Vosges",
+          "name_raw": "Keanu Vosges",
+          "runs": 0,
+          "balls_faced": 15,
+          "dismissals": 3,
+          "threes": 1,
+          "fours": 0,
+          "fives": 0,
+          "sixes": 0
+        },
+        {
+          "name": "Cohen Unknown",
+          "name_raw": "cohen Unknown",
+          "runs": 13,
+          "balls_faced": 9,
+          "dismissals": 0,
+          "threes": 1,
+          "fours": 0,
+          "fives": 0,
+          "sixes": 0
+        },
+        {
+          "name": "James Unknown",
+          "name_raw": "James Unknown",
+          "runs": 9,
+          "balls_faced": 9,
+          "dismissals": 1,
+          "threes": 1,
+          "fours": 0,
+          "fives": 0,
+          "sixes": 0
+        },
+        {
+          "name": "Zoya Unknown",
+          "name_raw": "Zoya Unknown",
+          "runs": 7,
+          "balls_faced": 15,
+          "dismissals": 1,
+          "threes": 0,
+          "fours": 0,
+          "fives": 0,
+          "sixes": 0
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Aditya Unknown",
+          "name_raw": "Aditya Unknown",
+          "overs": 2,
+          "wickets": 0,
+          "runs_conceded": 15,
+          "no_balls": 0,
+          "wides": 0
+        },
+        {
+          "name": "Shakti Natraj",
+          "name_raw": "Shakti Natraj",
+          "overs": 2,
+          "wickets": 0,
+          "runs_conceded": 11,
+          "no_balls": 0,
+          "wides": 1
+        },
+        {
+          "name": "Arjun Unknown",
+          "name_raw": "Arjun Unknown",
+          "overs": 2,
+          "wickets": 1,
+          "runs_conceded": 14,
+          "no_balls": 0,
+          "wides": 6
+        },
+        {
+          "name": "Hrisahn Unknown",
+          "name_raw": "hrisahn Unknown",
+          "overs": 2,
+          "wickets": 2,
+          "runs_conceded": 7,
+          "no_balls": 0,
+          "wides": 0
+        },
+        {
+          "name": "Ehesanbu Unknown",
+          "name_raw": "ehesanbu Unknown",
+          "overs": 2,
+          "wickets": 0,
+          "runs_conceded": 12,
+          "no_balls": 0,
+          "wides": 3
+        },
+        {
+          "name": "Dishank Unknown",
+          "name_raw": "Dishank Unknown",
+          "overs": 2,
+          "wickets": 2,
+          "runs_conceded": -1,
+          "no_balls": 0,
+          "wides": 0
+        }
+      ]
+    }
+  ]
+}

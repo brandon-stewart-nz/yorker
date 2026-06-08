@@ -167,6 +167,7 @@ const state = {
   players: null,
   schedule: null,
   standings: null,
+  divisionTeams: new Map(),
   matchCache: new Map(),
   resultsVisible: 3,
   resultsFilter: "played", // "played" | "won" | "lost"
@@ -446,6 +447,13 @@ function backTargetFor(from, fallbackHash, fallbackLabel) {
   if (from.startsWith("upcoming/")) {
     return { hash: from, label: "Back to Game" };
   }
+  if (from.startsWith("team/")) {
+    const parts = from.split("/");
+    if (parts[2] === "player") {
+      return { hash: from, label: "Back to player" };
+    }
+    return { hash: from, label: `Back to ${divTeamName(parseInt(parts[1], 10))}` };
+  }
   return { hash: fallbackHash, label: fallbackLabel };
 }
 
@@ -479,12 +487,24 @@ function render(skipScroll) {
     renderPlayer(app, key, from);
   } else if (path.startsWith("match/")) {
     const fid = parseInt(path.slice("match/".length), 10);
-    renderMatch(app, fid, from);
+    const ours = state.fixtures?.fixtures?.some(f => f.fixture_id === fid);
+    if (ours) renderMatch(app, fid, from);
+    else renderNeutralMatch(app, fid, from);
   } else if (path.startsWith("upcoming/")) {
     const fid = parseInt(path.slice("upcoming/".length), 10);
     renderUpcoming(app, fid, from);
   } else if (path === "standings") {
     renderStandings(app, from);
+  } else if (path.startsWith("team/")) {
+    const parts = path.split("/");
+    const teamId = parseInt(parts[1], 10);
+    if (parts[2] === "player") {
+      renderTeamPlayer(app, teamId, decodeURIComponent(parts.slice(3).join("/")), from);
+    } else if (parts[2] === "upcoming") {
+      renderTeamUpcoming(app, teamId, parseInt(parts[3], 10), from);
+    } else {
+      renderTeam(app, teamId, from);
+    }
   } else {
     renderHome(app);
   }
@@ -604,7 +624,9 @@ function renderStandings(app, from) {
     return `
       <tr class="${t.is_us ? "ladder-row--us" : ""}">
         <td class="num ladder-pos">${t.position}</td>
-        <td class="ladder-team">${escapeHtml(t.name)}${t.is_us ? ' <span class="ladder-you">You</span>' : ""}</td>
+        <td class="ladder-team">${t.is_us
+          ? `<a class="ladder-team-link" href="#">${escapeHtml(t.name)} <span class="ladder-you">You</span></a>`
+          : `<a class="ladder-team-link" href="#team/${t.team_id}">${escapeHtml(t.name)}</a>`}</td>
         <td class="num">${t.played}</td>
         <td class="num">${t.won}</td>
         <td class="num">${t.lost}</td>
@@ -645,6 +667,512 @@ function renderStandings(app, from) {
       </table>
     </div>
   `;
+}
+
+// ====================================================================
+// Division team pages (Phase 2) — every OTHER team in our division gets
+// the same view we give ourselves (hero, results, squad, per-player
+// pages), minus our private layers (schedule planning, push/calendar/
+// reports). Other-team players are keyed/shown VERBATIM — never folded
+// onto our roster. Data: data/division/{teamId}.json (built by
+// build-division.py), the leaderboard (standings.json) links into them.
+// ====================================================================
+
+function divTeamName(teamId) {
+  const t = state.standings?.teams?.find(x => x.team_id === teamId);
+  if (t) return t.name;
+  return state.divisionTeams.get(teamId)?.team?.name || "Team";
+}
+
+function teamInitials(name) {
+  return String(name || "").split(/\s+/).filter(Boolean).map(w => w[0]).slice(0, 3).join("").toUpperCase() || "?";
+}
+
+// Other-team player display: verbatim, title-cased, 'Unknown' placeholder stripped.
+function plainName(name) {
+  return String(name || "")
+    .split(/\s+/)
+    .filter(w => w && w.toLowerCase() !== "unknown")
+    .map(w => w.charAt(0).toUpperCase() + w.slice(1))
+    .join(" ");
+}
+
+function playerSlug(name) {
+  return plainName(name).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
+}
+
+function teamSideOf(f, teamId) {
+  const home = f.home.id === teamId;
+  return { side: home ? f.home : f.away, skins: home ? f.home_skins : f.away_skins };
+}
+function teamOppOf(f, teamId) {
+  const home = f.home.id === teamId;
+  return { side: home ? f.away : f.home, skins: home ? f.away_skins : f.home_skins };
+}
+
+// Map a team's display name (from a scoresheet) back to its Spawtz TeamId via
+// the leaderboard, so a neutral scorecard can link players to their team page.
+function resolveTeamIdByName(name) {
+  const n = String(name || "").trim().toLowerCase();
+  const t = state.standings?.teams?.find(x => (x.name || "").trim().toLowerCase() === n);
+  return t ? t.team_id : null;
+}
+
+// Resolve a player slug to a record in a team file. Exact slug, then unique
+// first-name, then nearest spelling — so a raw scorecard name ('Ollie') still
+// lands on the merged record ('Olly Hampshire').
+function findDivisionPlayer(data, key) {
+  const players = data.players || [];
+  let p = players.find(x => playerSlug(x.name) === key);
+  if (p) return p;
+  const fk = key.split("-")[0];
+  const fn = players.filter(x => playerSlug(x.name).split("-")[0] === fk);
+  if (fn.length === 1) return fn[0];
+  p = players.find(x => levenshtein(playerSlug(x.name), key) <= 2);
+  return p || null;
+}
+
+async function loadDivisionTeam(teamId) {
+  if (state.divisionTeams.has(teamId)) return state.divisionTeams.get(teamId);
+  const ck = `firebirds.cache.div.${teamId}`;
+  let data = null;
+  try {
+    const r = await fetch(`data/division/${teamId}.json`, { cache: "no-store" });
+    if (r.ok) data = await r.json();
+  } catch (e) { /* offline — fall back to cache */ }
+  if (!data) data = readCachedJson(ck);
+  else writeCachedJson(ck, data);
+  if (data) state.divisionTeams.set(teamId, data);
+  return data;
+}
+
+function linkRowAttrs(hash) {
+  if (!hash) return "";
+  return `class="player-row" data-target-hash="${escapeHtml(hash)}"`;
+}
+
+// --- Team hero / record / cards (mirror the home versions, team-relative) ---
+
+function teamHeroHtml(next, teamId) {
+  if (!next) {
+    return `
+      <div class="hero hero--empty">
+        <div class="hero__label">Next game</div>
+        <div class="hero__date">Not yet posted</div>
+        <p>No upcoming fixture posted yet. This updates automatically.</p>
+      </div>`;
+  }
+  const opp = teamOppOf(next, teamId).side.display;
+  const dt = parseSpawtzDate(next.date_str, next.time);
+  const dayShort = dt ? dt.toLocaleDateString("en-NZ", { weekday: "short" }).toUpperCase() : "";
+  const dayNum = dt ? String(dt.getDate()) : "";
+  const monShort = dt ? dt.toLocaleDateString("en-NZ", { month: "short" }).toUpperCase() : "";
+  const countdown = dt ? countdownText(dt) : "";
+  const inner = `
+    <div class="hero">
+      <div class="hero__topbar">
+        <div class="hero__label">${heroLabel(dt)}</div>
+        ${countdown ? `<div class="hero__pill${gamePhase(dt) === "live" ? " hero__pill--live" : ""}">${escapeHtml(countdown)}</div>` : ""}
+      </div>
+      <div class="hero__body">
+        <div class="hero__tile">
+          <div class="hero__tile-day">${escapeHtml(dayShort)}</div>
+          <div class="hero__tile-num">${escapeHtml(dayNum)}</div>
+          <div class="hero__tile-mon">${escapeHtml(monShort)}</div>
+        </div>
+        <div class="hero__info">
+          <div class="hero__vs">vs</div>
+          <div class="hero__opp">${escapeHtml(opp)}</div>
+          <div class="hero__when"><strong>${escapeHtml(formatTime12(next.time))}</strong> · ${escapeHtml(next.court)}</div>
+        </div>
+      </div>
+    </div>`;
+  const fid = next.fixture_id;
+  return fid
+    ? `<a class="hero-link" href="#${escapeHtml(makeHash(`team/${teamId}/upcoming/${fid}`, `team/${teamId}`))}">${inner}</a>`
+    : inner;
+}
+
+function teamRecordHtml(data) {
+  const rec = data.record;
+  if (!rec) return "";
+  const cell = (num, label) =>
+    `<div class="record__cell record__cell--static"><div class="record__num">${num}</div><div class="record__label">${label}</div></div>`;
+  const pos = data.standings_row?.position;
+  const teamCount = state.standings?.teams?.length;
+  const ladder = `
+      <a class="record__cell record__cell--link" href="#standings" aria-label="View the leaderboard">
+        <div class="record__num">${ordinal(pos)}</div>
+        <div class="record__label">Ladder${teamCount ? ` of ${teamCount}` : ""} ›</div>
+      </a>`;
+  return `<div class="record">${cell(rec.played, "Played")}${cell(rec.won, "Won")}${cell(rec.lost, "Lost")}${ladder}</div>`;
+}
+
+function teamResultCardHtml(f, teamId) {
+  const us = teamSideOf(f, teamId).skins;
+  const opp = teamOppOf(f, teamId);
+  const them = opp.skins;
+  let badge = "", cls = "result-card--upcoming";
+  if (f.played) {
+    if (us > them) { badge = `<span class="badge badge--win">Win</span>`; cls = "result-card--win"; }
+    else if (us < them) { badge = `<span class="badge badge--loss">Loss</span>`; cls = "result-card--loss"; }
+    else { badge = `<span class="badge badge--loss">Draw</span>`; cls = "result-card--loss"; }
+  } else {
+    badge = `<span class="badge badge--upcoming">Upcoming</span>`;
+  }
+  const scoreText = f.played
+    ? `<span class="result-card__score--us">${us}</span><span class="result-card__score-sep">–</span>${them}`
+    : `<small>vs</small>`;
+  return `
+    <div class="result-card ${cls}" data-fixture-id="${f.fixture_id ?? ""}">
+      <div>
+        <div class="result-card__date">${escapeHtml(f.date_str ?? "")}${badge}</div>
+        <div class="result-card__opp">${escapeHtml(opp.side.display)}</div>
+        <div class="result-card__meta">${escapeHtml(formatTime12(f.time))} · ${escapeHtml(f.court)}${f.is_grading ? " · Grading" : ""}</div>
+      </div>
+      <div class="result-card__score">${scoreText}</div>
+    </div>`;
+}
+
+function teamPlayerCardHtml(p, teamId) {
+  const t = p.totals;
+  const shown = plainName(p.name);
+  const initials = shown.split(/\s+/).map(s => s[0]).filter(Boolean).slice(0, 2).join("").toUpperCase() || "?";
+  return `
+    <a class="player-card player-card--standin" href="#${escapeHtml(makeHash(`team/${teamId}/player/${playerSlug(p.name)}`, `team/${teamId}`))}">
+      <div class="player-card__avatar">${escapeHtml(initials)}</div>
+      <div class="player-card__name">${escapeHtml(shown)}</div>
+      <div class="player-card__stats">
+        <div class="player-card__stat"><strong>${t.runs}</strong><span>Runs</span></div>
+        <div class="player-card__stat"><strong>${t.wickets}</strong><span>Wkts</span></div>
+        <div class="player-card__stat"><strong>${p.matches.length}</strong><span>Games</span></div>
+      </div>
+    </a>`;
+}
+
+// --- Team home --------------------------------------------------------
+
+async function renderTeam(app, teamId, from) {
+  if (teamId === TEAM_ID) { window.location.hash = ""; return; }
+  const backHash = from || "standings";
+  const backLabel = from ? "Back" : "Back to Leaderboard";
+  const backHtml = `<a class="back" href="#${escapeHtml(backHash)}">‹ ${escapeHtml(backLabel)}</a>`;
+  app.innerHTML = `${backHtml}<div class="loading">Loading team…</div>`;
+  const data = await loadDivisionTeam(teamId);
+  if (!data) {
+    const msg = navigator.onLine ? "Team not found." : "Currently offline — Please check your connection";
+    app.innerHTML = `${backHtml}<div class="loading">${msg}</div>`;
+    return;
+  }
+  const next = data.next_game;
+  scheduleHeroFlip(next ? parseSpawtzDate(next.date_str, next.time) : null);
+  const played = (data.fixtures || [])
+    .filter(f => f.played && f.scoresheet_complete)
+    .sort((a, b) => (b.fixture_id ?? 0) - (a.fixture_id ?? 0));
+  const pos = data.standings_row?.position;
+  app.innerHTML = `
+    ${backHtml}
+    <div class="detail-header detail-header--player">
+      <div class="detail-header__main">
+        <div class="detail-header__avatar">${escapeHtml(teamInitials(data.team.name))}</div>
+        <div>
+          <div class="detail-header__name">${escapeHtml(data.team.name)}</div>
+          <div class="detail-header__sub">${escapeHtml(data.division_name || "Division")} · <a class="sub-link" href="#standings">${ordinal(pos)} on the ladder</a></div>
+        </div>
+      </div>
+    </div>
+    ${teamHeroHtml(next, teamId)}
+    ${teamRecordHtml(data)}
+    <section class="section">
+      <h2 class="section-title">Results</h2>
+      <div class="results">${played.length ? played.map(f => teamResultCardHtml(f, teamId)).join("") : `<p class="empty-note">No results yet.</p>`}</div>
+    </section>
+    <section class="section">
+      <h2 class="section-title">Squad</h2>
+      <div class="squad">${(data.players || []).map(p => teamPlayerCardHtml(p, teamId)).join("")}</div>
+    </section>
+  `;
+  app.querySelectorAll(".result-card[data-fixture-id]").forEach(el => {
+    const fid = el.getAttribute("data-fixture-id");
+    if (!fid) return;
+    el.addEventListener("click", () => { window.location.hash = makeHash(`match/${fid}`, `team/${teamId}`); });
+  });
+}
+
+// --- Team player page -------------------------------------------------
+
+async function renderTeamPlayer(app, teamId, key, from) {
+  const backHash = from || `team/${teamId}`;
+  const backLabel = "Back to " + divTeamName(teamId);
+  const backHtml = `<a class="back" href="#${escapeHtml(backHash)}">‹ ${escapeHtml(backLabel)}</a>`;
+  app.innerHTML = `${backHtml}<div class="loading">Loading…</div>`;
+  const data = await loadDivisionTeam(teamId);
+  if (!data) {
+    const msg = navigator.onLine ? "Player not found." : "Currently offline — Please check your connection";
+    app.innerHTML = `${backHtml}<div class="loading">${msg}</div>`;
+    return;
+  }
+  const player = findDivisionPlayer(data, key);
+  if (!player) {
+    app.innerHTML = `${backHtml}<div class="loading">Player not found.</div>`;
+    return;
+  }
+  const t = player.totals;
+  const shown = plainName(player.name);
+  const initials = shown.split(/\s+/).map(s => s[0]).filter(Boolean).slice(0, 2).join("").toUpperCase() || "?";
+  const fromHere = `team/${teamId}/player/${playerSlug(player.name)}`;
+  const hsBest = bestBattingMatch(player.matches);
+  const bbBest = bestBowlingMatch(player.matches);
+  const cleanOpp = (vs) => escapeHtml((vs || "").replace(/^['"]+|['"]+$/g, "").trim());
+  const hlChip = (fid, label, valueHtml, vs) =>
+    `<a class="hl" href="#${escapeHtml(makeHash(`match/${fid}`, fromHere))}">
+        <span class="hl__chev" aria-hidden="true">›</span>
+        <span class="hl__label">${label}</span>
+        <span class="hl__val">${valueHtml}</span>
+        <span class="hl__ctx">vs ${cleanOpp(vs)}</span>
+      </a>`;
+  const hlChips = [];
+  if (hsBest) hlChips.push(hlChip(hsBest.fid, "High score batting", `${hsBest.r} <span class="hl__unit">runs</span>`, hsBest.vs));
+  if (bbBest) hlChips.push(hlChip(bbBest.fid, "Best bowling", `${bbBest.w}/${bbBest.rc} <span class="hl__unit">(wickets / runs)</span>`, bbBest.vs));
+  const highlightsHtml = hlChips.length ? `<div class="hl-row">${hlChips.join("")}</div>` : "";
+
+  const matchRows = [...player.matches]
+    .sort((a, b) => (b.fixture_id ?? 0) - (a.fixture_id ?? 0))
+    .map(m => {
+      const dmy = formatDateDMY(m.date_str);
+      const [dd, mm, yy] = dmy.split("/");
+      const dateCell = yy ? `${dd}/${mm}<span class="yr">/${yy}</span>` : escapeHtml(dmy);
+      const bRuns = m.batting?.runs, bBalls = m.batting?.balls_faced;
+      const wk = m.bowling?.wickets, rc = m.bowling?.runs_conceded, ov = m.bowling?.overs;
+      const srCell = (bRuns != null && bBalls) ? strikeRate(bRuns, bBalls) : "—";
+      const erCell = (rc != null && ov) ? economyRate(rc, ov) : "—";
+      return `
+        <tr class="player-row" data-fixture-id="${m.fixture_id}">
+          <td class="date-col">${dateCell}</td>
+          <td class="opp"><span class="opp-text">${escapeHtml(m.vs ?? "")}</span></td>
+          <td class="num">${bRuns ?? "—"}</td>
+          <td class="num">${srCell}</td>
+          <td class="num">${wk ?? "—"}</td>
+          <td class="num">${erCell}</td>
+        </tr>`;
+    }).join("");
+
+  app.innerHTML = `
+    ${backHtml}
+    <div class="detail-header detail-header--player">
+      <div class="detail-header__main">
+        <div class="detail-header__avatar">${escapeHtml(initials)}</div>
+        <div>
+          <div class="detail-header__name">${escapeHtml(shown)}</div>
+          <div class="detail-header__sub">${player.matches.length} match${player.matches.length === 1 ? "" : "es"} for <a class="sub-link" href="#team/${teamId}">${escapeHtml(divTeamName(teamId))}</a></div>
+        </div>
+      </div>
+      ${highlightsHtml}
+    </div>
+
+    <h3 class="subhead">Batting</h3>
+    <div class="stat-grid">
+      <div class="stat-grid__cell"><div class="stat-grid__num">${t.runs}</div><div class="stat-grid__label">Total runs</div></div>
+      <div class="stat-grid__cell"><div class="stat-grid__num">${t.balls_faced}</div><div class="stat-grid__label">Balls faced</div></div>
+      <div class="stat-grid__cell"><div class="stat-grid__num">${t.dismissals}</div><div class="stat-grid__label">Outs</div></div>
+    </div>
+
+    <h3 class="subhead">Bowling</h3>
+    <div class="stat-grid">
+      <div class="stat-grid__cell"><div class="stat-grid__num">${t.wickets}</div><div class="stat-grid__label">Wickets</div></div>
+      <div class="stat-grid__cell"><div class="stat-grid__num">${t.overs_bowled}</div><div class="stat-grid__label">Overs bowled</div></div>
+      <div class="stat-grid__cell"><div class="stat-grid__num">${t.runs_conceded}</div><div class="stat-grid__label">Runs conceded</div></div>
+    </div>
+
+    <h3 class="subhead">Match-by-match</h3>
+    ${player.matches.length === 0
+      ? `<div class="upcoming-shell"><p class="upcoming-shell__hint">Yet to play a game</p></div>`
+      : `<div class="table-card">
+      <table class="table table--player-matches">
+        <thead><tr>
+          <th class="date-col">Date</th>
+          <th>Opponent</th>
+          <th class="num-h" data-tip="Runs scored" aria-label="Runs scored">R</th>
+          <th class="num-h" data-tip="Strike rate — runs ÷ balls × 100" aria-label="Strike rate">SR</th>
+          <th class="num-h" data-tip="Wickets taken" aria-label="Wickets taken">W</th>
+          <th class="num-h" data-tip="Economy rate — runs ÷ overs" aria-label="Economy rate">ER</th>
+        </tr></thead>
+        <tbody>${matchRows}</tbody>
+      </table>
+    </div>`}
+  `;
+  app.querySelectorAll(".player-row[data-fixture-id]").forEach(el => {
+    const fid = el.getAttribute("data-fixture-id");
+    if (!fid) return;
+    el.addEventListener("click", () => { window.location.hash = makeHash(`match/${fid}`, fromHere); });
+  });
+}
+
+// --- Team upcoming game (Spawtz-only — no planned lineups) -------------
+
+async function renderTeamUpcoming(app, teamId, fid, from) {
+  const backHash = from || `team/${teamId}`;
+  const backHtml = `<a class="back" href="#${escapeHtml(backHash)}">‹ Back to ${escapeHtml(divTeamName(teamId))}</a>`;
+  app.innerHTML = `${backHtml}<div class="loading">Loading…</div>`;
+  const data = await loadDivisionTeam(teamId);
+  if (!data) {
+    const msg = navigator.onLine ? "Fixture not found." : "Currently offline — Please check your connection";
+    app.innerHTML = `${backHtml}<div class="loading">${msg}</div>`;
+    return;
+  }
+  const fixture = (data.fixtures || []).find(f => f.fixture_id === fid);
+  if (!fixture) {
+    app.innerHTML = `${backHtml}<div class="loading">Fixture not found.</div>`;
+    return;
+  }
+  if (fixture.played && fixture.scoresheet_complete) {
+    window.location.hash = makeHash(`match/${fid}`, backHash);
+    return;
+  }
+  const oppName = teamOppOf(fixture, teamId).side.display;
+  const dt = parseSpawtzDate(fixture.date_str, fixture.time);
+  scheduleHeroFlip(dt);
+  const awaiting = gamePhase(dt) === "finished" && !fixture.scoresheet_complete;
+  const dateLabel = dt
+    ? dt.toLocaleDateString("en-NZ", { weekday: "short", day: "numeric", month: "long" })
+    : (fixture.date_str ?? "");
+  const countdown = dt ? countdownText(dt) : "";
+  const oppInitial = ((oppName || "").match(/[A-Za-z]/) || ["?"])[0].toUpperCase();
+  app.innerHTML = `
+    ${backHtml}
+    <div class="detail-header">
+      <div class="detail-header__main">
+        <div class="detail-header__avatar">vs</div>
+        <div>
+          <div class="detail-header__name">${escapeHtml(divTeamName(teamId))} vs ${escapeHtml(oppName)}</div>
+          <div class="detail-header__sub">${escapeHtml(dateLabel)} · ${escapeHtml(formatTime12(fixture.time))} · ${escapeHtml(fixture.court || "")}</div>
+        </div>
+      </div>
+    </div>
+    ${awaiting
+      ? `<div class="upcoming-shell"><p class="upcoming-shell__title">Awaiting scores to be added</p><p class="upcoming-shell__hint">The scoresheet will appear here once it's posted.</p></div>`
+      : `<div class="hero">
+          <div class="hero__topbar"><div class="hero__label">${heroLabel(dt)}</div>${countdown ? `<div class="hero__pill${gamePhase(dt) === "live" ? " hero__pill--live" : ""}">${escapeHtml(countdown)}</div>` : ""}</div>
+          <div class="hero__body">
+            <div class="hero__tile"><div class="hero__tile-num">${escapeHtml(oppInitial)}</div></div>
+            <div class="hero__info"><div class="hero__vs">vs</div><div class="hero__opp">${escapeHtml(oppName)}</div><div class="hero__when"><strong>${escapeHtml(formatTime12(fixture.time))}</strong> · ${escapeHtml(fixture.court || "")}</div></div>
+          </div>
+        </div>`}
+  `;
+}
+
+// --- Neutral match scorecard (a game between two OTHER teams) ----------
+// Reached only from a team context (a team's result card or a team player's
+// game), so `from` carries a TeamId — we resolve the real team names/ids from
+// that team's fixture list (the scoresheet header is just a captain nickname,
+// not the team name), then render both sides neutrally with player links.
+
+async function renderNeutralMatch(app, fid, from) {
+  const backHash = from || "standings";
+  const backLabel = from ? "Back" : "Back to Leaderboard";
+  const backHtml = `<a class="back" href="#${escapeHtml(backHash)}">‹ ${escapeHtml(backLabel)}</a>`;
+  app.innerHTML = `${backHtml}<div class="loading">Loading match…</div>`;
+
+  let detail = state.matchCache.get(fid);
+  if (!detail) {
+    try {
+      detail = await fetchJson(`data/matches/${fid}.json`);
+      state.matchCache.set(fid, detail);
+    } catch (err) {
+      const msg = navigator.onLine ? "Couldn't load match." : "Currently offline — Please check your connection";
+      app.innerHTML = `${backHtml}<div class="loading">${msg}</div>`;
+      return;
+    }
+  }
+
+  // Find the fixture (reliable team names/ids) via the team we came from.
+  let fixture = null;
+  const hintId = from && from.startsWith("team/") ? parseInt(from.split("/")[1], 10) : null;
+  if (hintId != null) {
+    const d = await loadDivisionTeam(hintId);
+    fixture = (d?.fixtures || []).find(f => f.fixture_id === fid) || null;
+  }
+
+  const innings = detail.innings || [];
+  const summaries = detail.team_summaries || [];
+
+  // Map summaries/innings to home/away. With a fixture we anchor on skins;
+  // without one we fall back to scoresheet order + display names.
+  let home, away, homeInn, awayInn, homeSum, awaySum;
+  if (fixture) {
+    home = { id: fixture.home.id, name: fixture.home.display, skins: fixture.home_skins };
+    away = { id: fixture.away.id, name: fixture.away.display, skins: fixture.away_skins };
+    let idx = summaries.findIndex(s => s.total === home.skins);
+    if (idx < 0) idx = 0;
+    homeSum = summaries[idx] || null;
+    awaySum = summaries[1 - idx] || null;
+    homeInn = innings[idx] || null;
+    awayInn = innings[1 - idx] || null;
+  } else {
+    homeInn = innings[0] || null;
+    awayInn = innings[1] || null;
+    homeSum = summaries[0] || null;
+    awaySum = summaries[1] || null;
+    const hName = homeInn?.batting_team_display || homeSum?.display || "Team A";
+    const aName = awayInn?.batting_team_display || awaySum?.display || "Team B";
+    home = { id: resolveTeamIdByName(hName), name: hName, skins: homeSum?.total };
+    away = { id: resolveTeamIdByName(aName), name: aName, skins: awaySum?.total };
+  }
+
+  const hrefFor = (tid) => (name) =>
+    tid != null ? makeHash(`team/${tid}/player/${playerSlug(name)}`, `match/${fid}`) : null;
+  const homeHref = hrefFor(home.id);
+  const awayHref = hrefFor(away.id);
+  const linkName = (tid, name) =>
+    tid != null ? `<a class="sub-link" href="#team/${tid}">${escapeHtml(name)}</a>` : escapeHtml(name);
+
+  const hScore = homeSum?.total, aScore = awaySum?.total;
+  const homeWon = hScore != null && aScore != null && hScore > aScore;
+  const awayWon = hScore != null && aScore != null && aScore > hScore;
+  const margin = (hScore != null && aScore != null) ? Math.abs(hScore - aScore) : null;
+  const resultText = margin == null ? "" : margin === 0
+    ? "Match drawn"
+    : `${homeWon ? home.name : away.name} won by ${margin} run${margin === 1 ? "" : "s"}`;
+  const dt = fixture ? parseSpawtzDate(fixture.date_str, fixture.time) : null;
+  const dateLabel = dt
+    ? dt.toLocaleDateString("en-NZ", { weekday: "short", day: "numeric", month: "long" })
+    : (fixture?.date_str || detail.date_str || "");
+
+  app.innerHTML = `
+    ${backHtml}
+    <div class="detail-header">
+      <div class="detail-header__main">
+        <div class="detail-header__avatar">vs</div>
+        <div>
+          <div class="detail-header__name">${linkName(home.id, home.name)} vs ${linkName(away.id, away.name)}</div>
+          <div class="detail-header__sub">${escapeHtml(dateLabel)}${fixture?.court ? ` · ${escapeHtml(formatTime12(fixture.time))} · ${escapeHtml(fixture.court)}` : ""}</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="match-top">
+      <div class="match-summary">
+        <div class="match-summary__row ${awayWon ? "match-summary__row--lost" : ""}">
+          <div class="match-summary__crest" aria-hidden="true">${escapeHtml(teamInitials(home.name))}</div>
+          <div class="match-summary__name">${linkName(home.id, home.name)}</div>
+          <div class="match-summary__score">${hScore ?? "—"}</div>
+        </div>
+        <div class="match-summary__divider"><span class="match-summary__vs">vs</span></div>
+        <div class="match-summary__row ${homeWon ? "match-summary__row--lost" : ""}">
+          <div class="match-summary__crest" aria-hidden="true">${escapeHtml(teamInitials(away.name))}</div>
+          <div class="match-summary__name">${linkName(away.id, away.name)}</div>
+          <div class="match-summary__score">${aScore ?? "—"}</div>
+        </div>
+        ${resultText ? `<div class="match-summary__result">${escapeHtml(resultText)}</div>` : ""}
+      </div>
+    </div>
+
+    ${homeInn ? `<h3 class="subhead">${escapeHtml(home.name)} batting</h3>${battingTableHtml(homeInn.batters, { opponent: true, linkHref: homeHref })}` : ""}
+    ${awayInn ? `<h3 class="subhead">${escapeHtml(home.name)} bowling</h3>${bowlingTableHtml(awayInn.bowlers, { opponent: true, linkHref: homeHref })}` : ""}
+    ${awayInn ? `<h3 class="subhead">${escapeHtml(away.name)} batting</h3>${battingTableHtml(awayInn.batters, { opponent: true, linkHref: awayHref })}` : ""}
+    ${homeInn ? `<h3 class="subhead">${escapeHtml(away.name)} bowling</h3>${bowlingTableHtml(homeInn.bowlers, { opponent: true, linkHref: awayHref })}` : ""}
+  `;
+  wireRowNavigation(app);
 }
 
 function filteredResults(fixtures, filter) {
@@ -1334,6 +1862,13 @@ async function renderMatch(app, fid, from) {
   }
 
   const oppName = fixture ? opponentName(fixture) : (oppSummary?.display ?? "Opponent");
+  // Opposition names link to their player page on that team. Resolve their
+  // TeamId from the fixture (the non-us side) or by matching the name.
+  const oppTeamId = fixture
+    ? (isUsHome ? fixture.away.id : fixture.home.id)
+    : resolveTeamIdByName(oppName);
+  const oppHref = (name) =>
+    oppTeamId != null ? makeHash(`team/${oppTeamId}/player/${playerSlug(name)}`, `match/${fid}`) : null;
   const dt = fixture ? parseSpawtzDate(fixture.date_str, fixture.time) : null;
   const dateLabel = dt ? dt.toLocaleDateString("en-NZ", { weekday: "short", day: "numeric", month: "long" }) : (fixture?.date_str ?? "");
   const iso = dt
@@ -1414,12 +1949,12 @@ async function renderMatch(app, fid, from) {
 
     ${oppInnings ? `
       <h3 class="subhead">${escapeHtml(oppName)} batting</h3>
-      ${battingTableHtml(oppInnings.batters, { opponent: true })}
+      ${battingTableHtml(oppInnings.batters, { opponent: true, linkHref: oppHref })}
     ` : ""}
 
     ${fbInnings ? `
       <h3 class="subhead">${escapeHtml(oppName)} bowling</h3>
-      ${bowlingTableHtml(fbInnings.bowlers, { opponent: true })}
+      ${bowlingTableHtml(fbInnings.bowlers, { opponent: true, linkHref: oppHref })}
     ` : ""}
   `;
 
@@ -1561,8 +2096,9 @@ function battingTableHtml(batters, opts = {}) {
       </tr>`;
     for (const b of pair) {
       const isCap = captainKey && playerKey(b.name) === captainKey;
+      const rowAttrs = opts.linkHref ? linkRowAttrs(opts.linkHref(b.name)) : rowLinkAttrs(b.name, linkPlayers, matchId);
       body += `
-        <tr ${rowLinkAttrs(b.name, linkPlayers, matchId)}>
+        <tr ${rowAttrs}>
           <td>${escapeHtml(displayName(b.name, { opponent }) + (isCap ? " (c)" : ""))}</td>
           <td class="num">${b.runs}</td>
           <td class="num">${b.balls_faced}</td>
@@ -1610,8 +2146,9 @@ function bowlingTableHtml(bowlers, opts = {}) {
         <tbody>
           ${bowlers.map(b => {
             const isCap = captainKey && playerKey(b.name) === captainKey;
+            const rowAttrs = opts.linkHref ? linkRowAttrs(opts.linkHref(b.name)) : rowLinkAttrs(b.name, linkPlayers, matchId);
             return `
-            <tr ${rowLinkAttrs(b.name, linkPlayers, matchId)}>
+            <tr ${rowAttrs}>
               <td>${escapeHtml(displayName(b.name, { opponent }) + (isCap ? " (c)" : ""))}</td>
               <td class="num">${b.wickets}</td>
               <td class="num">${b.runs_conceded}</td>

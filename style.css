@@ -1596,3 +1596,31 @@ a.record__cell--link .record__num { color: var(--gold-deep); }
 @media (max-width: 560px) {
   .table--ladder .dk-only { display: none; }
 }
+
+/* --- Division team pages (Phase 2) --------------------------------- */
+
+/* Tappable team name in the leaderboard. */
+.ladder-team-link {
+  color: var(--teal-deep);
+  text-decoration: none;
+  font-weight: 600;
+}
+.ladder-team-link:hover { text-decoration: underline; }
+.table--ladder tr.ladder-row--us .ladder-team-link { color: var(--teal-deep); }
+
+/* Inline links inside a detail-header sub line / match summary names. */
+.sub-link {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-color: rgba(229, 179, 64, 0.6);
+}
+.sub-link:hover { text-decoration-color: var(--gold); }
+.match-summary__name .sub-link { text-decoration: none; }
+.match-summary__name .sub-link:hover { text-decoration: underline; }
+
+.empty-note {
+  color: var(--muted);
+  font-size: 14px;
+  padding: 8px 2px;
+}

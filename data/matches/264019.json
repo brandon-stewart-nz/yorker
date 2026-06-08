@@ -1,0 +1,288 @@
+{
+  "fixture_id": 264019,
+  "title": "Hutt Park - Karori Cricketers - Reuben vs Anderson Aces - Arihaan (06/06/2026 13:55)",
+  "team_summaries": [
+    {
+      "name": "Karori Cricketers - Reuben",
+      "display": "Karori Cricketers",
+      "skin_scores": [
+        21,
+        46,
+        12
+      ],
+      "total": 79,
+      "skins_won": 2,
+      "points": 5
+    },
+    {
+      "name": "Anderson Aces - Arihaan",
+      "display": "Anderson Aces",
+      "skin_scores": [
+        1,
+        28,
+        49
+      ],
+      "total": 78,
+      "skins_won": 1,
+      "points": 2
+    }
+  ],
+  "innings": [
+    {
+      "batting_team_raw": "Karori Cricketers - Reuben",
+      "batting_team_display": "Karori Cricketers",
+      "batters": [
+        {
+          "name": "Parv Unknown",
+          "name_raw": "Parv Unknown",
+          "runs": 14,
+          "balls_faced": 12,
+          "dismissals": 1,
+          "threes": 0,
+          "fours": 0,
+          "fives": 0,
+          "sixes": 0
+        },
+        {
+          "name": "Henry Viskovic",
+          "name_raw": "Henry Viskovic",
+          "runs": 7,
+          "balls_faced": 12,
+          "dismissals": 0,
+          "threes": 0,
+          "fours": 0,
+          "fives": 0,
+          "sixes": 0
+        },
+        {
+          "name": "Hugo Unknown",
+          "name_raw": "Hugo Unknown",
+          "runs": 20,
+          "balls_faced": 11,
+          "dismissals": 1,
+          "threes": 2,
+          "fours": 0,
+          "fives": 0,
+          "sixes": 0
+        },
+        {
+          "name": "Reuben Unknown",
+          "name_raw": "Reuben Unknown",
+          "runs": 26,
+          "balls_faced": 13,
+          "dismissals": 1,
+          "threes": 0,
+          "fours": 1,
+          "fives": 1,
+          "sixes": 0
+        },
+        {
+          "name": "Mattew Swan",
+          "name_raw": "Mattew Swan",
+          "runs": -2,
+          "balls_faced": 13,
+          "dismissals": 4,
+          "threes": 0,
+          "fours": 0,
+          "fives": 0,
+          "sixes": 0
+        },
+        {
+          "name": "Max Heffield",
+          "name_raw": "Max Heffield",
+          "runs": 14,
+          "balls_faced": 11,
+          "dismissals": 1,
+          "threes": 0,
+          "fours": 0,
+          "fives": 1,
+          "sixes": 0
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Daniel Unknown",
+          "name_raw": "daniel Unknown",
+          "overs": 2,
+          "wickets": 0,
+          "runs_conceded": 14,
+          "no_balls": 0,
+          "wides": 2
+        },
+        {
+          "name": "Jimmy Unknown",
+          "name_raw": "jimmy Unknown",
+          "overs": 2,
+          "wickets": 0,
+          "runs_conceded": 19,
+          "no_balls": 0,
+          "wides": 2
+        },
+        {
+          "name": "Gus Unknown",
+          "name_raw": "Gus Unknown",
+          "overs": 2,
+          "wickets": 2,
+          "runs_conceded": 4,
+          "no_balls": 0,
+          "wides": 3
+        },
+        {
+          "name": "Riley Unknown",
+          "name_raw": "Riley Unknown",
+          "overs": 2,
+          "wickets": 1,
+          "runs_conceded": 18,
+          "no_balls": 0,
+          "wides": 4
+        },
+        {
+          "name": "Lakshya Biswas",
+          "name_raw": "lakshya biswas",
+          "overs": 2,
+          "wickets": 3,
+          "runs_conceded": 8,
+          "no_balls": 0,
+          "wides": 3
+        },
+        {
+          "name": "Arihaan Bhushan",
+          "name_raw": "arihaan bhushan",
+          "overs": 2,
+          "wickets": 2,
+          "runs_conceded": 16,
+          "no_balls": 0,
+          "wides": 4
+        }
+      ]
+    },
+    {
+      "batting_team_raw": "Anderson Aces - Arihaan",
+      "batting_team_display": "Anderson Aces",
+      "batters": [
+        {
+          "name": "Arihaan Bhushan",
+          "name_raw": "arihaan bhushan",
+          "runs": 10,
+          "balls_faced": 16,
+          "dismissals": 2,
+          "threes": 0,
+          "fours": 0,
+          "fives": 0,
+          "sixes": 0
+        },
+        {
+          "name": "Lakshya Biswas",
+          "name_raw": "lakshya biswas",
+          "runs": -9,
+          "balls_faced": 8,
+          "dismissals": 2,
+          "threes": 0,
+          "fours": 0,
+          "fives": 0,
+          "sixes": 0
+        },
+        {
+          "name": "Riley Unknown",
+          "name_raw": "Riley Unknown",
+          "runs": 6,
+          "balls_faced": 12,
+          "dismissals": 1,
+          "threes": 0,
+          "fours": 0,
+          "fives": 0,
+          "sixes": 0
+        },
+        {
+          "name": "Gus Unknown",
+          "name_raw": "Gus Unknown",
+          "runs": 22,
+          "balls_faced": 12,
+          "dismissals": 0,
+          "threes": 1,
+          "fours": 0,
+          "fives": 2,
+          "sixes": 0
+        },
+        {
+          "name": "Daniel Unknown",
+          "name_raw": "daniel Unknown",
+          "runs": 27,
+          "balls_faced": 13,
+          "dismissals": 1,
+          "threes": 3,
+          "fours": 0,
+          "fives": 1,
+          "sixes": 0
+        },
+        {
+          "name": "Jimmy Unknown",
+          "name_raw": "jimmy Unknown",
+          "runs": 22,
+          "balls_faced": 11,
+          "dismissals": 0,
+          "threes": 2,
+          "fours": 0,
+          "fives": 0,
+          "sixes": 0
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Reuben Unknown",
+          "name_raw": "Reuben Unknown",
+          "overs": 2,
+          "wickets": 0,
+          "runs_conceded": 22,
+          "no_balls": 0,
+          "wides": 5
+        },
+        {
+          "name": "Hugo Unknown",
+          "name_raw": "Hugo Unknown",
+          "overs": 2,
+          "wickets": 2,
+          "runs_conceded": 8,
+          "no_balls": 0,
+          "wides": 3
+        },
+        {
+          "name": "Max Heffield",
+          "name_raw": "Max Heffield",
+          "overs": 2,
+          "wickets": 2,
+          "runs_conceded": 5,
+          "no_balls": 0,
+          "wides": 3
+        },
+        {
+          "name": "Parv Unknown",
+          "name_raw": "Parv Unknown",
+          "overs": 2,
+          "wickets": 1,
+          "runs_conceded": 18,
+          "no_balls": 0,
+          "wides": 4
+        },
+        {
+          "name": "Henry Viskovic",
+          "name_raw": "Henry Viskovic",
+          "overs": 2,
+          "wickets": 2,
+          "runs_conceded": 8,
+          "no_balls": 0,
+          "wides": 2
+        },
+        {
+          "name": "Mattew Swan",
+          "name_raw": "Mattew Swan",
+          "overs": 2,
+          "wickets": 0,
+          "runs_conceded": 17,
+          "no_balls": 0,
+          "wides": 0
+        }
+      ]
+    }
+  ]
+}
