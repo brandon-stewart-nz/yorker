@@ -1599,25 +1599,12 @@ a.record__cell--link .record__num { color: var(--gold-deep); }
 
 /* --- Division team pages (Phase 2) --------------------------------- */
 
-/* Tappable team name in the leaderboard. */
-.ladder-team-link {
-  color: var(--teal-deep);
-  text-decoration: none;
-  font-weight: 600;
-}
-.ladder-team-link:hover { text-decoration: underline; }
-.table--ladder tr.ladder-row--us .ladder-team-link { color: var(--teal-deep); }
-
-/* Inline links inside a detail-header sub line / match summary names. */
-.sub-link {
-  color: inherit;
-  text-decoration: underline;
-  text-underline-offset: 2px;
-  text-decoration-color: rgba(229, 179, 64, 0.6);
-}
-.sub-link:hover { text-decoration-color: var(--gold); }
-.match-summary__name .sub-link { text-decoration: none; }
-.match-summary__name .sub-link:hover { text-decoration: underline; }
+/* Leaderboard rows are whole-row tap targets (no inline text links) — matches
+   the result-card / player-row pattern. Only rows with a real destination get
+   the pointer + hover; our own row (empty target) stays inert. */
+.table--ladder tbody tr.ladder-row:not([data-target-hash=""]) { cursor: pointer; }
+.table--ladder tbody tr.ladder-row:not([data-target-hash=""]):hover td { background: var(--cream); }
+.table--ladder tbody tr.ladder-row--us:hover td { background: rgba(229, 179, 64, 0.16); }
 
 .empty-note {
   color: var(--muted);

@@ -621,12 +621,11 @@ function renderStandings(app, from) {
 
   const rows = teams.map(t => {
     const diff = t.difference > 0 ? `+${t.difference}` : `${t.difference}`;
+    const target = t.is_us ? "" : `team/${t.team_id}`;
     return `
-      <tr class="${t.is_us ? "ladder-row--us" : ""}">
+      <tr class="ladder-row${t.is_us ? " ladder-row--us" : ""}" data-target-hash="${escapeHtml(target)}">
         <td class="num ladder-pos">${t.position}</td>
-        <td class="ladder-team">${t.is_us
-          ? `<a class="ladder-team-link" href="#">${escapeHtml(t.name)} <span class="ladder-you">You</span></a>`
-          : `<a class="ladder-team-link" href="#team/${t.team_id}">${escapeHtml(t.name)}</a>`}</td>
+        <td class="ladder-team">${escapeHtml(t.name)}${t.is_us ? ' <span class="ladder-you">You</span>' : ""}</td>
         <td class="num">${t.played}</td>
         <td class="num">${t.won}</td>
         <td class="num">${t.lost}</td>
@@ -667,6 +666,7 @@ function renderStandings(app, from) {
       </table>
     </div>
   `;
+  wireRowNavigation(app);
 }
 
 // ====================================================================
@@ -682,6 +682,13 @@ function divTeamName(teamId) {
   const t = state.standings?.teams?.find(x => x.team_id === teamId);
   if (t) return t.name;
   return state.divisionTeams.get(teamId)?.team?.name || "Team";
+}
+
+// Only teams CURRENTLY in our division are navigable. Out-of-division teams
+// (grading opponents, or teams since promoted/relegated like Renegades) appear
+// in game histories but have no team/player pages — so they're never links.
+function isDivisionTeam(teamId) {
+  return !!state.standings?.teams?.some(x => x.team_id === teamId);
 }
 
 function teamInitials(name) {
@@ -838,8 +845,11 @@ function teamPlayerCardHtml(p, teamId) {
   const t = p.totals;
   const shown = plainName(p.name);
   const initials = shown.split(/\s+/).map(s => s[0]).filter(Boolean).slice(0, 2).join("").toUpperCase() || "?";
+  // A regular for their team (2+ games) gets the gold avatar like our core kids;
+  // a one-game-or-less player gets the grey "stand-in" treatment.
+  const regular = p.matches.length >= 2;
   return `
-    <a class="player-card player-card--standin" href="#${escapeHtml(makeHash(`team/${teamId}/player/${playerSlug(p.name)}`, `team/${teamId}`))}">
+    <a class="player-card${regular ? "" : " player-card--standin"}" href="#${escapeHtml(makeHash(`team/${teamId}/player/${playerSlug(p.name)}`, `team/${teamId}`))}">
       <div class="player-card__avatar">${escapeHtml(initials)}</div>
       <div class="player-card__name">${escapeHtml(shown)}</div>
       <div class="player-card__stats">
@@ -877,7 +887,7 @@ async function renderTeam(app, teamId, from) {
         <div class="detail-header__avatar">${escapeHtml(teamInitials(data.team.name))}</div>
         <div>
           <div class="detail-header__name">${escapeHtml(data.team.name)}</div>
-          <div class="detail-header__sub">${escapeHtml(data.division_name || "Division")} · <a class="sub-link" href="#standings">${ordinal(pos)} on the ladder</a></div>
+          <div class="detail-header__sub">${escapeHtml(data.division_name || "Division")} · ${ordinal(pos)} on the ladder</div>
         </div>
       </div>
     </div>
@@ -964,7 +974,7 @@ async function renderTeamPlayer(app, teamId, key, from) {
         <div class="detail-header__avatar">${escapeHtml(initials)}</div>
         <div>
           <div class="detail-header__name">${escapeHtml(shown)}</div>
-          <div class="detail-header__sub">${player.matches.length} match${player.matches.length === 1 ? "" : "es"} for <a class="sub-link" href="#team/${teamId}">${escapeHtml(divTeamName(teamId))}</a></div>
+          <div class="detail-header__sub">${player.matches.length} match${player.matches.length === 1 ? "" : "es"} for ${escapeHtml(divTeamName(teamId))}</div>
         </div>
       </div>
       ${highlightsHtml}
@@ -1119,12 +1129,13 @@ async function renderNeutralMatch(app, fid, from) {
     away = { id: resolveTeamIdByName(aName), name: aName, skins: awaySum?.total };
   }
 
-  const hrefFor = (tid) => (name) =>
-    tid != null ? makeHash(`team/${tid}/player/${playerSlug(name)}`, `match/${fid}`) : null;
+  // Player rows are tappable only for teams in OUR division (out-of-division
+  // grading opponents have no pages). Returns null → no row link.
+  const hrefFor = (tid) => isDivisionTeam(tid)
+    ? ((name) => makeHash(`team/${tid}/player/${playerSlug(name)}`, `match/${fid}`))
+    : null;
   const homeHref = hrefFor(home.id);
   const awayHref = hrefFor(away.id);
-  const linkName = (tid, name) =>
-    tid != null ? `<a class="sub-link" href="#team/${tid}">${escapeHtml(name)}</a>` : escapeHtml(name);
 
   const hScore = homeSum?.total, aScore = awaySum?.total;
   const homeWon = hScore != null && aScore != null && hScore > aScore;
@@ -1144,7 +1155,7 @@ async function renderNeutralMatch(app, fid, from) {
       <div class="detail-header__main">
         <div class="detail-header__avatar">vs</div>
         <div>
-          <div class="detail-header__name">${linkName(home.id, home.name)} vs ${linkName(away.id, away.name)}</div>
+          <div class="detail-header__name">${escapeHtml(home.name)} vs ${escapeHtml(away.name)}</div>
           <div class="detail-header__sub">${escapeHtml(dateLabel)}${fixture?.court ? ` · ${escapeHtml(formatTime12(fixture.time))} · ${escapeHtml(fixture.court)}` : ""}</div>
         </div>
       </div>
@@ -1154,13 +1165,13 @@ async function renderNeutralMatch(app, fid, from) {
       <div class="match-summary">
         <div class="match-summary__row ${awayWon ? "match-summary__row--lost" : ""}">
           <div class="match-summary__crest" aria-hidden="true">${escapeHtml(teamInitials(home.name))}</div>
-          <div class="match-summary__name">${linkName(home.id, home.name)}</div>
+          <div class="match-summary__name">${escapeHtml(home.name)}</div>
           <div class="match-summary__score">${hScore ?? "—"}</div>
         </div>
         <div class="match-summary__divider"><span class="match-summary__vs">vs</span></div>
         <div class="match-summary__row ${homeWon ? "match-summary__row--lost" : ""}">
           <div class="match-summary__crest" aria-hidden="true">${escapeHtml(teamInitials(away.name))}</div>
-          <div class="match-summary__name">${linkName(away.id, away.name)}</div>
+          <div class="match-summary__name">${escapeHtml(away.name)}</div>
           <div class="match-summary__score">${aScore ?? "—"}</div>
         </div>
         ${resultText ? `<div class="match-summary__result">${escapeHtml(resultText)}</div>` : ""}
@@ -1862,13 +1873,15 @@ async function renderMatch(app, fid, from) {
   }
 
   const oppName = fixture ? opponentName(fixture) : (oppSummary?.display ?? "Opponent");
-  // Opposition names link to their player page on that team. Resolve their
-  // TeamId from the fixture (the non-us side) or by matching the name.
+  // Opposition player rows link to their player page — but ONLY if the opponent
+  // is currently in our division (a grading foe since-joined, e.g. Anderson
+  // Aces, is clickable; Smashing Sataras / relegated Renegades are not).
   const oppTeamId = fixture
     ? (isUsHome ? fixture.away.id : fixture.home.id)
     : resolveTeamIdByName(oppName);
-  const oppHref = (name) =>
-    oppTeamId != null ? makeHash(`team/${oppTeamId}/player/${playerSlug(name)}`, `match/${fid}`) : null;
+  const oppHref = isDivisionTeam(oppTeamId)
+    ? ((name) => makeHash(`team/${oppTeamId}/player/${playerSlug(name)}`, `match/${fid}`))
+    : null;
   const dt = fixture ? parseSpawtzDate(fixture.date_str, fixture.time) : null;
   const dateLabel = dt ? dt.toLocaleDateString("en-NZ", { weekday: "short", day: "numeric", month: "long" }) : (fixture?.date_str ?? "");
   const iso = dt

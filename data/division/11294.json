@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-06-08T05:01:35.666141+00:00",
-  "generated_at_nz": "2026-06-08T17:01:31.807615+12:00",
+  "generated_at_utc": "2026-06-08T05:31:52.630557+00:00",
+  "generated_at_nz": "2026-06-08T17:31:48.364239+12:00",
   "division_name": "Division 8",
   "team": {
     "id": 11294,
@@ -51,7 +51,7 @@
       "played": true,
       "fixture_id": 263104,
       "scoresheet_complete": true,
-      "is_grading": false
+      "is_grading": true
     },
     {
       "date_str": "Saturday 02 May 2026",
@@ -72,7 +72,7 @@
       "played": true,
       "fixture_id": 263264,
       "scoresheet_complete": false,
-      "is_grading": false
+      "is_grading": true
     },
     {
       "date_str": "Saturday 09 May 2026",
@@ -93,7 +93,7 @@
       "played": true,
       "fixture_id": 263465,
       "scoresheet_complete": true,
-      "is_grading": false
+      "is_grading": true
     },
     {
       "date_str": "Saturday 16 May 2026",
