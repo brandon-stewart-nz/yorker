@@ -58,6 +58,14 @@ body {
 
 .scroll-pane {
   flex: 1 1 auto;
+  /* Force the flex scroller's minimum size to 0 so it shrinks to the available
+     space and scrolls internally. Without this, iOS Safari/WKWebView treats the
+     default min-height:auto as min-content, expands the pane to its full content
+     height, and body's overflow:hidden clips everything below the fold — exposing
+     the cream body background as a "solid block" at the bottom that content
+     appears to scroll behind. Desktop Chromium already behaves as if this is 0
+     (the overflow→auto-min-0 rule); iOS is inconsistent, so we set it explicitly. */
+  min-height: 0;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
   background: var(--paper);
