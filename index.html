@@ -19,6 +19,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Mark the installed standalone PWA before first paint so style.css can give
+       the locked app-shell the full-screen height. Without this the shell stops
+       at the iOS home-indicator inset and the body background paints a cream band
+       there. iOS never matches @media(display-mode:standalone), so
+       navigator.standalone is the reliable signal. -->
+  <script>if(navigator.standalone===true||matchMedia('(display-mode: standalone)').matches){document.documentElement.classList.add('pwa-standalone');}</script>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>

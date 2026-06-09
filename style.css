@@ -53,18 +53,31 @@ html, body {
 body {
   display: flex;
   flex-direction: column;
-  /* Fill the *visible* viewport. height:100% / 100vh resolve to the LARGE
-     mobile-Safari viewport (as if the toolbars were collapsed), but a locked
-     app-shell never scrolls the document, so Safari keeps its bottom toolbar
-     shown — which strands the bottom of the scroll-pane (the last squad cards +
-     footer) behind that toolbar. 100dvh is the dynamic viewport with the visible
-     toolbars subtracted, so the pane ends exactly at the toolbar's top edge.
-     Falls back to the height:100% set above where dvh is unsupported; in the
-     installed PWA / native webview there are no toolbars, so 100dvh == full
-     screen (no change there). */
+  /* Height of the locked app-shell. The two surfaces need DIFFERENT heights and
+     no single viewport unit satisfies both — verified on a real iOS standalone
+     PWA *and* mobile Safari in the iOS simulator:
+       • mobile Safari — the document never scrolls (overflow:hidden), so the
+         bottom toolbar never collapses. 100vh/100lvh resolve to the LARGE
+         (toolbar-hidden) height and strand the footer behind the toolbar; 100dvh
+         is the visible height, so content ends at the toolbar's top edge.
+       • installed standalone PWA — a viewport unit (dvh/svh) stops at the
+         home-indicator inset, ~34px SHORT of the physical screen. The body then
+         paints its OWN background in that uncovered strip → a cream band pinned
+         to the bottom that content scrolls under ("the block the same colour as
+         the background"). 100vh = the full screen, so content covers the strip
+         and the footer's safe-area padding keeps its text above the indicator
+         (see the html.pwa-standalone rule below).
+     So: 100dvh in a browser, 100vh in the installed PWA. iOS never matches
+     @media(display-mode:standalone), so the PWA case is gated by a class a tiny
+     <head> script adds from navigator.standalone. height:100% (html,body above)
+     is the pre-dvh fallback. */
   height: 100dvh;
   overflow: hidden;
 }
+
+/* Installed standalone PWA only: fill the full physical screen so the body's
+   background can't paint a band in the home-indicator strip. See body comment. */
+html.pwa-standalone body { height: 100vh; }
 
 .scroll-pane {
   flex: 1 1 auto;
