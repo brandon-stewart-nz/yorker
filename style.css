@@ -149,6 +149,10 @@ a {
   transition: opacity 0.2s ease;
 }
 .brand:hover { opacity: 0.85; }
+/* When the banner has no home target (the leaderboard), it's plain text — drop
+   the link affordance. */
+.brand--static { cursor: default; }
+.brand--static:hover { opacity: 1; }
 
 .brand-text {
   display: flex;

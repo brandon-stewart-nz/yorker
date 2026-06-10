@@ -624,8 +624,17 @@ function setBrand(name, hash) {
     `<span class="brand-text__bottom">${escapeHtml(bottom)}</span>`;
   const brand = document.querySelector(".brand");
   if (brand) {
-    brand.setAttribute("aria-label", `${name} — home`);
-    brand.setAttribute("href", hash || "#");
+    if (hash) {
+      brand.setAttribute("href", hash);
+      brand.setAttribute("aria-label", `${name} — home`);
+      brand.classList.remove("brand--static");
+    } else {
+      // No home target (the leaderboard is its own page) — render the title as
+      // plain text, not a link.
+      brand.removeAttribute("href");
+      brand.setAttribute("aria-label", name);
+      brand.classList.add("brand--static");
+    }
   }
 }
 
@@ -647,7 +656,9 @@ function teamContextId(s) {
 function brandTarget(path, from) {
   if (path === "standings") {
     const div = state.standings?.division_name || "Division";
-    return { name: `Leaderboard ${div}`, hash: "#standings" };
+    // The leaderboard is a top-level page with no home to link back to, so the
+    // banner title isn't a link (hash: null).
+    return { name: `Leaderboard ${div}`, hash: null };
   }
   const ctx = teamContextId(path) ?? teamContextId(from);
   if (ctx != null && ctx !== TEAM_ID && isDivisionTeam(ctx)) {
@@ -969,10 +980,9 @@ function teamHeroHtml(next, teamId) {
         </div>
       </div>
     </div>`;
-  const fid = next.fixture_id;
-  return fid
-    ? `<a class="hero-link" href="#${escapeHtml(makeHash(`team/${teamId}/upcoming/${fid}`, `team/${teamId}`))}">${inner}</a>`
-    : inner;
+  // Other teams' next-game hero is display-only — its upcoming page has nothing
+  // useful (no planned lineup etc.), so the card isn't a link.
+  return inner;
 }
 
 function teamRecordHtml(data) {
