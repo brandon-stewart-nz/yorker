@@ -189,27 +189,36 @@ a {
   font-variant-numeric: tabular-nums;
 }
 
-/* Site-wide share button — shares whatever page you're currently on. */
+/* Site-wide share button — shares whatever page you're currently on. A labelled
+   pill (icon + "SHARE") with a gold outline so it reads unmistakably as a button
+   to tap; white icon + text against the teal header. */
 .share-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 34px;
-  height: 34px;
+  gap: 6px;
+  height: 36px;
   flex: 0 0 auto;
-  padding: 0;
+  padding: 0 14px 0 11px;
   border-radius: 999px;
-  background: rgba(245, 239, 224, 0.12);
-  border: 1px solid rgba(245, 239, 224, 0.22);
+  background: rgba(245, 239, 224, 0.14);
+  border: 1.5px solid var(--gold);
   color: var(--cream);
+  font-family: var(--font-display);
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
   cursor: pointer;
+  box-shadow: 0 1px 5px rgba(14, 53, 61, 0.25);
   transition: background 0.15s ease, transform 0.1s ease;
   -webkit-tap-highlight-color: transparent;
 }
-.share-btn:hover { background: rgba(245, 239, 224, 0.22); }
-.share-btn:active { transform: scale(0.93); }
+.share-btn:hover { background: rgba(245, 239, 224, 0.26); }
+.share-btn:active { transform: scale(0.96); }
 .share-btn:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
-.share-btn__icon { width: 16px; height: 16px; }
+.share-btn__icon { width: 19px; height: 19px; flex: 0 0 auto; }
+.share-btn__label { line-height: 1; }
 
 /* Transient "Link copied" toast — only used as the Web Share fallback. */
 .share-toast {
