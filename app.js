@@ -812,10 +812,10 @@ function renderHome(app) {
 }
 
 // --- Leaderboard view ------------------------------------------------
-// Full division ladder from data/standings.json. Our row is highlighted;
-// reached from the home record card's 4th cell.
+// Full division ladder from data/standings.json. Presented neutrally (no back
+// link, no highlight of our own row) so it works as a shareable entry point for
+// any team in the division. Reached from the home record card's 4th cell.
 function renderStandings(app, from) {
-  const back = backTargetFor(from, "", "Back to Home");
   const standings = state.standings;
   const teams = standings?.teams || [];
 
@@ -823,9 +823,7 @@ function renderStandings(app, from) {
     const msg = navigator.onLine
       ? "Leaderboard not available yet."
       : "Currently offline — Please check your connection";
-    app.innerHTML = `
-      <a class="back" href="#${escapeHtml(back.hash)}">‹ ${escapeHtml(back.label)}</a>
-      <div class="loading">${msg}</div>`;
+    app.innerHTML = `<div class="loading">${msg}</div>`;
     return;
   }
 
@@ -835,9 +833,9 @@ function renderStandings(app, from) {
     // is redirected to home by renderTeam, so our row opens our dashboard.
     const target = `team/${t.team_id}`;
     return `
-      <tr class="ladder-row${t.is_us ? " ladder-row--us" : ""}" data-target-hash="${escapeHtml(target)}">
+      <tr class="ladder-row" data-target-hash="${escapeHtml(target)}">
         <td class="num ladder-pos">${t.position}</td>
-        <td class="ladder-team">${escapeHtml(t.name)}${t.is_us ? ' <span class="ladder-you">You</span>' : ""}</td>
+        <td class="ladder-team">${escapeHtml(t.name)}</td>
         <td class="num">${t.played}</td>
         <td class="num">${t.won}</td>
         <td class="num">${t.lost}</td>
@@ -850,8 +848,6 @@ function renderStandings(app, from) {
   }).join("");
 
   app.innerHTML = `
-    <a class="back" href="#${escapeHtml(back.hash)}">‹ ${escapeHtml(back.label)}</a>
-
     <div class="table-card">
       <table class="table table--ladder">
         <thead>

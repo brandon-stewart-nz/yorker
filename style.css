@@ -1631,29 +1631,6 @@ a.record__cell--link .record__num { color: var(--gold-deep); }
 }
 .table--ladder .ladder-team { font-weight: 600; color: var(--teal-deep); }
 
-/* Our row stands out — gold wash + a left accent bar. */
-.table--ladder tr.ladder-row--us td {
-  background: rgba(229, 179, 64, 0.16);
-}
-.table--ladder tr.ladder-row--us .ladder-pos {
-  box-shadow: inset 3px 0 0 var(--gold);
-}
-.table--ladder tr.ladder-row--us .ladder-team { color: var(--teal-deep); }
-.ladder-you {
-  display: inline-block;
-  margin-left: 6px;
-  padding: 1px 7px;
-  border-radius: 999px;
-  background: var(--gold);
-  color: var(--teal-deep);
-  font-family: var(--font-display);
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  vertical-align: middle;
-}
-
 @media (max-width: 560px) {
   .table--ladder .dk-only { display: none; }
 }
@@ -1661,11 +1638,9 @@ a.record__cell--link .record__num { color: var(--gold-deep); }
 /* --- Division team pages (Phase 2) --------------------------------- */
 
 /* Leaderboard rows are whole-row tap targets (no inline text links) — matches
-   the result-card / player-row pattern. Only rows with a real destination get
-   the pointer + hover; our own row (empty target) stays inert. */
+   the result-card / player-row pattern. Every row links to its team page. */
 .table--ladder tbody tr.ladder-row:not([data-target-hash=""]) { cursor: pointer; }
 .table--ladder tbody tr.ladder-row:not([data-target-hash=""]):hover td { background: var(--cream); }
-.table--ladder tbody tr.ladder-row--us:hover td { background: rgba(229, 179, 64, 0.16); }
 
 .empty-note {
   color: var(--muted);
