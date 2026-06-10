@@ -1045,6 +1045,9 @@ function teamResultCardHtml(f, teamId) {
   const us = teamSideOf(f, teamId).skins;
   const opp = teamOppOf(f, teamId);
   const them = opp.skins;
+  // "Not in Div" chip when this team played someone no longer in the division.
+  const oppId = opp.side.id;
+  const outOfDiv = f.played && oppId && !isDivisionTeam(oppId);
   let badge = "", cls = "result-card--upcoming";
   if (f.played) {
     if (us > them) { badge = `<span class="badge badge--win">Win</span>`; cls = "result-card--win"; }
@@ -1059,7 +1062,7 @@ function teamResultCardHtml(f, teamId) {
   return `
     <div class="result-card ${cls}" data-fixture-id="${f.fixture_id ?? ""}">
       <div>
-        <div class="result-card__date">${escapeHtml(f.date_str ?? "")}${badge}</div>
+        <div class="result-card__date">${escapeHtml(f.date_str ?? "")}${badge}${outOfDiv ? `<span class="badge badge--neutral">Not in Div</span>` : ""}</div>
         <div class="result-card__opp">${escapeHtml(opp.side.display)}</div>
         <div class="result-card__meta">${escapeHtml(formatTime12(f.time))} · ${escapeHtml(f.court)}${f.is_grading ? " · Grading" : ""}</div>
       </div>
@@ -1415,6 +1418,13 @@ async function renderNeutralMatch(app, fid, from) {
     ? dt.toLocaleDateString("en-NZ", { weekday: "short", day: "numeric", month: "long" })
     : (fixture?.date_str || detail.date_str || "");
 
+  // A "Team not in division" note above whichever side(s) aren't current
+  // division teams. Only when ids came from a real fixture — in the no-fixture
+  // deeplink fallback ids are resolved from scoresheet names (often captain
+  // nicknames) and would mis-flag a genuine side.
+  const homeNote = fixture && !isDivisionTeam(home.id) ? `<p class="match-note">Team not in division</p>` : "";
+  const awayNote = fixture && !isDivisionTeam(away.id) ? `<p class="match-note">Team not in division</p>` : "";
+
   app.innerHTML = `
     ${backHtml}
     <div class="detail-header">
@@ -1444,9 +1454,9 @@ async function renderNeutralMatch(app, fid, from) {
       </div>
     </div>
 
-    ${homeInn ? `<h3 class="subhead">${escapeHtml(home.name)} batting</h3>${battingTableHtml(homeInn.batters, { opponent: true, linkHref: homeHref })}` : ""}
+    ${homeInn ? `${homeNote}<h3 class="subhead">${escapeHtml(home.name)} batting</h3>${battingTableHtml(homeInn.batters, { opponent: true, linkHref: homeHref })}` : ""}
     ${awayInn ? `<h3 class="subhead">${escapeHtml(home.name)} bowling</h3>${bowlingTableHtml(awayInn.bowlers, { opponent: true, linkHref: homeHref })}` : ""}
-    ${awayInn ? `<h3 class="subhead">${escapeHtml(away.name)} batting</h3>${battingTableHtml(awayInn.batters, { opponent: true, linkHref: awayHref })}` : ""}
+    ${awayInn ? `${awayNote}<h3 class="subhead">${escapeHtml(away.name)} batting</h3>${battingTableHtml(awayInn.batters, { opponent: true, linkHref: awayHref })}` : ""}
     ${homeInn ? `<h3 class="subhead">${escapeHtml(away.name)} bowling</h3>${bowlingTableHtml(homeInn.bowlers, { opponent: true, linkHref: awayHref })}` : ""}
   `;
   wireRowNavigation(app);
@@ -1866,6 +1876,10 @@ function resultCardHtml(f) {
   const us = isUs ? f.home_skins : f.away_skins;
   const them = isUs ? f.away_skins : f.home_skins;
   const opponent = opponentName(f);
+  // A played game against a team that isn't currently in our division (a grading
+  // foe, or a since-relegated side) gets a neutral "Not in Div" chip.
+  const oppId = isUs ? f.away.id : f.home.id;
+  const outOfDiv = f.played && oppId && !isDivisionTeam(oppId);
 
   let badge = "", cls = "result-card--upcoming";
   if (f.played) {
@@ -1883,7 +1897,7 @@ function resultCardHtml(f) {
   return `
     <div class="result-card ${cls}" data-fixture-id="${f.fixture_id ?? ""}">
       <div>
-        <div class="result-card__date">${escapeHtml(f.date_str ?? "")}${badge}</div>
+        <div class="result-card__date">${escapeHtml(f.date_str ?? "")}${badge}${outOfDiv ? `<span class="badge badge--neutral">Not in Div</span>` : ""}</div>
         <div class="result-card__opp">${escapeHtml(opponent)}</div>
         <div class="result-card__meta">${escapeHtml(formatTime12(f.time))} · ${escapeHtml(f.court)}${f.is_grading ? " · Grading" : ""}</div>
       </div>
@@ -2172,36 +2186,43 @@ async function renderMatch(app, fid, from) {
 
   const fbWon = fbSummary && oppSummary && fbSummary.total > oppSummary.total;
   const fbLost = fbSummary && oppSummary && fbSummary.total < oppSummary.total;
-  const resultBadge = fbWon
-    ? `<span class="badge badge--win">Win</span>`
-    : fbLost ? `<span class="badge badge--loss">Loss</span>` : `<span class="badge badge--loss">Draw</span>`;
   const margin = fbSummary?.total != null && oppSummary?.total != null
     ? Math.abs(fbSummary.total - oppSummary.total)
     : null;
+  const oppInitial = ((oppName || "").match(/[A-Za-z]/) || ["?"])[0].toUpperCase();
+  const captain = state.schedule?.games?.[iso]?.captain || "";
+  const oppOutOfDiv = oppTeamId && !isDivisionTeam(oppTeamId);
+
+  // Perspective. When this scorecard is reached from ANOTHER division team's
+  // pages (from=team/{id}), present it from THEIR side — their name first, their
+  // Win/Loss verdict, their innings first — and hide our private planning
+  // overlays (POTD, reserves/away, captain), which are just for us. From our own
+  // contexts (home / our player / our upcoming) the `from` never starts with
+  // "team/", so `flip` is false and the page renders exactly as before.
+  const fromTeamId = (from || "").startsWith("team/") ? parseInt(from.split("/")[1], 10) : null;
+  const flip = fromTeamId != null && fromTeamId !== TEAM_ID && isDivisionTeam(fromTeamId);
+  const tableCaptain = flip ? "" : captain;
+
+  const leadName  = flip ? oppName : TEAM_DISPLAY;
+  const trailName = flip ? TEAM_DISPLAY : oppName;
+  const leadSum   = flip ? oppSummary : fbSummary;
+  const trailSum  = flip ? fbSummary  : oppSummary;
+  const leadWon   = leadSum && trailSum && leadSum.total > trailSum.total;
+  const leadLost  = leadSum && trailSum && leadSum.total < trailSum.total;
+  const resultBadge = leadWon
+    ? `<span class="badge badge--win">Win</span>`
+    : leadLost ? `<span class="badge badge--loss">Loss</span>` : `<span class="badge badge--loss">Draw</span>`;
   const resultText = margin == null
     ? ""
     : margin === 0
       ? "Match drawn"
-      : fbWon
-        ? `${TEAM_DISPLAY} won by ${margin} run${margin === 1 ? "" : "s"}`
-        : `${TEAM_DISPLAY} lost by ${margin} run${margin === 1 ? "" : "s"}`;
-  const oppInitial = ((oppName || "").match(/[A-Za-z]/) || ["?"])[0].toUpperCase();
+      : leadWon
+        ? `${leadName} won by ${margin} run${margin === 1 ? "" : "s"}`
+        : `${leadName} lost by ${margin} run${margin === 1 ? "" : "s"}`;
 
-  app.innerHTML = `
-    ${backHtml}
-    <div class="detail-header">
-      <div class="detail-header__main">
-        <div class="detail-header__avatar">vs</div>
-        <div>
-          <div class="detail-header__name">${escapeHtml(TEAM_DISPLAY)} vs ${escapeHtml(oppName)} ${resultBadge}</div>
-          <div class="detail-header__sub">${escapeHtml(dateLabel)} · ${escapeHtml(formatTime12(fixture?.time ?? ""))} · ${escapeHtml(fixture?.court ?? "")}${fixture?.is_grading ? " · Grading" : ""}</div>
-          ${state.schedule?.games?.[iso]?.captain ? `<div class="detail-header__sub"><strong>Captain:</strong> ${escapeHtml(resolveFullName(state.schedule.games[iso].captain))}</div>` : ""}
-        </div>
-      </div>
-    </div>
-
-    <div class="match-top">
-      <div class="match-summary">
+  // Each summary row carries its own crest; --lost marks the side that lost
+  // (independent of display order, so the flip just reorders the two rows).
+  const usRow = `
         <div class="match-summary__row ${fbLost ? "match-summary__row--lost" : ""}">
           <div class="match-summary__crest match-summary__crest--us" aria-hidden="true">
             <svg viewBox="0 0 64 64">
@@ -2210,37 +2231,59 @@ async function renderMatch(app, fid, from) {
           </div>
           <div class="match-summary__name">${escapeHtml(TEAM_DISPLAY)}</div>
           <div class="match-summary__score">${fbSummary?.total ?? "—"}</div>
-        </div>
-        <div class="match-summary__divider"><span class="match-summary__vs">vs</span></div>
+        </div>`;
+  const oppRow = `
         <div class="match-summary__row ${fbWon ? "match-summary__row--lost" : ""}">
           <div class="match-summary__crest" aria-hidden="true">${escapeHtml(oppInitial)}</div>
           <div class="match-summary__name">${escapeHtml(oppName)}</div>
           <div class="match-summary__score">${oppSummary?.total ?? "—"}</div>
+        </div>`;
+
+  // Our batting/bowling block — canonical names (NAME_OVERRIDES) + links to our
+  // own player pages. Always rendered the same way regardless of perspective.
+  const usTables = fbInnings ? `
+      <h3 class="subhead">${escapeHtml(TEAM_DISPLAY)} batting</h3>
+      ${battingTableHtml(fbInnings.batters, { linkPlayers: true, matchId: fid, captain: tableCaptain })}
+      <h3 class="subhead">${escapeHtml(TEAM_DISPLAY)} bowling</h3>
+      ${oppInnings ? bowlingTableHtml(oppInnings.bowlers, { linkPlayers: true, matchId: fid, captain: tableCaptain }) : "<p>No bowling data.</p>"}
+    ` : "";
+  // Opponent block — verbatim names; rows link to their pages only if they're a
+  // division team; a single "Team not in division" note sits above their two
+  // tables when they're not.
+  const oppNote = oppOutOfDiv ? `<p class="match-note">Team not in division</p>` : "";
+  const oppTables = (oppInnings || fbInnings) ? `
+      ${oppNote}
+      ${oppInnings ? `<h3 class="subhead">${escapeHtml(oppName)} batting</h3>${battingTableHtml(oppInnings.batters, { opponent: true, linkHref: oppHref })}` : ""}
+      ${fbInnings ? `<h3 class="subhead">${escapeHtml(oppName)} bowling</h3>${bowlingTableHtml(fbInnings.bowlers, { opponent: true, linkHref: oppHref })}` : ""}
+    ` : "";
+
+  app.innerHTML = `
+    ${backHtml}
+    <div class="detail-header">
+      <div class="detail-header__main">
+        <div class="detail-header__avatar">vs</div>
+        <div>
+          <div class="detail-header__name">${escapeHtml(leadName)} vs ${escapeHtml(trailName)} ${resultBadge}</div>
+          <div class="detail-header__sub">${escapeHtml(dateLabel)} · ${escapeHtml(formatTime12(fixture?.time ?? ""))} · ${escapeHtml(fixture?.court ?? "")}${fixture?.is_grading ? " · Grading" : ""}</div>
+          ${(!flip && captain) ? `<div class="detail-header__sub"><strong>Captain:</strong> ${escapeHtml(resolveFullName(captain))}</div>` : ""}
         </div>
+      </div>
+    </div>
+
+    <div class="match-top">
+      <div class="match-summary">
+        ${flip ? oppRow : usRow}
+        <div class="match-summary__divider"><span class="match-summary__vs">vs</span></div>
+        ${flip ? usRow : oppRow}
         ${resultText ? `<div class="match-summary__result">${escapeHtml(resultText)}</div>` : ""}
       </div>
 
-      ${potdCardHtml(iso, fbInnings, oppInnings, fid)}
+      ${flip ? "" : potdCardHtml(iso, fbInnings, oppInnings, fid)}
     </div>
 
-    ${lineupCardHtml(iso)}
+    ${flip ? "" : lineupCardHtml(iso)}
 
-    ${fbInnings ? `
-      <h3 class="subhead">${escapeHtml(TEAM_DISPLAY)} batting</h3>
-      ${battingTableHtml(fbInnings.batters, { linkPlayers: true, matchId: fid, captain: state.schedule?.games?.[iso]?.captain || "" })}
-      <h3 class="subhead">${escapeHtml(TEAM_DISPLAY)} bowling</h3>
-      ${oppInnings ? bowlingTableHtml(oppInnings.bowlers, { linkPlayers: true, matchId: fid, captain: state.schedule?.games?.[iso]?.captain || "" }) : "<p>No bowling data.</p>"}
-    ` : ""}
-
-    ${oppInnings ? `
-      <h3 class="subhead">${escapeHtml(oppName)} batting</h3>
-      ${battingTableHtml(oppInnings.batters, { opponent: true, linkHref: oppHref })}
-    ` : ""}
-
-    ${fbInnings ? `
-      <h3 class="subhead">${escapeHtml(oppName)} bowling</h3>
-      ${bowlingTableHtml(fbInnings.bowlers, { opponent: true, linkHref: oppHref })}
-    ` : ""}
+    ${flip ? `${oppTables}${usTables}` : `${usTables}${oppTables}`}
   `;
 
   wireRowNavigation(app);

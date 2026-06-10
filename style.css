@@ -799,6 +799,15 @@ button.record__cell[data-active="true"] .record__label {
 .badge--win { background: var(--green); color: #fff; }
 .badge--loss { background: #E7E4DA; color: var(--ink-soft); }
 .badge--upcoming { background: var(--gold); color: var(--teal-deep); }
+/* Neutral metadata chip (e.g. "Not in Div") — a calm outline so it reads as a
+   qualifier beside the Win/Loss verdict, never as a result of its own. */
+.badge--neutral {
+  background: transparent;
+  color: var(--muted);
+  border: 1px solid var(--line);
+  padding: 4px 11px;
+  font-weight: 600;
+}
 
 /* --- Squad / player grid ------------------------------------------- */
 
@@ -1647,6 +1656,15 @@ a.record__cell--link .record__num { color: var(--gold-deep); }
   font-size: 14px;
   padding: 8px 2px;
 }
+
+/* Subtle one-line qualifier above an out-of-division team's stat tables on a
+   scorecard. Tucks right above the team's first subhead. */
+.match-note {
+  color: var(--muted);
+  font-size: 13px;
+  margin: 22px 0 0;
+}
+.match-note + .subhead { margin-top: 4px; }
 
 /* --- Pull-to-refresh indicator (installed PWA only) ---
    Position + opacity are driven inline by app.js (initPullToRefresh); these
