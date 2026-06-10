@@ -378,10 +378,8 @@ async function init() {
   // the log.
   recordActivation();
 
-  // Pull-to-refresh gesture (installed PWA only) + the live-score poll. The
-  // poll self-gates: it does zero network outside the game window / offline /
-  // when the tab is hidden, so it's safe to run unconditionally.
-  initPullToRefresh();
+  // Live-score poll. It self-gates: zero network outside the game window /
+  // offline / when the tab is hidden, so it's safe to run unconditionally.
   setInterval(pollLiveScore, LIVE_POLL_MS);
 }
 
@@ -395,8 +393,8 @@ async function refresh(skipScroll) {
   }
 }
 
-// Refresh now, ignoring the 30s throttle — for the pull-to-refresh gesture and
-// the live-score poll, where the whole point is "give me the latest right now".
+// Refresh now, ignoring the 30s throttle — for the live-score poll, where the
+// whole point is "give me the latest right now".
 function forceRefresh(skipScroll) {
   lastFetchAt = 0;
   return refresh(skipScroll);
@@ -603,82 +601,6 @@ async function pollLiveScore() {
     if (live.fixture_id != null) state.matchCache.delete(live.fixture_id);
     forceRefresh(true);
   }
-}
-
-// --- Pull-to-refresh (installed PWA only) ------------------------------
-// A standalone PWA has no native pull-to-refresh, so add our own: pull down
-// from the top to fetch the latest scores. In a normal browser tab the
-// browser's own pull-to-refresh (a full reload) already does this, so we only
-// wire ours up when running standalone — no double gesture.
-function isStandaloneDisplay() {
-  return window.matchMedia("(display-mode: standalone)").matches
-    || window.navigator.standalone === true
-    || IS_NATIVE_APP;
-}
-
-function initPullToRefresh() {
-  const pane = document.querySelector(".scroll-pane");
-  if (!pane || !isStandaloneDisplay() || pane.dataset.ptrWired) return;
-  pane.dataset.ptrWired = "1";
-
-  const THRESHOLD = 64;     // px of (damped) pull past which a release refreshes
-  const MAX = 96;           // px the damped pull is capped at
-  const HIDDEN = -52;       // indicator's resting offset, tucked above the header
-
-  const indicator = document.createElement("div");
-  indicator.className = "ptr-indicator";
-  const spinner = document.createElement("div");
-  spinner.className = "ptr-spinner";
-  spinner.setAttribute("aria-hidden", "true");
-  indicator.appendChild(spinner);
-  document.body.appendChild(indicator);
-
-  let startY = 0, pulling = false, damped = 0, refreshing = false;
-
-  function setPull(px, animate) {
-    indicator.style.transition = animate
-      ? "transform .2s ease, opacity .2s ease" : "none";
-    indicator.style.transform = `translate(-50%, ${px}px)`;
-    indicator.style.opacity = px > HIDDEN + 8 ? "1" : "0";
-  }
-  setPull(HIDDEN, false);
-
-  pane.addEventListener("touchstart", (e) => {
-    if (refreshing || pane.scrollTop > 0 || e.touches.length !== 1) {
-      pulling = false;
-      return;
-    }
-    startY = e.touches[0].clientY;
-    pulling = true;
-    damped = 0;
-  }, { passive: true });
-
-  pane.addEventListener("touchmove", (e) => {
-    if (!pulling) return;
-    const dy = e.touches[0].clientY - startY;
-    if (dy <= 0 || pane.scrollTop > 0) { pulling = false; setPull(HIDDEN, true); return; }
-    e.preventDefault();                        // take over the gesture from the top
-    damped = Math.min(dy * 0.5, MAX);          // rubber-band resistance
-    setPull(HIDDEN + damped, false);
-    indicator.classList.toggle("ptr-indicator--ready", damped >= THRESHOLD);
-  }, { passive: false });
-
-  async function release() {
-    if (!pulling) return;
-    pulling = false;
-    if (damped >= THRESHOLD) {
-      refreshing = true;
-      indicator.classList.add("ptr-indicator--refreshing");
-      indicator.classList.remove("ptr-indicator--ready");
-      setPull(HIDDEN + 60, true);
-      try { await forceRefresh(); } catch {}
-      refreshing = false;
-      indicator.classList.remove("ptr-indicator--refreshing");
-    }
-    setPull(HIDDEN, true);
-  }
-  pane.addEventListener("touchend", release, { passive: true });
-  pane.addEventListener("touchcancel", release, { passive: true });
 }
 
 // The site-wide header doubles as the team banner: it shows "Blazing Firebirds"
