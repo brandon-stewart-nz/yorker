@@ -73,6 +73,18 @@ body {
      is the pre-dvh fallback. */
   height: 100dvh;
   overflow: hidden;
+  /* App-like feel: text isn't selectable anywhere, so tapping/long-pressing
+     never highlights text or pops the iOS copy menu. Selection and tapping are
+     independent — every link, button and tap target still works exactly the
+     same (they're click-driven). Inputs are re-enabled below. */
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+}
+/* Keep any text field editable/selectable (none today, but future-proof). */
+input, textarea, [contenteditable="true"] {
+  -webkit-user-select: text;
+  user-select: text;
 }
 
 /* Installed standalone PWA only: fill the full physical screen so the body's
