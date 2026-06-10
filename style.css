@@ -1698,6 +1698,11 @@ a.record__cell--link .record__num { color: var(--gold-deep); }
    rows are tapped rather than clicked. */
 .table.table--ladder td { padding-top: 15px; padding-bottom: 15px; }
 
+/* Larger, more legible leaderboard text (the base 12px on mobile was too small
+   for older readers). */
+.table.table--ladder { font-size: 16px; }
+.table.table--ladder th { font-size: 12px; }
+
 @media (max-width: 560px) {
   .table--ladder .dk-only { display: none; }
   .table.table--ladder td { padding-top: 19px; padding-bottom: 19px; }
