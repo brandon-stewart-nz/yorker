@@ -181,7 +181,7 @@ a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 6px;
+  gap: 3px;
   height: 36px;
   flex: 0 0 auto;
   padding: 0 15px 0 12px;
@@ -202,7 +202,9 @@ a {
 .share-btn:hover { background: var(--gold-bright); }
 .share-btn:active { transform: scale(0.96); }
 .share-btn:focus-visible { outline: 2px solid var(--cream); outline-offset: 2px; }
-.share-btn__icon { width: 19px; height: 19px; flex: 0 0 auto; }
+/* The glyph doesn't reach the SVG's right edge, so a small negative margin pulls
+   the label in to a tight, even gap. */
+.share-btn__icon { width: 24px; height: 24px; flex: 0 0 auto; margin-right: -4px; }
 .share-btn__label { line-height: 1; }
 
 /* Transient "Link copied" toast — only used as the Web Share fallback. */
