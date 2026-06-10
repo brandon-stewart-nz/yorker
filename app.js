@@ -662,21 +662,29 @@ function setBrand(name, hash) {
   }
 }
 
+// Pull a division team id out of a "team/{id}/…" path or breadcrumb (null if it
+// isn't one, or the id isn't a real other-division team).
+function teamContextId(s) {
+  if (!s || !s.startsWith("team/")) return null;
+  const id = parseInt(s.split("/")[1], 10);
+  return Number.isNaN(id) ? null : id;
+}
+
 // Resolve the name + home target the header should show for the current route.
 // The banner carries the page's own title, the same way the team pages moved
 // their name into it: "Leaderboard / Division 8" on the ladder (its in-page
 // title is dropped), a division team's own name + team home on its pages
-// (team landing / player / upcoming), otherwise us + our home.
-function brandTarget(path) {
+// (team landing / player / upcoming), otherwise us + our home. A match/player
+// page reached FROM a team (the `from` breadcrumb) inherits that team's banner,
+// so a scorecard opened from another team's page stays badged as that team.
+function brandTarget(path, from) {
   if (path === "standings") {
     const div = state.standings?.division_name || "Division";
     return { name: `Leaderboard ${div}`, hash: "#standings" };
   }
-  if (path.startsWith("team/")) {
-    const tid = parseInt(path.split("/")[1], 10);
-    if (tid !== TEAM_ID && isDivisionTeam(tid)) {
-      return { name: divTeamName(tid), hash: `#team/${tid}` };
-    }
+  const ctx = teamContextId(path) ?? teamContextId(from);
+  if (ctx != null && ctx !== TEAM_ID && isDivisionTeam(ctx)) {
+    return { name: divTeamName(ctx), hash: `#team/${ctx}` };
   }
   return { name: "Blazing Firebirds", hash: "#" };
 }
@@ -684,7 +692,7 @@ function brandTarget(path) {
 function render(skipScroll) {
   clearTimeout(heroFlipTimer);  // re-armed by the home / upcoming view when a hero is shown
   const { path, from } = parseHash();
-  const bt = brandTarget(path);
+  const bt = brandTarget(path, from);
   setBrand(bt.name, bt.hash);
   const app = document.getElementById("app");
   if (!skipScroll) {
