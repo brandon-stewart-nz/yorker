@@ -342,6 +342,7 @@ async function init() {
   // Wire the header share button once — it reads the current route at click
   // time, so it always shares whatever page the user is on.
   wireShareButton();
+  wireExternalLinksForIosPwa();
 
   // Paint last-known data from localStorage immediately so the dashboard
   // doesn't sit on a "loading" placeholder while the network resolves.
@@ -461,6 +462,19 @@ function updateMetaStrip() {
 function wireShareButton() {
   const btn = document.getElementById("share-btn");
   if (btn) btn.addEventListener("click", shareCurrentPage);
+}
+
+// Installed iOS home-screen app ONLY: external links (e.g. the footer's "Hutt
+// Indoor Sports") normally open in iOS's in-app Safari overlay. Rewrite them to
+// the (undocumented) x-safari- scheme so iOS opens them in the full Safari app —
+// a genuinely separate window. Gated on navigator.standalone, which is true only
+// in an iOS standalone PWA, so the website, Android and desktop are untouched.
+function wireExternalLinksForIosPwa() {
+  if (navigator.standalone !== true) return;
+  document.querySelectorAll('a[target="_blank"][href^="http"]').forEach((a) => {
+    a.setAttribute("href", "x-safari-" + a.getAttribute("href"));
+    a.removeAttribute("target");   // the scheme itself does the break-out
+  });
 }
 
 // Share the page the user is currently on. Title is the page's own banner name
