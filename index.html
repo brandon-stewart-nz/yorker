@@ -9,6 +9,18 @@
 
   <!-- PWA -->
   <link rel="manifest" href="manifest.webmanifest">
+  <script>
+    /* When opened via a shared install link (?team=… / ?view=standings), point
+       the manifest at the matching per-context file BEFORE the browser reads it,
+       so "Add to Home Screen" installs an icon that opens to that team /
+       leaderboard. app.js keeps the manifest in sync during in-app navigation. */
+    (function () {
+      var p = new URLSearchParams(location.search), t = p.get("team"), v = p.get("view"), href = null;
+      if (t && /^\d+$/.test(t)) href = "manifest-team-" + t + ".webmanifest";
+      else if (v === "standings") href = "manifest-standings.webmanifest";
+      if (href) { var l = document.querySelector('link[rel="manifest"]'); if (l) l.setAttribute("href", href); }
+    })();
+  </script>
   <link rel="icon" type="image/svg+xml" href="icon.svg">
   <link rel="apple-touch-icon" href="icon.svg">
   <meta name="apple-mobile-web-app-capable" content="yes">

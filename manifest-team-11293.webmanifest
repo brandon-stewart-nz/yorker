@@ -2,14 +2,16 @@
   "name": "Beamer",
   "short_name": "Beamer",
   "description": "Auto-updating dashboard for Vernon's indoor cricket team",
-  "start_url": "./",
-  "id": "./",
+  "start_url": "./?team=11293",
+  "id": "./?team=11293",
   "scope": "./",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#FBF9F3",
   "theme_color": "#1A4D58",
-  "categories": ["sports"],
+  "categories": [
+    "sports"
+  ],
   "icons": [
     {
       "src": "icon.svg",
