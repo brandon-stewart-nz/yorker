@@ -667,11 +667,53 @@ function brandTarget(path, from) {
   return { name: "Blazing Firebirds", hash: "#" };
 }
 
+// --- Context-aware "Add to Home Screen" ------------------------------
+// The installed icon should open to whatever the user was looking at: on a
+// division team's pages (home, results, a player) → that team's home; on the
+// leaderboard → the leaderboard; otherwise our own home. The hash that the
+// installed PWA should start at, for the current route:
+function installStartHash(path, from) {
+  if (path === "standings") return "#standings";
+  const ctx = teamContextId(path) ?? teamContextId(from);
+  if (ctx != null && ctx !== TEAM_ID && isDivisionTeam(ctx)) return `#team/${ctx}`;
+  return "";  // our own home
+}
+
+// We can't ship a different static manifest per page, so regenerate it as a blob
+// with the right ABSOLUTE start_url and re-point <link rel=manifest> at it on
+// every route. Android/Chromium "Add to Home Screen" reads this start_url; iOS
+// 16.4+ honours it too (older iOS falls back to the current URL — still that
+// team's content). Mirrors manifest.webmanifest — keep the two in sync.
+let _manifestBlobUrl = null;
+function updateInstallManifest(path, from) {
+  const link = document.querySelector('link[rel="manifest"]');
+  if (!link) return;
+  const base = location.origin + location.pathname;   // e.g. https://…/blazing-firebirds/
+  const manifest = {
+    name: "Beamer",
+    short_name: "Beamer",
+    description: "Auto-updating dashboard for Vernon's indoor cricket team",
+    start_url: base + installStartHash(path, from),
+    scope: base,
+    display: "standalone",
+    orientation: "portrait",
+    background_color: "#FBF9F3",
+    theme_color: "#1A4D58",
+    categories: ["sports"],
+    icons: [{ src: base + "icon.svg", sizes: "any", type: "image/svg+xml", purpose: "any maskable" }],
+  };
+  const url = URL.createObjectURL(new Blob([JSON.stringify(manifest)], { type: "application/manifest+json" }));
+  link.href = url;
+  if (_manifestBlobUrl) URL.revokeObjectURL(_manifestBlobUrl);
+  _manifestBlobUrl = url;
+}
+
 function render(skipScroll) {
   clearTimeout(heroFlipTimer);  // re-armed by the home / upcoming view when a hero is shown
   const { path, from } = parseHash();
   const bt = brandTarget(path, from);
   setBrand(bt.name, bt.hash);
+  updateInstallManifest(path, from);
   const app = document.getElementById("app");
   if (!skipScroll) {
     // The app-shell .scroll-pane is the single scroller; scroll it to the top
