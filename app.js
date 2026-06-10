@@ -274,14 +274,41 @@ function pageTitleFor(path) {
   return path;
 }
 
+function gaSlug(s) {
+  return String(s).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
+}
+
 // Slugified team name for GA paths ("Anderson Aces" → "anderson-aces");
 // null until the name is resolvable (standings or the team's own JSON).
 function teamNameSlug(teamId) {
   const name = state.standings?.teams?.find(x => x.team_id === teamId)?.name
     || state.divisionTeams.get(teamId)?.team?.name;
-  if (!name) return null;
-  const slug = String(name).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
-  return slug || null;
+  return (name && gaSlug(name)) || null;
+}
+
+// Human-readable GA identity for a fixture page: path slug
+// "blazing-firebirds-vs-renegades-2026-05-16" + matching title
+// "Blazing Firebirds vs Renegades — 16 May 2026". Teams meet more than once
+// a season, so the date keeps each meeting its own GA row. kind picks the
+// path prefix: "match", "upcoming", or "team-upcoming" (which nests under
+// /team/{name}/upcoming using teamId). Returns null when the team names
+// aren't resolvable — the caller's trackPageView then falls back to the
+// raw /match/{fid} route.
+function gaFixtureOverride(fixture, kind, teamId) {
+  const h = fixture?.home?.display, a = fixture?.away?.display;
+  if (!h || !a) return null;
+  const dt = parseSpawtzDate(fixture.date_str, fixture.time);
+  const iso = dt
+    ? `${dt.getFullYear()}-${String(dt.getMonth() + 1).padStart(2, "0")}-${String(dt.getDate()).padStart(2, "0")}`
+    : "";
+  const slug = `${gaSlug(h)}-vs-${gaSlug(a)}${iso ? `-${iso}` : ""}`;
+  const title = `${h} vs ${a}` + (dt
+    ? ` — ${dt.toLocaleDateString("en-NZ", { day: "numeric", month: "short", year: "numeric" })}`
+    : "");
+  const prefix = kind === "team-upcoming"
+    ? `/team/${teamNameSlug(teamId) ?? teamId}/upcoming`
+    : `/${kind}`;
+  return { path: `${prefix}/${slug}`, title };
 }
 
 // The path GA reports: the route as-is, except team routes swap the opaque
@@ -298,13 +325,13 @@ function gaPagePath(path) {
   return `/${path || "home"}`;
 }
 
-function trackPageView(path) {
+function trackPageView(path, override) {
   const route = path || "home";
   if (route === lastTrackedRoute) return;
   lastTrackedRoute = route;
   trackEvent("page_view", {
-    page_path: gaPagePath(path),
-    page_title: pageTitleFor(path),
+    page_path: override?.path || gaPagePath(path),
+    page_title: override?.title || pageTitleFor(path),
     page_location: window.location.href,
   });
 }
@@ -800,10 +827,11 @@ function brandTarget(path, from) {
 function render(skipScroll) {
   clearTimeout(heroFlipTimer);  // re-armed by the home / upcoming view when a hero is shown
   const { path, from } = parseHash();
-  // Team routes are tracked from their renderers AFTER the team JSON resolves,
-  // so the GA path carries the team name rather than the opaque Spawtz id (on
-  // a cold direct hit the name isn't known yet at route time).
-  if (!path.startsWith("team/")) trackPageView(path);
+  // Team / match / upcoming routes are tracked from their renderers AFTER
+  // their data resolves, so the GA path carries names ("/team/anderson-aces",
+  // "/match/byc-vs-renegades-2026-05-16") rather than opaque Spawtz ids (on
+  // a cold direct hit the names aren't known yet at route time).
+  if (!/^(team|match|upcoming)\//.test(path)) trackPageView(path);
   const bt = brandTarget(path, from);
   setBrand(bt.name, bt.hash);
   const app = document.getElementById("app");
@@ -1406,21 +1434,24 @@ async function renderTeamUpcoming(app, teamId, fid, from) {
   const backHtml = `<a class="back" href="#${escapeHtml(backHash)}">‹ Back to ${escapeHtml(divTeamName(teamId))}</a>`;
   app.innerHTML = `${backHtml}<div class="loading">Loading…</div>`;
   const data = await loadDivisionTeam(teamId);
-  trackPageView(`team/${teamId}/upcoming/${fid}`);
   if (!data) {
+    trackPageView(`team/${teamId}/upcoming/${fid}`);
     const msg = navigator.onLine ? "Fixture not found." : "Currently offline — Please check your connection";
     app.innerHTML = `${backHtml}<div class="loading">${msg}</div>`;
     return;
   }
   const fixture = (data.fixtures || []).find(f => f.fixture_id === fid);
   if (!fixture) {
+    trackPageView(`team/${teamId}/upcoming/${fid}`);
     app.innerHTML = `${backHtml}<div class="loading">Fixture not found.</div>`;
     return;
   }
+  // (Hand-off untracked — the match page records the redirected view.)
   if (fixture.played && fixture.scoresheet_complete) {
     window.location.hash = makeHash(`match/${fid}`, backHash);
     return;
   }
+  trackPageView(`team/${teamId}/upcoming/${fid}`, gaFixtureOverride(fixture, "team-upcoming", teamId));
   const oppName = teamOppOf(fixture, teamId).side.display;
   const dt = parseSpawtzDate(fixture.date_str, fixture.time);
   scheduleHeroFlip(dt);
@@ -1471,6 +1502,7 @@ async function renderNeutralMatch(app, fid, from) {
       detail = await fetchJson(`data/matches/${fid}.json`);
       state.matchCache.set(fid, detail);
     } catch (err) {
+      trackPageView(`match/${fid}`);
       const msg = navigator.onLine ? "Couldn't load match." : "Currently offline — Please check your connection";
       app.innerHTML = `${backHtml}<div class="loading">${msg}</div>`;
       return;
@@ -1517,6 +1549,12 @@ async function renderNeutralMatch(app, fid, from) {
     home = { id: resolveTeamIdByName(hName), name: hName, skins: homeSum?.total };
     away = { id: resolveTeamIdByName(aName), name: aName, skins: awaySum?.total };
   }
+  // Names are display values here (the fixture branch already swapped in the
+  // came-from team first); date rides along only when the fixture is known.
+  trackPageView(`match/${fid}`, gaFixtureOverride({
+    home: { display: home.name }, away: { display: away.name },
+    date_str: fixture?.date_str, time: fixture?.time,
+  }, "match"));
 
   // Player rows are tappable only for teams in OUR division (out-of-division
   // grading opponents have no pages). Returns null → no row link.
@@ -1718,15 +1756,18 @@ async function renderUpcoming(app, fid, from) {
     || (state.fixtures?.next_game?.fixture_id === fid ? state.fixtures.next_game : null);
 
   if (!fixture) {
+    trackPageView(`upcoming/${fid}`);
     app.innerHTML = `${backHtml}<div class="loading">Fixture not found.</div>`;
     return;
   }
 
   // Once the scorecard has real game data, hand off to the match page.
+  // (Untracked — the match page records the redirected view.)
   if (fixture.played && fixture.scoresheet_complete) {
     window.location.hash = makeHash(`match/${fid}`, from);
     return;
   }
+  trackPageView(`upcoming/${fid}`, gaFixtureOverride(fixture, "upcoming"));
 
   const game = applyDemoTiming(fixture);
   const oppName = opponentName(game);
@@ -2255,12 +2296,14 @@ async function renderMatch(app, fid, from) {
   const back = backTargetFor(from, "", "Back to Home");
   const backHtml = `<a class="back" href="#${escapeHtml(back.hash)}">‹ ${escapeHtml(back.label)}</a>`;
   app.innerHTML = `${backHtml}<div class="loading">Loading match…</div>`;
+  const fixture = state.fixtures.fixtures.find(f => f.fixture_id === fid);
   let detail = state.matchCache.get(fid);
   if (!detail) {
     try {
       detail = await fetchJson(`data/matches/${fid}.json`);
       state.matchCache.set(fid, detail);
     } catch (err) {
+      trackPageView(`match/${fid}`, gaFixtureOverride(fixture, "match"));
       const msg = navigator.onLine
         ? "Couldn't load match."
         : "Currently offline — Please check your connection";
@@ -2268,14 +2311,15 @@ async function renderMatch(app, fid, from) {
       return;
     }
   }
-  const fixture = state.fixtures.fixtures.find(f => f.fixture_id === fid);
 
   // Guard: if someone navigates directly to #match/N while the scorecard is still
   // mid-game partial, bounce them back to the upcoming page (planned lineup view).
+  // (Tracked after the guard — the upcoming page records the redirected view.)
   if (fixture && !fixture.scoresheet_complete) {
     window.location.hash = makeHash(`upcoming/${fid}`, from);
     return;
   }
+  trackPageView(`match/${fid}`, gaFixtureOverride(fixture, "match"));
 
   const isUsHome = fixture && fixture.home.id === TEAM_ID;
   const summaries = detail.team_summaries || [];
