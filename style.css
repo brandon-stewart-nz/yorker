@@ -170,11 +170,64 @@ a {
   text-transform: uppercase;
 }
 
+/* Right-side cluster: "updated X ago" + the share button. */
+.header__meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 0 0 auto;
+}
+
 .meta {
   font-size: 12px;
   color: rgba(245, 239, 224, 0.7);
   text-align: right;
   font-variant-numeric: tabular-nums;
+}
+
+/* Site-wide share button — shares whatever page you're currently on. */
+.share-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  flex: 0 0 auto;
+  padding: 0;
+  border-radius: 999px;
+  background: rgba(245, 239, 224, 0.12);
+  border: 1px solid rgba(245, 239, 224, 0.22);
+  color: var(--cream);
+  cursor: pointer;
+  transition: background 0.15s ease, transform 0.1s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+.share-btn:hover { background: rgba(245, 239, 224, 0.22); }
+.share-btn:active { transform: scale(0.93); }
+.share-btn:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+.share-btn__icon { width: 16px; height: 16px; }
+
+/* Transient "Link copied" toast — only used as the Web Share fallback. */
+.share-toast {
+  position: fixed;
+  left: 50%;
+  bottom: calc(28px + env(safe-area-inset-bottom));
+  transform: translate(-50%, 8px);
+  background: var(--teal-deep);
+  color: var(--cream);
+  font-size: 13px;
+  font-weight: 600;
+  padding: 9px 16px;
+  border-radius: 999px;
+  box-shadow: var(--shadow-md);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  z-index: 100;
+}
+.share-toast--show {
+  opacity: 1;
+  transform: translate(-50%, 0);
 }
 
 .meta-pill {

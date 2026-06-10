@@ -338,6 +338,10 @@ window.addEventListener("online", () => {
 });
 
 async function init() {
+  // Wire the header share button once — it reads the current route at click
+  // time, so it always shares whatever page the user is on.
+  wireShareButton();
+
   // Paint last-known data from localStorage immediately so the dashboard
   // doesn't sit on a "loading" placeholder while the network resolves.
   // The fresh fetch follows and overwrites the view within a moment.
@@ -453,6 +457,47 @@ function updateMetaStrip() {
   const dt = new Date(state.team.generated_at_nz);
   meta.textContent = `Updated ${relativeTime(dt)}`;
   meta.title = dt.toLocaleString("en-NZ", { dateStyle: "medium", timeStyle: "short" });
+}
+
+function wireShareButton() {
+  const btn = document.getElementById("share-btn");
+  if (btn) btn.addEventListener("click", shareCurrentPage);
+}
+
+// Share the page the user is currently on. Title is the page's own banner name
+// (the team you're viewing, the leaderboard, or us) so a shared link reads
+// sensibly; the URL is the full deep link (hash route included) so it opens
+// straight to that page. Uses the native share sheet where available, else
+// copies the link to the clipboard, else falls back to a prompt.
+async function shareCurrentPage() {
+  const { path, from } = parseHash();
+  const name = brandTarget(path, from).name || TEAM_DISPLAY;
+  const url = window.location.href;
+  if (navigator.share) {
+    try { await navigator.share({ title: name, text: name, url }); }
+    catch (_) { /* user dismissed the share sheet — not an error */ }
+    return;
+  }
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    try { await navigator.clipboard.writeText(url); flashShareToast("Link copied"); return; }
+    catch (_) { /* fall through to prompt */ }
+  }
+  window.prompt("Copy this link to share:", url);
+}
+
+function flashShareToast(msg) {
+  let t = document.getElementById("share-toast");
+  if (!t) {
+    t = document.createElement("div");
+    t.id = "share-toast";
+    t.className = "share-toast";
+    document.body.appendChild(t);
+  }
+  t.textContent = msg;
+  void t.offsetWidth;               // reflow so a repeat tap re-runs the transition
+  t.classList.add("share-toast--show");
+  clearTimeout(flashShareToast._t);
+  flashShareToast._t = setTimeout(() => t.classList.remove("share-toast--show"), 1800);
 }
 
 function parseHash() {
