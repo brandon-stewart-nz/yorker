@@ -266,11 +266,36 @@ function pageTitleFor(path) {
   if (path.startsWith("upcoming/")) return "Upcoming game";
   if (path.startsWith("team/")) {
     const parts = path.split("/");
-    if (parts[2] === "player") return "Division player";
-    if (parts[2] === "upcoming") return "Division upcoming game";
-    return "Division team";
+    const name = divTeamName(parseInt(parts[1], 10));   // "Team" until resolvable
+    if (parts[2] === "player") return `${name} — player`;
+    if (parts[2] === "upcoming") return `${name} — upcoming game`;
+    return name;
   }
   return path;
+}
+
+// Slugified team name for GA paths ("Anderson Aces" → "anderson-aces");
+// null until the name is resolvable (standings or the team's own JSON).
+function teamNameSlug(teamId) {
+  const name = state.standings?.teams?.find(x => x.team_id === teamId)?.name
+    || state.divisionTeams.get(teamId)?.team?.name;
+  if (!name) return null;
+  const slug = String(name).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
+  return slug || null;
+}
+
+// The path GA reports: the route as-is, except team routes swap the opaque
+// Spawtz team id for the team-name slug (/team/anderson-aces) so GA reports
+// are readable at a glance. The id stays only if the name can't be resolved
+// (offline cold hit on a direct link). The app's real URLs are untouched.
+function gaPagePath(path) {
+  if (path.startsWith("team/")) {
+    const parts = path.split("/");
+    const slug = teamNameSlug(parseInt(parts[1], 10));
+    if (slug) parts[1] = slug;
+    return `/${parts.join("/")}`;
+  }
+  return `/${path || "home"}`;
 }
 
 function trackPageView(path) {
@@ -278,7 +303,7 @@ function trackPageView(path) {
   if (route === lastTrackedRoute) return;
   lastTrackedRoute = route;
   trackEvent("page_view", {
-    page_path: `/${route}`,
+    page_path: gaPagePath(path),
     page_title: pageTitleFor(path),
     page_location: window.location.href,
   });
@@ -775,7 +800,10 @@ function brandTarget(path, from) {
 function render(skipScroll) {
   clearTimeout(heroFlipTimer);  // re-armed by the home / upcoming view when a hero is shown
   const { path, from } = parseHash();
-  trackPageView(path);
+  // Team routes are tracked from their renderers AFTER the team JSON resolves,
+  // so the GA path carries the team name rather than the opaque Spawtz id (on
+  // a cold direct hit the name isn't known yet at route time).
+  if (!path.startsWith("team/")) trackPageView(path);
   const bt = brandTarget(path, from);
   setBrand(bt.name, bt.hash);
   const app = document.getElementById("app");
@@ -1202,6 +1230,7 @@ async function renderTeam(app, teamId, from) {
   // record card's "Ladder ›" cell (and the banner is the team's own home).
   app.innerHTML = `<div class="loading">Loading team…</div>`;
   const data = await loadDivisionTeam(teamId);
+  trackPageView(`team/${teamId}`);
   if (!data) {
     const msg = navigator.onLine ? "Team not found." : "Currently offline — Please check your connection";
     app.innerHTML = `<div class="loading">${msg}</div>`;
@@ -1268,6 +1297,7 @@ async function renderTeamPlayer(app, teamId, key, from) {
   const backHtml = `<a class="back" href="#${escapeHtml(backHash)}">‹ ${escapeHtml(backLabel)}</a>`;
   app.innerHTML = `${backHtml}<div class="loading">Loading…</div>`;
   const data = await loadDivisionTeam(teamId);
+  trackPageView(`team/${teamId}/player/${key}`);
   if (!data) {
     const msg = navigator.onLine ? "Player not found." : "Currently offline — Please check your connection";
     app.innerHTML = `${backHtml}<div class="loading">${msg}</div>`;
@@ -1376,6 +1406,7 @@ async function renderTeamUpcoming(app, teamId, fid, from) {
   const backHtml = `<a class="back" href="#${escapeHtml(backHash)}">‹ Back to ${escapeHtml(divTeamName(teamId))}</a>`;
   app.innerHTML = `${backHtml}<div class="loading">Loading…</div>`;
   const data = await loadDivisionTeam(teamId);
+  trackPageView(`team/${teamId}/upcoming/${fid}`);
   if (!data) {
     const msg = navigator.onLine ? "Fixture not found." : "Currently offline — Please check your connection";
     app.innerHTML = `${backHtml}<div class="loading">${msg}</div>`;
