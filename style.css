@@ -160,13 +160,24 @@ a {
   color: var(--cream);
   transition: opacity 0.2s ease;
   /* Kill the iOS long-press artifacts on the wordmark: the white rounded
-     tap-highlight box and the link-preview/copy callout that pop on a
-     press-and-hold (the hidden analytics toggle is a long-press, so this is
-     hit every time). Not a hover state — these are touch press-and-hold UI. */
+     "lift platter" iOS drags a link onto, plus the tap-highlight box and the
+     link-preview/copy callout — all of which pop on a press-and-hold (the
+     hidden analytics toggle is a long-press, so this is hit every time). Not a
+     hover state — these are touch press-and-hold UI. The drag-lift is the
+     stubborn one: touch-callout alone doesn't stop it, so user-drag must be
+     disabled on the anchor AND its inner spans. */
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   user-select: none;
+  -webkit-user-drag: none;
+}
+.brand * {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  -webkit-tap-highlight-color: transparent;
 }
 .brand:hover { opacity: 0.85; }
 /* When the banner has no home target (the leaderboard), it's plain text — drop

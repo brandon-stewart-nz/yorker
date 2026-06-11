@@ -652,6 +652,12 @@ function wireAnalyticsOptOut() {
   brand.addEventListener("click", (e) => {
     if (fired) { e.preventDefault(); e.stopPropagation(); fired = false; }
   });
+  // Belt-and-suspenders for the iOS long-press: on the link pages the wordmark
+  // is an <a>, and iOS lifts a link onto a white drag "platter" / shows a
+  // callout on press-and-hold. The CSS (user-drag/touch-callout none) handles
+  // it, but block the drag + context menu here too so it can't surface.
+  brand.addEventListener("dragstart", (e) => e.preventDefault());
+  brand.addEventListener("contextmenu", (e) => e.preventDefault());
 }
 
 function showAnalyticsToast(text) {
