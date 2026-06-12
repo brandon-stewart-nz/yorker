@@ -94,9 +94,15 @@
     .header { background: #1A4D58; }
     /* In-app launch splash — installed PWA only. Picks up seamlessly from the
        native iOS launch image (gold ball on teal), holds ~2s, then a small
-       script fades it out to reveal the app. Hidden entirely in a browser. */
-    #splash { position: fixed; inset: 0; z-index: 9999; display: none;
-      background: radial-gradient(circle at 50% 46%, #16474F 0%, #0E353D 95%);
+       script fades it out to reveal the app. Hidden entirely in a browser.
+       Explicit width/height deliberately over-constrain inset:0 (right/bottom
+       ignored per CSS2 §10.3.7) because in iOS standalone the fixed-position box
+       can stop short of the physical screen the same way dvh does — 100vh is the
+       full screen (same fix as the app shell in style.css).
+       Geometry (circle 95vw, center 50%/46%, ball 34.5% width, stops 0%/100%)
+       must stay in sync with assets/gen-splash.js or the swap glitches. */
+    #splash { position: fixed; inset: 0; width: 100vw; height: 100vh; z-index: 9999; display: none;
+      background: radial-gradient(circle 95vw at 50% 46%, #16474F 0%, #0E353D 100%);
       transition: opacity 0.6s ease; }
     html.pwa-standalone #splash { display: block; }
     #splash svg { position: absolute; left: 50%; top: 46%; transform: translate(-50%, -50%);
