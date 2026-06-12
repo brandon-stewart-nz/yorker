@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex">
-  <title>Blazing Firebirds</title>
+  <title>Yorker</title>
   <style>
     :root {
       --gold: #E5B340; --gold-deep: #C49327;
@@ -47,7 +47,7 @@
 </head>
 <body>
   <div class="wrap">
-    <div class="brand"><img src="icon.svg" alt=""><span>Blazing Firebirds</span></div>
+    <div class="brand"><img src="icon.svg" alt=""><span>Yorker</span></div>
     <div class="card">
       <div id="prompt">
         <h1 id="title">…</h1>
@@ -76,7 +76,7 @@
     var COPY = {
       approve: {
         title: "Approve the fix?",
-        body: "This deploys the fix and restarts your Blazing Firebirds dashboard.",
+        body: "This deploys the fix and restarts your Yorker dashboard.",
         btn: "Yes, deploy it ✓", btnClass: "go", action: "confirm_approve",
         doneTitle: "Approved — thank you!",
         doneBody: "A confirmation email — “fixed and back up” — is on its way to you. You can close this page."
@@ -101,7 +101,7 @@
 
     if (!token) {
       $("title").textContent = "Nothing to do here";
-      $("body").textContent = "This page handles the buttons in the Blazing Firebirds watchdog emails.";
+      $("body").textContent = "This page handles the buttons in the Yorker watchdog emails.";
       $("actionBtn").classList.add("hidden");
       $("hint").classList.add("hidden");
     } else {

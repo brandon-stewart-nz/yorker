@@ -1,4 +1,4 @@
-// Blazing Firebirds dashboard — vanilla JS, hash-routed SPA.
+// Yorker dashboard — vanilla JS, hash-routed SPA.
 // Reads three JSON files written by scrape.py and a per-match file on demand.
 
 "use strict";
