@@ -823,20 +823,60 @@ function wireExternalLinksForIosPwa() {
 // in index.html — those are one fixed card for every link, because link
 // crawlers ignore the #hash and don't run this JS.)
 function shareTitleFor(path, from) {
-  if (path === "standings") {
+  const segs = path.split("/").filter(Boolean);
+
+  if (path === "standings" || path === "") {
     return `Leaderboard — ${state.standings?.division_name || "Division"}`;
   }
-  // Most detail pages already render their key title in .detail-header__name
-  // (player name; "Team A vs Team B"). Reuse it, minus any result badge.
-  const h = document.querySelector("#app .detail-header__name");
-  if (h) {
-    const clone = h.cloneNode(true);
-    clone.querySelectorAll(".badge").forEach((b) => b.remove());
-    const t = clone.textContent.replace(/\s+/g, " ").trim();
-    if (t) return t;
+
+  // Player page: "Vernon Stewart - Blazing Firebirds"
+  if (path.includes("/player/") || segs[0] === "player") {
+    const h = document.querySelector("#app .detail-header__name");
+    const playerName = h ? h.textContent.replace(/\s+/g, " ").trim() : null;
+    if (playerName) return `${playerName} - ${brandTarget(path, from).name || TEAM_DISPLAY}`;
   }
-  // Home / team landing have no detail header — use the banner name.
-  return brandTarget(path, from).name || TEAM_DISPLAY;
+
+  // Match result: "Blazing Firebirds (15) vs (12) Thunderboltz"
+  if (segs[0] === "match") {
+    const names = document.querySelectorAll("#app .match-summary__name");
+    const scores = document.querySelectorAll("#app .match-summary__score");
+    if (names.length >= 2 && scores.length >= 2) {
+      const s0 = scores[0].textContent.trim();
+      const s1 = scores[1].textContent.trim();
+      const n0 = names[0].textContent.trim();
+      const n1 = names[1].textContent.trim();
+      if (s0 !== "—" && s1 !== "—") return `${n0} (${s0}) vs (${s1}) ${n1}`;
+      return `${n0} vs ${n1}`;
+    }
+    const h = document.querySelector("#app .detail-header__name");
+    if (h) {
+      const clone = h.cloneNode(true);
+      clone.querySelectorAll(".badge").forEach((b) => b.remove());
+      const t = clone.textContent.replace(/\s+/g, " ").trim();
+      if (t) return t;
+    }
+  }
+
+  // Upcoming game: "Blazing Firebirds vs Thunderboltz 21/06 1:00pm - Court 3"
+  if (path.includes("/upcoming/") || segs[0] === "upcoming") {
+    const fid = fixtureIdFromSlugOrId(segs[segs.length - 1]);
+    const fixture = fid != null ? allKnownFixtures().find(f => f.fixture_id === fid) : null;
+    const h = document.querySelector("#app .detail-header__name");
+    const vsText = h ? h.textContent.replace(/\s+/g, " ").trim() : null;
+    if (vsText && fixture) {
+      const dt = parseSpawtzDate(fixture.date_str, fixture.time);
+      const ddmm = dt
+        ? `${String(dt.getDate()).padStart(2, "0")}/${String(dt.getMonth() + 1).padStart(2, "0")}`
+        : "";
+      const timeStr = formatTime12(fixture.time);
+      const court = fixture.court ? ` - ${fixture.court}` : "";
+      return `${vsText} ${ddmm} ${timeStr}${court}`;
+    }
+    if (vsText) return vsText;
+  }
+
+  // Team page (and any unmatched page): "Blazing Firebirds - Indoor Cricket"
+  return `${brandTarget(path, from).name || TEAM_DISPLAY} - Indoor Cricket`;
 }
 
 // Share the page the user is currently on. The title/text is that page's key
