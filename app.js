@@ -1233,7 +1233,7 @@ function renderStandings(app, from) {
   }).join("");
 
   app.innerHTML = `
-    <div class="chip-row">${installChipHtml()}</div>
+    <div class="chip-row chip-row--leaderboard">${installChipHtml()}</div>
     <div class="table-card">
       <table class="table table--ladder">
         <thead>
