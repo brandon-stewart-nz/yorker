@@ -533,9 +533,8 @@ a {
 .chip-row:has(> .install-chip[hidden]:only-child) { display: none; }
 .chip-row > .install-chip,
 .chip-row > .notify-chip { margin: 0; }
-/* Leaderboard (home) install row: flush to the top, with breathing room
-   before the ladder. */
-.chip-row--leaderboard { margin-top: 0; margin-bottom: 25px; }
+/* Leaderboard (home) install row: spacing above + breathing room before the ladder. */
+.chip-row--leaderboard { margin-top: 24px; margin-bottom: 25px; }
 
 /* --- Notify chip ---------------------------------------------------- */
 
