@@ -822,7 +822,13 @@ function wireExternalLinksForIosPwa() {
 // app name. (The rich preview card's image + title come from the static OG tags
 // in index.html — those are one fixed card for every link, because link
 // crawlers ignore the #hash and don't run this JS.)
+// Every share message is prefixed "Indoor Cricket — "; the per-page body is
+// built by shareTitleBody below.
 function shareTitleFor(path, from) {
+  return `Indoor Cricket — ${shareTitleBody(path, from)}`;
+}
+
+function shareTitleBody(path, from) {
   const segs = path.split("/").filter(Boolean);
 
   if (path === "standings" || path === "") {
@@ -875,8 +881,10 @@ function shareTitleFor(path, from) {
     if (vsText) return vsText;
   }
 
-  // Team page (and any unmatched page): "Blazing Firebirds - Indoor Cricket"
-  return `${brandTarget(path, from).name || TEAM_DISPLAY} - Indoor Cricket`;
+  // Team page (and any unmatched page): just the team name. The "Indoor
+  // Cricket — " prefix is added by shareTitleFor, so the team title reads
+  // "Indoor Cricket — Blazing Firebirds".
+  return brandTarget(path, from).name || TEAM_DISPLAY;
 }
 
 // Share the page the user is currently on. The title/text is that page's key
