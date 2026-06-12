@@ -1174,7 +1174,6 @@ function renderHome(app) {
   app.innerHTML = `
     ${heroHtml(next)}
     <div class="chip-row">
-      ${installChipHtml()}
       ${notifyChipHtml()}
     </div>
     ${recordHtml(team.record)}
@@ -1195,7 +1194,6 @@ function renderHome(app) {
   wireShowMore(app);
   wireRecordFilters(app);
   wirePlayerClicks(app);
-  wireInstallChip(app);
   wireNotifyChip(app);
 }
 
@@ -1235,6 +1233,7 @@ function renderStandings(app, from) {
   }).join("");
 
   app.innerHTML = `
+    <div class="chip-row">${installChipHtml()}</div>
     <div class="table-card">
       <table class="table table--ladder">
         <thead>
@@ -1254,6 +1253,7 @@ function renderStandings(app, from) {
     </div>
   `;
   wireRowNavigation(app);
+  wireInstallChip(app);
 }
 
 // ====================================================================
@@ -1521,7 +1521,6 @@ function paintTeam(app, data, teamId, from) {
   app.innerHTML = `
     ${teamHeroHtml(next, teamId)}
     <div class="chip-row">
-      ${installChipHtml()}
       ${notifyChipHtml(teamId)}
     </div>
     ${teamRecordHtml(data)}
@@ -1551,7 +1550,6 @@ function paintTeam(app, data, teamId, from) {
     state.teamVisible += 3;
     paintTeam(app, data, teamId, from);
   });
-  wireInstallChip(app);
   wireNotifyChip(app);
 }
 

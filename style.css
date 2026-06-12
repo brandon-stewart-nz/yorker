@@ -527,6 +527,10 @@ a {
   margin-top: 14px;
 }
 .chip-row:empty { display: none; }
+/* On the leaderboard the install chip is the row's only child — collapse the
+   whole row (and its top margin) whenever that chip is hidden (already
+   installed, or a browser that can't install), so there's never an empty gap. */
+.chip-row:has(> .install-chip[hidden]:only-child) { display: none; }
 .chip-row > .install-chip,
 .chip-row > .notify-chip { margin: 0; }
 
