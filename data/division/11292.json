@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-06-13T01:45:52.040409+00:00",
-  "generated_at_nz": "2026-06-13T13:45:47.748537+12:00",
+  "generated_at_utc": "2026-06-13T02:00:45.298080+00:00",
+  "generated_at_nz": "2026-06-13T14:00:42.786277+12:00",
   "division_name": "Division 8",
   "team": {
     "id": 11292,
@@ -10,47 +10,27 @@
   "standings_row": {
     "position": 6,
     "team_name_raw": "Oompa Loompas - Keanu",
-    "played": 4,
+    "played": 5,
     "won": 0,
-    "lost": 4,
+    "lost": 5,
     "drawn": 0,
     "forfeits_for": 0,
     "forfeits_against": 0,
-    "skins_for": 128,
-    "skins_against": 363,
-    "difference": -235,
+    "skins_for": 160,
+    "skins_against": 447,
+    "difference": -287,
     "bonus": 0,
-    "points": 4
+    "points": 5
   },
   "record": {
-    "played": 7,
+    "played": 8,
     "won": 1,
-    "lost": 6,
+    "lost": 7,
     "drawn": 0,
-    "skins_for": 266,
-    "skins_against": 539
+    "skins_for": 298,
+    "skins_against": 623
   },
-  "next_game": {
-    "date_str": "Saturday 13 Jun 2026",
-    "time": "13:00",
-    "court": "Court 1",
-    "home": {
-      "id": 11292,
-      "name": "Oompa Loompas - Keanu",
-      "display": "Oompa Loompas"
-    },
-    "away": {
-      "id": 11297,
-      "name": "BYC - Freddie",
-      "display": "BYC"
-    },
-    "home_skins": null,
-    "away_skins": null,
-    "played": false,
-    "fixture_id": 264011,
-    "scoresheet_complete": false,
-    "is_grading": false
-  },
+  "next_game": null,
   "fixtures": [
     {
       "date_str": "Saturday 25 Apr 2026",
@@ -213,11 +193,11 @@
         "name": "BYC - Freddie",
         "display": "BYC"
       },
-      "home_skins": null,
-      "away_skins": null,
-      "played": false,
+      "home_skins": 32,
+      "away_skins": 84,
+      "played": true,
       "fixture_id": 264011,
-      "scoresheet_complete": false,
+      "scoresheet_complete": true,
       "is_grading": false
     }
   ],
@@ -229,9 +209,9 @@
         "runs": 70,
         "balls_faced": 71,
         "dismissals": 3,
-        "overs_bowled": 11,
-        "wickets": 8,
-        "runs_conceded": 50
+        "overs_bowled": 13,
+        "wickets": 9,
+        "runs_conceded": 58
       },
       "matches": [
         {
@@ -383,6 +363,21 @@
             "no_balls": 0,
             "wides": 1
           }
+        },
+        {
+          "fixture_id": 264011,
+          "date_str": "Saturday 13 Jun 2026",
+          "vs": "BYC",
+          "batting": null,
+          "bowling": {
+            "name": "Ollie Unknown",
+            "name_raw": "ollie Unknown",
+            "overs": 2,
+            "wickets": 1,
+            "runs_conceded": 8,
+            "no_balls": 0,
+            "wides": 1
+          }
         }
       ]
     },
@@ -393,9 +388,9 @@
         "runs": 65,
         "balls_faced": 58,
         "dismissals": 2,
-        "overs_bowled": 12,
-        "wickets": 9,
-        "runs_conceded": 55
+        "overs_bowled": 14,
+        "wickets": 10,
+        "runs_conceded": 66
       },
       "matches": [
         {
@@ -537,6 +532,21 @@
             "no_balls": 0,
             "wides": 5
           }
+        },
+        {
+          "fixture_id": 264011,
+          "date_str": "Saturday 13 Jun 2026",
+          "vs": "BYC",
+          "batting": null,
+          "bowling": {
+            "name": "Karan Bakshi",
+            "name_raw": "Karan Bakshi",
+            "overs": 2,
+            "wickets": 1,
+            "runs_conceded": 11,
+            "no_balls": 0,
+            "wides": 4
+          }
         }
       ]
     },
@@ -547,9 +557,9 @@
         "runs": 34,
         "balls_faced": 72,
         "dismissals": 7,
-        "overs_bowled": 11,
+        "overs_bowled": 13,
         "wickets": 4,
-        "runs_conceded": 115
+        "runs_conceded": 142
       },
       "matches": [
         {
@@ -701,6 +711,21 @@
             "no_balls": 0,
             "wides": 5
           }
+        },
+        {
+          "fixture_id": 264011,
+          "date_str": "Saturday 13 Jun 2026",
+          "vs": "BYC",
+          "batting": null,
+          "bowling": {
+            "name": "Kiaansh Dubariya",
+            "name_raw": "Kiaansh dubariya",
+            "overs": 2,
+            "wickets": 0,
+            "runs_conceded": 27,
+            "no_balls": 0,
+            "wides": 2
+          }
         }
       ]
     },
@@ -711,9 +736,9 @@
         "runs": 33,
         "balls_faced": 18,
         "dismissals": 1,
-        "overs_bowled": 4,
+        "overs_bowled": 6,
         "wickets": 0,
-        "runs_conceded": 42
+        "runs_conceded": 56
       },
       "matches": [
         {
@@ -765,6 +790,21 @@
             "no_balls": 1,
             "wides": 3
           }
+        },
+        {
+          "fixture_id": 264011,
+          "date_str": "Saturday 13 Jun 2026",
+          "vs": "BYC",
+          "batting": null,
+          "bowling": {
+            "name": "Zayden Vosges",
+            "name_raw": "Zayden Vosges",
+            "overs": 2,
+            "wickets": 0,
+            "runs_conceded": 14,
+            "no_balls": 0,
+            "wides": 1
+          }
         }
       ]
     },
@@ -775,9 +815,9 @@
         "runs": 22,
         "balls_faced": 73,
         "dismissals": 12,
-        "overs_bowled": 12,
-        "wickets": 9,
-        "runs_conceded": 50
+        "overs_bowled": 14,
+        "wickets": 10,
+        "runs_conceded": 58
       },
       "matches": [
         {
@@ -928,6 +968,21 @@
             "runs_conceded": 3,
             "no_balls": 0,
             "wides": 5
+          }
+        },
+        {
+          "fixture_id": 264011,
+          "date_str": "Saturday 13 Jun 2026",
+          "vs": "BYC",
+          "batting": null,
+          "bowling": {
+            "name": "Keanu Vosges",
+            "name_raw": "Keanu Vosges",
+            "overs": 2,
+            "wickets": 1,
+            "runs_conceded": 8,
+            "no_balls": 0,
+            "wides": 4
           }
         }
       ]
@@ -1128,9 +1183,9 @@
         "runs": 12,
         "balls_faced": 68,
         "dismissals": 10,
-        "overs_bowled": 12,
+        "overs_bowled": 14,
         "wickets": 7,
-        "runs_conceded": 71
+        "runs_conceded": 87
       },
       "matches": [
         {
@@ -1234,6 +1289,21 @@
           }
         },
         {
+          "fixture_id": 264011,
+          "date_str": "Saturday 13 Jun 2026",
+          "vs": "BYC",
+          "batting": null,
+          "bowling": {
+            "name": "Cohen Unknown",
+            "name_raw": "cohen Unknown",
+            "overs": 2,
+            "wickets": 0,
+            "runs_conceded": 16,
+            "no_balls": 0,
+            "wides": 7
+          }
+        },
+        {
           "fixture_id": 263266,
           "date_str": "Saturday 02 May 2026",
           "vs": "The Net Ninjas",
@@ -1292,9 +1362,9 @@
         "runs": 9,
         "balls_faced": 9,
         "dismissals": 1,
-        "overs_bowled": 2,
-        "wickets": 2,
-        "runs_conceded": 8
+        "overs_bowled": 4,
+        "wickets": 4,
+        "runs_conceded": 5
       },
       "matches": [
         {
@@ -1318,6 +1388,21 @@
             "overs": 2,
             "wickets": 2,
             "runs_conceded": 8,
+            "no_balls": 0,
+            "wides": 1
+          }
+        },
+        {
+          "fixture_id": 264011,
+          "date_str": "Saturday 13 Jun 2026",
+          "vs": "BYC",
+          "batting": null,
+          "bowling": {
+            "name": "James Unknown",
+            "name_raw": "james Unknown",
+            "overs": 2,
+            "wickets": 2,
+            "runs_conceded": -3,
             "no_balls": 0,
             "wides": 1
           }
@@ -1389,6 +1474,64 @@
       ]
     },
     {
+      "name": "Freddie Gibson",
+      "totals": {
+        "innings_batted": 0,
+        "runs": 0,
+        "balls_faced": 0,
+        "dismissals": 0,
+        "overs_bowled": 2,
+        "wickets": 1,
+        "runs_conceded": 1
+      },
+      "matches": [
+        {
+          "fixture_id": 264011,
+          "date_str": "Saturday 13 Jun 2026",
+          "vs": "BYC",
+          "batting": null,
+          "bowling": {
+            "name": "Freddie Gibson",
+            "name_raw": "Freddie Gibson",
+            "overs": 2,
+            "wickets": 1,
+            "runs_conceded": 1,
+            "no_balls": 0,
+            "wides": 2
+          }
+        }
+      ]
+    },
+    {
+      "name": "Hugh Whittington",
+      "totals": {
+        "innings_batted": 0,
+        "runs": 0,
+        "balls_faced": 0,
+        "dismissals": 0,
+        "overs_bowled": 2,
+        "wickets": 0,
+        "runs_conceded": 9
+      },
+      "matches": [
+        {
+          "fixture_id": 264011,
+          "date_str": "Saturday 13 Jun 2026",
+          "vs": "BYC",
+          "batting": null,
+          "bowling": {
+            "name": "Hugh Whittington",
+            "name_raw": "Hugh Whittington",
+            "overs": 2,
+            "wickets": 0,
+            "runs_conceded": 9,
+            "no_balls": 0,
+            "wides": 3
+          }
+        }
+      ]
+    },
+    {
       "name": "Liam",
       "totals": {
         "innings_batted": 0,
@@ -1411,6 +1554,93 @@
             "overs": 2,
             "wickets": 0,
             "runs_conceded": 25,
+            "no_balls": 0,
+            "wides": 1
+          }
+        }
+      ]
+    },
+    {
+      "name": "Oahran Duncan",
+      "totals": {
+        "innings_batted": 0,
+        "runs": 0,
+        "balls_faced": 0,
+        "dismissals": 0,
+        "overs_bowled": 2,
+        "wickets": 2,
+        "runs_conceded": -6
+      },
+      "matches": [
+        {
+          "fixture_id": 264011,
+          "date_str": "Saturday 13 Jun 2026",
+          "vs": "BYC",
+          "batting": null,
+          "bowling": {
+            "name": "Oahran Duncan",
+            "name_raw": "Oahran Duncan",
+            "overs": 2,
+            "wickets": 2,
+            "runs_conceded": -6,
+            "no_balls": 0,
+            "wides": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "Raife",
+      "totals": {
+        "innings_batted": 0,
+        "runs": 0,
+        "balls_faced": 0,
+        "dismissals": 0,
+        "overs_bowled": 2,
+        "wickets": 0,
+        "runs_conceded": 8
+      },
+      "matches": [
+        {
+          "fixture_id": 264011,
+          "date_str": "Saturday 13 Jun 2026",
+          "vs": "BYC",
+          "batting": null,
+          "bowling": {
+            "name": "Raife Unknown",
+            "name_raw": "raife Unknown",
+            "overs": 2,
+            "wickets": 0,
+            "runs_conceded": 8,
+            "no_balls": 0,
+            "wides": 3
+          }
+        }
+      ]
+    },
+    {
+      "name": "Tom Burlace",
+      "totals": {
+        "innings_batted": 0,
+        "runs": 0,
+        "balls_faced": 0,
+        "dismissals": 0,
+        "overs_bowled": 2,
+        "wickets": 2,
+        "runs_conceded": -3
+      },
+      "matches": [
+        {
+          "fixture_id": 264011,
+          "date_str": "Saturday 13 Jun 2026",
+          "vs": "BYC",
+          "batting": null,
+          "bowling": {
+            "name": "Tom Burlace",
+            "name_raw": "Tom Burlace",
+            "overs": 2,
+            "wickets": 2,
+            "runs_conceded": -3,
             "no_balls": 0,
             "wides": 1
           }

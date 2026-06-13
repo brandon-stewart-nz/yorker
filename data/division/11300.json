@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-06-13T01:45:52.037450+00:00",
-  "generated_at_nz": "2026-06-13T13:45:47.748537+12:00",
+  "generated_at_utc": "2026-06-13T02:00:45.291566+00:00",
+  "generated_at_nz": "2026-06-13T14:00:42.786277+12:00",
   "division_name": "Division 8",
   "team": {
     "id": 11300,
@@ -8,49 +8,29 @@
     "raw_name": "Anderson Aces - Arihaan"
   },
   "standings_row": {
-    "position": 5,
+    "position": 4,
     "team_name_raw": "Anderson Aces - Arihaan",
-    "played": 4,
+    "played": 5,
     "won": 0,
-    "lost": 3,
+    "lost": 4,
     "drawn": 1,
     "forfeits_for": 0,
     "forfeits_against": 0,
-    "skins_for": 210,
-    "skins_against": 270,
-    "difference": -60,
+    "skins_for": 253,
+    "skins_against": 335,
+    "difference": -82,
     "bonus": 0,
-    "points": 5
+    "points": 6
   },
   "record": {
-    "played": 7,
+    "played": 8,
     "won": 2,
-    "lost": 4,
+    "lost": 5,
     "drawn": 1,
-    "skins_for": 463,
-    "skins_against": 417
+    "skins_for": 506,
+    "skins_against": 482
   },
-  "next_game": {
-    "date_str": "Saturday 13 Jun 2026",
-    "time": "13:00",
-    "court": "Court 4",
-    "home": {
-      "id": 11293,
-      "name": "Team Thunderboltz - Liam",
-      "display": "Team Thunderboltz"
-    },
-    "away": {
-      "id": 11300,
-      "name": "Anderson Aces - Arihaan",
-      "display": "Anderson Aces"
-    },
-    "home_skins": null,
-    "away_skins": null,
-    "played": false,
-    "fixture_id": 264010,
-    "scoresheet_complete": false,
-    "is_grading": false
-  },
+  "next_game": null,
   "fixtures": [
     {
       "date_str": "Saturday 25 Apr 2026",
@@ -213,11 +193,11 @@
         "name": "Anderson Aces - Arihaan",
         "display": "Anderson Aces"
       },
-      "home_skins": null,
-      "away_skins": null,
-      "played": false,
+      "home_skins": 65,
+      "away_skins": 43,
+      "played": true,
       "fixture_id": 264010,
-      "scoresheet_complete": false,
+      "scoresheet_complete": true,
       "is_grading": false
     }
   ],
@@ -362,218 +342,15 @@
       ]
     },
     {
-      "name": "Dylan Smith",
-      "totals": {
-        "innings_batted": 3,
-        "runs": 62,
-        "balls_faced": 34,
-        "dismissals": 2,
-        "overs_bowled": 6,
-        "wickets": 4,
-        "runs_conceded": 6
-      },
-      "matches": [
-        {
-          "fixture_id": 263107,
-          "date_str": "Saturday 25 Apr 2026",
-          "vs": "Allstars",
-          "batting": {
-            "name": "Dylan Smith",
-            "name_raw": "dylan smith",
-            "runs": 11,
-            "balls_faced": 8,
-            "dismissals": 0,
-            "threes": 0,
-            "fours": 0,
-            "fives": 0,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Dylan Smith",
-            "name_raw": "dylan smith",
-            "overs": 2,
-            "wickets": 0,
-            "runs_conceded": 13,
-            "no_balls": 0,
-            "wides": 1
-          }
-        },
-        {
-          "fixture_id": 263265,
-          "date_str": "Saturday 02 May 2026",
-          "vs": "Blazing Firebirds",
-          "batting": {
-            "name": "Dylan Smith",
-            "name_raw": "dylan smith",
-            "runs": 18,
-            "balls_faced": 12,
-            "dismissals": 1,
-            "threes": 2,
-            "fours": 0,
-            "fives": 1,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Dylan Smith",
-            "name_raw": "dylan smith",
-            "overs": 2,
-            "wickets": 2,
-            "runs_conceded": -1,
-            "no_balls": 0,
-            "wides": 0
-          }
-        },
-        {
-          "fixture_id": 263462,
-          "date_str": "Saturday 09 May 2026",
-          "vs": "Karori Cricketers",
-          "batting": {
-            "name": "Dylan Smith",
-            "name_raw": "dylan smith",
-            "runs": 33,
-            "balls_faced": 14,
-            "dismissals": 1,
-            "threes": 0,
-            "fours": 1,
-            "fives": 5,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Dylan Smith",
-            "name_raw": "dylan smith",
-            "overs": 2,
-            "wickets": 2,
-            "runs_conceded": -6,
-            "no_balls": 0,
-            "wides": 0
-          }
-        }
-      ]
-    },
-    {
-      "name": "Gus",
-      "totals": {
-        "innings_batted": 4,
-        "runs": 55,
-        "balls_faced": 46,
-        "dismissals": 2,
-        "overs_bowled": 8,
-        "wickets": 5,
-        "runs_conceded": 24
-      },
-      "matches": [
-        {
-          "fixture_id": 263462,
-          "date_str": "Saturday 09 May 2026",
-          "vs": "Karori Cricketers",
-          "batting": {
-            "name": "Gus Unknown",
-            "name_raw": "Gus Unknown",
-            "runs": 3,
-            "balls_faced": 10,
-            "dismissals": 2,
-            "threes": 0,
-            "fours": 1,
-            "fives": 1,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Gus Unknown",
-            "name_raw": "Gus Unknown",
-            "overs": 2,
-            "wickets": 1,
-            "runs_conceded": 8,
-            "no_balls": 0,
-            "wides": 4
-          }
-        },
-        {
-          "fixture_id": 263835,
-          "date_str": "Saturday 16 May 2026",
-          "vs": "Firebats",
-          "batting": {
-            "name": "Gus Unknown",
-            "name_raw": "Gus Unknown",
-            "runs": 17,
-            "balls_faced": 9,
-            "dismissals": 0,
-            "threes": 0,
-            "fours": 1,
-            "fives": 0,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Gus Unknown",
-            "name_raw": "Gus Unknown",
-            "overs": 2,
-            "wickets": 2,
-            "runs_conceded": 1,
-            "no_balls": 0,
-            "wides": 0
-          }
-        },
-        {
-          "fixture_id": 263876,
-          "date_str": "Saturday 23 May 2026",
-          "vs": "Thunder Strikers",
-          "batting": {
-            "name": "Gus Unknown",
-            "name_raw": "Gus Unknown",
-            "runs": 13,
-            "balls_faced": 15,
-            "dismissals": 0,
-            "threes": 0,
-            "fours": 0,
-            "fives": 0,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Gus Unknown",
-            "name_raw": "Gus Unknown",
-            "overs": 2,
-            "wickets": 0,
-            "runs_conceded": 11,
-            "no_balls": 0,
-            "wides": 4
-          }
-        },
-        {
-          "fixture_id": 264019,
-          "date_str": "Saturday 06 Jun 2026",
-          "vs": "Karori Cricketers",
-          "batting": {
-            "name": "Gus Unknown",
-            "name_raw": "Gus Unknown",
-            "runs": 22,
-            "balls_faced": 12,
-            "dismissals": 0,
-            "threes": 1,
-            "fours": 0,
-            "fives": 2,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Gus Unknown",
-            "name_raw": "Gus Unknown",
-            "overs": 2,
-            "wickets": 2,
-            "runs_conceded": 4,
-            "no_balls": 0,
-            "wides": 3
-          }
-        }
-      ]
-    },
-    {
       "name": "Micheal",
       "totals": {
-        "innings_batted": 4,
-        "runs": 55,
-        "balls_faced": 48,
-        "dismissals": 6,
-        "overs_bowled": 8,
+        "innings_batted": 5,
+        "runs": 66,
+        "balls_faced": 62,
+        "dismissals": 8,
+        "overs_bowled": 10,
         "wickets": 5,
-        "runs_conceded": 23
+        "runs_conceded": 38
       },
       "matches": [
         {
@@ -675,19 +452,461 @@
             "no_balls": 0,
             "wides": 0
           }
+        },
+        {
+          "fixture_id": 264010,
+          "date_str": "Saturday 13 Jun 2026",
+          "vs": "Team Thunderboltz",
+          "batting": {
+            "name": "Micheal Unknown",
+            "name_raw": "Micheal Unknown",
+            "runs": 11,
+            "balls_faced": 14,
+            "dismissals": 2,
+            "threes": 0,
+            "fours": 2,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Micheal Unknown",
+            "name_raw": "Micheal Unknown",
+            "overs": 2,
+            "wickets": 0,
+            "runs_conceded": 15,
+            "no_balls": 1,
+            "wides": 1
+          }
+        }
+      ]
+    },
+    {
+      "name": "Gus",
+      "totals": {
+        "innings_batted": 5,
+        "runs": 64,
+        "balls_faced": 59,
+        "dismissals": 4,
+        "overs_bowled": 10,
+        "wickets": 6,
+        "runs_conceded": 30
+      },
+      "matches": [
+        {
+          "fixture_id": 263462,
+          "date_str": "Saturday 09 May 2026",
+          "vs": "Karori Cricketers",
+          "batting": {
+            "name": "Gus Unknown",
+            "name_raw": "Gus Unknown",
+            "runs": 3,
+            "balls_faced": 10,
+            "dismissals": 2,
+            "threes": 0,
+            "fours": 1,
+            "fives": 1,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Gus Unknown",
+            "name_raw": "Gus Unknown",
+            "overs": 2,
+            "wickets": 1,
+            "runs_conceded": 8,
+            "no_balls": 0,
+            "wides": 4
+          }
+        },
+        {
+          "fixture_id": 263835,
+          "date_str": "Saturday 16 May 2026",
+          "vs": "Firebats",
+          "batting": {
+            "name": "Gus Unknown",
+            "name_raw": "Gus Unknown",
+            "runs": 17,
+            "balls_faced": 9,
+            "dismissals": 0,
+            "threes": 0,
+            "fours": 1,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Gus Unknown",
+            "name_raw": "Gus Unknown",
+            "overs": 2,
+            "wickets": 2,
+            "runs_conceded": 1,
+            "no_balls": 0,
+            "wides": 0
+          }
+        },
+        {
+          "fixture_id": 263876,
+          "date_str": "Saturday 23 May 2026",
+          "vs": "Thunder Strikers",
+          "batting": {
+            "name": "Gus Unknown",
+            "name_raw": "Gus Unknown",
+            "runs": 13,
+            "balls_faced": 15,
+            "dismissals": 0,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Gus Unknown",
+            "name_raw": "Gus Unknown",
+            "overs": 2,
+            "wickets": 0,
+            "runs_conceded": 11,
+            "no_balls": 0,
+            "wides": 4
+          }
+        },
+        {
+          "fixture_id": 264019,
+          "date_str": "Saturday 06 Jun 2026",
+          "vs": "Karori Cricketers",
+          "batting": {
+            "name": "Gus Unknown",
+            "name_raw": "Gus Unknown",
+            "runs": 22,
+            "balls_faced": 12,
+            "dismissals": 0,
+            "threes": 1,
+            "fours": 0,
+            "fives": 2,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Gus Unknown",
+            "name_raw": "Gus Unknown",
+            "overs": 2,
+            "wickets": 2,
+            "runs_conceded": 4,
+            "no_balls": 0,
+            "wides": 3
+          }
+        },
+        {
+          "fixture_id": 264010,
+          "date_str": "Saturday 13 Jun 2026",
+          "vs": "Team Thunderboltz",
+          "batting": {
+            "name": "Gus Unknown",
+            "name_raw": "Gus Unknown",
+            "runs": 9,
+            "balls_faced": 13,
+            "dismissals": 2,
+            "threes": 1,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Gus Unknown",
+            "name_raw": "Gus Unknown",
+            "overs": 2,
+            "wickets": 1,
+            "runs_conceded": 6,
+            "no_balls": 0,
+            "wides": 2
+          }
+        }
+      ]
+    },
+    {
+      "name": "Dylan Smith",
+      "totals": {
+        "innings_batted": 3,
+        "runs": 62,
+        "balls_faced": 34,
+        "dismissals": 2,
+        "overs_bowled": 6,
+        "wickets": 4,
+        "runs_conceded": 6
+      },
+      "matches": [
+        {
+          "fixture_id": 263107,
+          "date_str": "Saturday 25 Apr 2026",
+          "vs": "Allstars",
+          "batting": {
+            "name": "Dylan Smith",
+            "name_raw": "dylan smith",
+            "runs": 11,
+            "balls_faced": 8,
+            "dismissals": 0,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Dylan Smith",
+            "name_raw": "dylan smith",
+            "overs": 2,
+            "wickets": 0,
+            "runs_conceded": 13,
+            "no_balls": 0,
+            "wides": 1
+          }
+        },
+        {
+          "fixture_id": 263265,
+          "date_str": "Saturday 02 May 2026",
+          "vs": "Blazing Firebirds",
+          "batting": {
+            "name": "Dylan Smith",
+            "name_raw": "dylan smith",
+            "runs": 18,
+            "balls_faced": 12,
+            "dismissals": 1,
+            "threes": 2,
+            "fours": 0,
+            "fives": 1,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Dylan Smith",
+            "name_raw": "dylan smith",
+            "overs": 2,
+            "wickets": 2,
+            "runs_conceded": -1,
+            "no_balls": 0,
+            "wides": 0
+          }
+        },
+        {
+          "fixture_id": 263462,
+          "date_str": "Saturday 09 May 2026",
+          "vs": "Karori Cricketers",
+          "batting": {
+            "name": "Dylan Smith",
+            "name_raw": "dylan smith",
+            "runs": 33,
+            "balls_faced": 14,
+            "dismissals": 1,
+            "threes": 0,
+            "fours": 1,
+            "fives": 5,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Dylan Smith",
+            "name_raw": "dylan smith",
+            "overs": 2,
+            "wickets": 2,
+            "runs_conceded": -6,
+            "no_balls": 0,
+            "wides": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "Jimi Pearce",
+      "totals": {
+        "innings_batted": 7,
+        "runs": 55,
+        "balls_faced": 83,
+        "dismissals": 8,
+        "overs_bowled": 14,
+        "wickets": 5,
+        "runs_conceded": 84
+      },
+      "matches": [
+        {
+          "fixture_id": 263107,
+          "date_str": "Saturday 25 Apr 2026",
+          "vs": "Allstars",
+          "batting": {
+            "name": "Jimi Pearce",
+            "name_raw": "jimi pearce",
+            "runs": 0,
+            "balls_faced": 13,
+            "dismissals": 2,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Jimi Pearce",
+            "name_raw": "jimi pearce",
+            "overs": 2,
+            "wickets": 0,
+            "runs_conceded": 22,
+            "no_balls": 0,
+            "wides": 0
+          }
+        },
+        {
+          "fixture_id": 263265,
+          "date_str": "Saturday 02 May 2026",
+          "vs": "Blazing Firebirds",
+          "batting": {
+            "name": "Jimi Pearce",
+            "name_raw": "jimi pearce",
+            "runs": 22,
+            "balls_faced": 14,
+            "dismissals": 0,
+            "threes": 1,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Jimi Pearce",
+            "name_raw": "jimi pearce",
+            "overs": 2,
+            "wickets": 2,
+            "runs_conceded": 1,
+            "no_balls": 0,
+            "wides": 1
+          }
+        },
+        {
+          "fixture_id": 263835,
+          "date_str": "Saturday 16 May 2026",
+          "vs": "Firebats",
+          "batting": {
+            "name": "Jimi Pearce",
+            "name_raw": "jimi pearce",
+            "runs": -5,
+            "balls_faced": 7,
+            "dismissals": 2,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Jimi Pearce",
+            "name_raw": "jimi pearce",
+            "overs": 2,
+            "wickets": 1,
+            "runs_conceded": 9,
+            "no_balls": 0,
+            "wides": 2
+          }
+        },
+        {
+          "fixture_id": 263876,
+          "date_str": "Saturday 23 May 2026",
+          "vs": "Thunder Strikers",
+          "batting": {
+            "name": "Jimi Pearce",
+            "name_raw": "jimi pearce",
+            "runs": -1,
+            "balls_faced": 10,
+            "dismissals": 1,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Jimi Pearce",
+            "name_raw": "jimi pearce",
+            "overs": 2,
+            "wickets": 0,
+            "runs_conceded": 15,
+            "no_balls": 0,
+            "wides": 0
+          }
+        },
+        {
+          "fixture_id": 263954,
+          "date_str": "Saturday 30 May 2026",
+          "vs": "Fast Delivery",
+          "batting": {
+            "name": "Jimi Pearce",
+            "name_raw": "jimi pearce",
+            "runs": 6,
+            "balls_faced": 13,
+            "dismissals": 1,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Jimi Pearce",
+            "name_raw": "jimi pearce",
+            "overs": 2,
+            "wickets": 1,
+            "runs_conceded": 10,
+            "no_balls": 0,
+            "wides": 1
+          }
+        },
+        {
+          "fixture_id": 264010,
+          "date_str": "Saturday 13 Jun 2026",
+          "vs": "Team Thunderboltz",
+          "batting": {
+            "name": "Jimi Pearce",
+            "name_raw": "jimi pearce",
+            "runs": 11,
+            "balls_faced": 15,
+            "dismissals": 2,
+            "threes": 1,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Jimi Pearce",
+            "name_raw": "jimi pearce",
+            "overs": 2,
+            "wickets": 1,
+            "runs_conceded": 8,
+            "no_balls": 0,
+            "wides": 1
+          }
+        },
+        {
+          "fixture_id": 264019,
+          "date_str": "Saturday 06 Jun 2026",
+          "vs": "Karori Cricketers",
+          "batting": {
+            "name": "Jimmy Unknown",
+            "name_raw": "jimmy Unknown",
+            "runs": 22,
+            "balls_faced": 11,
+            "dismissals": 0,
+            "threes": 2,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Jimmy Unknown",
+            "name_raw": "jimmy Unknown",
+            "overs": 2,
+            "wickets": 0,
+            "runs_conceded": 19,
+            "no_balls": 0,
+            "wides": 2
+          }
         }
       ]
     },
     {
       "name": "Riley",
       "totals": {
-        "innings_batted": 5,
-        "runs": 51,
-        "balls_faced": 63,
-        "dismissals": 7,
-        "overs_bowled": 10,
+        "innings_batted": 6,
+        "runs": 55,
+        "balls_faced": 73,
+        "dismissals": 9,
+        "overs_bowled": 12,
         "wickets": 5,
-        "runs_conceded": 82
+        "runs_conceded": 102
       },
       "matches": [
         {
@@ -814,19 +1033,44 @@
             "no_balls": 0,
             "wides": 4
           }
+        },
+        {
+          "fixture_id": 264010,
+          "date_str": "Saturday 13 Jun 2026",
+          "vs": "Team Thunderboltz",
+          "batting": {
+            "name": "Riley Unknown",
+            "name_raw": "Riley Unknown",
+            "runs": 4,
+            "balls_faced": 10,
+            "dismissals": 2,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Riley Unknown",
+            "name_raw": "Riley Unknown",
+            "overs": 2,
+            "wickets": 0,
+            "runs_conceded": 20,
+            "no_balls": 0,
+            "wides": 5
+          }
         }
       ]
     },
     {
       "name": "Arihaan Bhushan",
       "totals": {
-        "innings_batted": 6,
-        "runs": 48,
-        "balls_faced": 76,
-        "dismissals": 7,
-        "overs_bowled": 12,
-        "wickets": 5,
-        "runs_conceded": 102
+        "innings_batted": 7,
+        "runs": 46,
+        "balls_faced": 87,
+        "dismissals": 10,
+        "overs_bowled": 14,
+        "wickets": 6,
+        "runs_conceded": 119
       },
       "matches": [
         {
@@ -978,169 +1222,30 @@
             "no_balls": 0,
             "wides": 4
           }
-        }
-      ]
-    },
-    {
-      "name": "Jimi Pearce",
-      "totals": {
-        "innings_batted": 6,
-        "runs": 44,
-        "balls_faced": 68,
-        "dismissals": 6,
-        "overs_bowled": 12,
-        "wickets": 4,
-        "runs_conceded": 76
-      },
-      "matches": [
-        {
-          "fixture_id": 263107,
-          "date_str": "Saturday 25 Apr 2026",
-          "vs": "Allstars",
-          "batting": {
-            "name": "Jimi Pearce",
-            "name_raw": "jimi pearce",
-            "runs": 0,
-            "balls_faced": 13,
-            "dismissals": 2,
-            "threes": 0,
-            "fours": 0,
-            "fives": 0,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Jimi Pearce",
-            "name_raw": "jimi pearce",
-            "overs": 2,
-            "wickets": 0,
-            "runs_conceded": 22,
-            "no_balls": 0,
-            "wides": 0
-          }
         },
         {
-          "fixture_id": 263265,
-          "date_str": "Saturday 02 May 2026",
-          "vs": "Blazing Firebirds",
+          "fixture_id": 264010,
+          "date_str": "Saturday 13 Jun 2026",
+          "vs": "Team Thunderboltz",
           "batting": {
-            "name": "Jimi Pearce",
-            "name_raw": "jimi pearce",
-            "runs": 22,
-            "balls_faced": 14,
-            "dismissals": 0,
-            "threes": 1,
-            "fours": 0,
-            "fives": 0,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Jimi Pearce",
-            "name_raw": "jimi pearce",
-            "overs": 2,
-            "wickets": 2,
-            "runs_conceded": 1,
-            "no_balls": 0,
-            "wides": 1
-          }
-        },
-        {
-          "fixture_id": 263835,
-          "date_str": "Saturday 16 May 2026",
-          "vs": "Firebats",
-          "batting": {
-            "name": "Jimi Pearce",
-            "name_raw": "jimi pearce",
-            "runs": -5,
-            "balls_faced": 7,
-            "dismissals": 2,
-            "threes": 0,
-            "fours": 0,
-            "fives": 0,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Jimi Pearce",
-            "name_raw": "jimi pearce",
-            "overs": 2,
-            "wickets": 1,
-            "runs_conceded": 9,
-            "no_balls": 0,
-            "wides": 2
-          }
-        },
-        {
-          "fixture_id": 263876,
-          "date_str": "Saturday 23 May 2026",
-          "vs": "Thunder Strikers",
-          "batting": {
-            "name": "Jimi Pearce",
-            "name_raw": "jimi pearce",
-            "runs": -1,
-            "balls_faced": 10,
-            "dismissals": 1,
-            "threes": 0,
-            "fours": 0,
-            "fives": 0,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Jimi Pearce",
-            "name_raw": "jimi pearce",
-            "overs": 2,
-            "wickets": 0,
-            "runs_conceded": 15,
-            "no_balls": 0,
-            "wides": 0
-          }
-        },
-        {
-          "fixture_id": 263954,
-          "date_str": "Saturday 30 May 2026",
-          "vs": "Fast Delivery",
-          "batting": {
-            "name": "Jimi Pearce",
-            "name_raw": "jimi pearce",
-            "runs": 6,
-            "balls_faced": 13,
-            "dismissals": 1,
-            "threes": 0,
-            "fours": 0,
-            "fives": 0,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Jimi Pearce",
-            "name_raw": "jimi pearce",
-            "overs": 2,
-            "wickets": 1,
-            "runs_conceded": 10,
-            "no_balls": 0,
-            "wides": 1
-          }
-        },
-        {
-          "fixture_id": 264019,
-          "date_str": "Saturday 06 Jun 2026",
-          "vs": "Karori Cricketers",
-          "batting": {
-            "name": "Jimmy Unknown",
-            "name_raw": "jimmy Unknown",
-            "runs": 22,
+            "name": "Arihaan Bhushan",
+            "name_raw": "arihaan bhushan",
+            "runs": -2,
             "balls_faced": 11,
-            "dismissals": 0,
-            "threes": 2,
+            "dismissals": 3,
+            "threes": 0,
             "fours": 0,
             "fives": 0,
             "sixes": 0
           },
           "bowling": {
-            "name": "Jimmy Unknown",
-            "name_raw": "jimmy Unknown",
+            "name": "Arihaan Bhushan",
+            "name_raw": "arihaan bhushan",
             "overs": 2,
-            "wickets": 0,
-            "runs_conceded": 19,
+            "wickets": 1,
+            "runs_conceded": 17,
             "no_balls": 0,
-            "wides": 2
+            "wides": 4
           }
         }
       ]
@@ -1148,13 +1253,13 @@
     {
       "name": "Abdullah Farooq",
       "totals": {
-        "innings_batted": 3,
-        "runs": 24,
-        "balls_faced": 30,
-        "dismissals": 4,
-        "overs_bowled": 6,
-        "wickets": 3,
-        "runs_conceded": 18
+        "innings_batted": 4,
+        "runs": 34,
+        "balls_faced": 39,
+        "dismissals": 5,
+        "overs_bowled": 8,
+        "wickets": 5,
+        "runs_conceded": 17
       },
       "matches": [
         {
@@ -1228,6 +1333,31 @@
             "overs": 2,
             "wickets": 2,
             "runs_conceded": -2,
+            "no_balls": 0,
+            "wides": 0
+          }
+        },
+        {
+          "fixture_id": 264010,
+          "date_str": "Saturday 13 Jun 2026",
+          "vs": "Team Thunderboltz",
+          "batting": {
+            "name": "Abdullah Farooq",
+            "name_raw": "abdullah farooq",
+            "runs": 10,
+            "balls_faced": 9,
+            "dismissals": 1,
+            "threes": 2,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Abdullah Farooq",
+            "name_raw": "abdullah farooq",
+            "overs": 2,
+            "wickets": 2,
+            "runs_conceded": -1,
             "no_balls": 0,
             "wides": 0
           }
