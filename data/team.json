@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-06-13T00:45:32.734879+00:00",
-  "generated_at_nz": "2026-06-13T12:45:26.021709+12:00",
+  "generated_at_utc": "2026-06-13T01:00:30.716619+00:00",
+  "generated_at_nz": "2026-06-13T13:00:23.857040+12:00",
   "team": {
     "id": 11361,
     "name": "Blazing Firebirds",
@@ -22,33 +22,12 @@
     "points": 8
   },
   "record": {
-    "played": 7,
+    "played": 8,
     "won": 3,
-    "lost": 4,
+    "lost": 5,
     "drawn": 0,
-    "skins_for": 441,
-    "skins_against": 564
+    "skins_for": 494,
+    "skins_against": 651
   },
-  "next_game": {
-    "date_str": "Saturday 13 Jun 2026",
-    "time": "12:00",
-    "court": "Court 3",
-    "home": {
-      "id": 11361,
-      "name": "Blazing Firebirds - Jacob",
-      "display": "Blazing Firebirds"
-    },
-    "away": {
-      "id": 11294,
-      "name": "Brooklyn Allrounders - Ifan",
-      "display": "Brooklyn Allrounders"
-    },
-    "home_skins": null,
-    "away_skins": null,
-    "played": false,
-    "fixture_id": 264009,
-    "is_grading": false,
-    "scoresheet_complete": false,
-    "result_final": false
-  }
+  "next_game": null
 }
