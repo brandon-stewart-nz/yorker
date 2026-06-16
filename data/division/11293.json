@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-06-16T08:00:42.520943+00:00",
-  "generated_at_nz": "2026-06-16T20:00:41.292041+12:00",
+  "generated_at_utc": "2026-06-16T09:00:56.228379+00:00",
+  "generated_at_nz": "2026-06-16T21:00:54.681835+12:00",
   "division_name": "Division 8",
   "team": {
     "id": 11293,
@@ -30,7 +30,27 @@
     "skins_for": 516,
     "skins_against": 476
   },
-  "next_game": null,
+  "next_game": {
+    "date_str": "Saturday 20 Jun 2026",
+    "time": "13:00",
+    "court": "Court 1",
+    "home": {
+      "id": 11292,
+      "name": "Oompa Loompas - Keanu",
+      "display": "Oompa Loompas"
+    },
+    "away": {
+      "id": 11293,
+      "name": "Team Thunderboltz - Liam",
+      "display": "Team Thunderboltz"
+    },
+    "home_skins": null,
+    "away_skins": null,
+    "played": false,
+    "fixture_id": 264013,
+    "scoresheet_complete": false,
+    "is_grading": false
+  },
   "fixtures": [
     {
       "date_str": "Saturday 25 Apr 2026",
@@ -198,6 +218,27 @@
       "played": true,
       "fixture_id": 264010,
       "scoresheet_complete": true,
+      "is_grading": false
+    },
+    {
+      "date_str": "Saturday 20 Jun 2026",
+      "time": "13:00",
+      "court": "Court 1",
+      "home": {
+        "id": 11292,
+        "name": "Oompa Loompas - Keanu",
+        "display": "Oompa Loompas"
+      },
+      "away": {
+        "id": 11293,
+        "name": "Team Thunderboltz - Liam",
+        "display": "Team Thunderboltz"
+      },
+      "home_skins": null,
+      "away_skins": null,
+      "played": false,
+      "fixture_id": 264013,
+      "scoresheet_complete": false,
       "is_grading": false
     }
   ],

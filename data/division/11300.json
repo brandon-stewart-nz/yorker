@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-06-16T08:00:42.525966+00:00",
-  "generated_at_nz": "2026-06-16T20:00:41.292041+12:00",
+  "generated_at_utc": "2026-06-16T09:00:56.233685+00:00",
+  "generated_at_nz": "2026-06-16T21:00:54.681835+12:00",
   "division_name": "Division 8",
   "team": {
     "id": 11300,
@@ -30,7 +30,27 @@
     "skins_for": 506,
     "skins_against": 482
   },
-  "next_game": null,
+  "next_game": {
+    "date_str": "Saturday 20 Jun 2026",
+    "time": "12:00",
+    "court": "Court 2",
+    "home": {
+      "id": 11361,
+      "name": "Blazing Firebirds - Jacob",
+      "display": "Blazing Firebirds"
+    },
+    "away": {
+      "id": 11300,
+      "name": "Anderson Aces - Arihaan",
+      "display": "Anderson Aces"
+    },
+    "home_skins": null,
+    "away_skins": null,
+    "played": false,
+    "fixture_id": 264012,
+    "scoresheet_complete": false,
+    "is_grading": false
+  },
   "fixtures": [
     {
       "date_str": "Saturday 25 Apr 2026",
@@ -198,6 +218,27 @@
       "played": true,
       "fixture_id": 264010,
       "scoresheet_complete": true,
+      "is_grading": false
+    },
+    {
+      "date_str": "Saturday 20 Jun 2026",
+      "time": "12:00",
+      "court": "Court 2",
+      "home": {
+        "id": 11361,
+        "name": "Blazing Firebirds - Jacob",
+        "display": "Blazing Firebirds"
+      },
+      "away": {
+        "id": 11300,
+        "name": "Anderson Aces - Arihaan",
+        "display": "Anderson Aces"
+      },
+      "home_skins": null,
+      "away_skins": null,
+      "played": false,
+      "fixture_id": 264012,
+      "scoresheet_complete": false,
       "is_grading": false
     }
   ],
