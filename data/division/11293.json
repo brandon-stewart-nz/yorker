@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-06-17T23:00:38.536901+00:00",
-  "generated_at_nz": "2026-06-18T11:00:37.327155+12:00",
+  "generated_at_utc": "2026-06-17T23:53:41.645577+00:00",
+  "generated_at_nz": "2026-06-18T11:53:40.104545+12:00",
   "division_name": "Division 8",
   "team": {
     "id": 11293,
@@ -16,9 +16,9 @@
     "drawn": 0,
     "forfeits_for": 0,
     "forfeits_against": 0,
-    "skins_for": 353,
-    "skins_against": 325,
-    "difference": 28,
+    "skins_for": 370,
+    "skins_against": 345,
+    "difference": 25,
     "bonus": 0,
     "points": 9
   },
