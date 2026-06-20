@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-06-20T01:33:59.652992+00:00",
-  "generated_at_nz": "2026-06-20T13:33:55.948554+12:00",
+  "generated_at_utc": "2026-06-20T01:55:45.029259+00:00",
+  "generated_at_nz": "2026-06-20T13:55:40.940532+12:00",
   "division_name": "Division 8",
   "team": {
     "id": 11297,
@@ -10,47 +10,27 @@
   "standings_row": {
     "position": 1,
     "team_name_raw": "BYC - Freddie",
-    "played": 5,
-    "won": 4,
+    "played": 6,
+    "won": 5,
     "lost": 1,
     "drawn": 0,
     "forfeits_for": 0,
     "forfeits_against": 0,
-    "skins_for": 344,
-    "skins_against": 230,
-    "difference": 114,
+    "skins_for": 393,
+    "skins_against": 273,
+    "difference": 120,
     "bonus": 0,
-    "points": 13
+    "points": 16
   },
   "record": {
-    "played": 8,
-    "won": 4,
+    "played": 9,
+    "won": 5,
     "lost": 4,
     "drawn": 0,
-    "skins_for": 351,
-    "skins_against": 485
+    "skins_for": 400,
+    "skins_against": 528
   },
-  "next_game": {
-    "date_str": "Saturday 20 Jun 2026",
-    "time": "13:00",
-    "court": "Court 3",
-    "home": {
-      "id": 11294,
-      "name": "Brooklyn Allrounders - Ifan",
-      "display": "Brooklyn Allrounders"
-    },
-    "away": {
-      "id": 11297,
-      "name": "BYC - Freddie",
-      "display": "BYC"
-    },
-    "home_skins": null,
-    "away_skins": null,
-    "played": false,
-    "fixture_id": 264014,
-    "scoresheet_complete": false,
-    "is_grading": false
-  },
+  "next_game": null,
   "fixtures": [
     {
       "date_str": "Saturday 25 Apr 2026",
@@ -234,11 +214,11 @@
         "name": "BYC - Freddie",
         "display": "BYC"
       },
-      "home_skins": null,
-      "away_skins": null,
-      "played": false,
+      "home_skins": 43,
+      "away_skins": 49,
+      "played": true,
       "fixture_id": 264014,
-      "scoresheet_complete": false,
+      "scoresheet_complete": true,
       "is_grading": false
     }
   ],
@@ -435,13 +415,13 @@
     {
       "name": "Raife",
       "totals": {
-        "innings_batted": 7,
-        "runs": 58,
-        "balls_faced": 75,
-        "dismissals": 7,
-        "overs_bowled": 14,
-        "wickets": 6,
-        "runs_conceded": 86
+        "innings_batted": 8,
+        "runs": 63,
+        "balls_faced": 90,
+        "dismissals": 9,
+        "overs_bowled": 16,
+        "wickets": 7,
+        "runs_conceded": 94
       },
       "matches": [
         {
@@ -570,6 +550,31 @@
           }
         },
         {
+          "fixture_id": 264014,
+          "date_str": "Saturday 20 Jun 2026",
+          "vs": "Brooklyn Allrounders",
+          "batting": {
+            "name": "Raife Unknown",
+            "name_raw": "raife Unknown",
+            "runs": 5,
+            "balls_faced": 15,
+            "dismissals": 2,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Raife Unknown",
+            "name_raw": "raife Unknown",
+            "overs": 2,
+            "wickets": 1,
+            "runs_conceded": 8,
+            "no_balls": 0,
+            "wides": 2
+          }
+        },
+        {
           "fixture_id": 263951,
           "date_str": "Saturday 30 May 2026",
           "vs": "Team Thunderboltz",
@@ -622,343 +627,15 @@
       ]
     },
     {
-      "name": "Freddie Gibson",
-      "totals": {
-        "innings_batted": 7,
-        "runs": 50,
-        "balls_faced": 87,
-        "dismissals": 14,
-        "overs_bowled": 14,
-        "wickets": 11,
-        "runs_conceded": 22
-      },
-      "matches": [
-        {
-          "fixture_id": 263105,
-          "date_str": "Saturday 25 Apr 2026",
-          "vs": "Cats",
-          "batting": {
-            "name": "Freddie Gibson",
-            "name_raw": "Freddie Gibson",
-            "runs": -22,
-            "balls_faced": 9,
-            "dismissals": 5,
-            "threes": 0,
-            "fours": 0,
-            "fives": 0,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Freddie Gibson",
-            "name_raw": "Freddie Gibson",
-            "overs": 2,
-            "wickets": 1,
-            "runs_conceded": 8,
-            "no_balls": 0,
-            "wides": 1
-          }
-        },
-        {
-          "fixture_id": 263467,
-          "date_str": "Saturday 09 May 2026",
-          "vs": "Firebats",
-          "batting": {
-            "name": "Freddie Gibson",
-            "name_raw": "Freddie Gibson",
-            "runs": -13,
-            "balls_faced": 10,
-            "dismissals": 4,
-            "threes": 0,
-            "fours": 0,
-            "fives": 0,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Freddie Gibson",
-            "name_raw": "Freddie Gibson",
-            "overs": 2,
-            "wickets": 2,
-            "runs_conceded": -1,
-            "no_balls": 0,
-            "wides": 1
-          }
-        },
-        {
-          "fixture_id": 263847,
-          "date_str": "Saturday 16 May 2026",
-          "vs": "Brooklyn Allrounders",
-          "batting": {
-            "name": "Freddie Gibson",
-            "name_raw": "Freddie Gibson",
-            "runs": 14,
-            "balls_faced": 16,
-            "dismissals": 1,
-            "threes": 1,
-            "fours": 0,
-            "fives": 1,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Freddie Gibson",
-            "name_raw": "Freddie Gibson",
-            "overs": 2,
-            "wickets": 3,
-            "runs_conceded": -5,
-            "no_balls": 0,
-            "wides": 3
-          }
-        },
-        {
-          "fixture_id": 263875,
-          "date_str": "Saturday 23 May 2026",
-          "vs": "Blazing Firebirds",
-          "batting": {
-            "name": "Freddie Gibson",
-            "name_raw": "Freddie Gibson",
-            "runs": 17,
-            "balls_faced": 14,
-            "dismissals": 1,
-            "threes": 2,
-            "fours": 0,
-            "fives": 0,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Freddie Gibson",
-            "name_raw": "Freddie Gibson",
-            "overs": 2,
-            "wickets": 2,
-            "runs_conceded": 3,
-            "no_balls": 0,
-            "wides": 1
-          }
-        },
-        {
-          "fixture_id": 263951,
-          "date_str": "Saturday 30 May 2026",
-          "vs": "Team Thunderboltz",
-          "batting": {
-            "name": "Freddie Gibson",
-            "name_raw": "Freddie Gibson",
-            "runs": 19,
-            "balls_faced": 16,
-            "dismissals": 1,
-            "threes": 2,
-            "fours": 1,
-            "fives": 0,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Freddie Gibson",
-            "name_raw": "Freddie Gibson",
-            "overs": 2,
-            "wickets": 1,
-            "runs_conceded": 3,
-            "no_balls": 0,
-            "wides": 1
-          }
-        },
-        {
-          "fixture_id": 264008,
-          "date_str": "Saturday 06 Jun 2026",
-          "vs": "Renegades",
-          "batting": {
-            "name": "Freddie Gibson",
-            "name_raw": "Freddie Gibson",
-            "runs": 16,
-            "balls_faced": 12,
-            "dismissals": 2,
-            "threes": 1,
-            "fours": 1,
-            "fives": 2,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Freddie Gibson",
-            "name_raw": "Freddie Gibson",
-            "overs": 2,
-            "wickets": 1,
-            "runs_conceded": 13,
-            "no_balls": 0,
-            "wides": 4
-          }
-        },
-        {
-          "fixture_id": 264011,
-          "date_str": "Saturday 13 Jun 2026",
-          "vs": "Oompa Loompas",
-          "batting": {
-            "name": "Freddie Gibson",
-            "name_raw": "Freddie Gibson",
-            "runs": 19,
-            "balls_faced": 10,
-            "dismissals": 0,
-            "threes": 1,
-            "fours": 0,
-            "fives": 0,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Freddie Gibson",
-            "name_raw": "Freddie Gibson",
-            "overs": 2,
-            "wickets": 1,
-            "runs_conceded": 1,
-            "no_balls": 0,
-            "wides": 2
-          }
-        }
-      ]
-    },
-    {
-      "name": "Hugh Whittington",
-      "totals": {
-        "innings_batted": 5,
-        "runs": 49,
-        "balls_faced": 61,
-        "dismissals": 6,
-        "overs_bowled": 10,
-        "wickets": 7,
-        "runs_conceded": 35
-      },
-      "matches": [
-        {
-          "fixture_id": 263105,
-          "date_str": "Saturday 25 Apr 2026",
-          "vs": "Cats",
-          "batting": {
-            "name": "Hugh Whittington",
-            "name_raw": "Hugh Whittington",
-            "runs": -6,
-            "balls_faced": 11,
-            "dismissals": 3,
-            "threes": 0,
-            "fours": 0,
-            "fives": 0,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Hugh Whittington",
-            "name_raw": "Hugh Whittington",
-            "overs": 2,
-            "wickets": 1,
-            "runs_conceded": 10,
-            "no_balls": 0,
-            "wides": 4
-          }
-        },
-        {
-          "fixture_id": 263467,
-          "date_str": "Saturday 09 May 2026",
-          "vs": "Firebats",
-          "batting": {
-            "name": "Hugh Whittington",
-            "name_raw": "Hugh Whittington",
-            "runs": 11,
-            "balls_faced": 11,
-            "dismissals": 1,
-            "threes": 0,
-            "fours": 0,
-            "fives": 0,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Hugh Whittington",
-            "name_raw": "Hugh Whittington",
-            "overs": 2,
-            "wickets": 2,
-            "runs_conceded": 10,
-            "no_balls": 0,
-            "wides": 5
-          }
-        },
-        {
-          "fixture_id": 263847,
-          "date_str": "Saturday 16 May 2026",
-          "vs": "Brooklyn Allrounders",
-          "batting": {
-            "name": "Hugh Whittington",
-            "name_raw": "Hugh Whittington",
-            "runs": 8,
-            "balls_faced": 12,
-            "dismissals": 1,
-            "threes": 1,
-            "fours": 0,
-            "fives": 0,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Hugh Whittington",
-            "name_raw": "Hugh Whittington",
-            "overs": 2,
-            "wickets": 2,
-            "runs_conceded": 0,
-            "no_balls": 0,
-            "wides": 1
-          }
-        },
-        {
-          "fixture_id": 263875,
-          "date_str": "Saturday 23 May 2026",
-          "vs": "Blazing Firebirds",
-          "batting": {
-            "name": "Hugh Whittington",
-            "name_raw": "Hugh Whittington",
-            "runs": 18,
-            "balls_faced": 12,
-            "dismissals": 0,
-            "threes": 1,
-            "fours": 0,
-            "fives": 0,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Hugh Whittington",
-            "name_raw": "Hugh Whittington",
-            "overs": 2,
-            "wickets": 2,
-            "runs_conceded": 6,
-            "no_balls": 0,
-            "wides": 4
-          }
-        },
-        {
-          "fixture_id": 264011,
-          "date_str": "Saturday 13 Jun 2026",
-          "vs": "Oompa Loompas",
-          "batting": {
-            "name": "Hugh Whittington",
-            "name_raw": "Hugh Whittington",
-            "runs": 18,
-            "balls_faced": 15,
-            "dismissals": 1,
-            "threes": 0,
-            "fours": 1,
-            "fives": 0,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Hugh Whittington",
-            "name_raw": "Hugh Whittington",
-            "overs": 2,
-            "wickets": 0,
-            "runs_conceded": 9,
-            "no_balls": 0,
-            "wides": 3
-          }
-        }
-      ]
-    },
-    {
       "name": "James",
       "totals": {
-        "innings_batted": 5,
-        "runs": 40,
-        "balls_faced": 62,
-        "dismissals": 6,
-        "overs_bowled": 10,
-        "wickets": 3,
-        "runs_conceded": 69
+        "innings_batted": 6,
+        "runs": 54,
+        "balls_faced": 74,
+        "dismissals": 7,
+        "overs_bowled": 12,
+        "wickets": 4,
+        "runs_conceded": 78
       },
       "matches": [
         {
@@ -1085,19 +762,44 @@
             "no_balls": 0,
             "wides": 1
           }
+        },
+        {
+          "fixture_id": 264014,
+          "date_str": "Saturday 20 Jun 2026",
+          "vs": "Brooklyn Allrounders",
+          "batting": {
+            "name": "James Unknown",
+            "name_raw": "james Unknown",
+            "runs": 14,
+            "balls_faced": 12,
+            "dismissals": 1,
+            "threes": 1,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "James Unknown",
+            "name_raw": "james Unknown",
+            "overs": 2,
+            "wickets": 1,
+            "runs_conceded": 9,
+            "no_balls": 0,
+            "wides": 2
+          }
         }
       ]
     },
     {
       "name": "Tom Burlace",
       "totals": {
-        "innings_batted": 8,
-        "runs": 40,
-        "balls_faced": 101,
+        "innings_batted": 9,
+        "runs": 52,
+        "balls_faced": 111,
         "dismissals": 13,
-        "overs_bowled": 16,
-        "wickets": 9,
-        "runs_conceded": 67
+        "overs_bowled": 18,
+        "wickets": 10,
+        "runs_conceded": 73
       },
       "matches": [
         {
@@ -1299,19 +1001,397 @@
             "no_balls": 0,
             "wides": 1
           }
+        },
+        {
+          "fixture_id": 264014,
+          "date_str": "Saturday 20 Jun 2026",
+          "vs": "Brooklyn Allrounders",
+          "batting": {
+            "name": "Tom Burlace",
+            "name_raw": "Tom Burlace",
+            "runs": 12,
+            "balls_faced": 10,
+            "dismissals": 0,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Tom Burlace",
+            "name_raw": "Tom Burlace",
+            "overs": 2,
+            "wickets": 1,
+            "runs_conceded": 6,
+            "no_balls": 0,
+            "wides": 1
+          }
+        }
+      ]
+    },
+    {
+      "name": "Freddie Gibson",
+      "totals": {
+        "innings_batted": 8,
+        "runs": 50,
+        "balls_faced": 96,
+        "dismissals": 16,
+        "overs_bowled": 16,
+        "wickets": 14,
+        "runs_conceded": 23
+      },
+      "matches": [
+        {
+          "fixture_id": 263105,
+          "date_str": "Saturday 25 Apr 2026",
+          "vs": "Cats",
+          "batting": {
+            "name": "Freddie Gibson",
+            "name_raw": "Freddie Gibson",
+            "runs": -22,
+            "balls_faced": 9,
+            "dismissals": 5,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Freddie Gibson",
+            "name_raw": "Freddie Gibson",
+            "overs": 2,
+            "wickets": 1,
+            "runs_conceded": 8,
+            "no_balls": 0,
+            "wides": 1
+          }
+        },
+        {
+          "fixture_id": 263467,
+          "date_str": "Saturday 09 May 2026",
+          "vs": "Firebats",
+          "batting": {
+            "name": "Freddie Gibson",
+            "name_raw": "Freddie Gibson",
+            "runs": -13,
+            "balls_faced": 10,
+            "dismissals": 4,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Freddie Gibson",
+            "name_raw": "Freddie Gibson",
+            "overs": 2,
+            "wickets": 2,
+            "runs_conceded": -1,
+            "no_balls": 0,
+            "wides": 1
+          }
+        },
+        {
+          "fixture_id": 263847,
+          "date_str": "Saturday 16 May 2026",
+          "vs": "Brooklyn Allrounders",
+          "batting": {
+            "name": "Freddie Gibson",
+            "name_raw": "Freddie Gibson",
+            "runs": 14,
+            "balls_faced": 16,
+            "dismissals": 1,
+            "threes": 1,
+            "fours": 0,
+            "fives": 1,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Freddie Gibson",
+            "name_raw": "Freddie Gibson",
+            "overs": 2,
+            "wickets": 3,
+            "runs_conceded": -5,
+            "no_balls": 0,
+            "wides": 3
+          }
+        },
+        {
+          "fixture_id": 263875,
+          "date_str": "Saturday 23 May 2026",
+          "vs": "Blazing Firebirds",
+          "batting": {
+            "name": "Freddie Gibson",
+            "name_raw": "Freddie Gibson",
+            "runs": 17,
+            "balls_faced": 14,
+            "dismissals": 1,
+            "threes": 2,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Freddie Gibson",
+            "name_raw": "Freddie Gibson",
+            "overs": 2,
+            "wickets": 2,
+            "runs_conceded": 3,
+            "no_balls": 0,
+            "wides": 1
+          }
+        },
+        {
+          "fixture_id": 263951,
+          "date_str": "Saturday 30 May 2026",
+          "vs": "Team Thunderboltz",
+          "batting": {
+            "name": "Freddie Gibson",
+            "name_raw": "Freddie Gibson",
+            "runs": 19,
+            "balls_faced": 16,
+            "dismissals": 1,
+            "threes": 2,
+            "fours": 1,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Freddie Gibson",
+            "name_raw": "Freddie Gibson",
+            "overs": 2,
+            "wickets": 1,
+            "runs_conceded": 3,
+            "no_balls": 0,
+            "wides": 1
+          }
+        },
+        {
+          "fixture_id": 264008,
+          "date_str": "Saturday 06 Jun 2026",
+          "vs": "Renegades",
+          "batting": {
+            "name": "Freddie Gibson",
+            "name_raw": "Freddie Gibson",
+            "runs": 16,
+            "balls_faced": 12,
+            "dismissals": 2,
+            "threes": 1,
+            "fours": 1,
+            "fives": 2,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Freddie Gibson",
+            "name_raw": "Freddie Gibson",
+            "overs": 2,
+            "wickets": 1,
+            "runs_conceded": 13,
+            "no_balls": 0,
+            "wides": 4
+          }
+        },
+        {
+          "fixture_id": 264011,
+          "date_str": "Saturday 13 Jun 2026",
+          "vs": "Oompa Loompas",
+          "batting": {
+            "name": "Freddie Gibson",
+            "name_raw": "Freddie Gibson",
+            "runs": 19,
+            "balls_faced": 10,
+            "dismissals": 0,
+            "threes": 1,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Freddie Gibson",
+            "name_raw": "Freddie Gibson",
+            "overs": 2,
+            "wickets": 1,
+            "runs_conceded": 1,
+            "no_balls": 0,
+            "wides": 2
+          }
+        },
+        {
+          "fixture_id": 264014,
+          "date_str": "Saturday 20 Jun 2026",
+          "vs": "Brooklyn Allrounders",
+          "batting": {
+            "name": "Freddie Gibson",
+            "name_raw": "Freddie Gibson",
+            "runs": 0,
+            "balls_faced": 9,
+            "dismissals": 2,
+            "threes": 0,
+            "fours": 0,
+            "fives": 1,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Freddie Gibson",
+            "name_raw": "Freddie Gibson",
+            "overs": 2,
+            "wickets": 3,
+            "runs_conceded": 1,
+            "no_balls": 1,
+            "wides": 1
+          }
+        }
+      ]
+    },
+    {
+      "name": "Hugh Whittington",
+      "totals": {
+        "innings_batted": 5,
+        "runs": 49,
+        "balls_faced": 61,
+        "dismissals": 6,
+        "overs_bowled": 10,
+        "wickets": 7,
+        "runs_conceded": 35
+      },
+      "matches": [
+        {
+          "fixture_id": 263105,
+          "date_str": "Saturday 25 Apr 2026",
+          "vs": "Cats",
+          "batting": {
+            "name": "Hugh Whittington",
+            "name_raw": "Hugh Whittington",
+            "runs": -6,
+            "balls_faced": 11,
+            "dismissals": 3,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Hugh Whittington",
+            "name_raw": "Hugh Whittington",
+            "overs": 2,
+            "wickets": 1,
+            "runs_conceded": 10,
+            "no_balls": 0,
+            "wides": 4
+          }
+        },
+        {
+          "fixture_id": 263467,
+          "date_str": "Saturday 09 May 2026",
+          "vs": "Firebats",
+          "batting": {
+            "name": "Hugh Whittington",
+            "name_raw": "Hugh Whittington",
+            "runs": 11,
+            "balls_faced": 11,
+            "dismissals": 1,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Hugh Whittington",
+            "name_raw": "Hugh Whittington",
+            "overs": 2,
+            "wickets": 2,
+            "runs_conceded": 10,
+            "no_balls": 0,
+            "wides": 5
+          }
+        },
+        {
+          "fixture_id": 263847,
+          "date_str": "Saturday 16 May 2026",
+          "vs": "Brooklyn Allrounders",
+          "batting": {
+            "name": "Hugh Whittington",
+            "name_raw": "Hugh Whittington",
+            "runs": 8,
+            "balls_faced": 12,
+            "dismissals": 1,
+            "threes": 1,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Hugh Whittington",
+            "name_raw": "Hugh Whittington",
+            "overs": 2,
+            "wickets": 2,
+            "runs_conceded": 0,
+            "no_balls": 0,
+            "wides": 1
+          }
+        },
+        {
+          "fixture_id": 263875,
+          "date_str": "Saturday 23 May 2026",
+          "vs": "Blazing Firebirds",
+          "batting": {
+            "name": "Hugh Whittington",
+            "name_raw": "Hugh Whittington",
+            "runs": 18,
+            "balls_faced": 12,
+            "dismissals": 0,
+            "threes": 1,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Hugh Whittington",
+            "name_raw": "Hugh Whittington",
+            "overs": 2,
+            "wickets": 2,
+            "runs_conceded": 6,
+            "no_balls": 0,
+            "wides": 4
+          }
+        },
+        {
+          "fixture_id": 264011,
+          "date_str": "Saturday 13 Jun 2026",
+          "vs": "Oompa Loompas",
+          "batting": {
+            "name": "Hugh Whittington",
+            "name_raw": "Hugh Whittington",
+            "runs": 18,
+            "balls_faced": 15,
+            "dismissals": 1,
+            "threes": 0,
+            "fours": 1,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Hugh Whittington",
+            "name_raw": "Hugh Whittington",
+            "overs": 2,
+            "wickets": 0,
+            "runs_conceded": 9,
+            "no_balls": 0,
+            "wides": 3
+          }
         }
       ]
     },
     {
       "name": "Ted Couchman",
       "totals": {
-        "innings_batted": 6,
-        "runs": 31,
-        "balls_faced": 74,
-        "dismissals": 7,
-        "overs_bowled": 12,
+        "innings_batted": 7,
+        "runs": 43,
+        "balls_faced": 88,
+        "dismissals": 8,
+        "overs_bowled": 14,
         "wickets": 7,
-        "runs_conceded": 71
+        "runs_conceded": 83
       },
       "matches": [
         {
@@ -1463,19 +1543,44 @@
             "no_balls": 0,
             "wides": 0
           }
+        },
+        {
+          "fixture_id": 264014,
+          "date_str": "Saturday 20 Jun 2026",
+          "vs": "Brooklyn Allrounders",
+          "batting": {
+            "name": "Ted Couchman",
+            "name_raw": "Ted Couchman",
+            "runs": 12,
+            "balls_faced": 14,
+            "dismissals": 1,
+            "threes": 1,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Ted Couchman",
+            "name_raw": "Ted Couchman",
+            "overs": 2,
+            "wickets": 0,
+            "runs_conceded": 12,
+            "no_balls": 0,
+            "wides": 3
+          }
         }
       ]
     },
     {
       "name": "Alex",
       "totals": {
-        "innings_batted": 1,
-        "runs": 15,
-        "balls_faced": 10,
-        "dismissals": 0,
-        "overs_bowled": 2,
-        "wickets": 3,
-        "runs_conceded": -11
+        "innings_batted": 2,
+        "runs": 21,
+        "balls_faced": 22,
+        "dismissals": 1,
+        "overs_bowled": 4,
+        "wickets": 4,
+        "runs_conceded": -4
       },
       "matches": [
         {
@@ -1501,6 +1606,31 @@
             "runs_conceded": -11,
             "no_balls": 0,
             "wides": 1
+          }
+        },
+        {
+          "fixture_id": 264014,
+          "date_str": "Saturday 20 Jun 2026",
+          "vs": "Brooklyn Allrounders",
+          "batting": {
+            "name": "Alex Unknown",
+            "name_raw": "alex Unknown",
+            "runs": 6,
+            "balls_faced": 12,
+            "dismissals": 1,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Alex Unknown",
+            "name_raw": "alex Unknown",
+            "overs": 2,
+            "wickets": 1,
+            "runs_conceded": 7,
+            "no_balls": 0,
+            "wides": 4
           }
         }
       ]
