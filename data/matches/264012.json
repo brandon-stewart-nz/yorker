@@ -11,20 +11,20 @@
         49
       ],
       "total": 111,
-      "skins_won": 3,
-      "points": 6
+      "skins_won": 2,
+      "points": 5
     },
     {
       "name": "Blazing Firebirds - Jacob",
       "display": "Blazing Firebirds",
       "skin_scores": [
-        0,
-        0,
-        0
+        28,
+        -14,
+        -14
       ],
       "total": 0,
-      "skins_won": 0,
-      "points": 1
+      "skins_won": 1,
+      "points": 2
     }
   ],
   "innings": [
@@ -157,15 +157,70 @@
       ]
     },
     {
-      "batting_team_raw": "",
-      "batting_team_display": "",
+      "batting_team_raw": "Blazing Firebirds - Jacob",
+      "batting_team_display": "Blazing Firebirds",
       "batters": [
         {
-          "name": "",
-          "name_raw": "",
-          "runs": 0,
-          "balls_faced": 0,
+          "name": "Vernon Stewart",
+          "name_raw": "vernon stewart",
+          "runs": 16,
+          "balls_faced": 12,
           "dismissals": 0,
+          "threes": 0,
+          "fours": 0,
+          "fives": 0,
+          "sixes": 0
+        },
+        {
+          "name": "Jack Butler",
+          "name_raw": "jack butler",
+          "runs": 12,
+          "balls_faced": 12,
+          "dismissals": 0,
+          "threes": 0,
+          "fours": 0,
+          "fives": 0,
+          "sixes": 0
+        },
+        {
+          "name": "Owen Buchan",
+          "name_raw": "owen buchan",
+          "runs": -2,
+          "balls_faced": 8,
+          "dismissals": 2,
+          "threes": 0,
+          "fours": 0,
+          "fives": 0,
+          "sixes": 0
+        },
+        {
+          "name": "Ria Sathish Kumar",
+          "name_raw": "Ria Sathish kumar",
+          "runs": -12,
+          "balls_faced": 16,
+          "dismissals": 3,
+          "threes": 0,
+          "fours": 0,
+          "fives": 0,
+          "sixes": 0
+        },
+        {
+          "name": "Anvaya Unknown",
+          "name_raw": "anvaya Unknown",
+          "runs": -4,
+          "balls_faced": 14,
+          "dismissals": 2,
+          "threes": 0,
+          "fours": 0,
+          "fives": 0,
+          "sixes": 0
+        },
+        {
+          "name": "Will Eltringham",
+          "name_raw": "will eltringham",
+          "runs": -10,
+          "balls_faced": 10,
+          "dismissals": 3,
           "threes": 0,
           "fours": 0,
           "fives": 0,
@@ -174,13 +229,58 @@
       ],
       "bowlers": [
         {
-          "name": "",
-          "name_raw": "",
-          "overs": 12,
-          "wickets": 0,
-          "runs_conceded": 0,
+          "name": "Abdullah Farooq",
+          "name_raw": "abdullah farooq",
+          "overs": 2,
+          "wickets": 2,
+          "runs_conceded": -1,
           "no_balls": 0,
           "wides": 0
+        },
+        {
+          "name": "Daniel Unknown",
+          "name_raw": "daniel Unknown",
+          "overs": 2,
+          "wickets": 0,
+          "runs_conceded": 12,
+          "no_balls": 0,
+          "wides": 4
+        },
+        {
+          "name": "Micheal Unknown",
+          "name_raw": "Micheal Unknown",
+          "overs": 2,
+          "wickets": 0,
+          "runs_conceded": 11,
+          "no_balls": 0,
+          "wides": 0
+        },
+        {
+          "name": "Gus Unknown",
+          "name_raw": "Gus Unknown",
+          "overs": 2,
+          "wickets": 1,
+          "runs_conceded": 4,
+          "no_balls": 0,
+          "wides": 0
+        },
+        {
+          "name": "Riley Unknown",
+          "name_raw": "Riley Unknown",
+          "overs": 2,
+          "wickets": 4,
+          "runs_conceded": -15,
+          "no_balls": 0,
+          "wides": 1
+        },
+        {
+          "name": "Lakshya Biswas",
+          "name_raw": "lakshya biswas",
+          "overs": 2,
+          "wickets": 3,
+          "runs_conceded": -11,
+          "no_balls": 0,
+          "wides": 1
         }
       ]
     }

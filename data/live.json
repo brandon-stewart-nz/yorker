@@ -1,14 +1,7 @@
 {
-  "generated_at_nz": "2026-06-20T12:55:20.461681+12:00",
-  "fixture_id": 264012,
-  "phase": "live",
-  "score": {
-    "home_skins": 0,
-    "away_skins": 111
-  },
-  "rev": "4f735d5f2020",
-  "date_str": "Saturday 20 Jun 2026",
-  "time": "12:00",
-  "played": true,
-  "scoresheet_complete": false
+  "generated_at_nz": "2026-06-20T13:00:20.832661+12:00",
+  "fixture_id": null,
+  "phase": "none",
+  "score": null,
+  "rev": null
 }

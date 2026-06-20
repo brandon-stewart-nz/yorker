@@ -1,12 +1,12 @@
 {
-  "generated_at_nz": "2026-06-20T12:55:20.461681+12:00",
+  "generated_at_nz": "2026-06-20T13:00:20.832661+12:00",
   "players": [
     {
       "name": "Vernon Stewart",
       "totals": {
-        "innings_batted": 7,
-        "runs": 112,
-        "balls_faced": 98,
+        "innings_batted": 8,
+        "runs": 128,
+        "balls_faced": 110,
         "dismissals": 7,
         "overs_bowled": 16,
         "wickets": 8,
@@ -192,7 +192,17 @@
           "fixture_id": 264012,
           "date_str": "Saturday 20 Jun 2026",
           "vs": "Anderson Aces",
-          "batting": null,
+          "batting": {
+            "name": "Vernon Stewart",
+            "name_raw": "vernon stewart",
+            "runs": 16,
+            "balls_faced": 12,
+            "dismissals": 0,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
           "bowling": {
             "name": "Vernon Stewart",
             "name_raw": "vernon stewart",
@@ -422,9 +432,9 @@
     {
       "name": "Jack Butler",
       "totals": {
-        "innings_batted": 7,
-        "runs": 65,
-        "balls_faced": 70,
+        "innings_batted": 8,
+        "runs": 77,
+        "balls_faced": 82,
         "dismissals": 10,
         "overs_bowled": 16,
         "wickets": 6,
@@ -610,7 +620,17 @@
           "fixture_id": 264012,
           "date_str": "Saturday 20 Jun 2026",
           "vs": "Anderson Aces",
-          "batting": null,
+          "batting": {
+            "name": "Jack Butler",
+            "name_raw": "jack butler",
+            "runs": 12,
+            "balls_faced": 12,
+            "dismissals": 0,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
           "bowling": {
             "name": "Jack Butler",
             "name_raw": "jack butler",
@@ -626,10 +646,10 @@
     {
       "name": "Will Eltringham",
       "totals": {
-        "innings_batted": 6,
-        "runs": 61,
-        "balls_faced": 61,
-        "dismissals": 6,
+        "innings_batted": 7,
+        "runs": 51,
+        "balls_faced": 71,
+        "dismissals": 9,
         "overs_bowled": 14,
         "wickets": 3,
         "runs_conceded": 143
@@ -789,7 +809,17 @@
           "fixture_id": 264012,
           "date_str": "Saturday 20 Jun 2026",
           "vs": "Anderson Aces",
-          "batting": null,
+          "batting": {
+            "name": "Will Eltringham",
+            "name_raw": "will eltringham",
+            "runs": -10,
+            "balls_faced": 10,
+            "dismissals": 3,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
           "bowling": {
             "name": "Will Eltringham",
             "name_raw": "will eltringham",
@@ -805,10 +835,10 @@
     {
       "name": "Anuya Metikurke",
       "totals": {
-        "innings_batted": 5,
-        "runs": 42,
-        "balls_faced": 50,
-        "dismissals": 5,
+        "innings_batted": 6,
+        "runs": 38,
+        "balls_faced": 64,
+        "dismissals": 7,
         "overs_bowled": 12,
         "wickets": 5,
         "runs_conceded": 74
@@ -943,7 +973,17 @@
           "fixture_id": 264012,
           "date_str": "Saturday 20 Jun 2026",
           "vs": "Anderson Aces",
-          "batting": null,
+          "batting": {
+            "name": "Anvaya Unknown",
+            "name_raw": "anvaya Unknown",
+            "runs": -4,
+            "balls_faced": 14,
+            "dismissals": 2,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
           "bowling": {
             "name": "Anvaya Unknown",
             "name_raw": "anvaya Unknown",
@@ -959,10 +999,10 @@
     {
       "name": "Owen Buchan",
       "totals": {
-        "innings_batted": 5,
-        "runs": 37,
-        "balls_faced": 46,
-        "dismissals": 5,
+        "innings_batted": 6,
+        "runs": 35,
+        "balls_faced": 54,
+        "dismissals": 7,
         "overs_bowled": 12,
         "wickets": 3,
         "runs_conceded": 133
@@ -1097,7 +1137,17 @@
           "fixture_id": 264012,
           "date_str": "Saturday 20 Jun 2026",
           "vs": "Anderson Aces",
-          "batting": null,
+          "batting": {
+            "name": "Owen Buchan",
+            "name_raw": "owen buchan",
+            "runs": -2,
+            "balls_faced": 8,
+            "dismissals": 2,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
           "bowling": {
             "name": "Owen Buchan",
             "name_raw": "owen buchan",
@@ -1191,10 +1241,10 @@
     {
       "name": "Ria Sathish Kumar",
       "totals": {
-        "innings_batted": 5,
-        "runs": 18,
-        "balls_faced": 65,
-        "dismissals": 6,
+        "innings_batted": 6,
+        "runs": 6,
+        "balls_faced": 81,
+        "dismissals": 9,
         "overs_bowled": 12,
         "wickets": 3,
         "runs_conceded": 108
@@ -1329,7 +1379,17 @@
           "fixture_id": 264012,
           "date_str": "Saturday 20 Jun 2026",
           "vs": "Anderson Aces",
-          "batting": null,
+          "batting": {
+            "name": "Ria Sathish Kumar",
+            "name_raw": "Ria Sathish kumar",
+            "runs": -12,
+            "balls_faced": 16,
+            "dismissals": 3,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
           "bowling": {
             "name": "Ria Sathish Kumar",
             "name_raw": "Ria Sathish kumar",
@@ -1442,37 +1502,6 @@
             "no_balls": 0,
             "wides": 3
           }
-        }
-      ]
-    },
-    {
-      "name": "",
-      "totals": {
-        "innings_batted": 1,
-        "runs": 0,
-        "balls_faced": 0,
-        "dismissals": 0,
-        "overs_bowled": 0,
-        "wickets": 0,
-        "runs_conceded": 0
-      },
-      "matches": [
-        {
-          "fixture_id": 264012,
-          "date_str": "Saturday 20 Jun 2026",
-          "vs": "Anderson Aces",
-          "batting": {
-            "name": "",
-            "name_raw": "",
-            "runs": 0,
-            "balls_faced": 0,
-            "dismissals": 0,
-            "threes": 0,
-            "fours": 0,
-            "fives": 0,
-            "sixes": 0
-          },
-          "bowling": null
         }
       ]
     }
