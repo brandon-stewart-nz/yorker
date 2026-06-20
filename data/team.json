@@ -1,33 +1,33 @@
 {
-  "generated_at_utc": "2026-06-20T00:05:33.417136+00:00",
-  "generated_at_nz": "2026-06-20T12:05:26.216974+12:00",
+  "generated_at_utc": "2026-06-20T00:55:28.137834+00:00",
+  "generated_at_nz": "2026-06-20T12:55:20.461681+12:00",
   "team": {
     "id": 11361,
     "name": "Blazing Firebirds",
     "raw_name": "Blazing Firebirds - Jacob"
   },
   "standings_row": {
-    "position": 3,
+    "position": 2,
     "team_name_raw": "Blazing Firebirds - Jacob",
-    "played": 5,
+    "played": 6,
     "won": 2,
-    "lost": 3,
+    "lost": 4,
     "drawn": 0,
     "forfeits_for": 0,
     "forfeits_against": 0,
     "skins_for": 346,
-    "skins_against": 384,
-    "difference": -38,
+    "skins_against": 495,
+    "difference": -149,
     "bonus": 0,
-    "points": 9
+    "points": 10
   },
   "record": {
-    "played": 8,
+    "played": 9,
     "won": 3,
-    "lost": 5,
+    "lost": 6,
     "drawn": 0,
     "skins_for": 494,
-    "skins_against": 651
+    "skins_against": 762
   },
   "next_game": {
     "date_str": "Saturday 20 Jun 2026",
@@ -43,9 +43,9 @@
       "name": "Anderson Aces - Arihaan",
       "display": "Anderson Aces"
     },
-    "home_skins": null,
-    "away_skins": null,
-    "played": false,
+    "home_skins": 0,
+    "away_skins": 111,
+    "played": true,
     "fixture_id": 264012,
     "is_grading": false,
     "scoresheet_complete": false,

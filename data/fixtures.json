@@ -1,5 +1,5 @@
 {
-  "generated_at_nz": "2026-06-20T12:05:26.216974+12:00",
+  "generated_at_nz": "2026-06-20T12:55:20.461681+12:00",
   "fixtures": [
     {
       "date_str": "Saturday 25 Apr 2026",
@@ -191,9 +191,9 @@
         "name": "Anderson Aces - Arihaan",
         "display": "Anderson Aces"
       },
-      "home_skins": null,
-      "away_skins": null,
-      "played": false,
+      "home_skins": 0,
+      "away_skins": 111,
+      "played": true,
       "fixture_id": 264012,
       "is_grading": false,
       "scoresheet_complete": false,
@@ -214,9 +214,9 @@
       "name": "Anderson Aces - Arihaan",
       "display": "Anderson Aces"
     },
-    "home_skins": null,
-    "away_skins": null,
-    "played": false,
+    "home_skins": 0,
+    "away_skins": 111,
+    "played": true,
     "fixture_id": 264012,
     "is_grading": false,
     "scoresheet_complete": false,
