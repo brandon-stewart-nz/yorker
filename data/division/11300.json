@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-06-23T00:00:41.929578+00:00",
-  "generated_at_nz": "2026-06-23T12:00:40.441980+12:00",
+  "generated_at_utc": "2026-06-23T01:00:47.150273+00:00",
+  "generated_at_nz": "2026-06-23T13:00:45.873584+12:00",
   "division_name": "Division 8",
   "team": {
     "id": 11300,
@@ -30,7 +30,27 @@
     "skins_for": 617,
     "skins_against": 482
   },
-  "next_game": null,
+  "next_game": {
+    "date_str": "Saturday 27 Jun 2026",
+    "time": "13:00",
+    "court": "Court 1",
+    "home": {
+      "id": 11300,
+      "name": "Anderson Aces - Arihaan",
+      "display": "Anderson Aces"
+    },
+    "away": {
+      "id": 11292,
+      "name": "Oompa Loompas - Keanu",
+      "display": "Oompa Loompas"
+    },
+    "home_skins": null,
+    "away_skins": null,
+    "played": false,
+    "fixture_id": 264341,
+    "scoresheet_complete": false,
+    "is_grading": false
+  },
   "fixtures": [
     {
       "date_str": "Saturday 25 Apr 2026",
@@ -219,6 +239,27 @@
       "played": true,
       "fixture_id": 264012,
       "scoresheet_complete": true,
+      "is_grading": false
+    },
+    {
+      "date_str": "Saturday 27 Jun 2026",
+      "time": "13:00",
+      "court": "Court 1",
+      "home": {
+        "id": 11300,
+        "name": "Anderson Aces - Arihaan",
+        "display": "Anderson Aces"
+      },
+      "away": {
+        "id": 11292,
+        "name": "Oompa Loompas - Keanu",
+        "display": "Oompa Loompas"
+      },
+      "home_skins": null,
+      "away_skins": null,
+      "played": false,
+      "fixture_id": 264341,
+      "scoresheet_complete": false,
       "is_grading": false
     }
   ],

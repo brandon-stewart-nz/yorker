@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-06-23T00:00:26.614861+00:00",
-  "generated_at_nz": "2026-06-23T12:00:20.988549+12:00",
+  "generated_at_utc": "2026-06-23T01:00:31.496993+00:00",
+  "generated_at_nz": "2026-06-23T13:00:26.404731+12:00",
   "team": {
     "id": 11361,
     "name": "Blazing Firebirds",
@@ -29,5 +29,26 @@
     "skins_for": 494,
     "skins_against": 762
   },
-  "next_game": null
+  "next_game": {
+    "date_str": "Saturday 27 Jun 2026",
+    "time": "12:00",
+    "court": "Court 1",
+    "home": {
+      "id": 11361,
+      "name": "Blazing Firebirds - Jacob",
+      "display": "Blazing Firebirds"
+    },
+    "away": {
+      "id": 11297,
+      "name": "BYC - Freddie",
+      "display": "BYC"
+    },
+    "home_skins": null,
+    "away_skins": null,
+    "played": false,
+    "fixture_id": 264336,
+    "is_grading": false,
+    "scoresheet_complete": false,
+    "result_final": false
+  }
 }
