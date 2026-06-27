@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-06-27T04:00:38.334734+00:00",
+  "generated_at_utc": "2026-06-27T06:00:40.973377+00:00",
   "games": {
     "2026-04-25": {
       "partnerships": [
@@ -297,7 +297,8 @@
         "Jacob"
       ],
       "stand_ins": [],
-      "captain": "Jack"
+      "captain": "Jack",
+      "potd": "Will"
     },
     "2026-06-27": {
       "partnerships": [
@@ -329,13 +330,13 @@
         "Jack"
       ],
       "stand_ins": [],
-      "captain": "Vernon"
+      "captain": "Vernon",
+      "potd": "Anvaya"
     },
     "2026-07-18": {
       "unavailable": [
         "Jacob",
         "Owen",
-        "Ria",
         "Liam",
         "Anvaya"
       ],
