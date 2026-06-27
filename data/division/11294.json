@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-06-27T01:55:41.706781+00:00",
-  "generated_at_nz": "2026-06-27T13:55:37.319629+12:00",
+  "generated_at_utc": "2026-06-27T02:00:51.420810+00:00",
+  "generated_at_nz": "2026-06-27T14:00:48.560008+12:00",
   "division_name": "Division 8",
   "team": {
     "id": 11294,
@@ -8,49 +8,29 @@
     "raw_name": "Brooklyn Allrounders - Ifan"
   },
   "standings_row": {
-    "position": 5,
+    "position": 2,
     "team_name_raw": "Brooklyn Allrounders - Ifan",
-    "played": 6,
-    "won": 2,
+    "played": 7,
+    "won": 3,
     "lost": 4,
     "drawn": 0,
     "forfeits_for": 0,
     "forfeits_against": 0,
-    "skins_for": 244,
+    "skins_for": 324,
     "skins_against": 452,
-    "difference": -208,
+    "difference": -128,
     "bonus": 0,
-    "points": 10
+    "points": 13
   },
   "record": {
-    "played": 9,
-    "won": 3,
+    "played": 10,
+    "won": 4,
     "lost": 6,
     "drawn": 0,
-    "skins_for": 383,
-    "skins_against": 628
+    "skins_for": 463,
+    "skins_against": 689
   },
-  "next_game": {
-    "date_str": "Saturday 27 Jun 2026",
-    "time": "13:00",
-    "court": "Court 2",
-    "home": {
-      "id": 11294,
-      "name": "Brooklyn Allrounders - Ifan",
-      "display": "Brooklyn Allrounders"
-    },
-    "away": {
-      "id": 11293,
-      "name": "Team Thunderboltz - Liam",
-      "display": "Team Thunderboltz"
-    },
-    "home_skins": null,
-    "away_skins": null,
-    "played": false,
-    "fixture_id": 264340,
-    "scoresheet_complete": false,
-    "is_grading": false
-  },
+  "next_game": null,
   "fixtures": [
     {
       "date_str": "Saturday 25 Apr 2026",
@@ -255,11 +235,11 @@
         "name": "Team Thunderboltz - Liam",
         "display": "Team Thunderboltz"
       },
-      "home_skins": null,
-      "away_skins": null,
-      "played": false,
+      "home_skins": 80,
+      "away_skins": 61,
+      "played": true,
       "fixture_id": 264340,
-      "scoresheet_complete": false,
+      "scoresheet_complete": true,
       "is_grading": false
     }
   ],
@@ -267,13 +247,13 @@
     {
       "name": "Rafe Mann",
       "totals": {
-        "innings_batted": 8,
-        "runs": 122,
-        "balls_faced": 99,
+        "innings_batted": 9,
+        "runs": 135,
+        "balls_faced": 107,
         "dismissals": 8,
-        "overs_bowled": 17,
-        "wickets": 5,
-        "runs_conceded": 110
+        "overs_bowled": 19,
+        "wickets": 7,
+        "runs_conceded": 111
       },
       "matches": [
         {
@@ -475,19 +455,44 @@
             "no_balls": 0,
             "wides": 6
           }
+        },
+        {
+          "fixture_id": 264340,
+          "date_str": "Saturday 27 Jun 2026",
+          "vs": "Team Thunderboltz",
+          "batting": {
+            "name": "Rafe Mann",
+            "name_raw": "Rafe mann",
+            "runs": 13,
+            "balls_faced": 8,
+            "dismissals": 0,
+            "threes": 1,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Rafe Mann",
+            "name_raw": "Rafe mann",
+            "overs": 2,
+            "wickets": 2,
+            "runs_conceded": 1,
+            "no_balls": 0,
+            "wides": 1
+          }
         }
       ]
     },
     {
       "name": "Luke Taylor",
       "totals": {
-        "innings_batted": 8,
-        "runs": 82,
-        "balls_faced": 92,
+        "innings_batted": 9,
+        "runs": 94,
+        "balls_faced": 107,
         "dismissals": 8,
-        "overs_bowled": 17,
-        "wickets": 10,
-        "runs_conceded": 95
+        "overs_bowled": 19,
+        "wickets": 11,
+        "runs_conceded": 110
       },
       "matches": [
         {
@@ -689,223 +694,30 @@
             "no_balls": 0,
             "wides": 1
           }
-        }
-      ]
-    },
-    {
-      "name": "Marley Brice-chin",
-      "totals": {
-        "innings_batted": 5,
-        "runs": 43,
-        "balls_faced": 49,
-        "dismissals": 6,
-        "overs_bowled": 12,
-        "wickets": 11,
-        "runs_conceded": 16
-      },
-      "matches": [
+        },
         {
-          "fixture_id": 263104,
-          "date_str": "Saturday 25 Apr 2026",
-          "vs": "Firebats",
+          "fixture_id": 264340,
+          "date_str": "Saturday 27 Jun 2026",
+          "vs": "Team Thunderboltz",
           "batting": {
-            "name": "Marley Brice-chin",
-            "name_raw": "Marley brice-chin",
-            "runs": -5,
-            "balls_faced": 11,
-            "dismissals": 3,
+            "name": "Luke Taylor",
+            "name_raw": "Luke Taylor",
+            "runs": 12,
+            "balls_faced": 15,
+            "dismissals": 0,
             "threes": 0,
             "fours": 0,
             "fives": 0,
             "sixes": 0
           },
           "bowling": {
-            "name": "Marley Brice-chin",
-            "name_raw": "Marley brice-chin",
-            "overs": 2,
-            "wickets": 0,
-            "runs_conceded": 21,
-            "no_balls": 0,
-            "wides": 5
-          }
-        },
-        {
-          "fixture_id": 263952,
-          "date_str": "Saturday 30 May 2026",
-          "vs": "Renegades",
-          "batting": {
-            "name": "Marley Brice-chin",
-            "name_raw": "Marley brice-chin",
-            "runs": 5,
-            "balls_faced": 11,
-            "dismissals": 1,
-            "threes": 1,
-            "fours": 0,
-            "fives": 0,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Marley Brice-chin",
-            "name_raw": "Marley brice-chin",
+            "name": "Luke Taylor",
+            "name_raw": "Luke Taylor",
             "overs": 2,
             "wickets": 1,
-            "runs_conceded": 14,
+            "runs_conceded": 15,
             "no_balls": 0,
             "wides": 2
-          }
-        },
-        {
-          "fixture_id": 264007,
-          "date_str": "Saturday 06 Jun 2026",
-          "vs": "Oompa Loompas",
-          "batting": {
-            "name": "Marley Brice-chin",
-            "name_raw": "Marley brice-chin",
-            "runs": 21,
-            "balls_faced": 8,
-            "dismissals": 0,
-            "threes": 0,
-            "fours": 2,
-            "fives": 1,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Marley Brice-chin",
-            "name_raw": "Marley brice-chin",
-            "overs": 3,
-            "wickets": 5,
-            "runs_conceded": -15,
-            "no_balls": 0,
-            "wides": 0
-          }
-        },
-        {
-          "fixture_id": 264009,
-          "date_str": "Saturday 13 Jun 2026",
-          "vs": "Blazing Firebirds",
-          "batting": {
-            "name": "Marley Brice-chin",
-            "name_raw": "Marley brice-chin",
-            "runs": 21,
-            "balls_faced": 10,
-            "dismissals": 0,
-            "threes": 0,
-            "fours": 1,
-            "fives": 2,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Marley Brice-chin",
-            "name_raw": "Marley brice-chin",
-            "overs": 2,
-            "wickets": 3,
-            "runs_conceded": -8,
-            "no_balls": 0,
-            "wides": 2
-          }
-        },
-        {
-          "fixture_id": 264014,
-          "date_str": "Saturday 20 Jun 2026",
-          "vs": "BYC",
-          "batting": {
-            "name": "Marley Brice-chin",
-            "name_raw": "Marley brice-chin",
-            "runs": 1,
-            "balls_faced": 9,
-            "dismissals": 2,
-            "threes": 0,
-            "fours": 1,
-            "fives": 0,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Marley Brice-chin",
-            "name_raw": "Marley brice-chin",
-            "overs": 3,
-            "wickets": 2,
-            "runs_conceded": 4,
-            "no_balls": 0,
-            "wides": 2
-          }
-        }
-      ]
-    },
-    {
-      "name": "Ethan",
-      "totals": {
-        "innings_batted": 2,
-        "runs": 36,
-        "balls_faced": 31,
-        "dismissals": 1,
-        "overs_bowled": 5,
-        "wickets": 4,
-        "runs_conceded": 15
-      },
-      "matches": [
-        {
-          "fixture_id": 263264,
-          "date_str": "Saturday 02 May 2026",
-          "vs": "Anaya Azhar",
-          "batting": {
-            "name": "Ethan Unknown",
-            "name_raw": "ethan Unknown",
-            "runs": 20,
-            "balls_faced": 14,
-            "dismissals": 0,
-            "threes": 0,
-            "fours": 2,
-            "fives": 0,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Ethan Unknown",
-            "name_raw": "ethan Unknown",
-            "overs": 2,
-            "wickets": 1,
-            "runs_conceded": 7,
-            "no_balls": 0,
-            "wides": 1
-          }
-        },
-        {
-          "fixture_id": 263952,
-          "date_str": "Saturday 30 May 2026",
-          "vs": "Renegades",
-          "batting": null,
-          "bowling": {
-            "name": "Ethan Unknown",
-            "name_raw": "ethan Unknown",
-            "overs": 1,
-            "wickets": 0,
-            "runs_conceded": 9,
-            "no_balls": 0,
-            "wides": 1
-          }
-        },
-        {
-          "fixture_id": 264009,
-          "date_str": "Saturday 13 Jun 2026",
-          "vs": "Blazing Firebirds",
-          "batting": {
-            "name": "Efan Unknown",
-            "name_raw": "efan Unknown",
-            "runs": 16,
-            "balls_faced": 17,
-            "dismissals": 1,
-            "threes": 2,
-            "fours": 0,
-            "fives": 0,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Efan Unknown",
-            "name_raw": "efan Unknown",
-            "overs": 2,
-            "wickets": 3,
-            "runs_conceded": -1,
-            "no_balls": 1,
-            "wides": 3
           }
         }
       ]
@@ -913,13 +725,13 @@
     {
       "name": "Oliver Fye",
       "totals": {
-        "innings_batted": 7,
-        "runs": 36,
-        "balls_faced": 84,
+        "innings_batted": 8,
+        "runs": 57,
+        "balls_faced": 97,
         "dismissals": 12,
-        "overs_bowled": 13,
+        "overs_bowled": 15,
         "wickets": 7,
-        "runs_conceded": 71
+        "runs_conceded": 97
       },
       "matches": [
         {
@@ -1095,6 +907,438 @@
             "runs_conceded": 0,
             "no_balls": 0,
             "wides": 0
+          }
+        },
+        {
+          "fixture_id": 264340,
+          "date_str": "Saturday 27 Jun 2026",
+          "vs": "Team Thunderboltz",
+          "batting": {
+            "name": "Oliver Fye",
+            "name_raw": "oliver fye",
+            "runs": 21,
+            "balls_faced": 13,
+            "dismissals": 0,
+            "threes": 0,
+            "fours": 1,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Oliver Fye",
+            "name_raw": "oliver fye",
+            "overs": 2,
+            "wickets": 0,
+            "runs_conceded": 26,
+            "no_balls": 0,
+            "wides": 4
+          }
+        }
+      ]
+    },
+    {
+      "name": "Marley Brice-chin",
+      "totals": {
+        "innings_batted": 6,
+        "runs": 53,
+        "balls_faced": 60,
+        "dismissals": 7,
+        "overs_bowled": 14,
+        "wickets": 13,
+        "runs_conceded": 16
+      },
+      "matches": [
+        {
+          "fixture_id": 263104,
+          "date_str": "Saturday 25 Apr 2026",
+          "vs": "Firebats",
+          "batting": {
+            "name": "Marley Brice-chin",
+            "name_raw": "Marley brice-chin",
+            "runs": -5,
+            "balls_faced": 11,
+            "dismissals": 3,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Marley Brice-chin",
+            "name_raw": "Marley brice-chin",
+            "overs": 2,
+            "wickets": 0,
+            "runs_conceded": 21,
+            "no_balls": 0,
+            "wides": 5
+          }
+        },
+        {
+          "fixture_id": 263952,
+          "date_str": "Saturday 30 May 2026",
+          "vs": "Renegades",
+          "batting": {
+            "name": "Marley Brice-chin",
+            "name_raw": "Marley brice-chin",
+            "runs": 5,
+            "balls_faced": 11,
+            "dismissals": 1,
+            "threes": 1,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Marley Brice-chin",
+            "name_raw": "Marley brice-chin",
+            "overs": 2,
+            "wickets": 1,
+            "runs_conceded": 14,
+            "no_balls": 0,
+            "wides": 2
+          }
+        },
+        {
+          "fixture_id": 264007,
+          "date_str": "Saturday 06 Jun 2026",
+          "vs": "Oompa Loompas",
+          "batting": {
+            "name": "Marley Brice-chin",
+            "name_raw": "Marley brice-chin",
+            "runs": 21,
+            "balls_faced": 8,
+            "dismissals": 0,
+            "threes": 0,
+            "fours": 2,
+            "fives": 1,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Marley Brice-chin",
+            "name_raw": "Marley brice-chin",
+            "overs": 3,
+            "wickets": 5,
+            "runs_conceded": -15,
+            "no_balls": 0,
+            "wides": 0
+          }
+        },
+        {
+          "fixture_id": 264009,
+          "date_str": "Saturday 13 Jun 2026",
+          "vs": "Blazing Firebirds",
+          "batting": {
+            "name": "Marley Brice-chin",
+            "name_raw": "Marley brice-chin",
+            "runs": 21,
+            "balls_faced": 10,
+            "dismissals": 0,
+            "threes": 0,
+            "fours": 1,
+            "fives": 2,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Marley Brice-chin",
+            "name_raw": "Marley brice-chin",
+            "overs": 2,
+            "wickets": 3,
+            "runs_conceded": -8,
+            "no_balls": 0,
+            "wides": 2
+          }
+        },
+        {
+          "fixture_id": 264014,
+          "date_str": "Saturday 20 Jun 2026",
+          "vs": "BYC",
+          "batting": {
+            "name": "Marley Brice-chin",
+            "name_raw": "Marley brice-chin",
+            "runs": 1,
+            "balls_faced": 9,
+            "dismissals": 2,
+            "threes": 0,
+            "fours": 1,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Marley Brice-chin",
+            "name_raw": "Marley brice-chin",
+            "overs": 3,
+            "wickets": 2,
+            "runs_conceded": 4,
+            "no_balls": 0,
+            "wides": 2
+          }
+        },
+        {
+          "fixture_id": 264340,
+          "date_str": "Saturday 27 Jun 2026",
+          "vs": "Team Thunderboltz",
+          "batting": {
+            "name": "Marley Brice-chin",
+            "name_raw": "Marley brice-chin",
+            "runs": 10,
+            "balls_faced": 11,
+            "dismissals": 1,
+            "threes": 1,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Marley Brice-chin",
+            "name_raw": "Marley brice-chin",
+            "overs": 2,
+            "wickets": 2,
+            "runs_conceded": 0,
+            "no_balls": 0,
+            "wides": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "Aaryan",
+      "totals": {
+        "innings_batted": 6,
+        "runs": 39,
+        "balls_faced": 78,
+        "dismissals": 11,
+        "overs_bowled": 12,
+        "wickets": 3,
+        "runs_conceded": 99
+      },
+      "matches": [
+        {
+          "fixture_id": 263264,
+          "date_str": "Saturday 02 May 2026",
+          "vs": "Anaya Azhar",
+          "batting": {
+            "name": "Aaryan Unknown",
+            "name_raw": "aaryan Unknown",
+            "runs": 3,
+            "balls_faced": 11,
+            "dismissals": 2,
+            "threes": 1,
+            "fours": 1,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Aaryan Unknown",
+            "name_raw": "aaryan Unknown",
+            "overs": 2,
+            "wickets": 0,
+            "runs_conceded": 6,
+            "no_balls": 0,
+            "wides": 3
+          }
+        },
+        {
+          "fixture_id": 263847,
+          "date_str": "Saturday 16 May 2026",
+          "vs": "BYC",
+          "batting": {
+            "name": "Aaryan Unknown",
+            "name_raw": "aaryan Unknown",
+            "runs": 15,
+            "balls_faced": 12,
+            "dismissals": 0,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Aaryan Unknown",
+            "name_raw": "aaryan Unknown",
+            "overs": 2,
+            "wickets": 1,
+            "runs_conceded": 15,
+            "no_balls": 0,
+            "wides": 1
+          }
+        },
+        {
+          "fixture_id": 263878,
+          "date_str": "Saturday 23 May 2026",
+          "vs": "Team Thunderboltz",
+          "batting": {
+            "name": "Aaryan Unknown",
+            "name_raw": "aaryan Unknown",
+            "runs": -8,
+            "balls_faced": 13,
+            "dismissals": 3,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Aaryan Unknown",
+            "name_raw": "aaryan Unknown",
+            "overs": 2,
+            "wickets": 0,
+            "runs_conceded": 30,
+            "no_balls": 0,
+            "wides": 3
+          }
+        },
+        {
+          "fixture_id": 263952,
+          "date_str": "Saturday 30 May 2026",
+          "vs": "Renegades",
+          "batting": {
+            "name": "Aaryan Unknown",
+            "name_raw": "aaryan Unknown",
+            "runs": 8,
+            "balls_faced": 10,
+            "dismissals": 1,
+            "threes": 1,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Aaryan Unknown",
+            "name_raw": "aaryan Unknown",
+            "overs": 2,
+            "wickets": 0,
+            "runs_conceded": 18,
+            "no_balls": 0,
+            "wides": 2
+          }
+        },
+        {
+          "fixture_id": 264007,
+          "date_str": "Saturday 06 Jun 2026",
+          "vs": "Oompa Loompas",
+          "batting": {
+            "name": "Aaryan Unknown",
+            "name_raw": "aaryan Unknown",
+            "runs": 3,
+            "balls_faced": 16,
+            "dismissals": 4,
+            "threes": 1,
+            "fours": 2,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Aaryan Unknown",
+            "name_raw": "aaryan Unknown",
+            "overs": 2,
+            "wickets": 2,
+            "runs_conceded": 10,
+            "no_balls": 0,
+            "wides": 4
+          }
+        },
+        {
+          "fixture_id": 264340,
+          "date_str": "Saturday 27 Jun 2026",
+          "vs": "Team Thunderboltz",
+          "batting": {
+            "name": "Aaryan Unknown",
+            "name_raw": "aaryan Unknown",
+            "runs": 18,
+            "balls_faced": 16,
+            "dismissals": 1,
+            "threes": 1,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Aaryan Unknown",
+            "name_raw": "aaryan Unknown",
+            "overs": 2,
+            "wickets": 0,
+            "runs_conceded": 20,
+            "no_balls": 0,
+            "wides": 5
+          }
+        }
+      ]
+    },
+    {
+      "name": "Ethan",
+      "totals": {
+        "innings_batted": 2,
+        "runs": 36,
+        "balls_faced": 31,
+        "dismissals": 1,
+        "overs_bowled": 5,
+        "wickets": 4,
+        "runs_conceded": 15
+      },
+      "matches": [
+        {
+          "fixture_id": 263264,
+          "date_str": "Saturday 02 May 2026",
+          "vs": "Anaya Azhar",
+          "batting": {
+            "name": "Ethan Unknown",
+            "name_raw": "ethan Unknown",
+            "runs": 20,
+            "balls_faced": 14,
+            "dismissals": 0,
+            "threes": 0,
+            "fours": 2,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Ethan Unknown",
+            "name_raw": "ethan Unknown",
+            "overs": 2,
+            "wickets": 1,
+            "runs_conceded": 7,
+            "no_balls": 0,
+            "wides": 1
+          }
+        },
+        {
+          "fixture_id": 263952,
+          "date_str": "Saturday 30 May 2026",
+          "vs": "Renegades",
+          "batting": null,
+          "bowling": {
+            "name": "Ethan Unknown",
+            "name_raw": "ethan Unknown",
+            "overs": 1,
+            "wickets": 0,
+            "runs_conceded": 9,
+            "no_balls": 0,
+            "wides": 1
+          }
+        },
+        {
+          "fixture_id": 264009,
+          "date_str": "Saturday 13 Jun 2026",
+          "vs": "Blazing Firebirds",
+          "batting": {
+            "name": "Efan Unknown",
+            "name_raw": "efan Unknown",
+            "runs": 16,
+            "balls_faced": 17,
+            "dismissals": 1,
+            "threes": 2,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Efan Unknown",
+            "name_raw": "efan Unknown",
+            "overs": 2,
+            "wickets": 3,
+            "runs_conceded": -1,
+            "no_balls": 1,
+            "wides": 3
           }
         }
       ]
@@ -1353,154 +1597,15 @@
       ]
     },
     {
-      "name": "Aaryan",
-      "totals": {
-        "innings_batted": 5,
-        "runs": 21,
-        "balls_faced": 62,
-        "dismissals": 10,
-        "overs_bowled": 10,
-        "wickets": 3,
-        "runs_conceded": 79
-      },
-      "matches": [
-        {
-          "fixture_id": 263264,
-          "date_str": "Saturday 02 May 2026",
-          "vs": "Anaya Azhar",
-          "batting": {
-            "name": "Aaryan Unknown",
-            "name_raw": "aaryan Unknown",
-            "runs": 3,
-            "balls_faced": 11,
-            "dismissals": 2,
-            "threes": 1,
-            "fours": 1,
-            "fives": 0,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Aaryan Unknown",
-            "name_raw": "aaryan Unknown",
-            "overs": 2,
-            "wickets": 0,
-            "runs_conceded": 6,
-            "no_balls": 0,
-            "wides": 3
-          }
-        },
-        {
-          "fixture_id": 263847,
-          "date_str": "Saturday 16 May 2026",
-          "vs": "BYC",
-          "batting": {
-            "name": "Aaryan Unknown",
-            "name_raw": "aaryan Unknown",
-            "runs": 15,
-            "balls_faced": 12,
-            "dismissals": 0,
-            "threes": 0,
-            "fours": 0,
-            "fives": 0,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Aaryan Unknown",
-            "name_raw": "aaryan Unknown",
-            "overs": 2,
-            "wickets": 1,
-            "runs_conceded": 15,
-            "no_balls": 0,
-            "wides": 1
-          }
-        },
-        {
-          "fixture_id": 263878,
-          "date_str": "Saturday 23 May 2026",
-          "vs": "Team Thunderboltz",
-          "batting": {
-            "name": "Aaryan Unknown",
-            "name_raw": "aaryan Unknown",
-            "runs": -8,
-            "balls_faced": 13,
-            "dismissals": 3,
-            "threes": 0,
-            "fours": 0,
-            "fives": 0,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Aaryan Unknown",
-            "name_raw": "aaryan Unknown",
-            "overs": 2,
-            "wickets": 0,
-            "runs_conceded": 30,
-            "no_balls": 0,
-            "wides": 3
-          }
-        },
-        {
-          "fixture_id": 263952,
-          "date_str": "Saturday 30 May 2026",
-          "vs": "Renegades",
-          "batting": {
-            "name": "Aaryan Unknown",
-            "name_raw": "aaryan Unknown",
-            "runs": 8,
-            "balls_faced": 10,
-            "dismissals": 1,
-            "threes": 1,
-            "fours": 0,
-            "fives": 0,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Aaryan Unknown",
-            "name_raw": "aaryan Unknown",
-            "overs": 2,
-            "wickets": 0,
-            "runs_conceded": 18,
-            "no_balls": 0,
-            "wides": 2
-          }
-        },
-        {
-          "fixture_id": 264007,
-          "date_str": "Saturday 06 Jun 2026",
-          "vs": "Oompa Loompas",
-          "batting": {
-            "name": "Aaryan Unknown",
-            "name_raw": "aaryan Unknown",
-            "runs": 3,
-            "balls_faced": 16,
-            "dismissals": 4,
-            "threes": 1,
-            "fours": 2,
-            "fives": 0,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Aaryan Unknown",
-            "name_raw": "aaryan Unknown",
-            "overs": 2,
-            "wickets": 2,
-            "runs_conceded": 10,
-            "no_balls": 0,
-            "wides": 4
-          }
-        }
-      ]
-    },
-    {
       "name": "Max Croke",
       "totals": {
-        "innings_batted": 8,
-        "runs": -5,
-        "balls_faced": 100,
-        "dismissals": 15,
-        "overs_bowled": 16,
-        "wickets": 5,
-        "runs_conceded": 159
+        "innings_batted": 9,
+        "runs": 1,
+        "balls_faced": 109,
+        "dismissals": 16,
+        "overs_bowled": 18,
+        "wickets": 8,
+        "runs_conceded": 158
       },
       "matches": [
         {
@@ -1701,6 +1806,31 @@
             "runs_conceded": 21,
             "no_balls": 0,
             "wides": 7
+          }
+        },
+        {
+          "fixture_id": 264340,
+          "date_str": "Saturday 27 Jun 2026",
+          "vs": "Team Thunderboltz",
+          "batting": {
+            "name": "Max Croke",
+            "name_raw": "Max croke",
+            "runs": 6,
+            "balls_faced": 9,
+            "dismissals": 1,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Max Croke",
+            "name_raw": "Max croke",
+            "overs": 2,
+            "wickets": 3,
+            "runs_conceded": -1,
+            "no_balls": 0,
+            "wides": 0
           }
         }
       ]
