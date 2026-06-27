@@ -1,16 +1,16 @@
 {
-  "generated_at_nz": "2026-06-27T12:05:21.204575+12:00",
+  "generated_at_nz": "2026-06-27T12:55:21.418470+12:00",
   "players": [
     {
       "name": "Vernon Stewart",
       "totals": {
-        "innings_batted": 8,
-        "runs": 128,
-        "balls_faced": 110,
-        "dismissals": 7,
-        "overs_bowled": 16,
-        "wickets": 8,
-        "runs_conceded": 99
+        "innings_batted": 9,
+        "runs": 114,
+        "balls_faced": 125,
+        "dismissals": 12,
+        "overs_bowled": 18,
+        "wickets": 9,
+        "runs_conceded": 110
       },
       "matches": [
         {
@@ -212,19 +212,44 @@
             "no_balls": 0,
             "wides": 5
           }
+        },
+        {
+          "fixture_id": 264336,
+          "date_str": "Saturday 27 Jun 2026",
+          "vs": "BYC",
+          "batting": {
+            "name": "Vernon Stewart",
+            "name_raw": "vernon stewart",
+            "runs": -14,
+            "balls_faced": 15,
+            "dismissals": 5,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Vernon Stewart",
+            "name_raw": "vernon stewart",
+            "overs": 2,
+            "wickets": 1,
+            "runs_conceded": 11,
+            "no_balls": 0,
+            "wides": 5
+          }
         }
       ]
     },
     {
       "name": "Jacob Brown",
       "totals": {
-        "innings_batted": 8,
-        "runs": 109,
-        "balls_faced": 120,
-        "dismissals": 12,
-        "overs_bowled": 16,
+        "innings_batted": 9,
+        "runs": 105,
+        "balls_faced": 135,
+        "dismissals": 16,
+        "overs_bowled": 18,
         "wickets": 9,
-        "runs_conceded": 83
+        "runs_conceded": 92
       },
       "matches": [
         {
@@ -425,6 +450,31 @@
             "runs_conceded": 11,
             "no_balls": 0,
             "wides": 3
+          }
+        },
+        {
+          "fixture_id": 264336,
+          "date_str": "Saturday 27 Jun 2026",
+          "vs": "BYC",
+          "batting": {
+            "name": "Jacob Brown",
+            "name_raw": "jacob brown",
+            "runs": -4,
+            "balls_faced": 15,
+            "dismissals": 4,
+            "threes": 0,
+            "fours": 1,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Jacob Brown",
+            "name_raw": "jacob brown",
+            "overs": 2,
+            "wickets": 0,
+            "runs_conceded": 9,
+            "no_balls": 0,
+            "wides": 1
           }
         }
       ]
@@ -646,13 +696,13 @@
     {
       "name": "Will Eltringham",
       "totals": {
-        "innings_batted": 7,
-        "runs": 51,
-        "balls_faced": 71,
-        "dismissals": 9,
-        "overs_bowled": 14,
+        "innings_batted": 8,
+        "runs": 42,
+        "balls_faced": 81,
+        "dismissals": 12,
+        "overs_bowled": 16,
         "wickets": 3,
-        "runs_conceded": 143
+        "runs_conceded": 159
       },
       "matches": [
         {
@@ -829,19 +879,44 @@
             "no_balls": 0,
             "wides": 2
           }
+        },
+        {
+          "fixture_id": 264336,
+          "date_str": "Saturday 27 Jun 2026",
+          "vs": "BYC",
+          "batting": {
+            "name": "Will Eltringham",
+            "name_raw": "will eltringham",
+            "runs": -9,
+            "balls_faced": 10,
+            "dismissals": 3,
+            "threes": 1,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Will Eltringham",
+            "name_raw": "will eltringham",
+            "overs": 2,
+            "wickets": 0,
+            "runs_conceded": 16,
+            "no_balls": 0,
+            "wides": 4
+          }
         }
       ]
     },
     {
       "name": "Anuya Metikurke",
       "totals": {
-        "innings_batted": 6,
-        "runs": 38,
-        "balls_faced": 64,
-        "dismissals": 7,
-        "overs_bowled": 12,
+        "innings_batted": 7,
+        "runs": 40,
+        "balls_faced": 78,
+        "dismissals": 9,
+        "overs_bowled": 14,
         "wickets": 5,
-        "runs_conceded": 74
+        "runs_conceded": 97
       },
       "matches": [
         {
@@ -993,19 +1068,44 @@
             "no_balls": 0,
             "wides": 1
           }
+        },
+        {
+          "fixture_id": 264336,
+          "date_str": "Saturday 27 Jun 2026",
+          "vs": "BYC",
+          "batting": {
+            "name": "Anvaya Unknown",
+            "name_raw": "anvaya Unknown",
+            "runs": 2,
+            "balls_faced": 14,
+            "dismissals": 2,
+            "threes": 0,
+            "fours": 1,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Anvaya Unknown",
+            "name_raw": "anvaya Unknown",
+            "overs": 2,
+            "wickets": 0,
+            "runs_conceded": 23,
+            "no_balls": 0,
+            "wides": 2
+          }
         }
       ]
     },
     {
       "name": "Owen Buchan",
       "totals": {
-        "innings_batted": 6,
-        "runs": 35,
-        "balls_faced": 54,
-        "dismissals": 7,
-        "overs_bowled": 12,
+        "innings_batted": 7,
+        "runs": 38,
+        "balls_faced": 63,
+        "dismissals": 9,
+        "overs_bowled": 14,
         "wickets": 3,
-        "runs_conceded": 133
+        "runs_conceded": 153
       },
       "matches": [
         {
@@ -1157,6 +1257,31 @@
             "no_balls": 0,
             "wides": 1
           }
+        },
+        {
+          "fixture_id": 264336,
+          "date_str": "Saturday 27 Jun 2026",
+          "vs": "BYC",
+          "batting": {
+            "name": "Owen Buchan",
+            "name_raw": "owen buchan",
+            "runs": 3,
+            "balls_faced": 9,
+            "dismissals": 2,
+            "threes": 2,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Owen Buchan",
+            "name_raw": "owen buchan",
+            "overs": 2,
+            "wickets": 0,
+            "runs_conceded": 20,
+            "no_balls": 0,
+            "wides": 6
+          }
         }
       ]
     },
@@ -1241,13 +1366,13 @@
     {
       "name": "Ria Sathish Kumar",
       "totals": {
-        "innings_batted": 6,
-        "runs": 6,
-        "balls_faced": 81,
-        "dismissals": 9,
-        "overs_bowled": 12,
-        "wickets": 3,
-        "runs_conceded": 108
+        "innings_batted": 7,
+        "runs": 17,
+        "balls_faced": 90,
+        "dismissals": 10,
+        "overs_bowled": 14,
+        "wickets": 4,
+        "runs_conceded": 123
       },
       "matches": [
         {
@@ -1398,6 +1523,31 @@
             "runs_conceded": 27,
             "no_balls": 0,
             "wides": 1
+          }
+        },
+        {
+          "fixture_id": 264336,
+          "date_str": "Saturday 27 Jun 2026",
+          "vs": "BYC",
+          "batting": {
+            "name": "Ria Sathish Kumar",
+            "name_raw": "Ria Sathish kumar",
+            "runs": 11,
+            "balls_faced": 9,
+            "dismissals": 1,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Ria Sathish Kumar",
+            "name_raw": "Ria Sathish kumar",
+            "overs": 2,
+            "wickets": 1,
+            "runs_conceded": 15,
+            "no_balls": 0,
+            "wides": 2
           }
         }
       ]

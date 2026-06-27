@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-06-27T00:05:42.244867+00:00",
-  "generated_at_nz": "2026-06-27T12:05:39.384216+12:00",
+  "generated_at_utc": "2026-06-27T00:55:40.536110+00:00",
+  "generated_at_nz": "2026-06-27T12:55:38.960971+12:00",
   "division_name": "Division 8",
   "team": {
     "id": 11293,
@@ -8,7 +8,7 @@
     "raw_name": "Team Thunderboltz - Liam"
   },
   "standings_row": {
-    "position": 2,
+    "position": 3,
     "team_name_raw": "Team Thunderboltz - Liam",
     "played": 6,
     "won": 2,
