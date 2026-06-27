@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-06-27T06:00:40.973377+00:00",
+  "generated_at_utc": "2026-06-27T08:00:36.257285+00:00",
   "games": {
     "2026-04-25": {
       "partnerships": [
@@ -341,7 +341,9 @@
         "Anvaya"
       ],
       "rotation": [],
-      "stand_ins": []
+      "stand_ins": [
+        "Fletcher Tulloch"
+      ]
     },
     "2026-07-25": {
       "unavailable": [
