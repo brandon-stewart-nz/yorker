@@ -1,0 +1,79 @@
+# GitHub Pages deploy for the public Yorker site.
+#
+# Why this exists: this repo's Pages source is "GitHub Actions" (not the legacy
+# deploy-from-branch). The engine repo (yorker-engine) pushes the dashboard shell
+# + serving data to `main` on every changed scrape; that push runs this workflow,
+# which uploads the repo as a Pages artifact and deploys it.
+#
+# The legacy auto-deploy intermittently hard-failed with "Deployment failed, try
+# again later." (a transient GitHub Pages backend error) on ~8% of runs, and
+# Saturday game-day bursts could supersede each other. This workflow fixes both:
+#   * a 3-attempt retry ladder rides out the transient backend blips in-run
+#     (seconds) instead of waiting for the next scrape (~2h);
+#   * the `pages` concurrency group serialises deploys so burst pushes queue
+#     instead of colliding.
+name: Deploy Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Serialise deploys. Do NOT cancel an in-progress deploy (let production finish);
+# intermediate queued runs are skipped and only the latest queued one deploys, so
+# a Saturday burst can never make two deployments race.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy3.outputs.page_url || steps.deploy2.outputs.page_url || steps.deploy1.outputs.page_url }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      # upload-pages-artifact tars `path` and already excludes .git and .github.
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+      # Retry ladder: deploy-pages fails the step on a transient
+      # "Deployment failed, try again later." Attempts 1 & 2 tolerate that
+      # (continue-on-error) and we retry after a short wait; attempt 3 is the
+      # gate that actually fails the job if GitHub is still refusing.
+      - name: Deploy — attempt 1
+        id: deploy1
+        continue-on-error: true
+        uses: actions/deploy-pages@v4
+
+      - name: Wait before retry
+        if: steps.deploy1.outcome == 'failure'
+        run: sleep 20
+
+      - name: Deploy — attempt 2
+        id: deploy2
+        if: steps.deploy1.outcome == 'failure'
+        continue-on-error: true
+        uses: actions/deploy-pages@v4
+
+      - name: Wait before final retry
+        if: steps.deploy1.outcome == 'failure' && steps.deploy2.outcome == 'failure'
+        run: sleep 30
+
+      - name: Deploy — attempt 3 (final)
+        id: deploy3
+        if: steps.deploy1.outcome == 'failure' && steps.deploy2.outcome == 'failure'
+        uses: actions/deploy-pages@v4
