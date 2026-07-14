@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-07-14T08:00:33.014103+00:00",
+  "generated_at_utc": "2026-07-14T10:00:38.492699+00:00",
   "games": {
     "2026-04-25": {
       "partnerships": [
@@ -334,10 +334,31 @@
       "potd": "Anvaya"
     },
     "2026-07-18": {
+      "partnerships": [
+        [
+          "Vernon",
+          "Jack"
+        ],
+        [
+          "Ria",
+          "Will"
+        ],
+        [
+          "Liam",
+          "Fletcher"
+        ]
+      ],
+      "bowling_order": [
+        "Fletcher",
+        "Liam",
+        "Ria",
+        "Vernon",
+        "Will",
+        "Jack"
+      ],
       "unavailable": [
         "Jacob",
         "Owen",
-        "Liam",
         "Anvaya"
       ],
       "rotation": [],
