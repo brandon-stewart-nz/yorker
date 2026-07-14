@@ -1,5 +1,5 @@
 {
-  "generated_at_nz": "2026-07-14T12:00:26.218644+12:00",
+  "generated_at_nz": "2026-07-14T14:00:19.838673+12:00",
   "fixtures": [
     {
       "date_str": "Saturday 25 Apr 2026",
@@ -220,7 +220,50 @@
       "is_grading": false,
       "scoresheet_complete": true,
       "result_final": true
+    },
+    {
+      "date_str": "Saturday 18 Jul 2026",
+      "time": "12:00",
+      "court": "Court 3",
+      "home": {
+        "id": 11361,
+        "name": "Blazing Firebirds - Jacob",
+        "display": "Blazing Firebirds"
+      },
+      "away": {
+        "id": 11294,
+        "name": "Brooklyn Allrounders - Ifan",
+        "display": "Brooklyn Allrounders"
+      },
+      "home_skins": null,
+      "away_skins": null,
+      "played": false,
+      "fixture_id": 264757,
+      "is_grading": false,
+      "scoresheet_complete": false,
+      "result_final": false
     }
   ],
-  "next_game": null
+  "next_game": {
+    "date_str": "Saturday 18 Jul 2026",
+    "time": "12:00",
+    "court": "Court 3",
+    "home": {
+      "id": 11361,
+      "name": "Blazing Firebirds - Jacob",
+      "display": "Blazing Firebirds"
+    },
+    "away": {
+      "id": 11294,
+      "name": "Brooklyn Allrounders - Ifan",
+      "display": "Brooklyn Allrounders"
+    },
+    "home_skins": null,
+    "away_skins": null,
+    "played": false,
+    "fixture_id": 264757,
+    "is_grading": false,
+    "scoresheet_complete": false,
+    "result_final": false
+  }
 }
