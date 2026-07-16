@@ -1,5 +1,5 @@
 {
-  "generated_at_nz": "2026-07-16T20:00:24.660280+12:00",
+  "generated_at_nz": "2026-07-16T22:00:24.958805+12:00",
   "fixtures": [
     {
       "date_str": "Saturday 25 Apr 2026",
@@ -231,9 +231,9 @@
         "display": "Blazing Firebirds"
       },
       "away": {
-        "id": 11294,
-        "name": "Brooklyn Allrounders - Ifan",
-        "display": "Brooklyn Allrounders"
+        "id": 11290,
+        "name": "Warriors - Alyssa",
+        "display": "Warriors"
       },
       "home_skins": null,
       "away_skins": null,
@@ -254,9 +254,9 @@
       "display": "Blazing Firebirds"
     },
     "away": {
-      "id": 11294,
-      "name": "Brooklyn Allrounders - Ifan",
-      "display": "Brooklyn Allrounders"
+      "id": 11290,
+      "name": "Warriors - Alyssa",
+      "display": "Warriors"
     },
     "home_skins": null,
     "away_skins": null,
