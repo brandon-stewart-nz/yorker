@@ -1,16 +1,16 @@
 {
-  "generated_at_nz": "2026-07-18T12:05:18.413217+12:00",
+  "generated_at_nz": "2026-07-18T12:55:22.448290+12:00",
   "players": [
     {
       "name": "Vernon Stewart",
       "totals": {
-        "innings_batted": 9,
-        "runs": 114,
-        "balls_faced": 125,
-        "dismissals": 12,
-        "overs_bowled": 18,
-        "wickets": 9,
-        "runs_conceded": 110
+        "innings_batted": 10,
+        "runs": 129,
+        "balls_faced": 144,
+        "dismissals": 13,
+        "overs_bowled": 20,
+        "wickets": 10,
+        "runs_conceded": 130
       },
       "matches": [
         {
@@ -236,6 +236,31 @@
             "runs_conceded": 11,
             "no_balls": 0,
             "wides": 5
+          }
+        },
+        {
+          "fixture_id": 264757,
+          "date_str": "Saturday 18 Jul 2026",
+          "vs": "Warriors",
+          "batting": {
+            "name": "Vernon Stewart",
+            "name_raw": "vernon stewart",
+            "runs": 15,
+            "balls_faced": 19,
+            "dismissals": 1,
+            "threes": 1,
+            "fours": 1,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Vernon Stewart",
+            "name_raw": "vernon stewart",
+            "overs": 2,
+            "wickets": 1,
+            "runs_conceded": 20,
+            "no_balls": 0,
+            "wides": 6
           }
         }
       ]
@@ -482,13 +507,13 @@
     {
       "name": "Jack Butler",
       "totals": {
-        "innings_batted": 8,
-        "runs": 77,
-        "balls_faced": 82,
+        "innings_batted": 9,
+        "runs": 87,
+        "balls_faced": 87,
         "dismissals": 10,
-        "overs_bowled": 16,
-        "wickets": 6,
-        "runs_conceded": 59
+        "overs_bowled": 18,
+        "wickets": 9,
+        "runs_conceded": 55
       },
       "matches": [
         {
@@ -690,19 +715,44 @@
             "no_balls": 1,
             "wides": 1
           }
+        },
+        {
+          "fixture_id": 264757,
+          "date_str": "Saturday 18 Jul 2026",
+          "vs": "Warriors",
+          "batting": {
+            "name": "Jack Butler",
+            "name_raw": "jack butler",
+            "runs": 10,
+            "balls_faced": 5,
+            "dismissals": 0,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Jack Butler",
+            "name_raw": "jack butler",
+            "overs": 2,
+            "wickets": 3,
+            "runs_conceded": -4,
+            "no_balls": 0,
+            "wides": 0
+          }
         }
       ]
     },
     {
       "name": "Will Eltringham",
       "totals": {
-        "innings_batted": 8,
-        "runs": 42,
-        "balls_faced": 81,
-        "dismissals": 12,
-        "overs_bowled": 16,
+        "innings_batted": 9,
+        "runs": 45,
+        "balls_faced": 88,
+        "dismissals": 13,
+        "overs_bowled": 18,
         "wickets": 3,
-        "runs_conceded": 159
+        "runs_conceded": 184
       },
       "matches": [
         {
@@ -904,6 +954,31 @@
             "no_balls": 0,
             "wides": 4
           }
+        },
+        {
+          "fixture_id": 264757,
+          "date_str": "Saturday 18 Jul 2026",
+          "vs": "Warriors",
+          "batting": {
+            "name": "Will Eltringham",
+            "name_raw": "will eltringham",
+            "runs": 3,
+            "balls_faced": 7,
+            "dismissals": 1,
+            "threes": 1,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Will Eltringham",
+            "name_raw": "will eltringham",
+            "overs": 2,
+            "wickets": 0,
+            "runs_conceded": 25,
+            "no_balls": 0,
+            "wides": 5
+          }
         }
       ]
     },
@@ -1092,6 +1167,220 @@
             "runs_conceded": 23,
             "no_balls": 0,
             "wides": 2
+          }
+        }
+      ]
+    },
+    {
+      "name": "Ria Sathish Kumar",
+      "totals": {
+        "innings_batted": 8,
+        "runs": 39,
+        "balls_faced": 107,
+        "dismissals": 10,
+        "overs_bowled": 16,
+        "wickets": 6,
+        "runs_conceded": 132
+      },
+      "matches": [
+        {
+          "fixture_id": 263265,
+          "date_str": "Saturday 02 May 2026",
+          "vs": "Anderson Aces",
+          "batting": {
+            "name": "Ria Sathishkumar",
+            "name_raw": "Ria Sathishkumar",
+            "runs": 11,
+            "balls_faced": 12,
+            "dismissals": 0,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Ria Sathishkumar",
+            "name_raw": "Ria Sathishkumar",
+            "overs": 2,
+            "wickets": 2,
+            "runs_conceded": 4,
+            "no_balls": 0,
+            "wides": 0
+          }
+        },
+        {
+          "fixture_id": 263465,
+          "date_str": "Saturday 09 May 2026",
+          "vs": "Brooklyn Allrounders",
+          "batting": {
+            "name": "Ria Sathish Kumar",
+            "name_raw": "Ria Sathish kumar",
+            "runs": 8,
+            "balls_faced": 14,
+            "dismissals": 1,
+            "threes": 1,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Ria Sathish Kumar",
+            "name_raw": "Ria Sathish kumar",
+            "overs": 2,
+            "wickets": 0,
+            "runs_conceded": 20,
+            "no_balls": 0,
+            "wides": 1
+          }
+        },
+        {
+          "fixture_id": 263826,
+          "date_str": "Saturday 16 May 2026",
+          "vs": "Renegades",
+          "batting": {
+            "name": "Ria Sathish Kumar",
+            "name_raw": "Ria Sathish kumar",
+            "runs": -7,
+            "balls_faced": 10,
+            "dismissals": 2,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Ria Sathish Kumar",
+            "name_raw": "Ria Sathish kumar",
+            "overs": 2,
+            "wickets": 0,
+            "runs_conceded": 19,
+            "no_balls": 0,
+            "wides": 1
+          }
+        },
+        {
+          "fixture_id": 263875,
+          "date_str": "Saturday 23 May 2026",
+          "vs": "BYC",
+          "batting": {
+            "name": "Ria Sathish Kumar",
+            "name_raw": "Ria Sathish kumar",
+            "runs": 3,
+            "balls_faced": 15,
+            "dismissals": 1,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Ria Sathish Kumar",
+            "name_raw": "Ria Sathish kumar",
+            "overs": 2,
+            "wickets": 1,
+            "runs_conceded": 17,
+            "no_balls": 0,
+            "wides": 1
+          }
+        },
+        {
+          "fixture_id": 264009,
+          "date_str": "Saturday 13 Jun 2026",
+          "vs": "Brooklyn Allrounders",
+          "batting": {
+            "name": "Ria Sathish Kumar",
+            "name_raw": "Ria Sathish kumar",
+            "runs": 3,
+            "balls_faced": 14,
+            "dismissals": 2,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Ria Sathish Kumar",
+            "name_raw": "Ria Sathish kumar",
+            "overs": 2,
+            "wickets": 0,
+            "runs_conceded": 21,
+            "no_balls": 0,
+            "wides": 2
+          }
+        },
+        {
+          "fixture_id": 264012,
+          "date_str": "Saturday 20 Jun 2026",
+          "vs": "Anderson Aces",
+          "batting": {
+            "name": "Ria Sathish Kumar",
+            "name_raw": "Ria Sathish kumar",
+            "runs": -12,
+            "balls_faced": 16,
+            "dismissals": 3,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Ria Sathish Kumar",
+            "name_raw": "Ria Sathish kumar",
+            "overs": 2,
+            "wickets": 0,
+            "runs_conceded": 27,
+            "no_balls": 0,
+            "wides": 1
+          }
+        },
+        {
+          "fixture_id": 264336,
+          "date_str": "Saturday 27 Jun 2026",
+          "vs": "BYC",
+          "batting": {
+            "name": "Ria Sathish Kumar",
+            "name_raw": "Ria Sathish kumar",
+            "runs": 11,
+            "balls_faced": 9,
+            "dismissals": 1,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Ria Sathish Kumar",
+            "name_raw": "Ria Sathish kumar",
+            "overs": 2,
+            "wickets": 1,
+            "runs_conceded": 15,
+            "no_balls": 0,
+            "wides": 2
+          }
+        },
+        {
+          "fixture_id": 264757,
+          "date_str": "Saturday 18 Jul 2026",
+          "vs": "Warriors",
+          "batting": {
+            "name": "Ria Sathishkumar",
+            "name_raw": "Ria Sathishkumar",
+            "runs": 22,
+            "balls_faced": 17,
+            "dismissals": 0,
+            "threes": 1,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Ria Sathishkumar",
+            "name_raw": "Ria Sathishkumar",
+            "overs": 2,
+            "wickets": 2,
+            "runs_conceded": 9,
+            "no_balls": 0,
+            "wides": 0
           }
         }
       ]
@@ -1286,6 +1575,134 @@
       ]
     },
     {
+      "name": "Connor Unknown",
+      "totals": {
+        "innings_batted": 2,
+        "runs": 32,
+        "balls_faced": 19,
+        "dismissals": 0,
+        "overs_bowled": 4,
+        "wickets": 2,
+        "runs_conceded": 22
+      },
+      "matches": [
+        {
+          "fixture_id": 264006,
+          "date_str": "Saturday 06 Jun 2026",
+          "vs": "Team Thunderboltz",
+          "batting": {
+            "name": "Connor Unknown",
+            "name_raw": "connor Unknown",
+            "runs": 18,
+            "balls_faced": 10,
+            "dismissals": 0,
+            "threes": 0,
+            "fours": 0,
+            "fives": 2,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Connor Unknown",
+            "name_raw": "connor Unknown",
+            "overs": 2,
+            "wickets": 1,
+            "runs_conceded": 7,
+            "no_balls": 0,
+            "wides": 2
+          }
+        },
+        {
+          "fixture_id": 264757,
+          "date_str": "Saturday 18 Jul 2026",
+          "vs": "Warriors",
+          "batting": {
+            "name": "Connor Unknown",
+            "name_raw": "connor Unknown",
+            "runs": 14,
+            "balls_faced": 9,
+            "dismissals": 0,
+            "threes": 1,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Connor Unknown",
+            "name_raw": "connor Unknown",
+            "overs": 2,
+            "wickets": 1,
+            "runs_conceded": 15,
+            "no_balls": 0,
+            "wides": 3
+          }
+        }
+      ]
+    },
+    {
+      "name": "Fletcher Tulloch",
+      "totals": {
+        "innings_batted": 2,
+        "runs": 26,
+        "balls_faced": 34,
+        "dismissals": 2,
+        "overs_bowled": 4,
+        "wickets": 3,
+        "runs_conceded": 30
+      },
+      "matches": [
+        {
+          "fixture_id": 263111,
+          "date_str": "Saturday 25 Apr 2026",
+          "vs": "'Smashing Sataras'",
+          "batting": {
+            "name": "Fletcher Tulloch",
+            "name_raw": "fletcher tulloch",
+            "runs": 5,
+            "balls_faced": 19,
+            "dismissals": 2,
+            "threes": 1,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Fletcher Tulloch",
+            "name_raw": "fletcher tulloch",
+            "overs": 2,
+            "wickets": 2,
+            "runs_conceded": 17,
+            "no_balls": 0,
+            "wides": 0
+          }
+        },
+        {
+          "fixture_id": 264757,
+          "date_str": "Saturday 18 Jul 2026",
+          "vs": "Warriors",
+          "batting": {
+            "name": "Fletcher Tulloch",
+            "name_raw": "fletcher tulloch",
+            "runs": 21,
+            "balls_faced": 15,
+            "dismissals": 0,
+            "threes": 1,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Fletcher Tulloch",
+            "name_raw": "fletcher tulloch",
+            "overs": 2,
+            "wickets": 1,
+            "runs_conceded": 13,
+            "no_balls": 0,
+            "wides": 1
+          }
+        }
+      ]
+    },
+    {
       "name": "Vivaan Unknown",
       "totals": {
         "innings_batted": 1,
@@ -1320,273 +1737,6 @@
             "runs_conceded": 10,
             "no_balls": 0,
             "wides": 1
-          }
-        }
-      ]
-    },
-    {
-      "name": "Connor Unknown",
-      "totals": {
-        "innings_batted": 1,
-        "runs": 18,
-        "balls_faced": 10,
-        "dismissals": 0,
-        "overs_bowled": 2,
-        "wickets": 1,
-        "runs_conceded": 7
-      },
-      "matches": [
-        {
-          "fixture_id": 264006,
-          "date_str": "Saturday 06 Jun 2026",
-          "vs": "Team Thunderboltz",
-          "batting": {
-            "name": "Connor Unknown",
-            "name_raw": "connor Unknown",
-            "runs": 18,
-            "balls_faced": 10,
-            "dismissals": 0,
-            "threes": 0,
-            "fours": 0,
-            "fives": 2,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Connor Unknown",
-            "name_raw": "connor Unknown",
-            "overs": 2,
-            "wickets": 1,
-            "runs_conceded": 7,
-            "no_balls": 0,
-            "wides": 2
-          }
-        }
-      ]
-    },
-    {
-      "name": "Ria Sathish Kumar",
-      "totals": {
-        "innings_batted": 7,
-        "runs": 17,
-        "balls_faced": 90,
-        "dismissals": 10,
-        "overs_bowled": 14,
-        "wickets": 4,
-        "runs_conceded": 123
-      },
-      "matches": [
-        {
-          "fixture_id": 263265,
-          "date_str": "Saturday 02 May 2026",
-          "vs": "Anderson Aces",
-          "batting": {
-            "name": "Ria Sathishkumar",
-            "name_raw": "Ria Sathishkumar",
-            "runs": 11,
-            "balls_faced": 12,
-            "dismissals": 0,
-            "threes": 0,
-            "fours": 0,
-            "fives": 0,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Ria Sathishkumar",
-            "name_raw": "Ria Sathishkumar",
-            "overs": 2,
-            "wickets": 2,
-            "runs_conceded": 4,
-            "no_balls": 0,
-            "wides": 0
-          }
-        },
-        {
-          "fixture_id": 263465,
-          "date_str": "Saturday 09 May 2026",
-          "vs": "Brooklyn Allrounders",
-          "batting": {
-            "name": "Ria Sathish Kumar",
-            "name_raw": "Ria Sathish kumar",
-            "runs": 8,
-            "balls_faced": 14,
-            "dismissals": 1,
-            "threes": 1,
-            "fours": 0,
-            "fives": 0,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Ria Sathish Kumar",
-            "name_raw": "Ria Sathish kumar",
-            "overs": 2,
-            "wickets": 0,
-            "runs_conceded": 20,
-            "no_balls": 0,
-            "wides": 1
-          }
-        },
-        {
-          "fixture_id": 263826,
-          "date_str": "Saturday 16 May 2026",
-          "vs": "Renegades",
-          "batting": {
-            "name": "Ria Sathish Kumar",
-            "name_raw": "Ria Sathish kumar",
-            "runs": -7,
-            "balls_faced": 10,
-            "dismissals": 2,
-            "threes": 0,
-            "fours": 0,
-            "fives": 0,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Ria Sathish Kumar",
-            "name_raw": "Ria Sathish kumar",
-            "overs": 2,
-            "wickets": 0,
-            "runs_conceded": 19,
-            "no_balls": 0,
-            "wides": 1
-          }
-        },
-        {
-          "fixture_id": 263875,
-          "date_str": "Saturday 23 May 2026",
-          "vs": "BYC",
-          "batting": {
-            "name": "Ria Sathish Kumar",
-            "name_raw": "Ria Sathish kumar",
-            "runs": 3,
-            "balls_faced": 15,
-            "dismissals": 1,
-            "threes": 0,
-            "fours": 0,
-            "fives": 0,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Ria Sathish Kumar",
-            "name_raw": "Ria Sathish kumar",
-            "overs": 2,
-            "wickets": 1,
-            "runs_conceded": 17,
-            "no_balls": 0,
-            "wides": 1
-          }
-        },
-        {
-          "fixture_id": 264009,
-          "date_str": "Saturday 13 Jun 2026",
-          "vs": "Brooklyn Allrounders",
-          "batting": {
-            "name": "Ria Sathish Kumar",
-            "name_raw": "Ria Sathish kumar",
-            "runs": 3,
-            "balls_faced": 14,
-            "dismissals": 2,
-            "threes": 0,
-            "fours": 0,
-            "fives": 0,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Ria Sathish Kumar",
-            "name_raw": "Ria Sathish kumar",
-            "overs": 2,
-            "wickets": 0,
-            "runs_conceded": 21,
-            "no_balls": 0,
-            "wides": 2
-          }
-        },
-        {
-          "fixture_id": 264012,
-          "date_str": "Saturday 20 Jun 2026",
-          "vs": "Anderson Aces",
-          "batting": {
-            "name": "Ria Sathish Kumar",
-            "name_raw": "Ria Sathish kumar",
-            "runs": -12,
-            "balls_faced": 16,
-            "dismissals": 3,
-            "threes": 0,
-            "fours": 0,
-            "fives": 0,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Ria Sathish Kumar",
-            "name_raw": "Ria Sathish kumar",
-            "overs": 2,
-            "wickets": 0,
-            "runs_conceded": 27,
-            "no_balls": 0,
-            "wides": 1
-          }
-        },
-        {
-          "fixture_id": 264336,
-          "date_str": "Saturday 27 Jun 2026",
-          "vs": "BYC",
-          "batting": {
-            "name": "Ria Sathish Kumar",
-            "name_raw": "Ria Sathish kumar",
-            "runs": 11,
-            "balls_faced": 9,
-            "dismissals": 1,
-            "threes": 0,
-            "fours": 0,
-            "fives": 0,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Ria Sathish Kumar",
-            "name_raw": "Ria Sathish kumar",
-            "overs": 2,
-            "wickets": 1,
-            "runs_conceded": 15,
-            "no_balls": 0,
-            "wides": 2
-          }
-        }
-      ]
-    },
-    {
-      "name": "Fletcher Tulloch",
-      "totals": {
-        "innings_batted": 1,
-        "runs": 5,
-        "balls_faced": 19,
-        "dismissals": 2,
-        "overs_bowled": 2,
-        "wickets": 2,
-        "runs_conceded": 17
-      },
-      "matches": [
-        {
-          "fixture_id": 263111,
-          "date_str": "Saturday 25 Apr 2026",
-          "vs": "'Smashing Sataras'",
-          "batting": {
-            "name": "Fletcher Tulloch",
-            "name_raw": "fletcher tulloch",
-            "runs": 5,
-            "balls_faced": 19,
-            "dismissals": 2,
-            "threes": 1,
-            "fours": 0,
-            "fives": 0,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Fletcher Tulloch",
-            "name_raw": "fletcher tulloch",
-            "overs": 2,
-            "wickets": 2,
-            "runs_conceded": 17,
-            "no_balls": 0,
-            "wides": 0
           }
         }
       ]
@@ -1654,19 +1804,6 @@
           }
         }
       ]
-    },
-    {
-      "name": "Conor Mudge",
-      "totals": {
-        "innings_batted": 0,
-        "runs": 0,
-        "balls_faced": 0,
-        "dismissals": 0,
-        "overs_bowled": 0,
-        "wickets": 0,
-        "runs_conceded": 0
-      },
-      "matches": []
     }
   ]
 }

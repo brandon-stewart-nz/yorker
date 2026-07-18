@@ -1,54 +1,33 @@
 {
-  "generated_at_utc": "2026-07-18T00:05:21.877722+00:00",
-  "generated_at_nz": "2026-07-18T12:05:18.413217+12:00",
+  "generated_at_utc": "2026-07-18T00:55:25.664386+00:00",
+  "generated_at_nz": "2026-07-18T12:55:22.448290+12:00",
   "team": {
     "id": 11361,
     "name": "Blazing Firebirds",
     "raw_name": "Blazing Firebirds - Jacob"
   },
   "standings_row": {
-    "position": 5,
+    "position": 2,
     "team_name_raw": "Blazing Firebirds - Jacob",
-    "played": 7,
-    "won": 2,
+    "played": 8,
+    "won": 3,
     "lost": 5,
     "drawn": 0,
     "forfeits_for": 0,
     "forfeits_against": 0,
-    "skins_for": 335,
-    "skins_against": 589,
-    "difference": -254,
+    "skins_for": 420,
+    "skins_against": 667,
+    "difference": -247,
     "bonus": 0,
-    "points": 11
+    "points": 14
   },
   "record": {
-    "played": 10,
-    "won": 3,
+    "played": 11,
+    "won": 4,
     "lost": 7,
     "drawn": 0,
-    "skins_for": 483,
-    "skins_against": 856
+    "skins_for": 568,
+    "skins_against": 934
   },
-  "next_game": {
-    "date_str": "Saturday 18 Jul 2026",
-    "time": "12:00",
-    "court": "Court 3",
-    "home": {
-      "id": 11361,
-      "name": "Blazing Firebirds - Jacob",
-      "display": "Blazing Firebirds"
-    },
-    "away": {
-      "id": 11290,
-      "name": "Warriors - Alyssa",
-      "display": "Warriors"
-    },
-    "home_skins": null,
-    "away_skins": null,
-    "played": false,
-    "fixture_id": 264757,
-    "is_grading": false,
-    "scoresheet_complete": false,
-    "result_final": false
-  }
+  "next_game": null
 }
