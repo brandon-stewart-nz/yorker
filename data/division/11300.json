@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-07-18T01:05:56.148896+00:00",
-  "generated_at_nz": "2026-07-18T13:05:51.579129+12:00",
+  "generated_at_utc": "2026-07-18T01:55:37.805933+00:00",
+  "generated_at_nz": "2026-07-18T13:55:33.231840+12:00",
   "division_name": "Division 8",
   "team": {
     "id": 11300,
@@ -8,49 +8,29 @@
     "raw_name": "Anderson Aces - Arihaan"
   },
   "standings_row": {
-    "position": 4,
+    "position": 2,
     "team_name_raw": "Anderson Aces - Arihaan",
-    "played": 7,
-    "won": 2,
+    "played": 8,
+    "won": 3,
     "lost": 4,
     "drawn": 1,
     "forfeits_for": 0,
     "forfeits_against": 0,
-    "skins_for": 421,
-    "skins_against": 375,
-    "difference": 46,
+    "skins_for": 487,
+    "skins_against": 437,
+    "difference": 50,
     "bonus": 0,
-    "points": 12
+    "points": 15
   },
   "record": {
-    "played": 10,
-    "won": 4,
+    "played": 11,
+    "won": 5,
     "lost": 5,
     "drawn": 1,
-    "skins_for": 674,
-    "skins_against": 522
+    "skins_for": 740,
+    "skins_against": 584
   },
-  "next_game": {
-    "date_str": "Saturday 18 Jul 2026",
-    "time": "13:00",
-    "court": "Court 1",
-    "home": {
-      "id": 11300,
-      "name": "Anderson Aces - Arihaan",
-      "display": "Anderson Aces"
-    },
-    "away": {
-      "id": 11293,
-      "name": "Team Thunderboltz - Liam",
-      "display": "Team Thunderboltz"
-    },
-    "home_skins": null,
-    "away_skins": null,
-    "played": false,
-    "fixture_id": 264758,
-    "scoresheet_complete": false,
-    "is_grading": false
-  },
+  "next_game": null,
   "fixtures": [
     {
       "date_str": "Saturday 25 Apr 2026",
@@ -276,11 +256,11 @@
         "name": "Team Thunderboltz - Liam",
         "display": "Team Thunderboltz"
       },
-      "home_skins": null,
-      "away_skins": null,
-      "played": false,
+      "home_skins": 66,
+      "away_skins": 62,
+      "played": true,
       "fixture_id": 264758,
-      "scoresheet_complete": false,
+      "scoresheet_complete": true,
       "is_grading": false
     }
   ],
@@ -477,13 +457,13 @@
     {
       "name": "Gus",
       "totals": {
-        "innings_batted": 7,
-        "runs": 100,
-        "balls_faced": 80,
-        "dismissals": 5,
-        "overs_bowled": 14,
-        "wickets": 8,
-        "runs_conceded": 39
+        "innings_batted": 8,
+        "runs": 104,
+        "balls_faced": 90,
+        "dismissals": 6,
+        "overs_bowled": 16,
+        "wickets": 11,
+        "runs_conceded": 31
       },
       "matches": [
         {
@@ -660,6 +640,220 @@
             "no_balls": 0,
             "wides": 3
           }
+        },
+        {
+          "fixture_id": 264758,
+          "date_str": "Saturday 18 Jul 2026",
+          "vs": "Team Thunderboltz",
+          "batting": {
+            "name": "Gus Unknown",
+            "name_raw": "Gus Unknown",
+            "runs": 4,
+            "balls_faced": 10,
+            "dismissals": 1,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Gus Unknown",
+            "name_raw": "Gus Unknown",
+            "overs": 2,
+            "wickets": 3,
+            "runs_conceded": -8,
+            "no_balls": 0,
+            "wides": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "Abdullah Farooq",
+      "totals": {
+        "innings_batted": 7,
+        "runs": 101,
+        "balls_faced": 76,
+        "dismissals": 7,
+        "overs_bowled": 14,
+        "wickets": 10,
+        "runs_conceded": 29
+      },
+      "matches": [
+        {
+          "fixture_id": 263107,
+          "date_str": "Saturday 25 Apr 2026",
+          "vs": "Allstars",
+          "batting": {
+            "name": "Abdullah Farooq",
+            "name_raw": "abdullah farooq",
+            "runs": 7,
+            "balls_faced": 10,
+            "dismissals": 1,
+            "threes": 1,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Abdullah Farooq",
+            "name_raw": "abdullah farooq",
+            "overs": 2,
+            "wickets": 1,
+            "runs_conceded": 4,
+            "no_balls": 0,
+            "wides": 1
+          }
+        },
+        {
+          "fixture_id": 263462,
+          "date_str": "Saturday 09 May 2026",
+          "vs": "Karori Cricketers",
+          "batting": {
+            "name": "Abdullah Farooq",
+            "name_raw": "abdullah farooq",
+            "runs": 16,
+            "balls_faced": 11,
+            "dismissals": 1,
+            "threes": 1,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Abdullah Farooq",
+            "name_raw": "abdullah farooq",
+            "overs": 2,
+            "wickets": 0,
+            "runs_conceded": 16,
+            "no_balls": 0,
+            "wides": 2
+          }
+        },
+        {
+          "fixture_id": 263835,
+          "date_str": "Saturday 16 May 2026",
+          "vs": "Firebats",
+          "batting": {
+            "name": "Abdullah Farooq",
+            "name_raw": "abdullah farooq",
+            "runs": 1,
+            "balls_faced": 9,
+            "dismissals": 2,
+            "threes": 1,
+            "fours": 1,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Abdullah Farooq",
+            "name_raw": "abdullah farooq",
+            "overs": 2,
+            "wickets": 2,
+            "runs_conceded": -2,
+            "no_balls": 0,
+            "wides": 0
+          }
+        },
+        {
+          "fixture_id": 264010,
+          "date_str": "Saturday 13 Jun 2026",
+          "vs": "Team Thunderboltz",
+          "batting": {
+            "name": "Abdullah Farooq",
+            "name_raw": "abdullah farooq",
+            "runs": 10,
+            "balls_faced": 9,
+            "dismissals": 1,
+            "threes": 2,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Abdullah Farooq",
+            "name_raw": "abdullah farooq",
+            "overs": 2,
+            "wickets": 2,
+            "runs_conceded": -1,
+            "no_balls": 0,
+            "wides": 0
+          }
+        },
+        {
+          "fixture_id": 264012,
+          "date_str": "Saturday 20 Jun 2026",
+          "vs": "Blazing Firebirds",
+          "batting": {
+            "name": "Abdullah Farooq",
+            "name_raw": "abdullah farooq",
+            "runs": 23,
+            "balls_faced": 11,
+            "dismissals": 0,
+            "threes": 0,
+            "fours": 3,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Abdullah Farooq",
+            "name_raw": "abdullah farooq",
+            "overs": 2,
+            "wickets": 2,
+            "runs_conceded": -1,
+            "no_balls": 0,
+            "wides": 0
+          }
+        },
+        {
+          "fixture_id": 264341,
+          "date_str": "Saturday 27 Jun 2026",
+          "vs": "Oompa Loompas",
+          "batting": {
+            "name": "Abdullah Farooq",
+            "name_raw": "abdullah farooq",
+            "runs": 22,
+            "balls_faced": 13,
+            "dismissals": 1,
+            "threes": 3,
+            "fours": 0,
+            "fives": 1,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Abdullah Farooq",
+            "name_raw": "abdullah farooq",
+            "overs": 2,
+            "wickets": 3,
+            "runs_conceded": 0,
+            "no_balls": 0,
+            "wides": 2
+          }
+        },
+        {
+          "fixture_id": 264758,
+          "date_str": "Saturday 18 Jul 2026",
+          "vs": "Team Thunderboltz",
+          "batting": {
+            "name": "Abdullah Farooq",
+            "name_raw": "abdullah farooq",
+            "runs": 22,
+            "balls_faced": 13,
+            "dismissals": 1,
+            "threes": 1,
+            "fours": 1,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Abdullah Farooq",
+            "name_raw": "abdullah farooq",
+            "overs": 2,
+            "wickets": 0,
+            "runs_conceded": 13,
+            "no_balls": 0,
+            "wides": 1
+          }
         }
       ]
     },
@@ -828,179 +1022,15 @@
       ]
     },
     {
-      "name": "Abdullah Farooq",
-      "totals": {
-        "innings_batted": 6,
-        "runs": 79,
-        "balls_faced": 63,
-        "dismissals": 6,
-        "overs_bowled": 12,
-        "wickets": 10,
-        "runs_conceded": 16
-      },
-      "matches": [
-        {
-          "fixture_id": 263107,
-          "date_str": "Saturday 25 Apr 2026",
-          "vs": "Allstars",
-          "batting": {
-            "name": "Abdullah Farooq",
-            "name_raw": "abdullah farooq",
-            "runs": 7,
-            "balls_faced": 10,
-            "dismissals": 1,
-            "threes": 1,
-            "fours": 0,
-            "fives": 0,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Abdullah Farooq",
-            "name_raw": "abdullah farooq",
-            "overs": 2,
-            "wickets": 1,
-            "runs_conceded": 4,
-            "no_balls": 0,
-            "wides": 1
-          }
-        },
-        {
-          "fixture_id": 263462,
-          "date_str": "Saturday 09 May 2026",
-          "vs": "Karori Cricketers",
-          "batting": {
-            "name": "Abdullah Farooq",
-            "name_raw": "abdullah farooq",
-            "runs": 16,
-            "balls_faced": 11,
-            "dismissals": 1,
-            "threes": 1,
-            "fours": 0,
-            "fives": 0,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Abdullah Farooq",
-            "name_raw": "abdullah farooq",
-            "overs": 2,
-            "wickets": 0,
-            "runs_conceded": 16,
-            "no_balls": 0,
-            "wides": 2
-          }
-        },
-        {
-          "fixture_id": 263835,
-          "date_str": "Saturday 16 May 2026",
-          "vs": "Firebats",
-          "batting": {
-            "name": "Abdullah Farooq",
-            "name_raw": "abdullah farooq",
-            "runs": 1,
-            "balls_faced": 9,
-            "dismissals": 2,
-            "threes": 1,
-            "fours": 1,
-            "fives": 0,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Abdullah Farooq",
-            "name_raw": "abdullah farooq",
-            "overs": 2,
-            "wickets": 2,
-            "runs_conceded": -2,
-            "no_balls": 0,
-            "wides": 0
-          }
-        },
-        {
-          "fixture_id": 264010,
-          "date_str": "Saturday 13 Jun 2026",
-          "vs": "Team Thunderboltz",
-          "batting": {
-            "name": "Abdullah Farooq",
-            "name_raw": "abdullah farooq",
-            "runs": 10,
-            "balls_faced": 9,
-            "dismissals": 1,
-            "threes": 2,
-            "fours": 0,
-            "fives": 0,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Abdullah Farooq",
-            "name_raw": "abdullah farooq",
-            "overs": 2,
-            "wickets": 2,
-            "runs_conceded": -1,
-            "no_balls": 0,
-            "wides": 0
-          }
-        },
-        {
-          "fixture_id": 264012,
-          "date_str": "Saturday 20 Jun 2026",
-          "vs": "Blazing Firebirds",
-          "batting": {
-            "name": "Abdullah Farooq",
-            "name_raw": "abdullah farooq",
-            "runs": 23,
-            "balls_faced": 11,
-            "dismissals": 0,
-            "threes": 0,
-            "fours": 3,
-            "fives": 0,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Abdullah Farooq",
-            "name_raw": "abdullah farooq",
-            "overs": 2,
-            "wickets": 2,
-            "runs_conceded": -1,
-            "no_balls": 0,
-            "wides": 0
-          }
-        },
-        {
-          "fixture_id": 264341,
-          "date_str": "Saturday 27 Jun 2026",
-          "vs": "Oompa Loompas",
-          "batting": {
-            "name": "Abdullah Farooq",
-            "name_raw": "abdullah farooq",
-            "runs": 22,
-            "balls_faced": 13,
-            "dismissals": 1,
-            "threes": 3,
-            "fours": 0,
-            "fives": 1,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Abdullah Farooq",
-            "name_raw": "abdullah farooq",
-            "overs": 2,
-            "wickets": 3,
-            "runs_conceded": 0,
-            "no_balls": 0,
-            "wides": 2
-          }
-        }
-      ]
-    },
-    {
       "name": "Jimi Pearce",
       "totals": {
-        "innings_batted": 8,
-        "runs": 64,
-        "balls_faced": 94,
-        "dismissals": 10,
-        "overs_bowled": 16,
-        "wickets": 8,
-        "runs_conceded": 80
+        "innings_batted": 9,
+        "runs": 70,
+        "balls_faced": 108,
+        "dismissals": 11,
+        "overs_bowled": 18,
+        "wickets": 9,
+        "runs_conceded": 90
       },
       "matches": [
         {
@@ -1179,6 +1209,31 @@
           }
         },
         {
+          "fixture_id": 264758,
+          "date_str": "Saturday 18 Jul 2026",
+          "vs": "Team Thunderboltz",
+          "batting": {
+            "name": "Jimi Pearce",
+            "name_raw": "jimi pearce",
+            "runs": 6,
+            "balls_faced": 14,
+            "dismissals": 1,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Jimi Pearce",
+            "name_raw": "jimi pearce",
+            "overs": 2,
+            "wickets": 1,
+            "runs_conceded": 10,
+            "no_balls": 0,
+            "wides": 1
+          }
+        },
+        {
           "fixture_id": 264019,
           "date_str": "Saturday 06 Jun 2026",
           "vs": "Karori Cricketers",
@@ -1290,6 +1345,220 @@
             "runs_conceded": -6,
             "no_balls": 0,
             "wides": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "Arihaan Bhushan",
+      "totals": {
+        "innings_batted": 8,
+        "runs": 60,
+        "balls_faced": 98,
+        "dismissals": 10,
+        "overs_bowled": 16,
+        "wickets": 7,
+        "runs_conceded": 134
+      },
+      "matches": [
+        {
+          "fixture_id": 263107,
+          "date_str": "Saturday 25 Apr 2026",
+          "vs": "Allstars",
+          "batting": {
+            "name": "Arihaan Bhushan",
+            "name_raw": "arihaan bhushan",
+            "runs": 8,
+            "balls_faced": 11,
+            "dismissals": 0,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Arihaan Bhushan",
+            "name_raw": "arihaan bhushan",
+            "overs": 2,
+            "wickets": 0,
+            "runs_conceded": 23,
+            "no_balls": 0,
+            "wides": 4
+          }
+        },
+        {
+          "fixture_id": 263265,
+          "date_str": "Saturday 02 May 2026",
+          "vs": "Blazing Firebirds",
+          "batting": {
+            "name": "Arihaan Bhushan",
+            "name_raw": "arihaan bhushan",
+            "runs": 17,
+            "balls_faced": 12,
+            "dismissals": 0,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Arihaan Bhushan",
+            "name_raw": "arihaan bhushan",
+            "overs": 2,
+            "wickets": 2,
+            "runs_conceded": 2,
+            "no_balls": 0,
+            "wides": 5
+          }
+        },
+        {
+          "fixture_id": 263835,
+          "date_str": "Saturday 16 May 2026",
+          "vs": "Firebats",
+          "batting": {
+            "name": "Arihaan Bhushan",
+            "name_raw": "arihaan bhushan",
+            "runs": 9,
+            "balls_faced": 15,
+            "dismissals": 2,
+            "threes": 1,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Arihaan Bhushan",
+            "name_raw": "arihaan bhushan",
+            "overs": 2,
+            "wickets": 0,
+            "runs_conceded": 16,
+            "no_balls": 0,
+            "wides": 2
+          }
+        },
+        {
+          "fixture_id": 263876,
+          "date_str": "Saturday 23 May 2026",
+          "vs": "Thunder Strikers",
+          "batting": {
+            "name": "Arihaan Bhushan",
+            "name_raw": "arihaan bhushan",
+            "runs": -5,
+            "balls_faced": 11,
+            "dismissals": 3,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Arihaan Bhushan",
+            "name_raw": "arihaan bhushan",
+            "overs": 2,
+            "wickets": 0,
+            "runs_conceded": 30,
+            "no_balls": 0,
+            "wides": 3
+          }
+        },
+        {
+          "fixture_id": 263954,
+          "date_str": "Saturday 30 May 2026",
+          "vs": "Fast Delivery",
+          "batting": {
+            "name": "Arihaan Bhushan",
+            "name_raw": "arihaan bhushan",
+            "runs": 9,
+            "balls_faced": 11,
+            "dismissals": 0,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Arihaan Bhushan",
+            "name_raw": "arihaan bhushan",
+            "overs": 2,
+            "wickets": 1,
+            "runs_conceded": 15,
+            "no_balls": 0,
+            "wides": 1
+          }
+        },
+        {
+          "fixture_id": 264019,
+          "date_str": "Saturday 06 Jun 2026",
+          "vs": "Karori Cricketers",
+          "batting": {
+            "name": "Arihaan Bhushan",
+            "name_raw": "arihaan bhushan",
+            "runs": 10,
+            "balls_faced": 16,
+            "dismissals": 2,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Arihaan Bhushan",
+            "name_raw": "arihaan bhushan",
+            "overs": 2,
+            "wickets": 2,
+            "runs_conceded": 16,
+            "no_balls": 0,
+            "wides": 4
+          }
+        },
+        {
+          "fixture_id": 264010,
+          "date_str": "Saturday 13 Jun 2026",
+          "vs": "Team Thunderboltz",
+          "batting": {
+            "name": "Arihaan Bhushan",
+            "name_raw": "arihaan bhushan",
+            "runs": -2,
+            "balls_faced": 11,
+            "dismissals": 3,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Arihaan Bhushan",
+            "name_raw": "arihaan bhushan",
+            "overs": 2,
+            "wickets": 1,
+            "runs_conceded": 17,
+            "no_balls": 0,
+            "wides": 4
+          }
+        },
+        {
+          "fixture_id": 264758,
+          "date_str": "Saturday 18 Jul 2026",
+          "vs": "Team Thunderboltz",
+          "batting": {
+            "name": "Arihaan Bhushan",
+            "name_raw": "arihaan bhushan",
+            "runs": 14,
+            "balls_faced": 11,
+            "dismissals": 0,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Arihaan Bhushan",
+            "name_raw": "arihaan bhushan",
+            "overs": 2,
+            "wickets": 1,
+            "runs_conceded": 15,
+            "no_balls": 0,
+            "wides": 9
           }
         }
       ]
@@ -1509,204 +1778,15 @@
       ]
     },
     {
-      "name": "Arihaan Bhushan",
-      "totals": {
-        "innings_batted": 7,
-        "runs": 46,
-        "balls_faced": 87,
-        "dismissals": 10,
-        "overs_bowled": 14,
-        "wickets": 6,
-        "runs_conceded": 119
-      },
-      "matches": [
-        {
-          "fixture_id": 263107,
-          "date_str": "Saturday 25 Apr 2026",
-          "vs": "Allstars",
-          "batting": {
-            "name": "Arihaan Bhushan",
-            "name_raw": "arihaan bhushan",
-            "runs": 8,
-            "balls_faced": 11,
-            "dismissals": 0,
-            "threes": 0,
-            "fours": 0,
-            "fives": 0,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Arihaan Bhushan",
-            "name_raw": "arihaan bhushan",
-            "overs": 2,
-            "wickets": 0,
-            "runs_conceded": 23,
-            "no_balls": 0,
-            "wides": 4
-          }
-        },
-        {
-          "fixture_id": 263265,
-          "date_str": "Saturday 02 May 2026",
-          "vs": "Blazing Firebirds",
-          "batting": {
-            "name": "Arihaan Bhushan",
-            "name_raw": "arihaan bhushan",
-            "runs": 17,
-            "balls_faced": 12,
-            "dismissals": 0,
-            "threes": 0,
-            "fours": 0,
-            "fives": 0,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Arihaan Bhushan",
-            "name_raw": "arihaan bhushan",
-            "overs": 2,
-            "wickets": 2,
-            "runs_conceded": 2,
-            "no_balls": 0,
-            "wides": 5
-          }
-        },
-        {
-          "fixture_id": 263835,
-          "date_str": "Saturday 16 May 2026",
-          "vs": "Firebats",
-          "batting": {
-            "name": "Arihaan Bhushan",
-            "name_raw": "arihaan bhushan",
-            "runs": 9,
-            "balls_faced": 15,
-            "dismissals": 2,
-            "threes": 1,
-            "fours": 0,
-            "fives": 0,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Arihaan Bhushan",
-            "name_raw": "arihaan bhushan",
-            "overs": 2,
-            "wickets": 0,
-            "runs_conceded": 16,
-            "no_balls": 0,
-            "wides": 2
-          }
-        },
-        {
-          "fixture_id": 263876,
-          "date_str": "Saturday 23 May 2026",
-          "vs": "Thunder Strikers",
-          "batting": {
-            "name": "Arihaan Bhushan",
-            "name_raw": "arihaan bhushan",
-            "runs": -5,
-            "balls_faced": 11,
-            "dismissals": 3,
-            "threes": 0,
-            "fours": 0,
-            "fives": 0,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Arihaan Bhushan",
-            "name_raw": "arihaan bhushan",
-            "overs": 2,
-            "wickets": 0,
-            "runs_conceded": 30,
-            "no_balls": 0,
-            "wides": 3
-          }
-        },
-        {
-          "fixture_id": 263954,
-          "date_str": "Saturday 30 May 2026",
-          "vs": "Fast Delivery",
-          "batting": {
-            "name": "Arihaan Bhushan",
-            "name_raw": "arihaan bhushan",
-            "runs": 9,
-            "balls_faced": 11,
-            "dismissals": 0,
-            "threes": 0,
-            "fours": 0,
-            "fives": 0,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Arihaan Bhushan",
-            "name_raw": "arihaan bhushan",
-            "overs": 2,
-            "wickets": 1,
-            "runs_conceded": 15,
-            "no_balls": 0,
-            "wides": 1
-          }
-        },
-        {
-          "fixture_id": 264019,
-          "date_str": "Saturday 06 Jun 2026",
-          "vs": "Karori Cricketers",
-          "batting": {
-            "name": "Arihaan Bhushan",
-            "name_raw": "arihaan bhushan",
-            "runs": 10,
-            "balls_faced": 16,
-            "dismissals": 2,
-            "threes": 0,
-            "fours": 0,
-            "fives": 0,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Arihaan Bhushan",
-            "name_raw": "arihaan bhushan",
-            "overs": 2,
-            "wickets": 2,
-            "runs_conceded": 16,
-            "no_balls": 0,
-            "wides": 4
-          }
-        },
-        {
-          "fixture_id": 264010,
-          "date_str": "Saturday 13 Jun 2026",
-          "vs": "Team Thunderboltz",
-          "batting": {
-            "name": "Arihaan Bhushan",
-            "name_raw": "arihaan bhushan",
-            "runs": -2,
-            "balls_faced": 11,
-            "dismissals": 3,
-            "threes": 0,
-            "fours": 0,
-            "fives": 0,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Arihaan Bhushan",
-            "name_raw": "arihaan bhushan",
-            "overs": 2,
-            "wickets": 1,
-            "runs_conceded": 17,
-            "no_balls": 0,
-            "wides": 4
-          }
-        }
-      ]
-    },
-    {
       "name": "Lakshya Biswas",
       "totals": {
-        "innings_batted": 7,
-        "runs": 27,
-        "balls_faced": 84,
-        "dismissals": 17,
-        "overs_bowled": 14,
+        "innings_batted": 8,
+        "runs": 31,
+        "balls_faced": 94,
+        "dismissals": 19,
+        "overs_bowled": 16,
         "wickets": 14,
-        "runs_conceded": 30
+        "runs_conceded": 47
       },
       "matches": [
         {
@@ -1883,6 +1963,31 @@
             "no_balls": 0,
             "wides": 3
           }
+        },
+        {
+          "fixture_id": 264758,
+          "date_str": "Saturday 18 Jul 2026",
+          "vs": "Team Thunderboltz",
+          "batting": {
+            "name": "Lakshya Biswas",
+            "name_raw": "lakshya biswas",
+            "runs": 4,
+            "balls_faced": 10,
+            "dismissals": 2,
+            "threes": 0,
+            "fours": 1,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Lakshya Biswas",
+            "name_raw": "lakshya biswas",
+            "overs": 2,
+            "wickets": 0,
+            "runs_conceded": 17,
+            "no_balls": 0,
+            "wides": 6
+          }
         }
       ]
     },
@@ -1921,6 +2026,45 @@
             "runs_conceded": 26,
             "no_balls": 0,
             "wides": 3
+          }
+        }
+      ]
+    },
+    {
+      "name": "Aaron",
+      "totals": {
+        "innings_batted": 1,
+        "runs": 16,
+        "balls_faced": 14,
+        "dismissals": 2,
+        "overs_bowled": 2,
+        "wickets": 0,
+        "runs_conceded": 15
+      },
+      "matches": [
+        {
+          "fixture_id": 264758,
+          "date_str": "Saturday 18 Jul 2026",
+          "vs": "Team Thunderboltz",
+          "batting": {
+            "name": "Aaron Unknown",
+            "name_raw": "aaron Unknown",
+            "runs": 16,
+            "balls_faced": 14,
+            "dismissals": 2,
+            "threes": 0,
+            "fours": 0,
+            "fives": 1,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Aaron Unknown",
+            "name_raw": "aaron Unknown",
+            "overs": 2,
+            "wickets": 0,
+            "runs_conceded": 15,
+            "no_balls": 0,
+            "wides": 6
           }
         }
       ]

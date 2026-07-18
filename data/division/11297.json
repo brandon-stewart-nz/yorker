@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-07-18T01:05:56.142831+00:00",
-  "generated_at_nz": "2026-07-18T13:05:51.579129+12:00",
+  "generated_at_utc": "2026-07-18T01:55:37.802638+00:00",
+  "generated_at_nz": "2026-07-18T13:55:33.231840+12:00",
   "division_name": "Division 8",
   "team": {
     "id": 11297,
@@ -10,47 +10,27 @@
   "standings_row": {
     "position": 1,
     "team_name_raw": "BYC - Freddie",
-    "played": 7,
+    "played": 8,
     "won": 6,
-    "lost": 1,
+    "lost": 2,
     "drawn": 0,
     "forfeits_for": 0,
     "forfeits_against": 0,
-    "skins_for": 487,
-    "skins_against": 262,
-    "difference": 225,
+    "skins_for": 529,
+    "skins_against": 352,
+    "difference": 177,
     "bonus": 0,
-    "points": 19
+    "points": 20
   },
   "record": {
-    "played": 10,
+    "played": 11,
     "won": 6,
-    "lost": 4,
+    "lost": 5,
     "drawn": 0,
-    "skins_for": 494,
-    "skins_against": 517
+    "skins_for": 536,
+    "skins_against": 607
   },
-  "next_game": {
-    "date_str": "Saturday 18 Jul 2026",
-    "time": "13:00",
-    "court": "Court 3",
-    "home": {
-      "id": 11297,
-      "name": "BYC - Freddie",
-      "display": "BYC"
-    },
-    "away": {
-      "id": 11292,
-      "name": "Oompa Loompas - Keanu",
-      "display": "Oompa Loompas"
-    },
-    "home_skins": null,
-    "away_skins": null,
-    "played": false,
-    "fixture_id": 264756,
-    "scoresheet_complete": false,
-    "is_grading": false
-  },
+  "next_game": null,
   "fixtures": [
     {
       "date_str": "Saturday 25 Apr 2026",
@@ -276,239 +256,25 @@
         "name": "Oompa Loompas - Keanu",
         "display": "Oompa Loompas"
       },
-      "home_skins": null,
-      "away_skins": null,
-      "played": false,
+      "home_skins": 42,
+      "away_skins": 90,
+      "played": true,
       "fixture_id": 264756,
-      "scoresheet_complete": false,
+      "scoresheet_complete": true,
       "is_grading": false
     }
   ],
   "players": [
     {
-      "name": "Oahran Duncan",
-      "totals": {
-        "innings_batted": 8,
-        "runs": 85,
-        "balls_faced": 92,
-        "dismissals": 6,
-        "overs_bowled": 16,
-        "wickets": 7,
-        "runs_conceded": 97
-      },
-      "matches": [
-        {
-          "fixture_id": 263105,
-          "date_str": "Saturday 25 Apr 2026",
-          "vs": "Cats",
-          "batting": {
-            "name": "Oahran Duncan",
-            "name_raw": "Oahran Duncan",
-            "runs": 7,
-            "balls_faced": 5,
-            "dismissals": 0,
-            "threes": 0,
-            "fours": 0,
-            "fives": 0,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Oahran Duncan",
-            "name_raw": "Oahran Duncan",
-            "overs": 2,
-            "wickets": 0,
-            "runs_conceded": 26,
-            "no_balls": 0,
-            "wides": 2
-          }
-        },
-        {
-          "fixture_id": 263283,
-          "date_str": "Saturday 02 May 2026",
-          "vs": "Upper Hutt Allstars",
-          "batting": {
-            "name": "Oahran Duncan",
-            "name_raw": "Oahran Duncan",
-            "runs": 8,
-            "balls_faced": 12,
-            "dismissals": 0,
-            "threes": 0,
-            "fours": 0,
-            "fives": 0,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Oahran Duncan",
-            "name_raw": "Oahran Duncan",
-            "overs": 2,
-            "wickets": 0,
-            "runs_conceded": 17,
-            "no_balls": 0,
-            "wides": 3
-          }
-        },
-        {
-          "fixture_id": 263467,
-          "date_str": "Saturday 09 May 2026",
-          "vs": "Firebats",
-          "batting": {
-            "name": "Oahran Duncan",
-            "name_raw": "Oahran Duncan",
-            "runs": 0,
-            "balls_faced": 14,
-            "dismissals": 3,
-            "threes": 0,
-            "fours": 0,
-            "fives": 0,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Oahran Duncan",
-            "name_raw": "Oahran Duncan",
-            "overs": 2,
-            "wickets": 0,
-            "runs_conceded": 21,
-            "no_balls": 0,
-            "wides": 1
-          }
-        },
-        {
-          "fixture_id": 263875,
-          "date_str": "Saturday 23 May 2026",
-          "vs": "Blazing Firebirds",
-          "batting": {
-            "name": "Oahran Duncan",
-            "name_raw": "Oahran Duncan",
-            "runs": 7,
-            "balls_faced": 9,
-            "dismissals": 1,
-            "threes": 1,
-            "fours": 0,
-            "fives": 0,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Oahran Duncan",
-            "name_raw": "Oahran Duncan",
-            "overs": 2,
-            "wickets": 1,
-            "runs_conceded": 15,
-            "no_balls": 0,
-            "wides": 3
-          }
-        },
-        {
-          "fixture_id": 263951,
-          "date_str": "Saturday 30 May 2026",
-          "vs": "Team Thunderboltz",
-          "batting": {
-            "name": "Oahran Duncan",
-            "name_raw": "Oahran Duncan",
-            "runs": 8,
-            "balls_faced": 13,
-            "dismissals": 1,
-            "threes": 1,
-            "fours": 1,
-            "fives": 0,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Oahran Duncan",
-            "name_raw": "Oahran Duncan",
-            "overs": 2,
-            "wickets": 1,
-            "runs_conceded": 6,
-            "no_balls": 0,
-            "wides": 3
-          }
-        },
-        {
-          "fixture_id": 264008,
-          "date_str": "Saturday 06 Jun 2026",
-          "vs": "Renegades",
-          "batting": {
-            "name": "Oahran Duncan",
-            "name_raw": "Oahran Duncan",
-            "runs": 13,
-            "balls_faced": 13,
-            "dismissals": 0,
-            "threes": 1,
-            "fours": 0,
-            "fives": 0,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Oahran Duncan",
-            "name_raw": "Oahran Duncan",
-            "overs": 2,
-            "wickets": 1,
-            "runs_conceded": 15,
-            "no_balls": 0,
-            "wides": 2
-          }
-        },
-        {
-          "fixture_id": 264011,
-          "date_str": "Saturday 13 Jun 2026",
-          "vs": "Oompa Loompas",
-          "batting": {
-            "name": "Oahran Duncan",
-            "name_raw": "Oahran Duncan",
-            "runs": 21,
-            "balls_faced": 13,
-            "dismissals": 1,
-            "threes": 1,
-            "fours": 0,
-            "fives": 1,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Oahran Duncan",
-            "name_raw": "Oahran Duncan",
-            "overs": 2,
-            "wickets": 2,
-            "runs_conceded": -6,
-            "no_balls": 0,
-            "wides": 0
-          }
-        },
-        {
-          "fixture_id": 264336,
-          "date_str": "Saturday 27 Jun 2026",
-          "vs": "Blazing Firebirds",
-          "batting": {
-            "name": "Oahran Duncan",
-            "name_raw": "Oahran Duncan",
-            "runs": 21,
-            "balls_faced": 13,
-            "dismissals": 0,
-            "threes": 1,
-            "fours": 0,
-            "fives": 0,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Oahran Duncan",
-            "name_raw": "Oahran Duncan",
-            "overs": 2,
-            "wickets": 2,
-            "runs_conceded": 3,
-            "no_balls": 0,
-            "wides": 1
-          }
-        }
-      ]
-    },
-    {
       "name": "Raife",
       "totals": {
-        "innings_batted": 9,
-        "runs": 79,
-        "balls_faced": 100,
+        "innings_batted": 10,
+        "runs": 90,
+        "balls_faced": 109,
         "dismissals": 9,
-        "overs_bowled": 18,
-        "wickets": 10,
-        "runs_conceded": 93
+        "overs_bowled": 20,
+        "wickets": 11,
+        "runs_conceded": 101
       },
       "matches": [
         {
@@ -735,6 +501,270 @@
             "no_balls": 0,
             "wides": 1
           }
+        },
+        {
+          "fixture_id": 264756,
+          "date_str": "Saturday 18 Jul 2026",
+          "vs": "Oompa Loompas",
+          "batting": {
+            "name": "Rafe Unknown",
+            "name_raw": "rafe Unknown",
+            "runs": 11,
+            "balls_faced": 9,
+            "dismissals": 0,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Rafe Unknown",
+            "name_raw": "rafe Unknown",
+            "overs": 2,
+            "wickets": 1,
+            "runs_conceded": 8,
+            "no_balls": 0,
+            "wides": 1
+          }
+        }
+      ]
+    },
+    {
+      "name": "Oahran Duncan",
+      "totals": {
+        "innings_batted": 9,
+        "runs": 86,
+        "balls_faced": 102,
+        "dismissals": 8,
+        "overs_bowled": 18,
+        "wickets": 7,
+        "runs_conceded": 114
+      },
+      "matches": [
+        {
+          "fixture_id": 263105,
+          "date_str": "Saturday 25 Apr 2026",
+          "vs": "Cats",
+          "batting": {
+            "name": "Oahran Duncan",
+            "name_raw": "Oahran Duncan",
+            "runs": 7,
+            "balls_faced": 5,
+            "dismissals": 0,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Oahran Duncan",
+            "name_raw": "Oahran Duncan",
+            "overs": 2,
+            "wickets": 0,
+            "runs_conceded": 26,
+            "no_balls": 0,
+            "wides": 2
+          }
+        },
+        {
+          "fixture_id": 263283,
+          "date_str": "Saturday 02 May 2026",
+          "vs": "Upper Hutt Allstars",
+          "batting": {
+            "name": "Oahran Duncan",
+            "name_raw": "Oahran Duncan",
+            "runs": 8,
+            "balls_faced": 12,
+            "dismissals": 0,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Oahran Duncan",
+            "name_raw": "Oahran Duncan",
+            "overs": 2,
+            "wickets": 0,
+            "runs_conceded": 17,
+            "no_balls": 0,
+            "wides": 3
+          }
+        },
+        {
+          "fixture_id": 263467,
+          "date_str": "Saturday 09 May 2026",
+          "vs": "Firebats",
+          "batting": {
+            "name": "Oahran Duncan",
+            "name_raw": "Oahran Duncan",
+            "runs": 0,
+            "balls_faced": 14,
+            "dismissals": 3,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Oahran Duncan",
+            "name_raw": "Oahran Duncan",
+            "overs": 2,
+            "wickets": 0,
+            "runs_conceded": 21,
+            "no_balls": 0,
+            "wides": 1
+          }
+        },
+        {
+          "fixture_id": 263875,
+          "date_str": "Saturday 23 May 2026",
+          "vs": "Blazing Firebirds",
+          "batting": {
+            "name": "Oahran Duncan",
+            "name_raw": "Oahran Duncan",
+            "runs": 7,
+            "balls_faced": 9,
+            "dismissals": 1,
+            "threes": 1,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Oahran Duncan",
+            "name_raw": "Oahran Duncan",
+            "overs": 2,
+            "wickets": 1,
+            "runs_conceded": 15,
+            "no_balls": 0,
+            "wides": 3
+          }
+        },
+        {
+          "fixture_id": 263951,
+          "date_str": "Saturday 30 May 2026",
+          "vs": "Team Thunderboltz",
+          "batting": {
+            "name": "Oahran Duncan",
+            "name_raw": "Oahran Duncan",
+            "runs": 8,
+            "balls_faced": 13,
+            "dismissals": 1,
+            "threes": 1,
+            "fours": 1,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Oahran Duncan",
+            "name_raw": "Oahran Duncan",
+            "overs": 2,
+            "wickets": 1,
+            "runs_conceded": 6,
+            "no_balls": 0,
+            "wides": 3
+          }
+        },
+        {
+          "fixture_id": 264008,
+          "date_str": "Saturday 06 Jun 2026",
+          "vs": "Renegades",
+          "batting": {
+            "name": "Oahran Duncan",
+            "name_raw": "Oahran Duncan",
+            "runs": 13,
+            "balls_faced": 13,
+            "dismissals": 0,
+            "threes": 1,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Oahran Duncan",
+            "name_raw": "Oahran Duncan",
+            "overs": 2,
+            "wickets": 1,
+            "runs_conceded": 15,
+            "no_balls": 0,
+            "wides": 2
+          }
+        },
+        {
+          "fixture_id": 264011,
+          "date_str": "Saturday 13 Jun 2026",
+          "vs": "Oompa Loompas",
+          "batting": {
+            "name": "Oahran Duncan",
+            "name_raw": "Oahran Duncan",
+            "runs": 21,
+            "balls_faced": 13,
+            "dismissals": 1,
+            "threes": 1,
+            "fours": 0,
+            "fives": 1,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Oahran Duncan",
+            "name_raw": "Oahran Duncan",
+            "overs": 2,
+            "wickets": 2,
+            "runs_conceded": -6,
+            "no_balls": 0,
+            "wides": 0
+          }
+        },
+        {
+          "fixture_id": 264336,
+          "date_str": "Saturday 27 Jun 2026",
+          "vs": "Blazing Firebirds",
+          "batting": {
+            "name": "Oahran Duncan",
+            "name_raw": "Oahran Duncan",
+            "runs": 21,
+            "balls_faced": 13,
+            "dismissals": 0,
+            "threes": 1,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Oahran Duncan",
+            "name_raw": "Oahran Duncan",
+            "overs": 2,
+            "wickets": 2,
+            "runs_conceded": 3,
+            "no_balls": 0,
+            "wides": 1
+          }
+        },
+        {
+          "fixture_id": 264756,
+          "date_str": "Saturday 18 Jul 2026",
+          "vs": "Oompa Loompas",
+          "batting": {
+            "name": "Oahran Duncan",
+            "name_raw": "Oahran Duncan",
+            "runs": 1,
+            "balls_faced": 10,
+            "dismissals": 2,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Oahran Duncan",
+            "name_raw": "Oahran Duncan",
+            "overs": 2,
+            "wickets": 0,
+            "runs_conceded": 17,
+            "no_balls": 0,
+            "wides": 1
+          }
         }
       ]
     },
@@ -930,13 +960,13 @@
     {
       "name": "Tom Burlace",
       "totals": {
-        "innings_batted": 10,
-        "runs": 66,
-        "balls_faced": 127,
-        "dismissals": 13,
-        "overs_bowled": 20,
+        "innings_batted": 11,
+        "runs": 71,
+        "balls_faced": 141,
+        "dismissals": 16,
+        "overs_bowled": 22,
         "wickets": 14,
-        "runs_conceded": 62
+        "runs_conceded": 82
       },
       "matches": [
         {
@@ -1188,6 +1218,270 @@
             "no_balls": 0,
             "wides": 0
           }
+        },
+        {
+          "fixture_id": 264756,
+          "date_str": "Saturday 18 Jul 2026",
+          "vs": "Oompa Loompas",
+          "batting": {
+            "name": "Tom Burlace",
+            "name_raw": "Tom Burlace",
+            "runs": 5,
+            "balls_faced": 14,
+            "dismissals": 3,
+            "threes": 0,
+            "fours": 1,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Tom Burlace",
+            "name_raw": "Tom Burlace",
+            "overs": 2,
+            "wickets": 0,
+            "runs_conceded": 20,
+            "no_balls": 0,
+            "wides": 3
+          }
+        }
+      ]
+    },
+    {
+      "name": "Ted Couchman",
+      "totals": {
+        "innings_batted": 9,
+        "runs": 68,
+        "balls_faced": 108,
+        "dismissals": 8,
+        "overs_bowled": 18,
+        "wickets": 11,
+        "runs_conceded": 101
+      },
+      "matches": [
+        {
+          "fixture_id": 263105,
+          "date_str": "Saturday 25 Apr 2026",
+          "vs": "Cats",
+          "batting": {
+            "name": "Ted Couchman",
+            "name_raw": "Ted Couchman",
+            "runs": -16,
+            "balls_faced": 13,
+            "dismissals": 5,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Ted Couchman",
+            "name_raw": "Ted Couchman",
+            "overs": 2,
+            "wickets": 1,
+            "runs_conceded": 9,
+            "no_balls": 0,
+            "wides": 2
+          }
+        },
+        {
+          "fixture_id": 263283,
+          "date_str": "Saturday 02 May 2026",
+          "vs": "Upper Hutt Allstars",
+          "batting": {
+            "name": "Ted Couchman",
+            "name_raw": "Ted Couchman",
+            "runs": 16,
+            "balls_faced": 15,
+            "dismissals": 0,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Ted Couchman",
+            "name_raw": "Ted Couchman",
+            "overs": 2,
+            "wickets": 2,
+            "runs_conceded": 12,
+            "no_balls": 0,
+            "wides": 6
+          }
+        },
+        {
+          "fixture_id": 263847,
+          "date_str": "Saturday 16 May 2026",
+          "vs": "Brooklyn Allrounders",
+          "batting": {
+            "name": "Ted Couchman",
+            "name_raw": "Ted Couchman",
+            "runs": 18,
+            "balls_faced": 12,
+            "dismissals": 0,
+            "threes": 4,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Ted Couchman",
+            "name_raw": "Ted Couchman",
+            "overs": 2,
+            "wickets": 2,
+            "runs_conceded": 7,
+            "no_balls": 0,
+            "wides": 5
+          }
+        },
+        {
+          "fixture_id": 263875,
+          "date_str": "Saturday 23 May 2026",
+          "vs": "Blazing Firebirds",
+          "batting": {
+            "name": "Ted Couchman",
+            "name_raw": "Ted Couchman",
+            "runs": 1,
+            "balls_faced": 12,
+            "dismissals": 1,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Ted Couchman",
+            "name_raw": "Ted Couchman",
+            "overs": 2,
+            "wickets": 1,
+            "runs_conceded": 10,
+            "no_balls": 0,
+            "wides": 3
+          }
+        },
+        {
+          "fixture_id": 263951,
+          "date_str": "Saturday 30 May 2026",
+          "vs": "Team Thunderboltz",
+          "batting": {
+            "name": "Ted Couchman",
+            "name_raw": "Ted Couchman",
+            "runs": 6,
+            "balls_faced": 11,
+            "dismissals": 1,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Ted Couchman",
+            "name_raw": "Ted Couchman",
+            "overs": 2,
+            "wickets": 1,
+            "runs_conceded": 11,
+            "no_balls": 0,
+            "wides": 4
+          }
+        },
+        {
+          "fixture_id": 264008,
+          "date_str": "Saturday 06 Jun 2026",
+          "vs": "Renegades",
+          "batting": {
+            "name": "Ted Couchman",
+            "name_raw": "Ted Couchman",
+            "runs": 6,
+            "balls_faced": 11,
+            "dismissals": 0,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Ted Couchman",
+            "name_raw": "Ted Couchman",
+            "overs": 2,
+            "wickets": 0,
+            "runs_conceded": 22,
+            "no_balls": 0,
+            "wides": 0
+          }
+        },
+        {
+          "fixture_id": 264014,
+          "date_str": "Saturday 20 Jun 2026",
+          "vs": "Brooklyn Allrounders",
+          "batting": {
+            "name": "Ted Couchman",
+            "name_raw": "Ted Couchman",
+            "runs": 12,
+            "balls_faced": 14,
+            "dismissals": 1,
+            "threes": 1,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Ted Couchman",
+            "name_raw": "Ted Couchman",
+            "overs": 2,
+            "wickets": 0,
+            "runs_conceded": 12,
+            "no_balls": 0,
+            "wides": 3
+          }
+        },
+        {
+          "fixture_id": 264336,
+          "date_str": "Saturday 27 Jun 2026",
+          "vs": "Blazing Firebirds",
+          "batting": {
+            "name": "Ted Couchman",
+            "name_raw": "Ted Couchman",
+            "runs": 14,
+            "balls_faced": 8,
+            "dismissals": 0,
+            "threes": 0,
+            "fours": 0,
+            "fives": 1,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Ted Couchman",
+            "name_raw": "Ted Couchman",
+            "overs": 2,
+            "wickets": 2,
+            "runs_conceded": 6,
+            "no_balls": 0,
+            "wides": 2
+          }
+        },
+        {
+          "fixture_id": 264756,
+          "date_str": "Saturday 18 Jul 2026",
+          "vs": "Oompa Loompas",
+          "batting": {
+            "name": "Ted Couchman",
+            "name_raw": "Ted Couchman",
+            "runs": 11,
+            "balls_faced": 12,
+            "dismissals": 0,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Ted Couchman",
+            "name_raw": "Ted Couchman",
+            "overs": 2,
+            "wickets": 2,
+            "runs_conceded": 12,
+            "no_balls": 0,
+            "wides": 0
+          }
         }
       ]
     },
@@ -1431,229 +1725,15 @@
       ]
     },
     {
-      "name": "Ted Couchman",
-      "totals": {
-        "innings_batted": 8,
-        "runs": 57,
-        "balls_faced": 96,
-        "dismissals": 8,
-        "overs_bowled": 16,
-        "wickets": 9,
-        "runs_conceded": 89
-      },
-      "matches": [
-        {
-          "fixture_id": 263105,
-          "date_str": "Saturday 25 Apr 2026",
-          "vs": "Cats",
-          "batting": {
-            "name": "Ted Couchman",
-            "name_raw": "Ted Couchman",
-            "runs": -16,
-            "balls_faced": 13,
-            "dismissals": 5,
-            "threes": 0,
-            "fours": 0,
-            "fives": 0,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Ted Couchman",
-            "name_raw": "Ted Couchman",
-            "overs": 2,
-            "wickets": 1,
-            "runs_conceded": 9,
-            "no_balls": 0,
-            "wides": 2
-          }
-        },
-        {
-          "fixture_id": 263283,
-          "date_str": "Saturday 02 May 2026",
-          "vs": "Upper Hutt Allstars",
-          "batting": {
-            "name": "Ted Couchman",
-            "name_raw": "Ted Couchman",
-            "runs": 16,
-            "balls_faced": 15,
-            "dismissals": 0,
-            "threes": 0,
-            "fours": 0,
-            "fives": 0,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Ted Couchman",
-            "name_raw": "Ted Couchman",
-            "overs": 2,
-            "wickets": 2,
-            "runs_conceded": 12,
-            "no_balls": 0,
-            "wides": 6
-          }
-        },
-        {
-          "fixture_id": 263847,
-          "date_str": "Saturday 16 May 2026",
-          "vs": "Brooklyn Allrounders",
-          "batting": {
-            "name": "Ted Couchman",
-            "name_raw": "Ted Couchman",
-            "runs": 18,
-            "balls_faced": 12,
-            "dismissals": 0,
-            "threes": 4,
-            "fours": 0,
-            "fives": 0,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Ted Couchman",
-            "name_raw": "Ted Couchman",
-            "overs": 2,
-            "wickets": 2,
-            "runs_conceded": 7,
-            "no_balls": 0,
-            "wides": 5
-          }
-        },
-        {
-          "fixture_id": 263875,
-          "date_str": "Saturday 23 May 2026",
-          "vs": "Blazing Firebirds",
-          "batting": {
-            "name": "Ted Couchman",
-            "name_raw": "Ted Couchman",
-            "runs": 1,
-            "balls_faced": 12,
-            "dismissals": 1,
-            "threes": 0,
-            "fours": 0,
-            "fives": 0,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Ted Couchman",
-            "name_raw": "Ted Couchman",
-            "overs": 2,
-            "wickets": 1,
-            "runs_conceded": 10,
-            "no_balls": 0,
-            "wides": 3
-          }
-        },
-        {
-          "fixture_id": 263951,
-          "date_str": "Saturday 30 May 2026",
-          "vs": "Team Thunderboltz",
-          "batting": {
-            "name": "Ted Couchman",
-            "name_raw": "Ted Couchman",
-            "runs": 6,
-            "balls_faced": 11,
-            "dismissals": 1,
-            "threes": 0,
-            "fours": 0,
-            "fives": 0,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Ted Couchman",
-            "name_raw": "Ted Couchman",
-            "overs": 2,
-            "wickets": 1,
-            "runs_conceded": 11,
-            "no_balls": 0,
-            "wides": 4
-          }
-        },
-        {
-          "fixture_id": 264008,
-          "date_str": "Saturday 06 Jun 2026",
-          "vs": "Renegades",
-          "batting": {
-            "name": "Ted Couchman",
-            "name_raw": "Ted Couchman",
-            "runs": 6,
-            "balls_faced": 11,
-            "dismissals": 0,
-            "threes": 0,
-            "fours": 0,
-            "fives": 0,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Ted Couchman",
-            "name_raw": "Ted Couchman",
-            "overs": 2,
-            "wickets": 0,
-            "runs_conceded": 22,
-            "no_balls": 0,
-            "wides": 0
-          }
-        },
-        {
-          "fixture_id": 264014,
-          "date_str": "Saturday 20 Jun 2026",
-          "vs": "Brooklyn Allrounders",
-          "batting": {
-            "name": "Ted Couchman",
-            "name_raw": "Ted Couchman",
-            "runs": 12,
-            "balls_faced": 14,
-            "dismissals": 1,
-            "threes": 1,
-            "fours": 0,
-            "fives": 0,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Ted Couchman",
-            "name_raw": "Ted Couchman",
-            "overs": 2,
-            "wickets": 0,
-            "runs_conceded": 12,
-            "no_balls": 0,
-            "wides": 3
-          }
-        },
-        {
-          "fixture_id": 264336,
-          "date_str": "Saturday 27 Jun 2026",
-          "vs": "Blazing Firebirds",
-          "batting": {
-            "name": "Ted Couchman",
-            "name_raw": "Ted Couchman",
-            "runs": 14,
-            "balls_faced": 8,
-            "dismissals": 0,
-            "threes": 0,
-            "fours": 0,
-            "fives": 1,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Ted Couchman",
-            "name_raw": "Ted Couchman",
-            "overs": 2,
-            "wickets": 2,
-            "runs_conceded": 6,
-            "no_balls": 0,
-            "wides": 2
-          }
-        }
-      ]
-    },
-    {
       "name": "Hugh Whittington",
       "totals": {
-        "innings_batted": 5,
-        "runs": 49,
-        "balls_faced": 61,
-        "dismissals": 6,
-        "overs_bowled": 10,
+        "innings_batted": 6,
+        "runs": 52,
+        "balls_faced": 76,
+        "dismissals": 7,
+        "overs_bowled": 12,
         "wickets": 7,
-        "runs_conceded": 35
+        "runs_conceded": 45
       },
       "matches": [
         {
@@ -1780,6 +1860,31 @@
             "no_balls": 0,
             "wides": 3
           }
+        },
+        {
+          "fixture_id": 264756,
+          "date_str": "Saturday 18 Jul 2026",
+          "vs": "Oompa Loompas",
+          "batting": {
+            "name": "Hugh Whittington",
+            "name_raw": "Hugh Whittington",
+            "runs": 3,
+            "balls_faced": 15,
+            "dismissals": 1,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Hugh Whittington",
+            "name_raw": "Hugh Whittington",
+            "overs": 2,
+            "wickets": 0,
+            "runs_conceded": 10,
+            "no_balls": 0,
+            "wides": 2
+          }
         }
       ]
     },
@@ -1843,6 +1948,45 @@
             "runs_conceded": 7,
             "no_balls": 0,
             "wides": 4
+          }
+        }
+      ]
+    },
+    {
+      "name": "Theo",
+      "totals": {
+        "innings_batted": 1,
+        "runs": 11,
+        "balls_faced": 12,
+        "dismissals": 0,
+        "overs_bowled": 2,
+        "wickets": 1,
+        "runs_conceded": 23
+      },
+      "matches": [
+        {
+          "fixture_id": 264756,
+          "date_str": "Saturday 18 Jul 2026",
+          "vs": "Oompa Loompas",
+          "batting": {
+            "name": "Theo Unknown",
+            "name_raw": "Theo Unknown",
+            "runs": 11,
+            "balls_faced": 12,
+            "dismissals": 0,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Theo Unknown",
+            "name_raw": "Theo Unknown",
+            "overs": 2,
+            "wickets": 1,
+            "runs_conceded": 23,
+            "no_balls": 0,
+            "wides": 2
           }
         }
       ]

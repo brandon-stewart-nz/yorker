@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-07-18T01:05:56.151874+00:00",
-  "generated_at_nz": "2026-07-18T13:05:51.579129+12:00",
+  "generated_at_utc": "2026-07-18T01:55:37.811514+00:00",
+  "generated_at_nz": "2026-07-18T13:55:33.231840+12:00",
   "division_name": "Division 8",
   "team": {
     "id": 11293,
@@ -10,47 +10,27 @@
   "standings_row": {
     "position": 5,
     "team_name_raw": "Team Thunderboltz - Liam",
-    "played": 7,
+    "played": 8,
     "won": 2,
-    "lost": 5,
+    "lost": 6,
     "drawn": 0,
     "forfeits_for": 0,
     "forfeits_against": 0,
-    "skins_for": 489,
-    "skins_against": 506,
-    "difference": -17,
+    "skins_for": 551,
+    "skins_against": 572,
+    "difference": -21,
     "bonus": 0,
-    "points": 11
+    "points": 12
   },
   "record": {
-    "played": 10,
+    "played": 11,
     "won": 3,
-    "lost": 7,
+    "lost": 8,
     "drawn": 0,
-    "skins_for": 635,
-    "skins_against": 637
+    "skins_for": 697,
+    "skins_against": 703
   },
-  "next_game": {
-    "date_str": "Saturday 18 Jul 2026",
-    "time": "13:00",
-    "court": "Court 1",
-    "home": {
-      "id": 11300,
-      "name": "Anderson Aces - Arihaan",
-      "display": "Anderson Aces"
-    },
-    "away": {
-      "id": 11293,
-      "name": "Team Thunderboltz - Liam",
-      "display": "Team Thunderboltz"
-    },
-    "home_skins": null,
-    "away_skins": null,
-    "played": false,
-    "fixture_id": 264758,
-    "scoresheet_complete": false,
-    "is_grading": false
-  },
+  "next_game": null,
   "fixtures": [
     {
       "date_str": "Saturday 25 Apr 2026",
@@ -276,11 +256,11 @@
         "name": "Team Thunderboltz - Liam",
         "display": "Team Thunderboltz"
       },
-      "home_skins": null,
-      "away_skins": null,
-      "played": false,
+      "home_skins": 66,
+      "away_skins": 62,
+      "played": true,
       "fixture_id": 264758,
-      "scoresheet_complete": false,
+      "scoresheet_complete": true,
       "is_grading": false
     }
   ],
@@ -288,13 +268,13 @@
     {
       "name": "Liam",
       "totals": {
-        "innings_batted": 7,
-        "runs": 132,
-        "balls_faced": 76,
+        "innings_batted": 8,
+        "runs": 147,
+        "balls_faced": 87,
         "dismissals": 3,
-        "overs_bowled": 14,
-        "wickets": 7,
-        "runs_conceded": 60
+        "overs_bowled": 16,
+        "wickets": 9,
+        "runs_conceded": 61
       },
       "matches": [
         {
@@ -471,194 +451,30 @@
             "no_balls": 1,
             "wides": 3
           }
-        }
-      ]
-    },
-    {
-      "name": "Khian Sharma",
-      "totals": {
-        "innings_batted": 7,
-        "runs": 114,
-        "balls_faced": 76,
-        "dismissals": 2,
-        "overs_bowled": 14,
-        "wickets": 6,
-        "runs_conceded": 56
-      },
-      "matches": [
-        {
-          "fixture_id": 263103,
-          "date_str": "Saturday 25 Apr 2026",
-          "vs": "Oompa Loompas",
-          "batting": {
-            "name": "Khian Sharma",
-            "name_raw": "Khian Sharma",
-            "runs": -3,
-            "balls_faced": 8,
-            "dismissals": 1,
-            "threes": 0,
-            "fours": 0,
-            "fives": 0,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Khian Sharma",
-            "name_raw": "Khian Sharma",
-            "overs": 2,
-            "wickets": 1,
-            "runs_conceded": 6,
-            "no_balls": 0,
-            "wides": 5
-          }
         },
         {
-          "fixture_id": 263262,
-          "date_str": "Saturday 02 May 2026",
-          "vs": "Hit n Run",
+          "fixture_id": 264758,
+          "date_str": "Saturday 18 Jul 2026",
+          "vs": "Anderson Aces",
           "batting": {
-            "name": "Khian Sharma",
-            "name_raw": "Khian Sharma",
-            "runs": 20,
-            "balls_faced": 10,
-            "dismissals": 0,
-            "threes": 1,
-            "fours": 2,
-            "fives": 0,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Khian Sharma",
-            "name_raw": "Khian Sharma",
-            "overs": 2,
-            "wickets": 2,
-            "runs_conceded": -7,
-            "no_balls": 0,
-            "wides": 1
-          }
-        },
-        {
-          "fixture_id": 263466,
-          "date_str": "Saturday 09 May 2026",
-          "vs": "Renegades",
-          "batting": {
-            "name": "Khian Sharma",
-            "name_raw": "Khian Sharma",
-            "runs": 21,
+            "name": "Liam Unknown",
+            "name_raw": "liam Unknown",
+            "runs": 15,
             "balls_faced": 11,
             "dismissals": 0,
             "threes": 0,
-            "fours": 1,
+            "fours": 0,
             "fives": 0,
             "sixes": 0
           },
           "bowling": {
-            "name": "Khian Sharma",
-            "name_raw": "Khian Sharma",
-            "overs": 2,
-            "wickets": 0,
-            "runs_conceded": 13,
-            "no_balls": 0,
-            "wides": 3
-          }
-        },
-        {
-          "fixture_id": 263878,
-          "date_str": "Saturday 23 May 2026",
-          "vs": "Brooklyn Allrounders",
-          "batting": {
-            "name": "Khian Sharma",
-            "name_raw": "Khian Sharma",
-            "runs": 19,
-            "balls_faced": 12,
-            "dismissals": 0,
-            "threes": 0,
-            "fours": 0,
-            "fives": 1,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Khian Sharma",
-            "name_raw": "Khian Sharma",
+            "name": "Liam Unknown",
+            "name_raw": "liam Unknown",
             "overs": 2,
             "wickets": 2,
-            "runs_conceded": 0,
+            "runs_conceded": 1,
             "no_balls": 0,
             "wides": 1
-          }
-        },
-        {
-          "fixture_id": 264010,
-          "date_str": "Saturday 13 Jun 2026",
-          "vs": "Anderson Aces",
-          "batting": {
-            "name": "Khian Sharma",
-            "name_raw": "Khian Sharma",
-            "runs": 16,
-            "balls_faced": 8,
-            "dismissals": 0,
-            "threes": 0,
-            "fours": 0,
-            "fives": 0,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Khian Sharma",
-            "name_raw": "Khian Sharma",
-            "overs": 2,
-            "wickets": 1,
-            "runs_conceded": 14,
-            "no_balls": 0,
-            "wides": 2
-          }
-        },
-        {
-          "fixture_id": 264013,
-          "date_str": "Saturday 20 Jun 2026",
-          "vs": "Oompa Loompas",
-          "batting": {
-            "name": "Khian Sharma",
-            "name_raw": "Khian Sharma",
-            "runs": 23,
-            "balls_faced": 15,
-            "dismissals": 1,
-            "threes": 1,
-            "fours": 1,
-            "fives": 0,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Khian Sharma",
-            "name_raw": "Khian Sharma",
-            "overs": 2,
-            "wickets": 0,
-            "runs_conceded": 11,
-            "no_balls": 0,
-            "wides": 2
-          }
-        },
-        {
-          "fixture_id": 263951,
-          "date_str": "Saturday 30 May 2026",
-          "vs": "BYC",
-          "batting": {
-            "name": "Kiaan Unknown",
-            "name_raw": "Kiaan Unknown",
-            "runs": 18,
-            "balls_faced": 12,
-            "dismissals": 0,
-            "threes": 0,
-            "fours": 0,
-            "fives": 0,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Kiaan Unknown",
-            "name_raw": "Kiaan Unknown",
-            "overs": 2,
-            "wickets": 0,
-            "runs_conceded": 19,
-            "no_balls": 1,
-            "wides": 2
           }
         }
       ]
@@ -666,13 +482,13 @@
     {
       "name": "Parth Gandhi",
       "totals": {
-        "innings_batted": 8,
-        "runs": 108,
-        "balls_faced": 108,
+        "innings_batted": 9,
+        "runs": 127,
+        "balls_faced": 121,
         "dismissals": 9,
-        "overs_bowled": 16,
-        "wickets": 11,
-        "runs_conceded": 44
+        "overs_bowled": 18,
+        "wickets": 13,
+        "runs_conceded": 42
       },
       "matches": [
         {
@@ -873,6 +689,245 @@
             "runs_conceded": 21,
             "no_balls": 0,
             "wides": 5
+          }
+        },
+        {
+          "fixture_id": 264758,
+          "date_str": "Saturday 18 Jul 2026",
+          "vs": "Anderson Aces",
+          "batting": {
+            "name": "Parth Gandhi",
+            "name_raw": "parth gandhi",
+            "runs": 19,
+            "balls_faced": 13,
+            "dismissals": 0,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Parth Gandhi",
+            "name_raw": "parth gandhi",
+            "overs": 2,
+            "wickets": 2,
+            "runs_conceded": -2,
+            "no_balls": 0,
+            "wides": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "Khian Sharma",
+      "totals": {
+        "innings_batted": 8,
+        "runs": 124,
+        "balls_faced": 90,
+        "dismissals": 3,
+        "overs_bowled": 16,
+        "wickets": 7,
+        "runs_conceded": 64
+      },
+      "matches": [
+        {
+          "fixture_id": 263103,
+          "date_str": "Saturday 25 Apr 2026",
+          "vs": "Oompa Loompas",
+          "batting": {
+            "name": "Khian Sharma",
+            "name_raw": "Khian Sharma",
+            "runs": -3,
+            "balls_faced": 8,
+            "dismissals": 1,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Khian Sharma",
+            "name_raw": "Khian Sharma",
+            "overs": 2,
+            "wickets": 1,
+            "runs_conceded": 6,
+            "no_balls": 0,
+            "wides": 5
+          }
+        },
+        {
+          "fixture_id": 263262,
+          "date_str": "Saturday 02 May 2026",
+          "vs": "Hit n Run",
+          "batting": {
+            "name": "Khian Sharma",
+            "name_raw": "Khian Sharma",
+            "runs": 20,
+            "balls_faced": 10,
+            "dismissals": 0,
+            "threes": 1,
+            "fours": 2,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Khian Sharma",
+            "name_raw": "Khian Sharma",
+            "overs": 2,
+            "wickets": 2,
+            "runs_conceded": -7,
+            "no_balls": 0,
+            "wides": 1
+          }
+        },
+        {
+          "fixture_id": 263466,
+          "date_str": "Saturday 09 May 2026",
+          "vs": "Renegades",
+          "batting": {
+            "name": "Khian Sharma",
+            "name_raw": "Khian Sharma",
+            "runs": 21,
+            "balls_faced": 11,
+            "dismissals": 0,
+            "threes": 0,
+            "fours": 1,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Khian Sharma",
+            "name_raw": "Khian Sharma",
+            "overs": 2,
+            "wickets": 0,
+            "runs_conceded": 13,
+            "no_balls": 0,
+            "wides": 3
+          }
+        },
+        {
+          "fixture_id": 263878,
+          "date_str": "Saturday 23 May 2026",
+          "vs": "Brooklyn Allrounders",
+          "batting": {
+            "name": "Khian Sharma",
+            "name_raw": "Khian Sharma",
+            "runs": 19,
+            "balls_faced": 12,
+            "dismissals": 0,
+            "threes": 0,
+            "fours": 0,
+            "fives": 1,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Khian Sharma",
+            "name_raw": "Khian Sharma",
+            "overs": 2,
+            "wickets": 2,
+            "runs_conceded": 0,
+            "no_balls": 0,
+            "wides": 1
+          }
+        },
+        {
+          "fixture_id": 264010,
+          "date_str": "Saturday 13 Jun 2026",
+          "vs": "Anderson Aces",
+          "batting": {
+            "name": "Khian Sharma",
+            "name_raw": "Khian Sharma",
+            "runs": 16,
+            "balls_faced": 8,
+            "dismissals": 0,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Khian Sharma",
+            "name_raw": "Khian Sharma",
+            "overs": 2,
+            "wickets": 1,
+            "runs_conceded": 14,
+            "no_balls": 0,
+            "wides": 2
+          }
+        },
+        {
+          "fixture_id": 264013,
+          "date_str": "Saturday 20 Jun 2026",
+          "vs": "Oompa Loompas",
+          "batting": {
+            "name": "Khian Sharma",
+            "name_raw": "Khian Sharma",
+            "runs": 23,
+            "balls_faced": 15,
+            "dismissals": 1,
+            "threes": 1,
+            "fours": 1,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Khian Sharma",
+            "name_raw": "Khian Sharma",
+            "overs": 2,
+            "wickets": 0,
+            "runs_conceded": 11,
+            "no_balls": 0,
+            "wides": 2
+          }
+        },
+        {
+          "fixture_id": 264758,
+          "date_str": "Saturday 18 Jul 2026",
+          "vs": "Anderson Aces",
+          "batting": {
+            "name": "Khian Sharma",
+            "name_raw": "Khian Sharma",
+            "runs": 10,
+            "balls_faced": 14,
+            "dismissals": 1,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Khian Sharma",
+            "name_raw": "Khian Sharma",
+            "overs": 2,
+            "wickets": 1,
+            "runs_conceded": 8,
+            "no_balls": 0,
+            "wides": 0
+          }
+        },
+        {
+          "fixture_id": 263951,
+          "date_str": "Saturday 30 May 2026",
+          "vs": "BYC",
+          "batting": {
+            "name": "Kiaan Unknown",
+            "name_raw": "Kiaan Unknown",
+            "runs": 18,
+            "balls_faced": 12,
+            "dismissals": 0,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Kiaan Unknown",
+            "name_raw": "Kiaan Unknown",
+            "overs": 2,
+            "wickets": 0,
+            "runs_conceded": 19,
+            "no_balls": 1,
+            "wides": 2
           }
         }
       ]
@@ -1094,13 +1149,13 @@
     {
       "name": "Rehaan",
       "totals": {
-        "innings_batted": 9,
-        "runs": 54,
-        "balls_faced": 114,
+        "innings_batted": 10,
+        "runs": 71,
+        "balls_faced": 124,
         "dismissals": 11,
-        "overs_bowled": 18,
-        "wickets": 6,
-        "runs_conceded": 108
+        "overs_bowled": 20,
+        "wickets": 8,
+        "runs_conceded": 118
       },
       "matches": [
         {
@@ -1327,6 +1382,31 @@
             "no_balls": 0,
             "wides": 3
           }
+        },
+        {
+          "fixture_id": 264758,
+          "date_str": "Saturday 18 Jul 2026",
+          "vs": "Anderson Aces",
+          "batting": {
+            "name": "Rehaan Unknown",
+            "name_raw": "rehaan Unknown",
+            "runs": 17,
+            "balls_faced": 10,
+            "dismissals": 0,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Rehaan Unknown",
+            "name_raw": "rehaan Unknown",
+            "overs": 2,
+            "wickets": 2,
+            "runs_conceded": 10,
+            "no_balls": 0,
+            "wides": 1
+          }
         }
       ]
     },
@@ -1472,13 +1552,13 @@
     {
       "name": "Om Patil",
       "totals": {
-        "innings_batted": 4,
-        "runs": 30,
-        "balls_faced": 44,
+        "innings_batted": 5,
+        "runs": 41,
+        "balls_faced": 56,
         "dismissals": 4,
-        "overs_bowled": 8,
+        "overs_bowled": 10,
         "wickets": 7,
-        "runs_conceded": 34
+        "runs_conceded": 58
       },
       "matches": [
         {
@@ -1579,6 +1659,31 @@
             "runs_conceded": 1,
             "no_balls": 0,
             "wides": 2
+          }
+        },
+        {
+          "fixture_id": 264758,
+          "date_str": "Saturday 18 Jul 2026",
+          "vs": "Anderson Aces",
+          "batting": {
+            "name": "Om Patil",
+            "name_raw": "Om Patil",
+            "runs": 11,
+            "balls_faced": 12,
+            "dismissals": 0,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Om Patil",
+            "name_raw": "Om Patil",
+            "overs": 2,
+            "wickets": 0,
+            "runs_conceded": 24,
+            "no_balls": 0,
+            "wides": 7
           }
         }
       ]
@@ -1750,13 +1855,13 @@
     {
       "name": "Krish Singh",
       "totals": {
-        "innings_batted": 6,
-        "runs": 16,
-        "balls_faced": 67,
-        "dismissals": 9,
-        "overs_bowled": 12,
+        "innings_batted": 7,
+        "runs": 6,
+        "balls_faced": 79,
+        "dismissals": 13,
+        "overs_bowled": 14,
         "wickets": 6,
-        "runs_conceded": 72
+        "runs_conceded": 97
       },
       "matches": [
         {
@@ -1907,6 +2012,31 @@
             "runs_conceded": 19,
             "no_balls": 0,
             "wides": 2
+          }
+        },
+        {
+          "fixture_id": 264758,
+          "date_str": "Saturday 18 Jul 2026",
+          "vs": "Anderson Aces",
+          "batting": {
+            "name": "Krish Singh",
+            "name_raw": "Krish Singh",
+            "runs": -10,
+            "balls_faced": 12,
+            "dismissals": 4,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Krish Singh",
+            "name_raw": "Krish Singh",
+            "overs": 2,
+            "wickets": 0,
+            "runs_conceded": 25,
+            "no_balls": 0,
+            "wides": 1
           }
         }
       ]
