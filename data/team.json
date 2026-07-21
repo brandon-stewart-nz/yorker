@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-07-21T08:00:27.343161+00:00",
-  "generated_at_nz": "2026-07-21T20:00:24.302924+12:00",
+  "generated_at_utc": "2026-07-21T10:00:26.393002+00:00",
+  "generated_at_nz": "2026-07-21T22:00:22.587091+12:00",
   "team": {
     "id": 11361,
     "name": "Blazing Firebirds",
@@ -29,5 +29,26 @@
     "skins_for": 568,
     "skins_against": 934
   },
-  "next_game": null
+  "next_game": {
+    "date_str": "Saturday 25 Jul 2026",
+    "time": "12:00",
+    "court": "Court 2",
+    "home": {
+      "id": 11361,
+      "name": "Blazing Firebirds - Jacob",
+      "display": "Blazing Firebirds"
+    },
+    "away": {
+      "id": 11300,
+      "name": "Anderson Aces - Arihaan",
+      "display": "Anderson Aces"
+    },
+    "home_skins": null,
+    "away_skins": null,
+    "played": false,
+    "fixture_id": 264916,
+    "is_grading": false,
+    "scoresheet_complete": false,
+    "result_final": false
+  }
 }
