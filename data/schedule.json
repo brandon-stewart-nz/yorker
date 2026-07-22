@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-07-22T06:00:36.611969+00:00",
+  "generated_at_utc": "2026-07-22T08:00:37.653433+00:00",
   "games": {
     "2026-04-25": {
       "partnerships": [
@@ -369,6 +369,14 @@
       ]
     },
     "2026-07-25": {
+      "bowling_order": [
+        "Conor",
+        "",
+        "",
+        "",
+        "",
+        "Rohan"
+      ],
       "unavailable": [
         "Jacob",
         "Jack",
@@ -376,7 +384,10 @@
         "Owen"
       ],
       "rotation": [],
-      "stand_ins": []
+      "stand_ins": [
+        "Conor Mudge",
+        "Rohan Patel"
+      ]
     },
     "2026-08-01": {
       "unavailable": [

@@ -1,5 +1,5 @@
 {
-  "generated_at_nz": "2026-07-22T18:00:21.253882+12:00",
+  "generated_at_nz": "2026-07-22T20:00:23.968211+12:00",
   "players": [
     {
       "name": "Vernon Stewart",
@@ -1804,6 +1804,32 @@
           }
         }
       ]
+    },
+    {
+      "name": "Conor Mudge",
+      "totals": {
+        "innings_batted": 0,
+        "runs": 0,
+        "balls_faced": 0,
+        "dismissals": 0,
+        "overs_bowled": 0,
+        "wickets": 0,
+        "runs_conceded": 0
+      },
+      "matches": []
+    },
+    {
+      "name": "Rohan Patel",
+      "totals": {
+        "innings_batted": 0,
+        "runs": 0,
+        "balls_faced": 0,
+        "dismissals": 0,
+        "overs_bowled": 0,
+        "wickets": 0,
+        "runs_conceded": 0
+      },
+      "matches": []
     }
   ]
 }
