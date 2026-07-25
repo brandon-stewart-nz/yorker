@@ -1,12 +1,12 @@
 {
-  "generated_at_nz": "2026-07-25T10:00:23.609195+12:00",
+  "generated_at_nz": "2026-07-25T12:00:21.441130+12:00",
   "fixture_id": 264916,
-  "phase": "upcoming",
+  "phase": "live",
   "score": {
     "home_skins": null,
     "away_skins": null
   },
-  "rev": "211e6cfa039e",
+  "rev": "9ab67da244ad",
   "date_str": "Saturday 25 Jul 2026",
   "time": "12:00",
   "played": false,
