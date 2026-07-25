@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-07-25T03:05:43.719501+00:00",
+  "generated_at_utc": "2026-07-25T03:55:40.075355+00:00",
   "games": {
     "2026-04-25": {
       "partnerships": [
@@ -405,7 +405,8 @@
         "Rohan Patel",
         "Jaiden"
       ],
-      "captain": "Vernon"
+      "captain": "Vernon",
+      "potd": "Vernon"
     },
     "2026-08-01": {
       "unavailable": [
