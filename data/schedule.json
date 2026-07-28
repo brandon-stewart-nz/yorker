@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-07-28T04:00:51.231184+00:00",
+  "generated_at_utc": "2026-07-28T06:00:43.315154+00:00",
   "games": {
     "2026-04-25": {
       "partnerships": [
@@ -412,19 +412,19 @@
       "partnerships": [
         [
           "Vernon",
-          "Owen"
-        ],
-        [
-          "Ria",
           "Jack"
         ],
         [
+          "Ria",
+          "Fletcher"
+        ],
+        [
           "Anvaya",
-          ""
+          "Owen"
         ]
       ],
       "bowling_order": [
-        "",
+        "Fletcher",
         "Vernon",
         "Anvaya",
         "Ria",
@@ -437,7 +437,9 @@
         "Will"
       ],
       "rotation": [],
-      "stand_ins": []
+      "stand_ins": [
+        "Fletcher Tulloch"
+      ]
     },
     "2026-08-08": {
       "unavailable": [
