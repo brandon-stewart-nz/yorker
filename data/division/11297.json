@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-07-28T22:00:55.364288+00:00",
-  "generated_at_nz": "2026-07-29T10:00:54.053906+12:00",
+  "generated_at_utc": "2026-07-29T00:00:40.698576+00:00",
+  "generated_at_nz": "2026-07-29T12:00:38.979997+12:00",
   "division_name": "Division 8",
   "team": {
     "id": 11297,
@@ -10,8 +10,8 @@
   "standings_row": {
     "position": 1,
     "team_name_raw": "BYC - Freddie",
-    "played": 8,
-    "won": 6,
+    "played": 9,
+    "won": 7,
     "lost": 2,
     "drawn": 0,
     "forfeits_for": 0,
@@ -20,7 +20,7 @@
     "skins_against": 352,
     "difference": 177,
     "bonus": 0,
-    "points": 20
+    "points": 23
   },
   "record": {
     "played": 12,

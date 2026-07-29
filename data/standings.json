@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-07-28T22:00:40.699695+00:00",
-  "generated_at_nz": "2026-07-29T10:00:35.547828+12:00",
+  "generated_at_utc": "2026-07-29T00:00:29.577411+00:00",
+  "generated_at_nz": "2026-07-29T12:00:23.781583+12:00",
   "division_name": "Division 8",
   "division_id": 4391,
   "our_team_id": 11361,
@@ -10,8 +10,8 @@
       "position": 1,
       "team_name_raw": "BYC - Freddie",
       "name": "BYC",
-      "played": 8,
-      "won": 6,
+      "played": 9,
+      "won": 7,
       "lost": 2,
       "drawn": 0,
       "forfeits_for": 0,
@@ -20,7 +20,7 @@
       "skins_against": 352,
       "difference": 177,
       "bonus": 0,
-      "points": 20,
+      "points": 23,
       "is_us": false
     },
     {
@@ -82,9 +82,9 @@
       "position": 5,
       "team_name_raw": "Brooklyn Allrounders - Ifan",
       "name": "Brooklyn Allrounders",
-      "played": 8,
+      "played": 9,
       "won": 3,
-      "lost": 5,
+      "lost": 6,
       "drawn": 0,
       "forfeits_for": 0,
       "forfeits_against": 0,
@@ -92,7 +92,7 @@
       "skins_against": 587,
       "difference": -220,
       "bonus": 0,
-      "points": 14,
+      "points": 15,
       "is_us": false
     },
     {
