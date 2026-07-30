@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-07-30T06:00:41.365547+00:00",
+  "generated_at_utc": "2026-07-30T08:00:44.356402+00:00",
   "games": {
     "2026-04-25": {
       "partnerships": [
@@ -415,16 +415,16 @@
           "Jack"
         ],
         [
-          "Ria",
-          "Fletcher"
-        ],
-        [
           "Anvaya",
           "Owen"
+        ],
+        [
+          "Conor",
+          "Ria"
         ]
       ],
       "bowling_order": [
-        "Fletcher",
+        "Conor",
         "Vernon",
         "Anvaya",
         "Ria",
@@ -437,7 +437,9 @@
         "Will"
       ],
       "rotation": [],
-      "stand_ins": []
+      "stand_ins": [
+        "Conor Mudge"
+      ]
     },
     "2026-08-08": {
       "unavailable": [

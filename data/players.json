@@ -1,5 +1,5 @@
 {
-  "generated_at_nz": "2026-07-30T18:00:21.525066+12:00",
+  "generated_at_nz": "2026-07-30T20:00:27.219596+12:00",
   "players": [
     {
       "name": "Vernon Stewart",
@@ -1982,6 +1982,19 @@
           }
         }
       ]
+    },
+    {
+      "name": "Conor Mudge",
+      "totals": {
+        "innings_batted": 0,
+        "runs": 0,
+        "balls_faced": 0,
+        "dismissals": 0,
+        "overs_bowled": 0,
+        "wickets": 0,
+        "runs_conceded": 0
+      },
+      "matches": []
     }
   ]
 }
