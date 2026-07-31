@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-07-31T08:00:48.427975+00:00",
+  "generated_at_utc": "2026-07-31T10:00:41.001177+00:00",
   "games": {
     "2026-04-25": {
       "partnerships": [
@@ -420,12 +420,12 @@
         ],
         [
           "Conor",
-          "Vernon"
+          "Joachim"
         ]
       ],
       "bowling_order": [
         "Jack",
-        "Vernon",
+        "Joachim",
         "Anvaya",
         "Ria",
         "Conor",
@@ -434,11 +434,13 @@
       "unavailable": [
         "Jacob",
         "Liam",
-        "Will"
+        "Will",
+        "Vernon"
       ],
       "rotation": [],
       "stand_ins": [
-        "Conor Mudge"
+        "Conor Mudge",
+        "Joachim Ryan"
       ]
     },
     "2026-08-08": {
