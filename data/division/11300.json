@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-08-01T10:00:51.191707+00:00",
-  "generated_at_nz": "2026-08-01T22:00:49.463209+12:00",
+  "generated_at_utc": "2026-08-01T20:00:38.939286+00:00",
+  "generated_at_nz": "2026-08-02T08:00:36.983295+12:00",
   "division_name": "Division 8",
   "team": {
     "id": 11300,
@@ -30,27 +30,7 @@
     "skins_for": 789,
     "skins_against": 670
   },
-  "next_game": {
-    "date_str": "Saturday 01 Aug 2026",
-    "time": "12:00",
-    "court": "Court 2",
-    "home": {
-      "id": 11300,
-      "name": "Anderson Aces - Arihaan",
-      "display": "Anderson Aces"
-    },
-    "away": {
-      "id": 11297,
-      "name": "BYC - Freddie",
-      "display": "BYC"
-    },
-    "home_skins": null,
-    "away_skins": null,
-    "played": false,
-    "fixture_id": 265637,
-    "scoresheet_complete": false,
-    "is_grading": false
-  },
+  "next_game": null,
   "fixtures": [
     {
       "date_str": "Saturday 25 Apr 2026",
