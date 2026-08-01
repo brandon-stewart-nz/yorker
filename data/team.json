@@ -1,54 +1,33 @@
 {
-  "generated_at_utc": "2026-08-01T00:05:27.349612+00:00",
-  "generated_at_nz": "2026-08-01T12:05:19.693244+12:00",
+  "generated_at_utc": "2026-08-01T00:55:35.544712+00:00",
+  "generated_at_nz": "2026-08-01T12:55:27.864029+12:00",
   "team": {
     "id": 11361,
     "name": "Blazing Firebirds",
     "raw_name": "Blazing Firebirds - Jacob"
   },
   "standings_row": {
-    "position": 2,
+    "position": 3,
     "team_name_raw": "Blazing Firebirds - Jacob",
-    "played": 9,
+    "played": 10,
     "won": 4,
-    "lost": 5,
+    "lost": 6,
     "drawn": 0,
     "forfeits_for": 0,
     "forfeits_against": 0,
-    "skins_for": 506,
-    "skins_against": 716,
-    "difference": -210,
+    "skins_for": 552,
+    "skins_against": 812,
+    "difference": -260,
     "bonus": 0,
-    "points": 17
+    "points": 18
   },
   "record": {
-    "played": 12,
+    "played": 13,
     "won": 5,
-    "lost": 7,
+    "lost": 8,
     "drawn": 0,
-    "skins_for": 654,
-    "skins_against": 983
+    "skins_for": 700,
+    "skins_against": 1079
   },
-  "next_game": {
-    "date_str": "Saturday 01 Aug 2026",
-    "time": "12:00",
-    "court": "Court 1",
-    "home": {
-      "id": 11361,
-      "name": "Blazing Firebirds - Jacob",
-      "display": "Blazing Firebirds"
-    },
-    "away": {
-      "id": 11292,
-      "name": "Oompa Loompas - Keanu",
-      "display": "Oompa Loompas"
-    },
-    "home_skins": null,
-    "away_skins": null,
-    "played": false,
-    "fixture_id": 265638,
-    "is_grading": false,
-    "scoresheet_complete": false,
-    "result_final": false
-  }
+  "next_game": null
 }

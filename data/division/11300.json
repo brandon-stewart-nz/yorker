@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-08-01T00:05:41.854726+00:00",
-  "generated_at_nz": "2026-08-01T12:05:37.255196+12:00",
+  "generated_at_utc": "2026-08-01T00:55:54.532513+00:00",
+  "generated_at_nz": "2026-08-01T12:55:51.652852+12:00",
   "division_name": "Division 8",
   "team": {
     "id": 11300,
@@ -8,7 +8,7 @@
     "raw_name": "Anderson Aces - Arihaan"
   },
   "standings_row": {
-    "position": 3,
+    "position": 4,
     "team_name_raw": "Anderson Aces - Arihaan",
     "played": 9,
     "won": 3,

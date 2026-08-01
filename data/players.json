@@ -1,5 +1,5 @@
 {
-  "generated_at_nz": "2026-08-01T12:05:19.693244+12:00",
+  "generated_at_nz": "2026-08-01T12:55:27.864029+12:00",
   "players": [
     {
       "name": "Vernon Stewart",
@@ -532,12 +532,12 @@
     {
       "name": "Jack Butler",
       "totals": {
-        "innings_batted": 9,
-        "runs": 87,
-        "balls_faced": 87,
+        "innings_batted": 10,
+        "runs": 103,
+        "balls_faced": 99,
         "dismissals": 10,
-        "overs_bowled": 18,
-        "wickets": 9,
+        "overs_bowled": 20,
+        "wickets": 10,
         "runs_conceded": 55
       },
       "matches": [
@@ -765,92 +765,28 @@
             "no_balls": 0,
             "wides": 0
           }
-        }
-      ]
-    },
-    {
-      "name": "Connor Unknown",
-      "totals": {
-        "innings_batted": 3,
-        "runs": 47,
-        "balls_faced": 30,
-        "dismissals": 1,
-        "overs_bowled": 6,
-        "wickets": 3,
-        "runs_conceded": 27
-      },
-      "matches": [
+        },
         {
-          "fixture_id": 264006,
-          "date_str": "Saturday 06 Jun 2026",
-          "vs": "Team Thunderboltz",
+          "fixture_id": 265638,
+          "date_str": "Saturday 01 Aug 2026",
+          "vs": "Oompa Loompas",
           "batting": {
-            "name": "Connor Unknown",
-            "name_raw": "connor Unknown",
-            "runs": 18,
-            "balls_faced": 10,
+            "name": "Jack Butler",
+            "name_raw": "jack butler",
+            "runs": 16,
+            "balls_faced": 12,
             "dismissals": 0,
             "threes": 0,
             "fours": 0,
-            "fives": 2,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Connor Unknown",
-            "name_raw": "connor Unknown",
-            "overs": 2,
-            "wickets": 1,
-            "runs_conceded": 7,
-            "no_balls": 0,
-            "wides": 2
-          }
-        },
-        {
-          "fixture_id": 264757,
-          "date_str": "Saturday 18 Jul 2026",
-          "vs": "Warriors",
-          "batting": {
-            "name": "Connor Unknown",
-            "name_raw": "connor Unknown",
-            "runs": 14,
-            "balls_faced": 9,
-            "dismissals": 0,
-            "threes": 1,
-            "fours": 0,
             "fives": 0,
             "sixes": 0
           },
           "bowling": {
-            "name": "Connor Unknown",
-            "name_raw": "connor Unknown",
+            "name": "Jack Butler",
+            "name_raw": "jack butler",
             "overs": 2,
             "wickets": 1,
-            "runs_conceded": 15,
-            "no_balls": 0,
-            "wides": 3
-          }
-        },
-        {
-          "fixture_id": 264916,
-          "date_str": "Saturday 25 Jul 2026",
-          "vs": "Anderson Aces",
-          "batting": {
-            "name": "Connor Unknown",
-            "name_raw": "connor Unknown",
-            "runs": 15,
-            "balls_faced": 11,
-            "dismissals": 1,
-            "threes": 2,
-            "fours": 0,
-            "fives": 0,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Connor Unknown",
-            "name_raw": "connor Unknown",
-            "overs": 2,
-            "wickets": 1,
-            "runs_conceded": 5,
+            "runs_conceded": 0,
             "no_balls": 0,
             "wides": 1
           }
@@ -860,13 +796,13 @@
     {
       "name": "Ria Sathish Kumar",
       "totals": {
-        "innings_batted": 9,
-        "runs": 47,
-        "balls_faced": 123,
+        "innings_batted": 10,
+        "runs": 59,
+        "balls_faced": 135,
         "dismissals": 10,
-        "overs_bowled": 18,
-        "wickets": 9,
-        "runs_conceded": 130
+        "overs_bowled": 20,
+        "wickets": 11,
+        "runs_conceded": 155
       },
       "matches": [
         {
@@ -1090,6 +1026,359 @@
             "overs": 2,
             "wickets": 3,
             "runs_conceded": -2,
+            "no_balls": 0,
+            "wides": 1
+          }
+        },
+        {
+          "fixture_id": 265638,
+          "date_str": "Saturday 01 Aug 2026",
+          "vs": "Oompa Loompas",
+          "batting": {
+            "name": "Ria Sathishkumar",
+            "name_raw": "Ria Sathishkumar",
+            "runs": 12,
+            "balls_faced": 12,
+            "dismissals": 0,
+            "threes": 1,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Ria Sathishkumar",
+            "name_raw": "Ria Sathishkumar",
+            "overs": 2,
+            "wickets": 2,
+            "runs_conceded": 25,
+            "no_balls": 1,
+            "wides": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "Connor Unknown",
+      "totals": {
+        "innings_batted": 4,
+        "runs": 55,
+        "balls_faced": 44,
+        "dismissals": 3,
+        "overs_bowled": 8,
+        "wickets": 3,
+        "runs_conceded": 47
+      },
+      "matches": [
+        {
+          "fixture_id": 264006,
+          "date_str": "Saturday 06 Jun 2026",
+          "vs": "Team Thunderboltz",
+          "batting": {
+            "name": "Connor Unknown",
+            "name_raw": "connor Unknown",
+            "runs": 18,
+            "balls_faced": 10,
+            "dismissals": 0,
+            "threes": 0,
+            "fours": 0,
+            "fives": 2,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Connor Unknown",
+            "name_raw": "connor Unknown",
+            "overs": 2,
+            "wickets": 1,
+            "runs_conceded": 7,
+            "no_balls": 0,
+            "wides": 2
+          }
+        },
+        {
+          "fixture_id": 264757,
+          "date_str": "Saturday 18 Jul 2026",
+          "vs": "Warriors",
+          "batting": {
+            "name": "Connor Unknown",
+            "name_raw": "connor Unknown",
+            "runs": 14,
+            "balls_faced": 9,
+            "dismissals": 0,
+            "threes": 1,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Connor Unknown",
+            "name_raw": "connor Unknown",
+            "overs": 2,
+            "wickets": 1,
+            "runs_conceded": 15,
+            "no_balls": 0,
+            "wides": 3
+          }
+        },
+        {
+          "fixture_id": 264916,
+          "date_str": "Saturday 25 Jul 2026",
+          "vs": "Anderson Aces",
+          "batting": {
+            "name": "Connor Unknown",
+            "name_raw": "connor Unknown",
+            "runs": 15,
+            "balls_faced": 11,
+            "dismissals": 1,
+            "threes": 2,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Connor Unknown",
+            "name_raw": "connor Unknown",
+            "overs": 2,
+            "wickets": 1,
+            "runs_conceded": 5,
+            "no_balls": 0,
+            "wides": 1
+          }
+        },
+        {
+          "fixture_id": 265638,
+          "date_str": "Saturday 01 Aug 2026",
+          "vs": "Oompa Loompas",
+          "batting": {
+            "name": "Connor Unknown",
+            "name_raw": "connor Unknown",
+            "runs": 8,
+            "balls_faced": 14,
+            "dismissals": 2,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Connor Unknown",
+            "name_raw": "connor Unknown",
+            "overs": 2,
+            "wickets": 0,
+            "runs_conceded": 20,
+            "no_balls": 0,
+            "wides": 2
+          }
+        }
+      ]
+    },
+    {
+      "name": "Anuya Metikurke",
+      "totals": {
+        "innings_batted": 8,
+        "runs": 51,
+        "balls_faced": 91,
+        "dismissals": 10,
+        "overs_bowled": 16,
+        "wickets": 6,
+        "runs_conceded": 110
+      },
+      "matches": [
+        {
+          "fixture_id": 263465,
+          "date_str": "Saturday 09 May 2026",
+          "vs": "Brooklyn Allrounders",
+          "batting": {
+            "name": "Anuya Metikurke",
+            "name_raw": "anuya metikurke",
+            "runs": 8,
+            "balls_faced": 10,
+            "dismissals": 0,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Anuya Metikurke",
+            "name_raw": "anuya metikurke",
+            "overs": 2,
+            "wickets": 3,
+            "runs_conceded": -4,
+            "no_balls": 0,
+            "wides": 0
+          }
+        },
+        {
+          "fixture_id": 263826,
+          "date_str": "Saturday 16 May 2026",
+          "vs": "Renegades",
+          "batting": {
+            "name": "Anvaya Unknown",
+            "name_raw": "anvaya Unknown",
+            "runs": -9,
+            "balls_faced": 14,
+            "dismissals": 4,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Anvaya Unknown",
+            "name_raw": "anvaya Unknown",
+            "overs": 2,
+            "wickets": 0,
+            "runs_conceded": 22,
+            "no_balls": 0,
+            "wides": 2
+          }
+        },
+        {
+          "fixture_id": 263875,
+          "date_str": "Saturday 23 May 2026",
+          "vs": "BYC",
+          "batting": {
+            "name": "Anuya Metikurke",
+            "name_raw": "anuya metikurke",
+            "runs": 11,
+            "balls_faced": 9,
+            "dismissals": 1,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Anuya Metikurke",
+            "name_raw": "anuya metikurke",
+            "overs": 2,
+            "wickets": 0,
+            "runs_conceded": 14,
+            "no_balls": 0,
+            "wides": 0
+          }
+        },
+        {
+          "fixture_id": 263950,
+          "date_str": "Saturday 30 May 2026",
+          "vs": "Oompa Loompas",
+          "batting": {
+            "name": "Anvaya Unknown",
+            "name_raw": "anvaya Unknown",
+            "runs": 17,
+            "balls_faced": 7,
+            "dismissals": 0,
+            "threes": 1,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Anvaya Unknown",
+            "name_raw": "anvaya Unknown",
+            "overs": 2,
+            "wickets": 1,
+            "runs_conceded": 10,
+            "no_balls": 0,
+            "wides": 4
+          }
+        },
+        {
+          "fixture_id": 264006,
+          "date_str": "Saturday 06 Jun 2026",
+          "vs": "Team Thunderboltz",
+          "batting": {
+            "name": "Anvaya Unknown",
+            "name_raw": "anvaya Unknown",
+            "runs": 15,
+            "balls_faced": 10,
+            "dismissals": 0,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Anvaya Unknown",
+            "name_raw": "anvaya Unknown",
+            "overs": 2,
+            "wickets": 0,
+            "runs_conceded": 16,
+            "no_balls": 0,
+            "wides": 4
+          }
+        },
+        {
+          "fixture_id": 264012,
+          "date_str": "Saturday 20 Jun 2026",
+          "vs": "Anderson Aces",
+          "batting": {
+            "name": "Anvaya Unknown",
+            "name_raw": "anvaya Unknown",
+            "runs": -4,
+            "balls_faced": 14,
+            "dismissals": 2,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Anvaya Unknown",
+            "name_raw": "anvaya Unknown",
+            "overs": 2,
+            "wickets": 1,
+            "runs_conceded": 16,
+            "no_balls": 0,
+            "wides": 1
+          }
+        },
+        {
+          "fixture_id": 264336,
+          "date_str": "Saturday 27 Jun 2026",
+          "vs": "BYC",
+          "batting": {
+            "name": "Anvaya Unknown",
+            "name_raw": "anvaya Unknown",
+            "runs": 2,
+            "balls_faced": 14,
+            "dismissals": 2,
+            "threes": 0,
+            "fours": 1,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Anvaya Unknown",
+            "name_raw": "anvaya Unknown",
+            "overs": 2,
+            "wickets": 0,
+            "runs_conceded": 23,
+            "no_balls": 0,
+            "wides": 2
+          }
+        },
+        {
+          "fixture_id": 265638,
+          "date_str": "Saturday 01 Aug 2026",
+          "vs": "Oompa Loompas",
+          "batting": {
+            "name": "Anuya Metikurke",
+            "name_raw": "anuya metikurke",
+            "runs": 11,
+            "balls_faced": 13,
+            "dismissals": 1,
+            "threes": 2,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Anuya Metikurke",
+            "name_raw": "anuya metikurke",
+            "overs": 2,
+            "wickets": 1,
+            "runs_conceded": 13,
             "no_balls": 0,
             "wides": 1
           }
@@ -1361,204 +1650,15 @@
       ]
     },
     {
-      "name": "Anuya Metikurke",
-      "totals": {
-        "innings_batted": 7,
-        "runs": 40,
-        "balls_faced": 78,
-        "dismissals": 9,
-        "overs_bowled": 14,
-        "wickets": 5,
-        "runs_conceded": 97
-      },
-      "matches": [
-        {
-          "fixture_id": 263465,
-          "date_str": "Saturday 09 May 2026",
-          "vs": "Brooklyn Allrounders",
-          "batting": {
-            "name": "Anuya Metikurke",
-            "name_raw": "anuya metikurke",
-            "runs": 8,
-            "balls_faced": 10,
-            "dismissals": 0,
-            "threes": 0,
-            "fours": 0,
-            "fives": 0,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Anuya Metikurke",
-            "name_raw": "anuya metikurke",
-            "overs": 2,
-            "wickets": 3,
-            "runs_conceded": -4,
-            "no_balls": 0,
-            "wides": 0
-          }
-        },
-        {
-          "fixture_id": 263826,
-          "date_str": "Saturday 16 May 2026",
-          "vs": "Renegades",
-          "batting": {
-            "name": "Anvaya Unknown",
-            "name_raw": "anvaya Unknown",
-            "runs": -9,
-            "balls_faced": 14,
-            "dismissals": 4,
-            "threes": 0,
-            "fours": 0,
-            "fives": 0,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Anvaya Unknown",
-            "name_raw": "anvaya Unknown",
-            "overs": 2,
-            "wickets": 0,
-            "runs_conceded": 22,
-            "no_balls": 0,
-            "wides": 2
-          }
-        },
-        {
-          "fixture_id": 263875,
-          "date_str": "Saturday 23 May 2026",
-          "vs": "BYC",
-          "batting": {
-            "name": "Anuya Metikurke",
-            "name_raw": "anuya metikurke",
-            "runs": 11,
-            "balls_faced": 9,
-            "dismissals": 1,
-            "threes": 0,
-            "fours": 0,
-            "fives": 0,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Anuya Metikurke",
-            "name_raw": "anuya metikurke",
-            "overs": 2,
-            "wickets": 0,
-            "runs_conceded": 14,
-            "no_balls": 0,
-            "wides": 0
-          }
-        },
-        {
-          "fixture_id": 263950,
-          "date_str": "Saturday 30 May 2026",
-          "vs": "Oompa Loompas",
-          "batting": {
-            "name": "Anvaya Unknown",
-            "name_raw": "anvaya Unknown",
-            "runs": 17,
-            "balls_faced": 7,
-            "dismissals": 0,
-            "threes": 1,
-            "fours": 0,
-            "fives": 0,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Anvaya Unknown",
-            "name_raw": "anvaya Unknown",
-            "overs": 2,
-            "wickets": 1,
-            "runs_conceded": 10,
-            "no_balls": 0,
-            "wides": 4
-          }
-        },
-        {
-          "fixture_id": 264006,
-          "date_str": "Saturday 06 Jun 2026",
-          "vs": "Team Thunderboltz",
-          "batting": {
-            "name": "Anvaya Unknown",
-            "name_raw": "anvaya Unknown",
-            "runs": 15,
-            "balls_faced": 10,
-            "dismissals": 0,
-            "threes": 0,
-            "fours": 0,
-            "fives": 0,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Anvaya Unknown",
-            "name_raw": "anvaya Unknown",
-            "overs": 2,
-            "wickets": 0,
-            "runs_conceded": 16,
-            "no_balls": 0,
-            "wides": 4
-          }
-        },
-        {
-          "fixture_id": 264012,
-          "date_str": "Saturday 20 Jun 2026",
-          "vs": "Anderson Aces",
-          "batting": {
-            "name": "Anvaya Unknown",
-            "name_raw": "anvaya Unknown",
-            "runs": -4,
-            "balls_faced": 14,
-            "dismissals": 2,
-            "threes": 0,
-            "fours": 0,
-            "fives": 0,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Anvaya Unknown",
-            "name_raw": "anvaya Unknown",
-            "overs": 2,
-            "wickets": 1,
-            "runs_conceded": 16,
-            "no_balls": 0,
-            "wides": 1
-          }
-        },
-        {
-          "fixture_id": 264336,
-          "date_str": "Saturday 27 Jun 2026",
-          "vs": "BYC",
-          "batting": {
-            "name": "Anvaya Unknown",
-            "name_raw": "anvaya Unknown",
-            "runs": 2,
-            "balls_faced": 14,
-            "dismissals": 2,
-            "threes": 0,
-            "fours": 1,
-            "fives": 0,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Anvaya Unknown",
-            "name_raw": "anvaya Unknown",
-            "overs": 2,
-            "wickets": 0,
-            "runs_conceded": 23,
-            "no_balls": 0,
-            "wides": 2
-          }
-        }
-      ]
-    },
-    {
       "name": "Owen Buchan",
       "totals": {
-        "innings_batted": 7,
-        "runs": 38,
-        "balls_faced": 63,
-        "dismissals": 9,
-        "overs_bowled": 14,
+        "innings_batted": 8,
+        "runs": 32,
+        "balls_faced": 74,
+        "dismissals": 12,
+        "overs_bowled": 16,
         "wickets": 3,
-        "runs_conceded": 153
+        "runs_conceded": 171
       },
       "matches": [
         {
@@ -1734,6 +1834,31 @@
             "runs_conceded": 20,
             "no_balls": 0,
             "wides": 6
+          }
+        },
+        {
+          "fixture_id": 265638,
+          "date_str": "Saturday 01 Aug 2026",
+          "vs": "Oompa Loompas",
+          "batting": {
+            "name": "Owen Buchan",
+            "name_raw": "owen buchan",
+            "runs": -6,
+            "balls_faced": 11,
+            "dismissals": 3,
+            "threes": 0,
+            "fours": 1,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Owen Buchan",
+            "name_raw": "owen buchan",
+            "overs": 2,
+            "wickets": 0,
+            "runs_conceded": 18,
+            "no_balls": 0,
+            "wides": 3
           }
         }
       ]
@@ -1920,6 +2045,45 @@
       ]
     },
     {
+      "name": "Joe Unknown",
+      "totals": {
+        "innings_batted": 1,
+        "runs": 5,
+        "balls_faced": 10,
+        "dismissals": 1,
+        "overs_bowled": 2,
+        "wickets": 0,
+        "runs_conceded": 20
+      },
+      "matches": [
+        {
+          "fixture_id": 265638,
+          "date_str": "Saturday 01 Aug 2026",
+          "vs": "Oompa Loompas",
+          "batting": {
+            "name": "Joe Unknown",
+            "name_raw": "joe Unknown",
+            "runs": 5,
+            "balls_faced": 10,
+            "dismissals": 1,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Joe Unknown",
+            "name_raw": "joe Unknown",
+            "overs": 2,
+            "wickets": 0,
+            "runs_conceded": 20,
+            "no_balls": 0,
+            "wides": 1
+          }
+        }
+      ]
+    },
+    {
       "name": "Liam Laing",
       "totals": {
         "innings_batted": 2,
@@ -1982,32 +2146,6 @@
           }
         }
       ]
-    },
-    {
-      "name": "Conor Mudge",
-      "totals": {
-        "innings_batted": 0,
-        "runs": 0,
-        "balls_faced": 0,
-        "dismissals": 0,
-        "overs_bowled": 0,
-        "wickets": 0,
-        "runs_conceded": 0
-      },
-      "matches": []
-    },
-    {
-      "name": "Joachim Ryan",
-      "totals": {
-        "innings_batted": 0,
-        "runs": 0,
-        "balls_faced": 0,
-        "dismissals": 0,
-        "overs_bowled": 0,
-        "wickets": 0,
-        "runs_conceded": 0
-      },
-      "matches": []
     }
   ]
 }
