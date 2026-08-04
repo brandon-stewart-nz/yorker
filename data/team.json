@@ -1,13 +1,13 @@
 {
-  "generated_at_utc": "2026-08-03T22:00:28.384479+00:00",
-  "generated_at_nz": "2026-08-04T10:00:22.671825+12:00",
+  "generated_at_utc": "2026-08-04T00:00:32.603118+00:00",
+  "generated_at_nz": "2026-08-04T12:00:26.927024+12:00",
   "team": {
     "id": 11361,
     "name": "Blazing Firebirds",
     "raw_name": "Blazing Firebirds - Jacob"
   },
   "standings_row": {
-    "position": 3,
+    "position": 4,
     "team_name_raw": "Blazing Firebirds - Jacob",
     "played": 10,
     "won": 4,
