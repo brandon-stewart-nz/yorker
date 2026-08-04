@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-08-04T04:00:35.196719+00:00",
-  "generated_at_nz": "2026-08-04T16:00:29.689772+12:00",
+  "generated_at_utc": "2026-08-04T06:00:41.132359+00:00",
+  "generated_at_nz": "2026-08-04T18:00:35.796190+12:00",
   "team": {
     "id": 11361,
     "name": "Blazing Firebirds",
@@ -29,5 +29,26 @@
     "skins_for": 700,
     "skins_against": 1079
   },
-  "next_game": null
+  "next_game": {
+    "date_str": "Saturday 08 Aug 2026",
+    "time": "12:00",
+    "court": "Court 3",
+    "home": {
+      "id": 11293,
+      "name": "Team Thunderboltz - Liam",
+      "display": "Team Thunderboltz"
+    },
+    "away": {
+      "id": 11361,
+      "name": "Blazing Firebirds - Jacob",
+      "display": "Blazing Firebirds"
+    },
+    "home_skins": null,
+    "away_skins": null,
+    "played": false,
+    "fixture_id": 265676,
+    "is_grading": false,
+    "scoresheet_complete": false,
+    "result_final": false
+  }
 }

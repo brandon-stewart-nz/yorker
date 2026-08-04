@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-08-04T04:00:57.018449+00:00",
+  "generated_at_utc": "2026-08-04T06:01:16.139367+00:00",
   "games": {
     "2026-04-25": {
       "partnerships": [
@@ -441,16 +441,41 @@
       "stand_ins": [
         "Conor Mudge",
         "Joe"
-      ]
+      ],
+      "captain": "Ria",
+      "potd": "Anvaya"
     },
     "2026-08-08": {
+      "partnerships": [
+        [
+          "",
+          "Vernon"
+        ],
+        [
+          "Ria",
+          "Will"
+        ],
+        [
+          "Owen",
+          "Jacob"
+        ]
+      ],
+      "bowling_order": [
+        "Jacob",
+        "Will",
+        "Vernon",
+        "Ria",
+        "",
+        "Owen"
+      ],
       "unavailable": [
-        "Liam"
+        "Liam",
+        "Anvaya",
+        "Jack"
       ],
-      "rotation": [
-        "Vernon"
-      ],
-      "stand_ins": []
+      "rotation": [],
+      "stand_ins": [],
+      "captain": "Jacob"
     },
     "2026-08-15": {
       "unavailable": [
