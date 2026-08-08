@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-08-08T01:06:06.365328+00:00",
-  "generated_at_nz": "2026-08-08T13:06:03.609807+12:00",
+  "generated_at_utc": "2026-08-08T01:55:50.943347+00:00",
+  "generated_at_nz": "2026-08-08T13:55:47.148484+12:00",
   "division_name": "Division 8",
   "team": {
     "id": 11294,
@@ -10,47 +10,27 @@
   "standings_row": {
     "position": 6,
     "team_name_raw": "Brooklyn Allrounders - Ifan",
-    "played": 10,
+    "played": 11,
     "won": 3,
-    "lost": 7,
+    "lost": 8,
     "drawn": 0,
     "forfeits_for": 0,
     "forfeits_against": 0,
-    "skins_for": 429,
-    "skins_against": 660,
-    "difference": -231,
+    "skins_for": 460,
+    "skins_against": 707,
+    "difference": -247,
     "bonus": 0,
-    "points": 16
+    "points": 17
   },
   "record": {
-    "played": 12,
+    "played": 13,
     "won": 4,
-    "lost": 8,
+    "lost": 9,
     "drawn": 0,
-    "skins_for": 568,
-    "skins_against": 836
+    "skins_for": 599,
+    "skins_against": 883
   },
-  "next_game": {
-    "date_str": "Saturday 08 Aug 2026",
-    "time": "13:00",
-    "court": "Court 1",
-    "home": {
-      "id": 11297,
-      "name": "BYC - Freddie",
-      "display": "BYC"
-    },
-    "away": {
-      "id": 11294,
-      "name": "Brooklyn Allrounders - Ifan",
-      "display": "Brooklyn Allrounders"
-    },
-    "home_skins": null,
-    "away_skins": null,
-    "played": false,
-    "fixture_id": 265678,
-    "scoresheet_complete": false,
-    "is_grading": false
-  },
+  "next_game": null,
   "fixtures": [
     {
       "date_str": "Saturday 25 Apr 2026",
@@ -318,11 +298,11 @@
         "name": "Brooklyn Allrounders - Ifan",
         "display": "Brooklyn Allrounders"
       },
-      "home_skins": null,
-      "away_skins": null,
-      "played": false,
+      "home_skins": 47,
+      "away_skins": 31,
+      "played": true,
       "fixture_id": 265678,
-      "scoresheet_complete": false,
+      "scoresheet_complete": true,
       "is_grading": false
     }
   ],
@@ -330,13 +310,13 @@
     {
       "name": "Rafe Mann",
       "totals": {
-        "innings_batted": 10,
-        "runs": 152,
-        "balls_faced": 117,
+        "innings_batted": 11,
+        "runs": 168,
+        "balls_faced": 128,
         "dismissals": 8,
-        "overs_bowled": 21,
-        "wickets": 8,
-        "runs_conceded": 119
+        "overs_bowled": 23,
+        "wickets": 9,
+        "runs_conceded": 130
       },
       "matches": [
         {
@@ -588,19 +568,44 @@
             "no_balls": 0,
             "wides": 3
           }
+        },
+        {
+          "fixture_id": 265678,
+          "date_str": "Saturday 08 Aug 2026",
+          "vs": "BYC",
+          "batting": {
+            "name": "Rafe Mann",
+            "name_raw": "Rafe mann",
+            "runs": 16,
+            "balls_faced": 11,
+            "dismissals": 0,
+            "threes": 2,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Rafe Mann",
+            "name_raw": "Rafe mann",
+            "overs": 2,
+            "wickets": 1,
+            "runs_conceded": 11,
+            "no_balls": 0,
+            "wides": 0
+          }
         }
       ]
     },
     {
       "name": "Luke Taylor",
       "totals": {
-        "innings_batted": 10,
+        "innings_batted": 11,
         "runs": 95,
-        "balls_faced": 116,
-        "dismissals": 10,
-        "overs_bowled": 21,
-        "wickets": 12,
-        "runs_conceded": 128
+        "balls_faced": 122,
+        "dismissals": 11,
+        "overs_bowled": 23,
+        "wickets": 14,
+        "runs_conceded": 131
       },
       "matches": [
         {
@@ -852,19 +857,44 @@
             "no_balls": 0,
             "wides": 4
           }
+        },
+        {
+          "fixture_id": 265678,
+          "date_str": "Saturday 08 Aug 2026",
+          "vs": "BYC",
+          "batting": {
+            "name": "Luke Taylor",
+            "name_raw": "Luke Taylor",
+            "runs": 0,
+            "balls_faced": 6,
+            "dismissals": 1,
+            "threes": 1,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Luke Taylor",
+            "name_raw": "Luke Taylor",
+            "overs": 2,
+            "wickets": 2,
+            "runs_conceded": 3,
+            "no_balls": 0,
+            "wides": 3
+          }
         }
       ]
     },
     {
       "name": "Oliver Fye",
       "totals": {
-        "innings_batted": 10,
-        "runs": 74,
-        "balls_faced": 126,
+        "innings_batted": 11,
+        "runs": 79,
+        "balls_faced": 139,
         "dismissals": 15,
-        "overs_bowled": 19,
+        "overs_bowled": 21,
         "wickets": 7,
-        "runs_conceded": 129
+        "runs_conceded": 146
       },
       "matches": [
         {
@@ -1116,19 +1146,44 @@
             "no_balls": 0,
             "wides": 3
           }
+        },
+        {
+          "fixture_id": 265678,
+          "date_str": "Saturday 08 Aug 2026",
+          "vs": "BYC",
+          "batting": {
+            "name": "Oliver Fye",
+            "name_raw": "oliver fye",
+            "runs": 5,
+            "balls_faced": 13,
+            "dismissals": 0,
+            "threes": 1,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Oliver Fye",
+            "name_raw": "oliver fye",
+            "overs": 2,
+            "wickets": 0,
+            "runs_conceded": 17,
+            "no_balls": 0,
+            "wides": 4
+          }
         }
       ]
     },
     {
       "name": "Marley Brice-chin",
       "totals": {
-        "innings_batted": 8,
-        "runs": 73,
-        "balls_faced": 86,
-        "dismissals": 9,
-        "overs_bowled": 18,
-        "wickets": 16,
-        "runs_conceded": 18
+        "innings_batted": 9,
+        "runs": 76,
+        "balls_faced": 95,
+        "dismissals": 10,
+        "overs_bowled": 20,
+        "wickets": 18,
+        "runs_conceded": 17
       },
       "matches": [
         {
@@ -1330,19 +1385,44 @@
             "no_balls": 0,
             "wides": 1
           }
+        },
+        {
+          "fixture_id": 265678,
+          "date_str": "Saturday 08 Aug 2026",
+          "vs": "BYC",
+          "batting": {
+            "name": "Marley Brice-chin",
+            "name_raw": "Marley brice-chin",
+            "runs": 3,
+            "balls_faced": 9,
+            "dismissals": 1,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Marley Brice-chin",
+            "name_raw": "Marley brice-chin",
+            "overs": 2,
+            "wickets": 2,
+            "runs_conceded": -1,
+            "no_balls": 0,
+            "wides": 2
+          }
         }
       ]
     },
     {
       "name": "Ifan Medcalf",
       "totals": {
-        "innings_batted": 8,
-        "runs": 49,
-        "balls_faced": 115,
-        "dismissals": 18,
-        "overs_bowled": 16,
-        "wickets": 6,
-        "runs_conceded": 77
+        "innings_batted": 9,
+        "runs": 55,
+        "balls_faced": 130,
+        "dismissals": 20,
+        "overs_bowled": 18,
+        "wickets": 8,
+        "runs_conceded": 83
       },
       "matches": [
         {
@@ -1543,6 +1623,31 @@
             "runs_conceded": 12,
             "no_balls": 0,
             "wides": 2
+          }
+        },
+        {
+          "fixture_id": 265678,
+          "date_str": "Saturday 08 Aug 2026",
+          "vs": "BYC",
+          "batting": {
+            "name": "Ifan Medcalf",
+            "name_raw": "Ifan medcalf",
+            "runs": 6,
+            "balls_faced": 15,
+            "dismissals": 2,
+            "threes": 1,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Ifan Medcalf",
+            "name_raw": "Ifan medcalf",
+            "overs": 2,
+            "wickets": 2,
+            "runs_conceded": 6,
+            "no_balls": 0,
+            "wides": 1
           }
         }
       ]
@@ -1932,13 +2037,13 @@
     {
       "name": "Max Croke",
       "totals": {
-        "innings_batted": 11,
-        "runs": 17,
-        "balls_faced": 131,
-        "dismissals": 17,
-        "overs_bowled": 22,
-        "wickets": 9,
-        "runs_conceded": 189
+        "innings_batted": 12,
+        "runs": 18,
+        "balls_faced": 149,
+        "dismissals": 19,
+        "overs_bowled": 24,
+        "wickets": 10,
+        "runs_conceded": 200
       },
       "matches": [
         {
@@ -2212,6 +2317,31 @@
             "overs": 2,
             "wickets": 0,
             "runs_conceded": 13,
+            "no_balls": 0,
+            "wides": 1
+          }
+        },
+        {
+          "fixture_id": 265678,
+          "date_str": "Saturday 08 Aug 2026",
+          "vs": "BYC",
+          "batting": {
+            "name": "Max Croke",
+            "name_raw": "Max croke",
+            "runs": 1,
+            "balls_faced": 18,
+            "dismissals": 2,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Max Croke",
+            "name_raw": "Max croke",
+            "overs": 2,
+            "wickets": 1,
+            "runs_conceded": 11,
             "no_balls": 0,
             "wides": 1
           }
