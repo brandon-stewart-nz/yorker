@@ -1,5 +1,5 @@
 {
-  "generated_at_nz": "2026-08-08T12:55:23.341246+12:00",
+  "generated_at_nz": "2026-08-08T13:05:39.592901+12:00",
   "fixtures": [
     {
       "date_str": "Saturday 25 Apr 2026",
@@ -307,7 +307,7 @@
       "fixture_id": 265676,
       "is_grading": false,
       "scoresheet_complete": true,
-      "result_final": false
+      "result_final": true
     }
   ],
   "next_game": null
