@@ -1,12 +1,12 @@
 {
-  "generated_at_nz": "2026-08-08T10:00:28.678906+12:00",
+  "generated_at_nz": "2026-08-08T12:00:22.736059+12:00",
   "fixture_id": 265676,
-  "phase": "upcoming",
+  "phase": "live",
   "score": {
     "home_skins": null,
     "away_skins": null
   },
-  "rev": "211e6cfa039e",
+  "rev": "be91ed4bb3f1",
   "date_str": "Saturday 08 Aug 2026",
   "time": "12:00",
   "played": false,
