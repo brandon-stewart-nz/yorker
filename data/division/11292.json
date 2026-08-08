@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-08-08T02:05:49.123106+00:00",
-  "generated_at_nz": "2026-08-08T14:05:45.865902+12:00",
+  "generated_at_utc": "2026-08-08T02:55:42.101055+00:00",
+  "generated_at_nz": "2026-08-08T14:55:38.915783+12:00",
   "division_name": "Division 8",
   "team": {
     "id": 11292,
@@ -10,47 +10,27 @@
   "standings_row": {
     "position": 4,
     "team_name_raw": "Oompa Loompas - Keanu",
-    "played": 10,
+    "played": 11,
     "won": 4,
-    "lost": 6,
+    "lost": 7,
     "drawn": 0,
     "forfeits_for": 0,
     "forfeits_against": 0,
-    "skins_for": 541,
-    "skins_against": 693,
-    "difference": -152,
+    "skins_for": 592,
+    "skins_against": 776,
+    "difference": -184,
     "bonus": 0,
-    "points": 18
+    "points": 19
   },
   "record": {
-    "played": 13,
+    "played": 14,
     "won": 5,
-    "lost": 8,
+    "lost": 9,
     "drawn": 0,
-    "skins_for": 679,
-    "skins_against": 869
+    "skins_for": 730,
+    "skins_against": 952
   },
-  "next_game": {
-    "date_str": "Saturday 08 Aug 2026",
-    "time": "13:55",
-    "court": "Court 1",
-    "home": {
-      "id": 11292,
-      "name": "Oompa Loompas - Keanu",
-      "display": "Oompa Loompas"
-    },
-    "away": {
-      "id": 11300,
-      "name": "Anderson Aces - Arihaan",
-      "display": "Anderson Aces"
-    },
-    "home_skins": null,
-    "away_skins": null,
-    "played": false,
-    "fixture_id": 265677,
-    "scoresheet_complete": false,
-    "is_grading": false
-  },
+  "next_game": null,
   "fixtures": [
     {
       "date_str": "Saturday 25 Apr 2026",
@@ -339,11 +319,11 @@
         "name": "Anderson Aces - Arihaan",
         "display": "Anderson Aces"
       },
-      "home_skins": null,
-      "away_skins": null,
-      "played": false,
+      "home_skins": 51,
+      "away_skins": 83,
+      "played": true,
       "fixture_id": 265677,
-      "scoresheet_complete": false,
+      "scoresheet_complete": true,
       "is_grading": false
     }
   ],
@@ -351,13 +331,13 @@
     {
       "name": "Karan Bakshi",
       "totals": {
-        "innings_batted": 9,
-        "runs": 130,
-        "balls_faced": 118,
+        "innings_batted": 10,
+        "runs": 141,
+        "balls_faced": 133,
         "dismissals": 2,
-        "overs_bowled": 22,
-        "wickets": 14,
-        "runs_conceded": 111
+        "overs_bowled": 24,
+        "wickets": 15,
+        "runs_conceded": 127
       },
       "matches": [
         {
@@ -551,6 +531,31 @@
           }
         },
         {
+          "fixture_id": 265677,
+          "date_str": "Saturday 08 Aug 2026",
+          "vs": "Anderson Aces",
+          "batting": {
+            "name": "Karan Bakshi",
+            "name_raw": "Karan Bakshi",
+            "runs": 11,
+            "balls_faced": 15,
+            "dismissals": 0,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Karan Bakshi",
+            "name_raw": "Karan Bakshi",
+            "overs": 2,
+            "wickets": 1,
+            "runs_conceded": 16,
+            "no_balls": 0,
+            "wides": 1
+          }
+        },
+        {
           "fixture_id": 263103,
           "date_str": "Saturday 25 Apr 2026",
           "vs": "Team Thunderboltz",
@@ -620,13 +625,13 @@
     {
       "name": "Zayden Vosges",
       "totals": {
-        "innings_batted": 5,
-        "runs": 109,
-        "balls_faced": 54,
-        "dismissals": 3,
-        "overs_bowled": 12,
-        "wickets": 2,
-        "runs_conceded": 89
+        "innings_batted": 6,
+        "runs": 132,
+        "balls_faced": 64,
+        "dismissals": 4,
+        "overs_bowled": 14,
+        "wickets": 3,
+        "runs_conceded": 101
       },
       "matches": [
         {
@@ -767,6 +772,360 @@
             "runs_conceded": 9,
             "no_balls": 0,
             "wides": 2
+          }
+        },
+        {
+          "fixture_id": 265677,
+          "date_str": "Saturday 08 Aug 2026",
+          "vs": "Anderson Aces",
+          "batting": {
+            "name": "Zayden Vosges",
+            "name_raw": "Zayden Vosges",
+            "runs": 23,
+            "balls_faced": 10,
+            "dismissals": 1,
+            "threes": 1,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Zayden Vosges",
+            "name_raw": "Zayden Vosges",
+            "overs": 2,
+            "wickets": 1,
+            "runs_conceded": 12,
+            "no_balls": 0,
+            "wides": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "Koen Kleyngeld",
+      "totals": {
+        "innings_batted": 12,
+        "runs": 101,
+        "balls_faced": 126,
+        "dismissals": 12,
+        "overs_bowled": 26,
+        "wickets": 15,
+        "runs_conceded": 152
+      },
+      "matches": [
+        {
+          "fixture_id": 263103,
+          "date_str": "Saturday 25 Apr 2026",
+          "vs": "Team Thunderboltz",
+          "batting": {
+            "name": "Koen Kleyngeld",
+            "name_raw": "Koen Kleyngeld",
+            "runs": 2,
+            "balls_faced": 15,
+            "dismissals": 2,
+            "threes": 1,
+            "fours": 1,
+            "fives": 1,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Koen Kleyngeld",
+            "name_raw": "Koen Kleyngeld",
+            "overs": 2,
+            "wickets": 2,
+            "runs_conceded": 0,
+            "no_balls": 0,
+            "wides": 3
+          }
+        },
+        {
+          "fixture_id": 263877,
+          "date_str": "Saturday 23 May 2026",
+          "vs": "Renegades",
+          "batting": {
+            "name": "Koen Kleyngeld",
+            "name_raw": "Koen Kleyngeld",
+            "runs": -5,
+            "balls_faced": 13,
+            "dismissals": 3,
+            "threes": 0,
+            "fours": 1,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Koen Kleyngeld",
+            "name_raw": "Koen Kleyngeld",
+            "overs": 2,
+            "wickets": 1,
+            "runs_conceded": 15,
+            "no_balls": 0,
+            "wides": 4
+          }
+        },
+        {
+          "fixture_id": 264007,
+          "date_str": "Saturday 06 Jun 2026",
+          "vs": "Brooklyn Allrounders",
+          "batting": {
+            "name": "Koen Kleyngeld",
+            "name_raw": "Koen Kleyngeld",
+            "runs": -2,
+            "balls_faced": 11,
+            "dismissals": 2,
+            "threes": 0,
+            "fours": 0,
+            "fives": 1,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Koen Kleyngeld",
+            "name_raw": "Koen Kleyngeld",
+            "overs": 2,
+            "wickets": 1,
+            "runs_conceded": 18,
+            "no_balls": 0,
+            "wides": 6
+          }
+        },
+        {
+          "fixture_id": 264013,
+          "date_str": "Saturday 20 Jun 2026",
+          "vs": "Team Thunderboltz",
+          "batting": {
+            "name": "Koen Kleyngeld",
+            "name_raw": "Koen Kleyngeld",
+            "runs": 19,
+            "balls_faced": 15,
+            "dismissals": 0,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Koen Kleyngeld",
+            "name_raw": "Koen Kleyngeld",
+            "overs": 2,
+            "wickets": 1,
+            "runs_conceded": 13,
+            "no_balls": 1,
+            "wides": 2
+          }
+        },
+        {
+          "fixture_id": 264341,
+          "date_str": "Saturday 27 Jun 2026",
+          "vs": "Anderson Aces",
+          "batting": {
+            "name": "Koen Kleyngeld",
+            "name_raw": "Koen Kleyngeld",
+            "runs": 8,
+            "balls_faced": 5,
+            "dismissals": 0,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Koen Kleyngeld",
+            "name_raw": "Koen Kleyngeld",
+            "overs": 2,
+            "wickets": 3,
+            "runs_conceded": 1,
+            "no_balls": 0,
+            "wides": 2
+          }
+        },
+        {
+          "fixture_id": 264756,
+          "date_str": "Saturday 18 Jul 2026",
+          "vs": "BYC",
+          "batting": {
+            "name": "Koen Kleyngeld",
+            "name_raw": "Koen Kleyngeld",
+            "runs": 13,
+            "balls_faced": 6,
+            "dismissals": 0,
+            "threes": 2,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Koen Kleyngeld",
+            "name_raw": "Koen Kleyngeld",
+            "overs": 2,
+            "wickets": 1,
+            "runs_conceded": 9,
+            "no_balls": 0,
+            "wides": 6
+          }
+        },
+        {
+          "fixture_id": 264917,
+          "date_str": "Saturday 25 Jul 2026",
+          "vs": "Brooklyn Allrounders",
+          "batting": {
+            "name": "Koen Kleyngeld",
+            "name_raw": "Koen Kleyngeld",
+            "runs": 16,
+            "balls_faced": 10,
+            "dismissals": 1,
+            "threes": 0,
+            "fours": 1,
+            "fives": 1,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Koen Kleyngeld",
+            "name_raw": "Koen Kleyngeld",
+            "overs": 2,
+            "wickets": 2,
+            "runs_conceded": 7,
+            "no_balls": 0,
+            "wides": 5
+          }
+        },
+        {
+          "fixture_id": 265677,
+          "date_str": "Saturday 08 Aug 2026",
+          "vs": "Anderson Aces",
+          "batting": {
+            "name": "Koen Kleyngeld",
+            "name_raw": "Koen Kleyngeld",
+            "runs": 5,
+            "balls_faced": 9,
+            "dismissals": 1,
+            "threes": 0,
+            "fours": 1,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Koen Kleyngeld",
+            "name_raw": "Koen Kleyngeld",
+            "overs": 2,
+            "wickets": 0,
+            "runs_conceded": 22,
+            "no_balls": 0,
+            "wides": 8
+          }
+        },
+        {
+          "fixture_id": 263463,
+          "date_str": "Saturday 09 May 2026",
+          "vs": "Thunder Strikers",
+          "batting": {
+            "name": "Cohen Unknown",
+            "name_raw": "cohen Unknown",
+            "runs": 13,
+            "balls_faced": 9,
+            "dismissals": 0,
+            "threes": 1,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Cohen Unknown",
+            "name_raw": "cohen Unknown",
+            "overs": 2,
+            "wickets": 0,
+            "runs_conceded": 18,
+            "no_balls": 0,
+            "wides": 4
+          }
+        },
+        {
+          "fixture_id": 264011,
+          "date_str": "Saturday 13 Jun 2026",
+          "vs": "BYC",
+          "batting": null,
+          "bowling": {
+            "name": "Cohen Unknown",
+            "name_raw": "cohen Unknown",
+            "overs": 2,
+            "wickets": 0,
+            "runs_conceded": 16,
+            "no_balls": 0,
+            "wides": 7
+          }
+        },
+        {
+          "fixture_id": 263266,
+          "date_str": "Saturday 02 May 2026",
+          "vs": "The Net Ninjas",
+          "batting": {
+            "name": "Coen Unknown",
+            "name_raw": "coen Unknown",
+            "runs": 9,
+            "balls_faced": 8,
+            "dismissals": 0,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Coen Unknown",
+            "name_raw": "coen Unknown",
+            "overs": 2,
+            "wickets": 2,
+            "runs_conceded": 3,
+            "no_balls": 1,
+            "wides": 3
+          }
+        },
+        {
+          "fixture_id": 263950,
+          "date_str": "Saturday 30 May 2026",
+          "vs": "Blazing Firebirds",
+          "batting": {
+            "name": "Coen Unknown",
+            "name_raw": "coen Unknown",
+            "runs": -5,
+            "balls_faced": 12,
+            "dismissals": 3,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Coen Unknown",
+            "name_raw": "coen Unknown",
+            "overs": 2,
+            "wickets": 1,
+            "runs_conceded": 17,
+            "no_balls": 0,
+            "wides": 8
+          }
+        },
+        {
+          "fixture_id": 265638,
+          "date_str": "Saturday 01 Aug 2026",
+          "vs": "Blazing Firebirds",
+          "batting": {
+            "name": "Coen Unknown",
+            "name_raw": "coen Unknown",
+            "runs": 28,
+            "balls_faced": 13,
+            "dismissals": 0,
+            "threes": 1,
+            "fours": 1,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Coen Unknown",
+            "name_raw": "coen Unknown",
+            "overs": 2,
+            "wickets": 1,
+            "runs_conceded": 13,
+            "no_balls": 0,
+            "wides": 4
           }
         }
       ]
@@ -1001,319 +1360,15 @@
       ]
     },
     {
-      "name": "Koen Kleyngeld",
-      "totals": {
-        "innings_batted": 11,
-        "runs": 96,
-        "balls_faced": 117,
-        "dismissals": 11,
-        "overs_bowled": 24,
-        "wickets": 15,
-        "runs_conceded": 130
-      },
-      "matches": [
-        {
-          "fixture_id": 263103,
-          "date_str": "Saturday 25 Apr 2026",
-          "vs": "Team Thunderboltz",
-          "batting": {
-            "name": "Koen Kleyngeld",
-            "name_raw": "Koen Kleyngeld",
-            "runs": 2,
-            "balls_faced": 15,
-            "dismissals": 2,
-            "threes": 1,
-            "fours": 1,
-            "fives": 1,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Koen Kleyngeld",
-            "name_raw": "Koen Kleyngeld",
-            "overs": 2,
-            "wickets": 2,
-            "runs_conceded": 0,
-            "no_balls": 0,
-            "wides": 3
-          }
-        },
-        {
-          "fixture_id": 263877,
-          "date_str": "Saturday 23 May 2026",
-          "vs": "Renegades",
-          "batting": {
-            "name": "Koen Kleyngeld",
-            "name_raw": "Koen Kleyngeld",
-            "runs": -5,
-            "balls_faced": 13,
-            "dismissals": 3,
-            "threes": 0,
-            "fours": 1,
-            "fives": 0,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Koen Kleyngeld",
-            "name_raw": "Koen Kleyngeld",
-            "overs": 2,
-            "wickets": 1,
-            "runs_conceded": 15,
-            "no_balls": 0,
-            "wides": 4
-          }
-        },
-        {
-          "fixture_id": 264007,
-          "date_str": "Saturday 06 Jun 2026",
-          "vs": "Brooklyn Allrounders",
-          "batting": {
-            "name": "Koen Kleyngeld",
-            "name_raw": "Koen Kleyngeld",
-            "runs": -2,
-            "balls_faced": 11,
-            "dismissals": 2,
-            "threes": 0,
-            "fours": 0,
-            "fives": 1,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Koen Kleyngeld",
-            "name_raw": "Koen Kleyngeld",
-            "overs": 2,
-            "wickets": 1,
-            "runs_conceded": 18,
-            "no_balls": 0,
-            "wides": 6
-          }
-        },
-        {
-          "fixture_id": 264013,
-          "date_str": "Saturday 20 Jun 2026",
-          "vs": "Team Thunderboltz",
-          "batting": {
-            "name": "Koen Kleyngeld",
-            "name_raw": "Koen Kleyngeld",
-            "runs": 19,
-            "balls_faced": 15,
-            "dismissals": 0,
-            "threes": 0,
-            "fours": 0,
-            "fives": 0,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Koen Kleyngeld",
-            "name_raw": "Koen Kleyngeld",
-            "overs": 2,
-            "wickets": 1,
-            "runs_conceded": 13,
-            "no_balls": 1,
-            "wides": 2
-          }
-        },
-        {
-          "fixture_id": 264341,
-          "date_str": "Saturday 27 Jun 2026",
-          "vs": "Anderson Aces",
-          "batting": {
-            "name": "Koen Kleyngeld",
-            "name_raw": "Koen Kleyngeld",
-            "runs": 8,
-            "balls_faced": 5,
-            "dismissals": 0,
-            "threes": 0,
-            "fours": 0,
-            "fives": 0,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Koen Kleyngeld",
-            "name_raw": "Koen Kleyngeld",
-            "overs": 2,
-            "wickets": 3,
-            "runs_conceded": 1,
-            "no_balls": 0,
-            "wides": 2
-          }
-        },
-        {
-          "fixture_id": 264756,
-          "date_str": "Saturday 18 Jul 2026",
-          "vs": "BYC",
-          "batting": {
-            "name": "Koen Kleyngeld",
-            "name_raw": "Koen Kleyngeld",
-            "runs": 13,
-            "balls_faced": 6,
-            "dismissals": 0,
-            "threes": 2,
-            "fours": 0,
-            "fives": 0,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Koen Kleyngeld",
-            "name_raw": "Koen Kleyngeld",
-            "overs": 2,
-            "wickets": 1,
-            "runs_conceded": 9,
-            "no_balls": 0,
-            "wides": 6
-          }
-        },
-        {
-          "fixture_id": 264917,
-          "date_str": "Saturday 25 Jul 2026",
-          "vs": "Brooklyn Allrounders",
-          "batting": {
-            "name": "Koen Kleyngeld",
-            "name_raw": "Koen Kleyngeld",
-            "runs": 16,
-            "balls_faced": 10,
-            "dismissals": 1,
-            "threes": 0,
-            "fours": 1,
-            "fives": 1,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Koen Kleyngeld",
-            "name_raw": "Koen Kleyngeld",
-            "overs": 2,
-            "wickets": 2,
-            "runs_conceded": 7,
-            "no_balls": 0,
-            "wides": 5
-          }
-        },
-        {
-          "fixture_id": 263463,
-          "date_str": "Saturday 09 May 2026",
-          "vs": "Thunder Strikers",
-          "batting": {
-            "name": "Cohen Unknown",
-            "name_raw": "cohen Unknown",
-            "runs": 13,
-            "balls_faced": 9,
-            "dismissals": 0,
-            "threes": 1,
-            "fours": 0,
-            "fives": 0,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Cohen Unknown",
-            "name_raw": "cohen Unknown",
-            "overs": 2,
-            "wickets": 0,
-            "runs_conceded": 18,
-            "no_balls": 0,
-            "wides": 4
-          }
-        },
-        {
-          "fixture_id": 264011,
-          "date_str": "Saturday 13 Jun 2026",
-          "vs": "BYC",
-          "batting": null,
-          "bowling": {
-            "name": "Cohen Unknown",
-            "name_raw": "cohen Unknown",
-            "overs": 2,
-            "wickets": 0,
-            "runs_conceded": 16,
-            "no_balls": 0,
-            "wides": 7
-          }
-        },
-        {
-          "fixture_id": 263266,
-          "date_str": "Saturday 02 May 2026",
-          "vs": "The Net Ninjas",
-          "batting": {
-            "name": "Coen Unknown",
-            "name_raw": "coen Unknown",
-            "runs": 9,
-            "balls_faced": 8,
-            "dismissals": 0,
-            "threes": 0,
-            "fours": 0,
-            "fives": 0,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Coen Unknown",
-            "name_raw": "coen Unknown",
-            "overs": 2,
-            "wickets": 2,
-            "runs_conceded": 3,
-            "no_balls": 1,
-            "wides": 3
-          }
-        },
-        {
-          "fixture_id": 263950,
-          "date_str": "Saturday 30 May 2026",
-          "vs": "Blazing Firebirds",
-          "batting": {
-            "name": "Coen Unknown",
-            "name_raw": "coen Unknown",
-            "runs": -5,
-            "balls_faced": 12,
-            "dismissals": 3,
-            "threes": 0,
-            "fours": 0,
-            "fives": 0,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Coen Unknown",
-            "name_raw": "coen Unknown",
-            "overs": 2,
-            "wickets": 1,
-            "runs_conceded": 17,
-            "no_balls": 0,
-            "wides": 8
-          }
-        },
-        {
-          "fixture_id": 265638,
-          "date_str": "Saturday 01 Aug 2026",
-          "vs": "Blazing Firebirds",
-          "batting": {
-            "name": "Coen Unknown",
-            "name_raw": "coen Unknown",
-            "runs": 28,
-            "balls_faced": 13,
-            "dismissals": 0,
-            "threes": 1,
-            "fours": 1,
-            "fives": 0,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Coen Unknown",
-            "name_raw": "coen Unknown",
-            "overs": 2,
-            "wickets": 1,
-            "runs_conceded": 13,
-            "no_balls": 0,
-            "wides": 4
-          }
-        }
-      ]
-    },
-    {
       "name": "Kianansh Dubariya",
       "totals": {
-        "innings_batted": 11,
+        "innings_batted": 12,
         "runs": 75,
-        "balls_faced": 138,
-        "dismissals": 12,
-        "overs_bowled": 22,
-        "wickets": 13,
-        "runs_conceded": 179
+        "balls_faced": 150,
+        "dismissals": 14,
+        "overs_bowled": 24,
+        "wickets": 16,
+        "runs_conceded": 182
       },
       "matches": [
         {
@@ -1602,6 +1657,31 @@
             "overs": 2,
             "wickets": 1,
             "runs_conceded": 13,
+            "no_balls": 0,
+            "wides": 3
+          }
+        },
+        {
+          "fixture_id": 265677,
+          "date_str": "Saturday 08 Aug 2026",
+          "vs": "Anderson Aces",
+          "batting": {
+            "name": "Kiaansh Dubariya",
+            "name_raw": "Kiaansh dubariya",
+            "runs": 0,
+            "balls_faced": 12,
+            "dismissals": 2,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Kiaansh Dubariya",
+            "name_raw": "Kiaansh dubariya",
+            "overs": 2,
+            "wickets": 3,
+            "runs_conceded": 3,
             "no_balls": 0,
             "wides": 3
           }
@@ -1915,13 +1995,13 @@
     {
       "name": "Sidanth Kumar",
       "totals": {
-        "innings_batted": 12,
-        "runs": 54,
-        "balls_faced": 134,
-        "dismissals": 15,
-        "overs_bowled": 23,
-        "wickets": 20,
-        "runs_conceded": 81
+        "innings_batted": 13,
+        "runs": 53,
+        "balls_faced": 146,
+        "dismissals": 17,
+        "overs_bowled": 25,
+        "wickets": 21,
+        "runs_conceded": 93
       },
       "matches": [
         {
@@ -2223,19 +2303,44 @@
             "no_balls": 0,
             "wides": 1
           }
+        },
+        {
+          "fixture_id": 265677,
+          "date_str": "Saturday 08 Aug 2026",
+          "vs": "Anderson Aces",
+          "batting": {
+            "name": "Siddant Unknown",
+            "name_raw": "Siddant Unknown",
+            "runs": -1,
+            "balls_faced": 12,
+            "dismissals": 2,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Siddant Unknown",
+            "name_raw": "Siddant Unknown",
+            "overs": 2,
+            "wickets": 1,
+            "runs_conceded": 12,
+            "no_balls": 0,
+            "wides": 2
+          }
         }
       ]
     },
     {
       "name": "Elan",
       "totals": {
-        "innings_batted": 1,
-        "runs": 12,
-        "balls_faced": 13,
-        "dismissals": 2,
-        "overs_bowled": 2,
+        "innings_batted": 2,
+        "runs": 25,
+        "balls_faced": 27,
+        "dismissals": 3,
+        "overs_bowled": 4,
         "wickets": 2,
-        "runs_conceded": 0
+        "runs_conceded": 18
       },
       "matches": [
         {
@@ -2261,6 +2366,31 @@
             "runs_conceded": 0,
             "no_balls": 0,
             "wides": 1
+          }
+        },
+        {
+          "fixture_id": 265677,
+          "date_str": "Saturday 08 Aug 2026",
+          "vs": "Anderson Aces",
+          "batting": {
+            "name": "Elan Unknown",
+            "name_raw": "Elan Unknown",
+            "runs": 13,
+            "balls_faced": 14,
+            "dismissals": 1,
+            "threes": 0,
+            "fours": 1,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Elan Unknown",
+            "name_raw": "Elan Unknown",
+            "overs": 2,
+            "wickets": 0,
+            "runs_conceded": 18,
+            "no_balls": 0,
+            "wides": 2
           }
         }
       ]

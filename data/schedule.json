@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-08-08T02:05:45.486398+00:00",
+  "generated_at_utc": "2026-08-08T02:55:38.538853+00:00",
   "games": {
     "2026-04-25": {
       "partnerships": [
@@ -477,7 +477,8 @@
       "stand_ins": [
         "Fletcher Tulloch"
       ],
-      "captain": "Jacob"
+      "captain": "Jacob",
+      "potd": "Vernon"
     },
     "2026-08-15": {
       "unavailable": [
@@ -486,7 +487,8 @@
       "rotation": [
         "Jack"
       ],
-      "stand_ins": []
+      "stand_ins": [],
+      "captain": "Owen"
     },
     "2026-08-22": {
       "unavailable": [
