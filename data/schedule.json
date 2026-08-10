@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-08-10T06:00:43.147076+00:00",
+  "generated_at_utc": "2026-08-10T08:00:39.179460+00:00",
   "games": {
     "2026-04-25": {
       "partnerships": [
@@ -514,13 +514,11 @@
     },
     "2026-08-22": {
       "unavailable": [
-        "Liam"
+        "Liam",
+        "Anvaya"
       ],
-      "rotation": [
-        "Jacob"
-      ],
-      "stand_ins": [],
-      "captain": "Anvaya"
+      "rotation": [],
+      "stand_ins": []
     },
     "2026-08-29": {
       "unavailable": [
