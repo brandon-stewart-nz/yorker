@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-08-12T08:00:42.336594+00:00",
+  "generated_at_utc": "2026-08-12T10:00:42.096156+00:00",
   "games": {
     "2026-04-25": {
       "partnerships": [
@@ -518,7 +518,8 @@
         "Anvaya"
       ],
       "rotation": [],
-      "stand_ins": []
+      "stand_ins": [],
+      "captain": "Vernon"
     },
     "2026-08-29": {
       "unavailable": [
