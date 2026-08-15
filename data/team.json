@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-08-15T00:05:30.190275+00:00",
-  "generated_at_nz": "2026-08-15T12:05:22.729460+12:00",
+  "generated_at_utc": "2026-08-15T00:55:32.214726+00:00",
+  "generated_at_nz": "2026-08-15T12:55:25.001478+12:00",
   "team": {
     "id": 11361,
     "name": "Blazing Firebirds",
@@ -9,46 +9,25 @@
   "standings_row": {
     "position": 3,
     "team_name_raw": "Blazing Firebirds - Jacob",
-    "played": 11,
+    "played": 12,
     "won": 5,
-    "lost": 6,
+    "lost": 7,
     "drawn": 0,
     "forfeits_for": 0,
     "forfeits_against": 0,
-    "skins_for": 638,
-    "skins_against": 887,
-    "difference": -249,
+    "skins_for": 684,
+    "skins_against": 976,
+    "difference": -292,
     "bonus": 0,
-    "points": 21
+    "points": 22
   },
   "record": {
-    "played": 14,
+    "played": 15,
     "won": 6,
-    "lost": 8,
+    "lost": 9,
     "drawn": 0,
-    "skins_for": 786,
-    "skins_against": 1154
+    "skins_for": 832,
+    "skins_against": 1243
   },
-  "next_game": {
-    "date_str": "Saturday 15 Aug 2026",
-    "time": "12:00",
-    "court": "Court 4",
-    "home": {
-      "id": 11297,
-      "name": "BYC - Freddie",
-      "display": "BYC"
-    },
-    "away": {
-      "id": 11361,
-      "name": "Blazing Firebirds - Jacob",
-      "display": "Blazing Firebirds"
-    },
-    "home_skins": null,
-    "away_skins": null,
-    "played": false,
-    "fixture_id": 265854,
-    "is_grading": false,
-    "scoresheet_complete": false,
-    "result_final": false
-  }
+  "next_game": null
 }
