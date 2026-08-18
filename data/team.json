@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-08-18T02:00:34.122528+00:00",
-  "generated_at_nz": "2026-08-18T14:00:28.843798+12:00",
+  "generated_at_utc": "2026-08-18T04:00:38.477766+00:00",
+  "generated_at_nz": "2026-08-18T16:00:33.300649+12:00",
   "team": {
     "id": 11361,
     "name": "Blazing Firebirds",
@@ -29,5 +29,26 @@
     "skins_for": 832,
     "skins_against": 1243
   },
-  "next_game": null
+  "next_game": {
+    "date_str": "Saturday 22 Aug 2026",
+    "time": "12:00",
+    "court": "Court 4",
+    "home": {
+      "id": 11294,
+      "name": "Brooklyn Allrounders - Ifan",
+      "display": "Brooklyn Allrounders"
+    },
+    "away": {
+      "id": 11361,
+      "name": "Blazing Firebirds - Jacob",
+      "display": "Blazing Firebirds"
+    },
+    "home_skins": null,
+    "away_skins": null,
+    "played": false,
+    "fixture_id": 265858,
+    "is_grading": false,
+    "scoresheet_complete": false,
+    "result_final": false
+  }
 }

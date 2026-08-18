@@ -1,7 +1,14 @@
 {
-  "generated_at_nz": "2026-08-18T14:00:28.843798+12:00",
-  "fixture_id": null,
-  "phase": "none",
-  "score": null,
-  "rev": null
+  "generated_at_nz": "2026-08-18T16:00:33.300649+12:00",
+  "fixture_id": 265858,
+  "phase": "upcoming",
+  "score": {
+    "home_skins": null,
+    "away_skins": null
+  },
+  "rev": "211e6cfa039e",
+  "date_str": "Saturday 22 Aug 2026",
+  "time": "12:00",
+  "played": false,
+  "scoresheet_complete": false
 }
