@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-08-22T02:05:47.443160+00:00",
+  "generated_at_utc": "2026-08-22T02:56:02.652815+00:00",
   "games": {
     "2026-04-25": {
       "partnerships": [
@@ -544,9 +544,10 @@
         "Rohan"
       ],
       "stand_ins": [
-        "Rohan"
+        "Rohan Patel"
       ],
-      "captain": "Vernon"
+      "captain": "Vernon",
+      "potd": "Jacob"
     },
     "2026-08-29": {
       "unavailable": [

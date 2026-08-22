@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-08-22T02:05:49.528453+00:00",
-  "generated_at_nz": "2026-08-22T14:05:47.820506+12:00",
+  "generated_at_utc": "2026-08-22T02:56:04.810078+00:00",
+  "generated_at_nz": "2026-08-22T14:56:03.026548+12:00",
   "division_name": "Division 8",
   "team": {
     "id": 11294,
@@ -8,7 +8,7 @@
     "raw_name": "Brooklyn Allrounders - Ifan"
   },
   "standings_row": {
-    "position": 5,
+    "position": 6,
     "team_name_raw": "Brooklyn Allrounders - Ifan",
     "played": 13,
     "won": 3,
