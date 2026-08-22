@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-08-22T01:05:55.946822+00:00",
-  "generated_at_nz": "2026-08-22T13:05:51.715654+12:00",
+  "generated_at_utc": "2026-08-22T01:55:47.747209+00:00",
+  "generated_at_nz": "2026-08-22T13:55:42.912018+12:00",
   "division_name": "Division 8",
   "team": {
     "id": 11293,
@@ -23,34 +23,14 @@
     "points": 18
   },
   "record": {
-    "played": 15,
+    "played": 16,
     "won": 4,
-    "lost": 11,
+    "lost": 12,
     "drawn": 0,
-    "skins_for": 926,
-    "skins_against": 1000
+    "skins_for": 1008,
+    "skins_against": 1087
   },
-  "next_game": {
-    "date_str": "Saturday 22 Aug 2026",
-    "time": "13:00",
-    "court": "Court 2",
-    "home": {
-      "id": 11300,
-      "name": "Anderson Aces - Arihaan",
-      "display": "Anderson Aces"
-    },
-    "away": {
-      "id": 11293,
-      "name": "Team Thunderboltz - Liam",
-      "display": "Team Thunderboltz"
-    },
-    "home_skins": null,
-    "away_skins": null,
-    "played": false,
-    "fixture_id": 265859,
-    "scoresheet_complete": false,
-    "is_grading": false
-  },
+  "next_game": null,
   "fixtures": [
     {
       "date_str": "Saturday 25 Apr 2026",
@@ -381,11 +361,11 @@
         "name": "Team Thunderboltz - Liam",
         "display": "Team Thunderboltz"
       },
-      "home_skins": null,
-      "away_skins": null,
-      "played": false,
+      "home_skins": 87,
+      "away_skins": 82,
+      "played": true,
       "fixture_id": 265859,
-      "scoresheet_complete": false,
+      "scoresheet_complete": true,
       "is_grading": false
     }
   ],
@@ -682,13 +662,13 @@
     {
       "name": "Khian Sharma",
       "totals": {
-        "innings_batted": 10,
-        "runs": 157,
-        "balls_faced": 119,
+        "innings_batted": 11,
+        "runs": 181,
+        "balls_faced": 133,
         "dismissals": 3,
-        "overs_bowled": 20,
-        "wickets": 7,
-        "runs_conceded": 99
+        "overs_bowled": 22,
+        "wickets": 8,
+        "runs_conceded": 107
       },
       "matches": [
         {
@@ -892,6 +872,31 @@
           }
         },
         {
+          "fixture_id": 265859,
+          "date_str": "Saturday 22 Aug 2026",
+          "vs": "Anderson Aces",
+          "batting": {
+            "name": "Khian Sharma",
+            "name_raw": "Khian Sharma",
+            "runs": 24,
+            "balls_faced": 14,
+            "dismissals": 0,
+            "threes": 0,
+            "fours": 1,
+            "fives": 1,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Khian Sharma",
+            "name_raw": "Khian Sharma",
+            "overs": 2,
+            "wickets": 1,
+            "runs_conceded": 8,
+            "no_balls": 0,
+            "wides": 1
+          }
+        },
+        {
           "fixture_id": 263951,
           "date_str": "Saturday 30 May 2026",
           "vs": "BYC",
@@ -946,13 +951,13 @@
     {
       "name": "Parth Gandhi",
       "totals": {
-        "innings_batted": 12,
-        "runs": 148,
-        "balls_faced": 155,
+        "innings_batted": 13,
+        "runs": 171,
+        "balls_faced": 165,
         "dismissals": 12,
-        "overs_bowled": 24,
+        "overs_bowled": 26,
         "wickets": 14,
-        "runs_conceded": 80
+        "runs_conceded": 88
       },
       "matches": [
         {
@@ -1254,19 +1259,44 @@
             "no_balls": 0,
             "wides": 1
           }
+        },
+        {
+          "fixture_id": 265859,
+          "date_str": "Saturday 22 Aug 2026",
+          "vs": "Anderson Aces",
+          "batting": {
+            "name": "Parth Gandhi",
+            "name_raw": "parth gandhi",
+            "runs": 23,
+            "balls_faced": 10,
+            "dismissals": 0,
+            "threes": 2,
+            "fours": 1,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Parth Gandhi",
+            "name_raw": "parth gandhi",
+            "overs": 2,
+            "wickets": 0,
+            "runs_conceded": 8,
+            "no_balls": 0,
+            "wides": 1
+          }
         }
       ]
     },
     {
       "name": "Rehaan",
       "totals": {
-        "innings_batted": 13,
-        "runs": 114,
-        "balls_faced": 155,
-        "dismissals": 11,
-        "overs_bowled": 26,
+        "innings_batted": 14,
+        "runs": 129,
+        "balls_faced": 168,
+        "dismissals": 12,
+        "overs_bowled": 28,
         "wickets": 10,
-        "runs_conceded": 147
+        "runs_conceded": 159
       },
       "matches": [
         {
@@ -1593,19 +1623,44 @@
             "no_balls": 0,
             "wides": 2
           }
+        },
+        {
+          "fixture_id": 265859,
+          "date_str": "Saturday 22 Aug 2026",
+          "vs": "Anderson Aces",
+          "batting": {
+            "name": "Rehaan Unknown",
+            "name_raw": "rehaan Unknown",
+            "runs": 15,
+            "balls_faced": 13,
+            "dismissals": 1,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Rehaan Unknown",
+            "name_raw": "rehaan Unknown",
+            "overs": 2,
+            "wickets": 0,
+            "runs_conceded": 12,
+            "no_balls": 0,
+            "wides": 1
+          }
         }
       ]
     },
     {
       "name": "Arjun Govind",
       "totals": {
-        "innings_batted": 10,
-        "runs": 105,
-        "balls_faced": 119,
+        "innings_batted": 11,
+        "runs": 118,
+        "balls_faced": 130,
         "dismissals": 10,
-        "overs_bowled": 20,
+        "overs_bowled": 22,
         "wickets": 9,
-        "runs_conceded": 126
+        "runs_conceded": 143
       },
       "matches": [
         {
@@ -1857,6 +1912,31 @@
             "no_balls": 0,
             "wides": 3
           }
+        },
+        {
+          "fixture_id": 265859,
+          "date_str": "Saturday 22 Aug 2026",
+          "vs": "Anderson Aces",
+          "batting": {
+            "name": "Arjun Govind",
+            "name_raw": "Arjun govind",
+            "runs": 13,
+            "balls_faced": 11,
+            "dismissals": 0,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Arjun Govind",
+            "name_raw": "Arjun govind",
+            "overs": 2,
+            "wickets": 0,
+            "runs_conceded": 17,
+            "no_balls": 0,
+            "wides": 3
+          }
         }
       ]
     },
@@ -2077,13 +2157,13 @@
     {
       "name": "Om Patil",
       "totals": {
-        "innings_batted": 7,
-        "runs": 56,
-        "balls_faced": 79,
-        "dismissals": 5,
-        "overs_bowled": 14,
+        "innings_batted": 8,
+        "runs": 63,
+        "balls_faced": 90,
+        "dismissals": 6,
+        "overs_bowled": 16,
         "wickets": 10,
-        "runs_conceded": 75
+        "runs_conceded": 95
       },
       "matches": [
         {
@@ -2259,6 +2339,31 @@
             "runs_conceded": 8,
             "no_balls": 0,
             "wides": 4
+          }
+        },
+        {
+          "fixture_id": 265859,
+          "date_str": "Saturday 22 Aug 2026",
+          "vs": "Anderson Aces",
+          "batting": {
+            "name": "Om Patil",
+            "name_raw": "Om Patil",
+            "runs": 7,
+            "balls_faced": 11,
+            "dismissals": 1,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Om Patil",
+            "name_raw": "Om Patil",
+            "overs": 2,
+            "wickets": 0,
+            "runs_conceded": 20,
+            "no_balls": 0,
+            "wides": 2
           }
         }
       ]
@@ -2480,13 +2585,13 @@
     {
       "name": "Krish Singh",
       "totals": {
-        "innings_batted": 10,
+        "innings_batted": 11,
         "runs": 14,
-        "balls_faced": 114,
-        "dismissals": 19,
-        "overs_bowled": 20,
+        "balls_faced": 127,
+        "dismissals": 21,
+        "overs_bowled": 22,
         "wickets": 8,
-        "runs_conceded": 131
+        "runs_conceded": 153
       },
       "matches": [
         {
@@ -2737,6 +2842,31 @@
             "runs_conceded": 11,
             "no_balls": 0,
             "wides": 3
+          }
+        },
+        {
+          "fixture_id": 265859,
+          "date_str": "Saturday 22 Aug 2026",
+          "vs": "Anderson Aces",
+          "batting": {
+            "name": "Krish Singh",
+            "name_raw": "Krish Singh",
+            "runs": 0,
+            "balls_faced": 13,
+            "dismissals": 2,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Krish Singh",
+            "name_raw": "Krish Singh",
+            "overs": 2,
+            "wickets": 0,
+            "runs_conceded": 22,
+            "no_balls": 0,
+            "wides": 5
           }
         }
       ]
