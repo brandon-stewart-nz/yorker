@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-08-24T10:00:51.577945+00:00",
+  "generated_at_utc": "2026-08-24T20:01:01.607407+00:00",
   "games": {
     "2026-04-25": {
       "partnerships": [
@@ -540,9 +540,7 @@
         "Anvaya",
         "Owen"
       ],
-      "rotation": [
-        "Rohan"
-      ],
+      "rotation": [],
       "stand_ins": [
         "Rohan Patel"
       ],
