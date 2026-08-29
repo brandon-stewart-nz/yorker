@@ -1,25 +1,25 @@
 {
-  "generated_at_utc": "2026-08-29T01:05:31.792393+00:00",
-  "generated_at_nz": "2026-08-29T13:05:24.053788+12:00",
+  "generated_at_utc": "2026-08-29T01:55:32.548001+00:00",
+  "generated_at_nz": "2026-08-29T13:55:24.612258+12:00",
   "team": {
     "id": 11361,
     "name": "Blazing Firebirds",
     "raw_name": "Blazing Firebirds - Jacob"
   },
   "standings_row": {
-    "position": 4,
+    "position": 3,
     "team_name_raw": "Blazing Firebirds - Jacob",
-    "played": 13,
+    "played": 14,
     "won": 6,
-    "lost": 7,
+    "lost": 8,
     "drawn": 0,
     "forfeits_for": 0,
     "forfeits_against": 0,
-    "skins_for": 787,
+    "skins_for": 860,
     "skins_against": 1,
-    "difference": -238,
+    "difference": -249,
     "bonus": 0,
-    "points": 25
+    "points": 26
   },
   "record": {
     "played": 17,

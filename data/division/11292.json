@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-08-29T01:05:53.035150+00:00",
-  "generated_at_nz": "2026-08-29T13:05:48.477179+12:00",
+  "generated_at_utc": "2026-08-29T01:55:55.312944+00:00",
+  "generated_at_nz": "2026-08-29T13:55:50.602832+12:00",
   "division_name": "Division 8",
   "team": {
     "id": 11292,
@@ -8,7 +8,7 @@
     "raw_name": "Oompa Loompas - Keanu"
   },
   "standings_row": {
-    "position": 3,
+    "position": 4,
     "team_name_raw": "Oompa Loompas - Keanu",
     "played": 13,
     "won": 6,
@@ -40,9 +40,9 @@
       "display": "Oompa Loompas"
     },
     "away": {
-      "id": 11294,
-      "name": "Brooklyn Allrounders - Ifan",
-      "display": "Brooklyn Allrounders"
+      "id": 11290,
+      "name": "Warriors - Alyssa",
+      "display": "Warriors"
     },
     "home_skins": null,
     "away_skins": null,
@@ -398,9 +398,9 @@
         "display": "Oompa Loompas"
       },
       "away": {
-        "id": 11294,
-        "name": "Brooklyn Allrounders - Ifan",
-        "display": "Brooklyn Allrounders"
+        "id": 11290,
+        "name": "Warriors - Alyssa",
+        "display": "Warriors"
       },
       "home_skins": null,
       "away_skins": null,
