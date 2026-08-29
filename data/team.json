@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-08-29T00:55:41.520063+00:00",
-  "generated_at_nz": "2026-08-29T12:55:34.561492+12:00",
+  "generated_at_utc": "2026-08-29T01:05:31.792393+00:00",
+  "generated_at_nz": "2026-08-29T13:05:24.053788+12:00",
   "team": {
     "id": 11361,
     "name": "Blazing Firebirds",
@@ -22,33 +22,12 @@
     "points": 25
   },
   "record": {
-    "played": 16,
+    "played": 17,
     "won": 7,
-    "lost": 9,
+    "lost": 10,
     "drawn": 0,
-    "skins_for": 935,
-    "skins_against": 1292
+    "skins_for": 1008,
+    "skins_against": 1376
   },
-  "next_game": {
-    "date_str": "Saturday 29 Aug 2026",
-    "time": "12:00",
-    "court": "Court 3",
-    "home": {
-      "id": 11361,
-      "name": "Blazing Firebirds - Jacob",
-      "display": "Blazing Firebirds"
-    },
-    "away": {
-      "id": 11300,
-      "name": "Anderson Aces - Arihaan",
-      "display": "Anderson Aces"
-    },
-    "home_skins": null,
-    "away_skins": null,
-    "played": false,
-    "fixture_id": 265861,
-    "is_grading": false,
-    "scoresheet_complete": false,
-    "result_final": false
-  }
+  "next_game": null
 }
