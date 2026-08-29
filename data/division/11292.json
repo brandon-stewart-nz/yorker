@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-08-29T03:05:59.724567+00:00",
-  "generated_at_nz": "2026-08-29T15:05:58.344143+12:00",
+  "generated_at_utc": "2026-08-29T03:55:54.367738+00:00",
+  "generated_at_nz": "2026-08-29T15:55:53.024049+12:00",
   "division_name": "Division 8",
   "team": {
     "id": 11292,
@@ -8,19 +8,19 @@
     "raw_name": "Oompa Loompas - Keanu"
   },
   "standings_row": {
-    "position": 4,
+    "position": 3,
     "team_name_raw": "Oompa Loompas - Keanu",
-    "played": 13,
+    "played": 14,
     "won": 6,
     "lost": 7,
     "drawn": 0,
-    "forfeits_for": 0,
+    "forfeits_for": 1,
     "forfeits_against": 0,
     "skins_for": 743,
     "skins_against": 874,
     "difference": -131,
     "bonus": 0,
-    "points": 25
+    "points": 28
   },
   "record": {
     "played": 16,
