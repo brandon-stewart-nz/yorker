@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-09-01T00:00:56.815432+00:00",
-  "generated_at_nz": "2026-09-01T12:00:55.166658+12:00",
+  "generated_at_utc": "2026-09-01T02:01:03.642337+00:00",
+  "generated_at_nz": "2026-09-01T14:01:02.136129+12:00",
   "division_name": "Division 8",
   "team": {
     "id": 11294,
@@ -30,7 +30,27 @@
     "skins_for": 672,
     "skins_against": 1077
   },
-  "next_game": null,
+  "next_game": {
+    "date_str": "Saturday 05 Sep 2026",
+    "time": "12:50",
+    "court": "Court 3",
+    "home": {
+      "id": 11294,
+      "name": "Brooklyn Allrounders - Ifan",
+      "display": "Brooklyn Allrounders"
+    },
+    "away": {
+      "id": 11293,
+      "name": "Team Thunderboltz - Liam",
+      "display": "Team Thunderboltz"
+    },
+    "home_skins": null,
+    "away_skins": null,
+    "played": false,
+    "fixture_id": 266372,
+    "scoresheet_complete": false,
+    "is_grading": false
+  },
   "fixtures": [
     {
       "date_str": "Saturday 25 Apr 2026",
@@ -345,6 +365,27 @@
       "played": true,
       "fixture_id": 265858,
       "scoresheet_complete": true,
+      "is_grading": false
+    },
+    {
+      "date_str": "Saturday 05 Sep 2026",
+      "time": "12:50",
+      "court": "Court 3",
+      "home": {
+        "id": 11294,
+        "name": "Brooklyn Allrounders - Ifan",
+        "display": "Brooklyn Allrounders"
+      },
+      "away": {
+        "id": 11293,
+        "name": "Team Thunderboltz - Liam",
+        "display": "Team Thunderboltz"
+      },
+      "home_skins": null,
+      "away_skins": null,
+      "played": false,
+      "fixture_id": 266372,
+      "scoresheet_complete": false,
       "is_grading": false
     }
   ],
