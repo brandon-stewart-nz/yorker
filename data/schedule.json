@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-01T10:00:58.806247+00:00",
+  "generated_at_utc": "2026-09-01T20:00:58.305764+00:00",
   "games": {
     "2026-04-25": {
       "partnerships": [
@@ -580,6 +580,28 @@
       "potd": "Vernon"
     },
     "2026-09-05": {
+      "partnerships": [
+        [
+          "Vernon",
+          "Jack"
+        ],
+        [
+          "Anvaya",
+          "Will"
+        ],
+        [
+          "Jacob",
+          "Owen"
+        ]
+      ],
+      "bowling_order": [
+        "Jack",
+        "Will",
+        "Vernon",
+        "Anvaya",
+        "Jacob",
+        "Owen"
+      ],
       "unavailable": [
         "Liam"
       ],
@@ -590,11 +612,33 @@
       "captain": "Owen"
     },
     "2026-09-12": {
+      "partnerships": [
+        [
+          "Vernon",
+          "Jack"
+        ],
+        [
+          "Ria",
+          "Will"
+        ],
+        [
+          "Jacob",
+          "Owen"
+        ]
+      ],
+      "bowling_order": [
+        "Jack",
+        "Will",
+        "Vernon",
+        "Ria",
+        "Jacob",
+        "Owen"
+      ],
       "unavailable": [
         "Liam"
       ],
       "rotation": [
-        "Will"
+        "Anvaya"
       ],
       "stand_ins": [],
       "captain": "Jack"
