@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-01T08:00:51.593575+00:00",
+  "generated_at_utc": "2026-09-01T10:00:58.806247+00:00",
   "games": {
     "2026-04-25": {
       "partnerships": [
@@ -576,7 +576,8 @@
       ],
       "rotation": [],
       "stand_ins": [],
-      "captain": "Will"
+      "captain": "Will",
+      "potd": "Vernon"
     },
     "2026-09-05": {
       "unavailable": [
