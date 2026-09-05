@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-09-05T01:05:57.591589+00:00",
-  "generated_at_nz": "2026-09-05T13:05:54.948293+12:00",
+  "generated_at_utc": "2026-09-05T01:56:28.589067+00:00",
+  "generated_at_nz": "2026-09-05T13:56:24.043294+12:00",
   "division_name": "Division 8",
   "team": {
     "id": 11293,
@@ -10,47 +10,27 @@
   "standings_row": {
     "position": 5,
     "team_name_raw": "Team Thunderboltz - Liam",
-    "played": 14,
-    "won": 4,
+    "played": 15,
+    "won": 5,
     "lost": 10,
     "drawn": 0,
     "forfeits_for": 0,
     "forfeits_against": 0,
-    "skins_for": 929,
-    "skins_against": 998,
-    "difference": -69,
+    "skins_for": 1,
+    "skins_against": 1,
+    "difference": -1,
     "bonus": 0,
-    "points": 22
+    "points": 25
   },
   "record": {
-    "played": 17,
-    "won": 5,
+    "played": 18,
+    "won": 6,
     "lost": 12,
     "drawn": 0,
-    "skins_for": 1075,
-    "skins_against": 1129
+    "skins_for": 1174,
+    "skins_against": 1160
   },
-  "next_game": {
-    "date_str": "Saturday 05 Sep 2026",
-    "time": "12:50",
-    "court": "Court 3",
-    "home": {
-      "id": 11294,
-      "name": "Brooklyn Allrounders - Ifan",
-      "display": "Brooklyn Allrounders"
-    },
-    "away": {
-      "id": 11293,
-      "name": "Team Thunderboltz - Liam",
-      "display": "Team Thunderboltz"
-    },
-    "home_skins": null,
-    "away_skins": null,
-    "played": false,
-    "fixture_id": 266372,
-    "scoresheet_complete": false,
-    "is_grading": false
-  },
+  "next_game": null,
   "fixtures": [
     {
       "date_str": "Saturday 25 Apr 2026",
@@ -423,339 +403,25 @@
         "name": "Team Thunderboltz - Liam",
         "display": "Team Thunderboltz"
       },
-      "home_skins": null,
-      "away_skins": null,
-      "played": false,
+      "home_skins": 31,
+      "away_skins": 99,
+      "played": true,
       "fixture_id": 266372,
-      "scoresheet_complete": false,
+      "scoresheet_complete": true,
       "is_grading": false
     }
   ],
   "players": [
     {
-      "name": "Liam",
-      "totals": {
-        "innings_batted": 12,
-        "runs": 203,
-        "balls_faced": 149,
-        "dismissals": 7,
-        "overs_bowled": 24,
-        "wickets": 12,
-        "runs_conceded": 93
-      },
-      "matches": [
-        {
-          "fixture_id": 263262,
-          "date_str": "Saturday 02 May 2026",
-          "vs": "Hit n Run",
-          "batting": {
-            "name": "Liam Unknown",
-            "name_raw": "liam Unknown",
-            "runs": 15,
-            "balls_faced": 12,
-            "dismissals": 1,
-            "threes": 0,
-            "fours": 1,
-            "fives": 1,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Liam Unknown",
-            "name_raw": "liam Unknown",
-            "overs": 2,
-            "wickets": 4,
-            "runs_conceded": -10,
-            "no_balls": 0,
-            "wides": 2
-          }
-        },
-        {
-          "fixture_id": 263466,
-          "date_str": "Saturday 09 May 2026",
-          "vs": "Renegades",
-          "batting": {
-            "name": "Liam Unknown",
-            "name_raw": "liam Unknown",
-            "runs": 8,
-            "balls_faced": 9,
-            "dismissals": 1,
-            "threes": 0,
-            "fours": 1,
-            "fives": 0,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Liam Unknown",
-            "name_raw": "liam Unknown",
-            "overs": 2,
-            "wickets": 0,
-            "runs_conceded": 17,
-            "no_balls": 0,
-            "wides": 0
-          }
-        },
-        {
-          "fixture_id": 263878,
-          "date_str": "Saturday 23 May 2026",
-          "vs": "Brooklyn Allrounders",
-          "batting": {
-            "name": "Liam Unknown",
-            "name_raw": "liam Unknown",
-            "runs": 30,
-            "balls_faced": 13,
-            "dismissals": 0,
-            "threes": 1,
-            "fours": 1,
-            "fives": 0,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Liam Unknown",
-            "name_raw": "liam Unknown",
-            "overs": 2,
-            "wickets": 2,
-            "runs_conceded": 1,
-            "no_balls": 0,
-            "wides": 2
-          }
-        },
-        {
-          "fixture_id": 263951,
-          "date_str": "Saturday 30 May 2026",
-          "vs": "BYC",
-          "batting": {
-            "name": "Liam Unknown",
-            "name_raw": "liam Unknown",
-            "runs": 19,
-            "balls_faced": 11,
-            "dismissals": 0,
-            "threes": 0,
-            "fours": 0,
-            "fives": 0,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Liam Unknown",
-            "name_raw": "liam Unknown",
-            "overs": 2,
-            "wickets": 0,
-            "runs_conceded": 6,
-            "no_balls": 0,
-            "wides": 0
-          }
-        },
-        {
-          "fixture_id": 264006,
-          "date_str": "Saturday 06 Jun 2026",
-          "vs": "Blazing Firebirds",
-          "batting": {
-            "name": "Liam Unknown",
-            "name_raw": "liam Unknown",
-            "runs": 19,
-            "balls_faced": 9,
-            "dismissals": 0,
-            "threes": 0,
-            "fours": 0,
-            "fives": 0,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Liam Unknown",
-            "name_raw": "liam Unknown",
-            "overs": 2,
-            "wickets": 0,
-            "runs_conceded": 21,
-            "no_balls": 3,
-            "wides": 2
-          }
-        },
-        {
-          "fixture_id": 264013,
-          "date_str": "Saturday 20 Jun 2026",
-          "vs": "Oompa Loompas",
-          "batting": {
-            "name": "Liam Unknown",
-            "name_raw": "liam Unknown",
-            "runs": 23,
-            "balls_faced": 11,
-            "dismissals": 0,
-            "threes": 1,
-            "fours": 0,
-            "fives": 0,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Liam Unknown",
-            "name_raw": "liam Unknown",
-            "overs": 2,
-            "wickets": 0,
-            "runs_conceded": 15,
-            "no_balls": 1,
-            "wides": 1
-          }
-        },
-        {
-          "fixture_id": 264340,
-          "date_str": "Saturday 27 Jun 2026",
-          "vs": "Brooklyn Allrounders",
-          "batting": {
-            "name": "Liam Unknown",
-            "name_raw": "liam Unknown",
-            "runs": 18,
-            "balls_faced": 11,
-            "dismissals": 1,
-            "threes": 0,
-            "fours": 1,
-            "fives": 0,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Liam Unknown",
-            "name_raw": "liam Unknown",
-            "overs": 2,
-            "wickets": 1,
-            "runs_conceded": 10,
-            "no_balls": 1,
-            "wides": 3
-          }
-        },
-        {
-          "fixture_id": 264758,
-          "date_str": "Saturday 18 Jul 2026",
-          "vs": "Anderson Aces",
-          "batting": {
-            "name": "Liam Unknown",
-            "name_raw": "liam Unknown",
-            "runs": 15,
-            "balls_faced": 11,
-            "dismissals": 0,
-            "threes": 0,
-            "fours": 0,
-            "fives": 0,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Liam Unknown",
-            "name_raw": "liam Unknown",
-            "overs": 2,
-            "wickets": 2,
-            "runs_conceded": 1,
-            "no_balls": 0,
-            "wides": 1
-          }
-        },
-        {
-          "fixture_id": 265639,
-          "date_str": "Saturday 01 Aug 2026",
-          "vs": "Brooklyn Allrounders",
-          "batting": {
-            "name": "Liam Unknown",
-            "name_raw": "liam Unknown",
-            "runs": 25,
-            "balls_faced": 18,
-            "dismissals": 0,
-            "threes": 1,
-            "fours": 0,
-            "fives": 0,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Liam Unknown",
-            "name_raw": "liam Unknown",
-            "overs": 2,
-            "wickets": 1,
-            "runs_conceded": 7,
-            "no_balls": 0,
-            "wides": 2
-          }
-        },
-        {
-          "fixture_id": 265676,
-          "date_str": "Saturday 08 Aug 2026",
-          "vs": "Blazing Firebirds",
-          "batting": {
-            "name": "Liam Unknown",
-            "name_raw": "liam Unknown",
-            "runs": 14,
-            "balls_faced": 16,
-            "dismissals": 1,
-            "threes": 0,
-            "fours": 0,
-            "fives": 0,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Liam Unknown",
-            "name_raw": "liam Unknown",
-            "overs": 2,
-            "wickets": 0,
-            "runs_conceded": 11,
-            "no_balls": 0,
-            "wides": 2
-          }
-        },
-        {
-          "fixture_id": 265855,
-          "date_str": "Saturday 15 Aug 2026",
-          "vs": "Oompa Loompas",
-          "batting": {
-            "name": "Liam Unknown",
-            "name_raw": "liam Unknown",
-            "runs": 6,
-            "balls_faced": 12,
-            "dismissals": 2,
-            "threes": 2,
-            "fours": 0,
-            "fives": 0,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Liam Unknown",
-            "name_raw": "liam Unknown",
-            "overs": 2,
-            "wickets": 0,
-            "runs_conceded": 17,
-            "no_balls": 2,
-            "wides": 4
-          }
-        },
-        {
-          "fixture_id": 265860,
-          "date_str": "Saturday 29 Aug 2026",
-          "vs": "BYC",
-          "batting": {
-            "name": "Liam Unknown",
-            "name_raw": "liam Unknown",
-            "runs": 11,
-            "balls_faced": 16,
-            "dismissals": 1,
-            "threes": 0,
-            "fours": 0,
-            "fives": 0,
-            "sixes": 0
-          },
-          "bowling": {
-            "name": "Liam Unknown",
-            "name_raw": "liam Unknown",
-            "overs": 2,
-            "wickets": 2,
-            "runs_conceded": -3,
-            "no_balls": 0,
-            "wides": 1
-          }
-        }
-      ]
-    },
-    {
       "name": "Parth Gandhi",
       "totals": {
-        "innings_batted": 14,
-        "runs": 192,
-        "balls_faced": 177,
+        "innings_batted": 15,
+        "runs": 226,
+        "balls_faced": 195,
         "dismissals": 12,
-        "overs_bowled": 28,
-        "wickets": 15,
-        "runs_conceded": 96
+        "overs_bowled": 30,
+        "wickets": 18,
+        "runs_conceded": 88
       },
       "matches": [
         {
@@ -1107,19 +773,383 @@
             "no_balls": 0,
             "wides": 3
           }
+        },
+        {
+          "fixture_id": 266372,
+          "date_str": "Saturday 05 Sep 2026",
+          "vs": "Brooklyn Allrounders",
+          "batting": {
+            "name": "Parth Gandhi",
+            "name_raw": "parth gandhi",
+            "runs": 34,
+            "balls_faced": 18,
+            "dismissals": 0,
+            "threes": 0,
+            "fours": 1,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Parth Gandhi",
+            "name_raw": "parth gandhi",
+            "overs": 2,
+            "wickets": 3,
+            "runs_conceded": -8,
+            "no_balls": 0,
+            "wides": 3
+          }
+        }
+      ]
+    },
+    {
+      "name": "Liam",
+      "totals": {
+        "innings_batted": 13,
+        "runs": 225,
+        "balls_faced": 164,
+        "dismissals": 7,
+        "overs_bowled": 26,
+        "wickets": 13,
+        "runs_conceded": 102
+      },
+      "matches": [
+        {
+          "fixture_id": 263262,
+          "date_str": "Saturday 02 May 2026",
+          "vs": "Hit n Run",
+          "batting": {
+            "name": "Liam Unknown",
+            "name_raw": "liam Unknown",
+            "runs": 15,
+            "balls_faced": 12,
+            "dismissals": 1,
+            "threes": 0,
+            "fours": 1,
+            "fives": 1,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Liam Unknown",
+            "name_raw": "liam Unknown",
+            "overs": 2,
+            "wickets": 4,
+            "runs_conceded": -10,
+            "no_balls": 0,
+            "wides": 2
+          }
+        },
+        {
+          "fixture_id": 263466,
+          "date_str": "Saturday 09 May 2026",
+          "vs": "Renegades",
+          "batting": {
+            "name": "Liam Unknown",
+            "name_raw": "liam Unknown",
+            "runs": 8,
+            "balls_faced": 9,
+            "dismissals": 1,
+            "threes": 0,
+            "fours": 1,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Liam Unknown",
+            "name_raw": "liam Unknown",
+            "overs": 2,
+            "wickets": 0,
+            "runs_conceded": 17,
+            "no_balls": 0,
+            "wides": 0
+          }
+        },
+        {
+          "fixture_id": 263878,
+          "date_str": "Saturday 23 May 2026",
+          "vs": "Brooklyn Allrounders",
+          "batting": {
+            "name": "Liam Unknown",
+            "name_raw": "liam Unknown",
+            "runs": 30,
+            "balls_faced": 13,
+            "dismissals": 0,
+            "threes": 1,
+            "fours": 1,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Liam Unknown",
+            "name_raw": "liam Unknown",
+            "overs": 2,
+            "wickets": 2,
+            "runs_conceded": 1,
+            "no_balls": 0,
+            "wides": 2
+          }
+        },
+        {
+          "fixture_id": 263951,
+          "date_str": "Saturday 30 May 2026",
+          "vs": "BYC",
+          "batting": {
+            "name": "Liam Unknown",
+            "name_raw": "liam Unknown",
+            "runs": 19,
+            "balls_faced": 11,
+            "dismissals": 0,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Liam Unknown",
+            "name_raw": "liam Unknown",
+            "overs": 2,
+            "wickets": 0,
+            "runs_conceded": 6,
+            "no_balls": 0,
+            "wides": 0
+          }
+        },
+        {
+          "fixture_id": 264006,
+          "date_str": "Saturday 06 Jun 2026",
+          "vs": "Blazing Firebirds",
+          "batting": {
+            "name": "Liam Unknown",
+            "name_raw": "liam Unknown",
+            "runs": 19,
+            "balls_faced": 9,
+            "dismissals": 0,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Liam Unknown",
+            "name_raw": "liam Unknown",
+            "overs": 2,
+            "wickets": 0,
+            "runs_conceded": 21,
+            "no_balls": 3,
+            "wides": 2
+          }
+        },
+        {
+          "fixture_id": 264013,
+          "date_str": "Saturday 20 Jun 2026",
+          "vs": "Oompa Loompas",
+          "batting": {
+            "name": "Liam Unknown",
+            "name_raw": "liam Unknown",
+            "runs": 23,
+            "balls_faced": 11,
+            "dismissals": 0,
+            "threes": 1,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Liam Unknown",
+            "name_raw": "liam Unknown",
+            "overs": 2,
+            "wickets": 0,
+            "runs_conceded": 15,
+            "no_balls": 1,
+            "wides": 1
+          }
+        },
+        {
+          "fixture_id": 264340,
+          "date_str": "Saturday 27 Jun 2026",
+          "vs": "Brooklyn Allrounders",
+          "batting": {
+            "name": "Liam Unknown",
+            "name_raw": "liam Unknown",
+            "runs": 18,
+            "balls_faced": 11,
+            "dismissals": 1,
+            "threes": 0,
+            "fours": 1,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Liam Unknown",
+            "name_raw": "liam Unknown",
+            "overs": 2,
+            "wickets": 1,
+            "runs_conceded": 10,
+            "no_balls": 1,
+            "wides": 3
+          }
+        },
+        {
+          "fixture_id": 264758,
+          "date_str": "Saturday 18 Jul 2026",
+          "vs": "Anderson Aces",
+          "batting": {
+            "name": "Liam Unknown",
+            "name_raw": "liam Unknown",
+            "runs": 15,
+            "balls_faced": 11,
+            "dismissals": 0,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Liam Unknown",
+            "name_raw": "liam Unknown",
+            "overs": 2,
+            "wickets": 2,
+            "runs_conceded": 1,
+            "no_balls": 0,
+            "wides": 1
+          }
+        },
+        {
+          "fixture_id": 265639,
+          "date_str": "Saturday 01 Aug 2026",
+          "vs": "Brooklyn Allrounders",
+          "batting": {
+            "name": "Liam Unknown",
+            "name_raw": "liam Unknown",
+            "runs": 25,
+            "balls_faced": 18,
+            "dismissals": 0,
+            "threes": 1,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Liam Unknown",
+            "name_raw": "liam Unknown",
+            "overs": 2,
+            "wickets": 1,
+            "runs_conceded": 7,
+            "no_balls": 0,
+            "wides": 2
+          }
+        },
+        {
+          "fixture_id": 265676,
+          "date_str": "Saturday 08 Aug 2026",
+          "vs": "Blazing Firebirds",
+          "batting": {
+            "name": "Liam Unknown",
+            "name_raw": "liam Unknown",
+            "runs": 14,
+            "balls_faced": 16,
+            "dismissals": 1,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Liam Unknown",
+            "name_raw": "liam Unknown",
+            "overs": 2,
+            "wickets": 0,
+            "runs_conceded": 11,
+            "no_balls": 0,
+            "wides": 2
+          }
+        },
+        {
+          "fixture_id": 265855,
+          "date_str": "Saturday 15 Aug 2026",
+          "vs": "Oompa Loompas",
+          "batting": {
+            "name": "Liam Unknown",
+            "name_raw": "liam Unknown",
+            "runs": 6,
+            "balls_faced": 12,
+            "dismissals": 2,
+            "threes": 2,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Liam Unknown",
+            "name_raw": "liam Unknown",
+            "overs": 2,
+            "wickets": 0,
+            "runs_conceded": 17,
+            "no_balls": 2,
+            "wides": 4
+          }
+        },
+        {
+          "fixture_id": 265860,
+          "date_str": "Saturday 29 Aug 2026",
+          "vs": "BYC",
+          "batting": {
+            "name": "Liam Unknown",
+            "name_raw": "liam Unknown",
+            "runs": 11,
+            "balls_faced": 16,
+            "dismissals": 1,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Liam Unknown",
+            "name_raw": "liam Unknown",
+            "overs": 2,
+            "wickets": 2,
+            "runs_conceded": -3,
+            "no_balls": 0,
+            "wides": 1
+          }
+        },
+        {
+          "fixture_id": 266372,
+          "date_str": "Saturday 05 Sep 2026",
+          "vs": "Brooklyn Allrounders",
+          "batting": {
+            "name": "Liam Unknown",
+            "name_raw": "liam Unknown",
+            "runs": 22,
+            "balls_faced": 15,
+            "dismissals": 0,
+            "threes": 1,
+            "fours": 1,
+            "fives": 1,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Liam Unknown",
+            "name_raw": "liam Unknown",
+            "overs": 2,
+            "wickets": 1,
+            "runs_conceded": 9,
+            "no_balls": 2,
+            "wides": 1
+          }
         }
       ]
     },
     {
       "name": "Khian Sharma",
       "totals": {
-        "innings_batted": 12,
-        "runs": 184,
-        "balls_faced": 143,
+        "innings_batted": 13,
+        "runs": 196,
+        "balls_faced": 152,
         "dismissals": 4,
-        "overs_bowled": 24,
+        "overs_bowled": 26,
         "wickets": 8,
-        "runs_conceded": 123
+        "runs_conceded": 134
       },
       "matches": [
         {
@@ -1373,6 +1403,31 @@
           }
         },
         {
+          "fixture_id": 266372,
+          "date_str": "Saturday 05 Sep 2026",
+          "vs": "Brooklyn Allrounders",
+          "batting": {
+            "name": "Khian Sharma",
+            "name_raw": "Khian Sharma",
+            "runs": 12,
+            "balls_faced": 9,
+            "dismissals": 0,
+            "threes": 1,
+            "fours": 0,
+            "fives": 1,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Khian Sharma",
+            "name_raw": "Khian Sharma",
+            "overs": 2,
+            "wickets": 0,
+            "runs_conceded": 11,
+            "no_balls": 0,
+            "wides": 2
+          }
+        },
+        {
           "fixture_id": 263951,
           "date_str": "Saturday 30 May 2026",
           "vs": "BYC",
@@ -1427,13 +1482,13 @@
     {
       "name": "Rehaan",
       "totals": {
-        "innings_batted": 15,
-        "runs": 138,
-        "balls_faced": 176,
+        "innings_batted": 16,
+        "runs": 147,
+        "balls_faced": 182,
         "dismissals": 12,
-        "overs_bowled": 30,
-        "wickets": 11,
-        "runs_conceded": 167
+        "overs_bowled": 32,
+        "wickets": 12,
+        "runs_conceded": 168
       },
       "matches": [
         {
@@ -1810,18 +1865,43 @@
             "no_balls": 0,
             "wides": 4
           }
+        },
+        {
+          "fixture_id": 266372,
+          "date_str": "Saturday 05 Sep 2026",
+          "vs": "Brooklyn Allrounders",
+          "batting": {
+            "name": "Rehaan Unknown",
+            "name_raw": "rehaan Unknown",
+            "runs": 9,
+            "balls_faced": 6,
+            "dismissals": 0,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Rehaan Unknown",
+            "name_raw": "rehaan Unknown",
+            "overs": 2,
+            "wickets": 1,
+            "runs_conceded": 1,
+            "no_balls": 0,
+            "wides": 3
+          }
         }
       ]
     },
     {
       "name": "Arjun Govind",
       "totals": {
-        "innings_batted": 11,
-        "runs": 118,
-        "balls_faced": 130,
+        "innings_batted": 12,
+        "runs": 132,
+        "balls_faced": 139,
         "dismissals": 10,
-        "overs_bowled": 22,
-        "wickets": 9,
+        "overs_bowled": 24,
+        "wickets": 11,
         "runs_conceded": 143
       },
       "matches": [
@@ -2096,6 +2176,31 @@
             "overs": 2,
             "wickets": 0,
             "runs_conceded": 17,
+            "no_balls": 0,
+            "wides": 3
+          }
+        },
+        {
+          "fixture_id": 266372,
+          "date_str": "Saturday 05 Sep 2026",
+          "vs": "Brooklyn Allrounders",
+          "batting": {
+            "name": "Arjun Govind",
+            "name_raw": "Arjun govind",
+            "runs": 14,
+            "balls_faced": 9,
+            "dismissals": 0,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Arjun Govind",
+            "name_raw": "Arjun govind",
+            "overs": 2,
+            "wickets": 2,
+            "runs_conceded": 0,
             "no_balls": 0,
             "wides": 3
           }
@@ -2797,13 +2902,13 @@
     {
       "name": "Krish Singh",
       "totals": {
-        "innings_batted": 11,
-        "runs": 14,
-        "balls_faced": 127,
-        "dismissals": 21,
-        "overs_bowled": 22,
+        "innings_batted": 12,
+        "runs": 22,
+        "balls_faced": 142,
+        "dismissals": 22,
+        "overs_bowled": 24,
         "wickets": 8,
-        "runs_conceded": 153
+        "runs_conceded": 171
       },
       "matches": [
         {
@@ -3079,6 +3184,31 @@
             "runs_conceded": 22,
             "no_balls": 0,
             "wides": 5
+          }
+        },
+        {
+          "fixture_id": 266372,
+          "date_str": "Saturday 05 Sep 2026",
+          "vs": "Brooklyn Allrounders",
+          "batting": {
+            "name": "Krish Singh",
+            "name_raw": "Krish Singh",
+            "runs": 8,
+            "balls_faced": 15,
+            "dismissals": 1,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Krish Singh",
+            "name_raw": "Krish Singh",
+            "overs": 2,
+            "wickets": 0,
+            "runs_conceded": 18,
+            "no_balls": 0,
+            "wides": 6
           }
         }
       ]
