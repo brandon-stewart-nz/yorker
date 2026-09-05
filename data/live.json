@@ -1,14 +1,7 @@
 {
-  "generated_at_nz": "2026-09-05T12:05:26.428712+12:00",
-  "fixture_id": 266373,
-  "phase": "live",
-  "score": {
-    "home_skins": null,
-    "away_skins": null
-  },
-  "rev": "964bf8241917",
-  "date_str": "Saturday 05 Sep 2026",
-  "time": "11:50",
-  "played": false,
-  "scoresheet_complete": false
+  "generated_at_nz": "2026-09-05T12:55:28.207367+12:00",
+  "fixture_id": null,
+  "phase": "none",
+  "score": null,
+  "rev": null
 }

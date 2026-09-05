@@ -1,5 +1,5 @@
 {
-  "generated_at_nz": "2026-09-05T12:05:26.428712+12:00",
+  "generated_at_nz": "2026-09-05T12:55:28.207367+12:00",
   "fixtures": [
     {
       "date_str": "Saturday 25 Apr 2026",
@@ -389,35 +389,14 @@
         "name": "Blazing Firebirds - Jacob",
         "display": "Blazing Firebirds"
       },
-      "home_skins": null,
-      "away_skins": null,
-      "played": false,
+      "home_skins": 91,
+      "away_skins": 61,
+      "played": true,
       "fixture_id": 266373,
       "is_grading": false,
-      "scoresheet_complete": false,
-      "result_final": false
+      "scoresheet_complete": true,
+      "result_final": true
     }
   ],
-  "next_game": {
-    "date_str": "Saturday 05 Sep 2026",
-    "time": "11:50",
-    "court": "Court 2",
-    "home": {
-      "id": 11297,
-      "name": "BYC - Freddie",
-      "display": "BYC"
-    },
-    "away": {
-      "id": 11361,
-      "name": "Blazing Firebirds - Jacob",
-      "display": "Blazing Firebirds"
-    },
-    "home_skins": null,
-    "away_skins": null,
-    "played": false,
-    "fixture_id": 266373,
-    "is_grading": false,
-    "scoresheet_complete": false,
-    "result_final": false
-  }
+  "next_game": null
 }
