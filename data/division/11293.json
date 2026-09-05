@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-09-05T01:56:28.589067+00:00",
-  "generated_at_nz": "2026-09-05T13:56:24.043294+12:00",
+  "generated_at_utc": "2026-09-05T02:00:55.656423+00:00",
+  "generated_at_nz": "2026-09-05T14:00:54.115366+12:00",
   "division_name": "Division 8",
   "team": {
     "id": 11293,
@@ -10,17 +10,17 @@
   "standings_row": {
     "position": 5,
     "team_name_raw": "Team Thunderboltz - Liam",
-    "played": 15,
-    "won": 5,
+    "played": 14,
+    "won": 4,
     "lost": 10,
     "drawn": 0,
     "forfeits_for": 0,
     "forfeits_against": 0,
-    "skins_for": 1,
-    "skins_against": 1,
-    "difference": -1,
+    "skins_for": 929,
+    "skins_against": 998,
+    "difference": -69,
     "bonus": 0,
-    "points": 25
+    "points": 22
   },
   "record": {
     "played": 18,

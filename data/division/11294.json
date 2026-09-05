@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-09-05T01:56:28.592988+00:00",
-  "generated_at_nz": "2026-09-05T13:56:24.043294+12:00",
+  "generated_at_utc": "2026-09-05T02:00:55.659381+00:00",
+  "generated_at_nz": "2026-09-05T14:00:54.115366+12:00",
   "division_name": "Division 8",
   "team": {
     "id": 11294,
@@ -10,17 +10,17 @@
   "standings_row": {
     "position": 6,
     "team_name_raw": "Brooklyn Allrounders - Ifan",
-    "played": 15,
+    "played": 14,
     "won": 3,
-    "lost": 11,
+    "lost": 10,
     "drawn": 0,
     "forfeits_for": 0,
     "forfeits_against": 1,
-    "skins_for": 564,
-    "skins_against": 1,
-    "difference": -436,
+    "skins_for": 533,
+    "skins_against": 901,
+    "difference": -368,
     "bonus": 0,
-    "points": 20
+    "points": 19
   },
   "record": {
     "played": 16,
