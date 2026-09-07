@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-09-07T20:00:51.669379+00:00",
-  "generated_at_nz": "2026-09-08T08:00:50.104540+12:00",
+  "generated_at_utc": "2026-09-07T22:00:53.068356+00:00",
+  "generated_at_nz": "2026-09-08T10:00:51.379184+12:00",
   "division_name": "Division 8",
   "team": {
     "id": 11292,
@@ -30,7 +30,27 @@
     "skins_for": 1008,
     "skins_against": 1183
   },
-  "next_game": null,
+  "next_game": {
+    "date_str": "Saturday 12 Sep 2026",
+    "time": "12:30",
+    "court": "Court 1",
+    "home": {
+      "id": 11292,
+      "name": "Oompa Loompas - Keanu",
+      "display": "Oompa Loompas"
+    },
+    "away": {
+      "id": 11294,
+      "name": "Brooklyn Allrounders - Ifan",
+      "display": "Brooklyn Allrounders"
+    },
+    "home_skins": null,
+    "away_skins": null,
+    "played": false,
+    "fixture_id": 266537,
+    "scoresheet_complete": false,
+    "is_grading": false
+  },
   "fixtures": [
     {
       "date_str": "Saturday 25 Apr 2026",
@@ -408,6 +428,27 @@
       "played": true,
       "fixture_id": 266371,
       "scoresheet_complete": true,
+      "is_grading": false
+    },
+    {
+      "date_str": "Saturday 12 Sep 2026",
+      "time": "12:30",
+      "court": "Court 1",
+      "home": {
+        "id": 11292,
+        "name": "Oompa Loompas - Keanu",
+        "display": "Oompa Loompas"
+      },
+      "away": {
+        "id": 11294,
+        "name": "Brooklyn Allrounders - Ifan",
+        "display": "Brooklyn Allrounders"
+      },
+      "home_skins": null,
+      "away_skins": null,
+      "played": false,
+      "fixture_id": 266537,
+      "scoresheet_complete": false,
       "is_grading": false
     }
   ],
