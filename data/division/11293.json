@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-09-09T02:01:19.810273+00:00",
-  "generated_at_nz": "2026-09-09T14:01:18.180937+12:00",
+  "generated_at_utc": "2026-09-09T04:01:00.048531+00:00",
+  "generated_at_nz": "2026-09-09T16:00:58.349359+12:00",
   "division_name": "Division 8",
   "team": {
     "id": 11293,
@@ -33,7 +33,7 @@
   "next_game": {
     "date_str": "Saturday 12 Sep 2026",
     "time": "11:30",
-    "court": "Court 4",
+    "court": "Court 2",
     "home": {
       "id": 11293,
       "name": "Team Thunderboltz - Liam",
@@ -433,7 +433,7 @@
     {
       "date_str": "Saturday 12 Sep 2026",
       "time": "11:30",
-      "court": "Court 4",
+      "court": "Court 2",
       "home": {
         "id": 11293,
         "name": "Team Thunderboltz - Liam",
