@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-09-12T00:00:34.657147+00:00",
-  "generated_at_nz": "2026-09-12T12:00:26.656861+12:00",
+  "generated_at_utc": "2026-09-12T08:20:22.064153+00:00",
+  "generated_at_nz": "2026-09-12T20:20:12.107313+12:00",
   "division_name": "Division 8",
   "division_id": 4391,
   "our_team_id": 11361,
@@ -71,7 +71,7 @@
       "forfeits_for": 0,
       "forfeits_against": 0,
       "skins_for": 860,
-      "skins_against": 1,
+      "skins_against": 1109,
       "difference": -249,
       "bonus": 0,
       "points": 26,

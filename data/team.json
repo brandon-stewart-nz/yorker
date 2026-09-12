@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-09-12T00:00:34.657125+00:00",
-  "generated_at_nz": "2026-09-12T12:00:26.656861+12:00",
+  "generated_at_utc": "2026-09-12T08:20:22.064130+00:00",
+  "generated_at_nz": "2026-09-12T20:20:12.107313+12:00",
   "team": {
     "id": 11361,
     "name": "Blazing Firebirds",
@@ -16,7 +16,7 @@
     "forfeits_for": 0,
     "forfeits_against": 0,
     "skins_for": 860,
-    "skins_against": 1,
+    "skins_against": 1109,
     "difference": -249,
     "bonus": 0,
     "points": 26
@@ -26,29 +26,8 @@
     "won": 7,
     "lost": 12,
     "drawn": 0,
-    "skins_for": 1069,
+    "skins_for": 1147,
     "skins_against": 1548
   },
-  "next_game": {
-    "date_str": "Saturday 12 Sep 2026",
-    "time": "11:30",
-    "court": "Court 2",
-    "home": {
-      "id": 11293,
-      "name": "Team Thunderboltz - Liam",
-      "display": "Team Thunderboltz"
-    },
-    "away": {
-      "id": 11361,
-      "name": "Blazing Firebirds - Jacob",
-      "display": "Blazing Firebirds"
-    },
-    "home_skins": 81,
-    "away_skins": 0,
-    "played": true,
-    "fixture_id": 266538,
-    "is_grading": false,
-    "scoresheet_complete": false,
-    "result_final": false
-  }
+  "next_game": null
 }

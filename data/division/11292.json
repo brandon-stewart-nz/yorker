@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-09-12T00:00:51.688615+00:00",
-  "generated_at_nz": "2026-09-12T12:00:48.223246+12:00",
+  "generated_at_utc": "2026-09-12T08:20:52.833141+00:00",
+  "generated_at_nz": "2026-09-12T20:20:47.072032+12:00",
   "division_name": "Division 8",
   "team": {
     "id": 11292,
@@ -23,34 +23,14 @@
     "points": 31
   },
   "record": {
-    "played": 18,
-    "won": 8,
+    "played": 19,
+    "won": 9,
     "lost": 10,
     "drawn": 0,
-    "skins_for": 1008,
-    "skins_against": 1183
+    "skins_for": 1091,
+    "skins_against": 1212
   },
-  "next_game": {
-    "date_str": "Saturday 12 Sep 2026",
-    "time": "12:30",
-    "court": "Court 1",
-    "home": {
-      "id": 11292,
-      "name": "Oompa Loompas - Keanu",
-      "display": "Oompa Loompas"
-    },
-    "away": {
-      "id": 11294,
-      "name": "Brooklyn Allrounders - Ifan",
-      "display": "Brooklyn Allrounders"
-    },
-    "home_skins": null,
-    "away_skins": null,
-    "played": false,
-    "fixture_id": 266537,
-    "scoresheet_complete": false,
-    "is_grading": false
-  },
+  "next_game": null,
   "fixtures": [
     {
       "date_str": "Saturday 25 Apr 2026",
@@ -444,11 +424,11 @@
         "name": "Brooklyn Allrounders - Ifan",
         "display": "Brooklyn Allrounders"
       },
-      "home_skins": null,
-      "away_skins": null,
-      "played": false,
+      "home_skins": 83,
+      "away_skins": 29,
+      "played": true,
       "fixture_id": 266537,
-      "scoresheet_complete": false,
+      "scoresheet_complete": true,
       "is_grading": false
     }
   ],
@@ -456,13 +436,13 @@
     {
       "name": "Zayden Vosges",
       "totals": {
-        "innings_batted": 10,
-        "runs": 220,
-        "balls_faced": 118,
+        "innings_batted": 11,
+        "runs": 266,
+        "balls_faced": 133,
         "dismissals": 5,
-        "overs_bowled": 22,
-        "wickets": 7,
-        "runs_conceded": 125
+        "overs_bowled": 24,
+        "wickets": 10,
+        "runs_conceded": 127
       },
       "matches": [
         {
@@ -729,18 +709,43 @@
             "no_balls": 0,
             "wides": 2
           }
+        },
+        {
+          "fixture_id": 266537,
+          "date_str": "Saturday 12 Sep 2026",
+          "vs": "Brooklyn Allrounders",
+          "batting": {
+            "name": "Zayden Vosges",
+            "name_raw": "Zayden Vosges",
+            "runs": 46,
+            "balls_faced": 15,
+            "dismissals": 0,
+            "threes": 1,
+            "fours": 2,
+            "fives": 2,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Zayden Vosges",
+            "name_raw": "Zayden Vosges",
+            "overs": 2,
+            "wickets": 3,
+            "runs_conceded": 2,
+            "no_balls": 0,
+            "wides": 4
+          }
         }
       ]
     },
     {
       "name": "Karan Bakshi",
       "totals": {
-        "innings_batted": 14,
-        "runs": 205,
-        "balls_faced": 190,
-        "dismissals": 4,
-        "overs_bowled": 31,
-        "wickets": 19,
+        "innings_batted": 15,
+        "runs": 216,
+        "balls_faced": 208,
+        "dismissals": 6,
+        "overs_bowled": 33,
+        "wickets": 21,
         "runs_conceded": 163
       },
       "matches": [
@@ -1035,6 +1040,31 @@
           }
         },
         {
+          "fixture_id": 266537,
+          "date_str": "Saturday 12 Sep 2026",
+          "vs": "Brooklyn Allrounders",
+          "batting": {
+            "name": "Karan Bakshi",
+            "name_raw": "Karan Bakshi",
+            "runs": 11,
+            "balls_faced": 18,
+            "dismissals": 2,
+            "threes": 0,
+            "fours": 1,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Karan Bakshi",
+            "name_raw": "Karan Bakshi",
+            "overs": 2,
+            "wickets": 2,
+            "runs_conceded": 0,
+            "no_balls": 0,
+            "wides": 0
+          }
+        },
+        {
           "fixture_id": 263103,
           "date_str": "Saturday 25 Apr 2026",
           "vs": "Team Thunderboltz",
@@ -1129,13 +1159,13 @@
     {
       "name": "Koen Kleyngeld",
       "totals": {
-        "innings_batted": 16,
-        "runs": 151,
-        "balls_faced": 165,
+        "innings_batted": 17,
+        "runs": 161,
+        "balls_faced": 171,
         "dismissals": 14,
-        "overs_bowled": 34,
-        "wickets": 17,
-        "runs_conceded": 218
+        "overs_bowled": 36,
+        "wickets": 21,
+        "runs_conceded": 212
       },
       "matches": [
         {
@@ -1386,6 +1416,31 @@
             "runs_conceded": 22,
             "no_balls": 0,
             "wides": 7
+          }
+        },
+        {
+          "fixture_id": 266537,
+          "date_str": "Saturday 12 Sep 2026",
+          "vs": "Brooklyn Allrounders",
+          "batting": {
+            "name": "Koen Kleyngeld",
+            "name_raw": "Koen Kleyngeld",
+            "runs": 10,
+            "balls_faced": 6,
+            "dismissals": 0,
+            "threes": 0,
+            "fours": 0,
+            "fives": 1,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Koen Kleyngeld",
+            "name_raw": "Koen Kleyngeld",
+            "overs": 2,
+            "wickets": 4,
+            "runs_conceded": -6,
+            "no_balls": 0,
+            "wides": 2
           }
         },
         {
@@ -1812,13 +1867,13 @@
     {
       "name": "Kianansh Dubariya",
       "totals": {
-        "innings_batted": 16,
-        "runs": 102,
-        "balls_faced": 209,
-        "dismissals": 20,
-        "overs_bowled": 32,
-        "wickets": 19,
-        "runs_conceded": 250
+        "innings_batted": 17,
+        "runs": 107,
+        "balls_faced": 223,
+        "dismissals": 22,
+        "overs_bowled": 34,
+        "wickets": 21,
+        "runs_conceded": 259
       },
       "matches": [
         {
@@ -2235,18 +2290,43 @@
             "no_balls": 1,
             "wides": 7
           }
+        },
+        {
+          "fixture_id": 266537,
+          "date_str": "Saturday 12 Sep 2026",
+          "vs": "Brooklyn Allrounders",
+          "batting": {
+            "name": "Kiaansh Dubariya",
+            "name_raw": "Kiaansh dubariya",
+            "runs": 5,
+            "balls_faced": 14,
+            "dismissals": 2,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Kiaansh Dubariya",
+            "name_raw": "Kiaansh dubariya",
+            "overs": 2,
+            "wickets": 2,
+            "runs_conceded": 9,
+            "no_balls": 0,
+            "wides": 6
+          }
         }
       ]
     },
     {
       "name": "Keanu Vosges",
       "totals": {
-        "innings_batted": 13,
-        "runs": 60,
-        "balls_faced": 146,
-        "dismissals": 23,
-        "overs_bowled": 28,
-        "wickets": 15,
+        "innings_batted": 14,
+        "runs": 65,
+        "balls_faced": 155,
+        "dismissals": 24,
+        "overs_bowled": 30,
+        "wickets": 17,
         "runs_conceded": 143
       },
       "matches": [
@@ -2589,19 +2669,44 @@
             "no_balls": 1,
             "wides": 2
           }
+        },
+        {
+          "fixture_id": 266537,
+          "date_str": "Saturday 12 Sep 2026",
+          "vs": "Brooklyn Allrounders",
+          "batting": {
+            "name": "Keanu Vosges",
+            "name_raw": "Keanu Vosges",
+            "runs": 5,
+            "balls_faced": 9,
+            "dismissals": 1,
+            "threes": 1,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Keanu Vosges",
+            "name_raw": "Keanu Vosges",
+            "overs": 2,
+            "wickets": 2,
+            "runs_conceded": 0,
+            "no_balls": 0,
+            "wides": 1
+          }
         }
       ]
     },
     {
       "name": "Sidanth Kumar",
       "totals": {
-        "innings_batted": 17,
-        "runs": 52,
-        "balls_faced": 183,
+        "innings_batted": 18,
+        "runs": 58,
+        "balls_faced": 193,
         "dismissals": 23,
-        "overs_bowled": 33,
+        "overs_bowled": 35,
         "wickets": 31,
-        "runs_conceded": 103
+        "runs_conceded": 127
       },
       "matches": [
         {
@@ -3027,6 +3132,31 @@
             "runs_conceded": 3,
             "no_balls": 0,
             "wides": 0
+          }
+        },
+        {
+          "fixture_id": 266537,
+          "date_str": "Saturday 12 Sep 2026",
+          "vs": "Brooklyn Allrounders",
+          "batting": {
+            "name": "Siddant Unknown",
+            "name_raw": "Siddant Unknown",
+            "runs": 6,
+            "balls_faced": 10,
+            "dismissals": 0,
+            "threes": 0,
+            "fours": 0,
+            "fives": 0,
+            "sixes": 0
+          },
+          "bowling": {
+            "name": "Siddant Unknown",
+            "name_raw": "Siddant Unknown",
+            "overs": 2,
+            "wickets": 0,
+            "runs_conceded": 24,
+            "no_balls": 0,
+            "wides": 2
           }
         }
       ]
