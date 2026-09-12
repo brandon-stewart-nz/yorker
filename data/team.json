@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-09-11T22:00:32.364087+00:00",
-  "generated_at_nz": "2026-09-12T10:00:26.797686+12:00",
+  "generated_at_utc": "2026-09-12T00:00:34.657125+00:00",
+  "generated_at_nz": "2026-09-12T12:00:26.656861+12:00",
   "team": {
     "id": 11361,
     "name": "Blazing Firebirds",
@@ -22,12 +22,12 @@
     "points": 26
   },
   "record": {
-    "played": 18,
+    "played": 19,
     "won": 7,
-    "lost": 11,
+    "lost": 12,
     "drawn": 0,
     "skins_for": 1069,
-    "skins_against": 1467
+    "skins_against": 1548
   },
   "next_game": {
     "date_str": "Saturday 12 Sep 2026",
@@ -43,9 +43,9 @@
       "name": "Blazing Firebirds - Jacob",
       "display": "Blazing Firebirds"
     },
-    "home_skins": null,
-    "away_skins": null,
-    "played": false,
+    "home_skins": 81,
+    "away_skins": 0,
+    "played": true,
     "fixture_id": 266538,
     "is_grading": false,
     "scoresheet_complete": false,
